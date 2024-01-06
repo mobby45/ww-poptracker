@@ -1,0 +1,590 @@
+[
+    {
+        "name": "Telescope",
+        "type": "toggle",
+        "img": "images/items/item0.png",
+        "codes": "telescope"
+    },
+    {
+        "name": "Swift Sail",
+        "type": "toggle",
+        "img": "images/items/item1.png",
+        "initial_active_state": true,
+        "codes": "sail"
+    },
+    {
+        "name": "Wind Waker",
+        "type": "toggle",
+        "img": "images/items/item2.png",
+        "codes": "windwaker"
+    },
+    {
+        "name": "Grappling Hook",
+        "type": "toggle",
+        "img": "images/items/item3.png",
+        "codes": "grapple,weapon"
+    },
+    {
+        "name": "Spoils Bag",
+        "type": "toggle",
+        "img": "images/items/item4.png",
+        "codes": "spoils"
+    },
+    {
+        "name": "Boomerang",
+        "type": "toggle",
+        "img": "images/items/item5.png",
+        "codes": "boomerang,weapon"
+    },
+    {
+        "name": "Deku Leaf",
+        "type": "toggle",
+        "img": "images/items/item6.png",
+        "codes": "leaf"
+    },
+    {
+        "name": "Tingle Tuner",
+        "type": "toggle",
+        "img": "images/items/item7.png",
+        "codes": "tuner"
+    },
+    {
+        "name": "Picto Box",
+        "type": "progressive",
+        "allow_disabled": true,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "img": "images/items/item8.png",
+                "codes": "picto",
+                "inherit_codes": true
+            },
+            {
+                "img": "images/items/item8_2.png",
+                "codes": "picto_2",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
+        "name": "Iron Boots",
+        "type": "toggle",
+        "img": "images/items/item9.png",
+        "codes": "boots"
+    },
+    {
+        "name": "Magic Armor",
+        "type": "toggle",
+        "img": "images/items/item10.png",
+        "codes": "armor"
+    },
+    {
+        "name": "Bait Bag",
+        "type": "toggle",
+        "img": "images/items/item11.png",
+        "codes": "bait"
+    },
+    {
+        "name": "Hero's Charm",
+        "type": "toggle",
+        "img": "images/items/item27.png",
+        "codes": "charm"
+    },
+    {
+        "name": "Hero's Bow",
+        "type": "progressive",
+        "allow_disabled": true,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "img": "images/items/item12.png",
+                "codes": "bow,weapon",
+                "inherit_codes": true
+            },
+            {
+                "img": "images/items/item12_2.png",
+                "codes": "bow_2,weapon",
+                "inherit_codes": true
+            },
+            {
+                "img": "images/items/item12_3.png",
+                "codes": "bow_3,weapon",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
+        "name": "Bombs",
+        "type": "toggle",
+        "img": "images/items/item13.png",
+        "codes": "bombs,weapon,rock"
+    },
+    {
+		"name": "Empty Bottle",
+		"type": "consumable",
+		"img": "images/items/bottle.png",
+		"codes": "bottle",
+		"max_quantity": 4
+	},
+    {
+		"name": "Green Chu Jelly",
+		"type": "consumable",
+		"img": "images/items/chu_green.png",
+		"codes": "green",
+		"max_quantity": 15
+	},
+    {
+		"name": "Blue Chu Jelly",
+		"type": "consumable",
+		"img": "images/items/chu_blue.png",
+		"codes": "blue",
+		"max_quantity": 15
+	},
+    {
+		"name": "Knight's Crest",
+		"type": "consumable",
+		"img": "images/items/crest.png",
+		"codes": "crest",
+		"max_quantity": 10
+	},
+    {
+        "name": "Maggie's Letter",
+        "type": "toggle",
+        "img": "images/items/item15.png",
+        "codes": "maggie"
+    },
+    {
+        "name": "Moblin's Letter",
+        "type": "toggle",
+        "img": "images/items/item16.png",
+        "codes": "moblin"
+    },
+    {
+        "name": "Note to Mom",
+        "type": "toggle",
+        "img": "images/items/item17.png",
+        "codes": "mom"
+    },
+    {
+        "name": "Delivery Bag",
+        "type": "toggle",
+        "img": "images/items/item18.png",
+        "codes": "delivery"
+    },
+    {
+        "name": "Hookshot",
+        "type": "toggle",
+        "img": "images/items/item19.png",
+        "codes": "hookshot,weapon"
+    },
+    {
+        "name": "Skull Hammer",
+        "type": "toggle",
+        "img": "images/items/item20.png",
+        "codes": "hammer,weapon"
+    },
+    {
+        "name": "Progressive Sword",
+        "type": "progressive",
+        "allow_disabled": true,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "img": "images/items/item21.png",
+                "codes": "sword,weapon",
+                "inherit_codes": true
+            },
+            {
+                "img": "images/items/item21_2.png",
+                "codes": "mastersword,weapon",
+                "inherit_codes": true
+            },
+            {
+                "img": "images/items/item21_3.png",
+                "codes": "mastersword_half,weapon",
+                "inherit_codes": true
+            },
+            {
+                "img": "images/items/item21_4.png",
+                "codes": "mastersword_full,weapon",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
+        "name": "Power Bracelets",
+        "type": "toggle",
+        "img": "images/items/item22.png",
+        "codes": "power,rock"
+    },
+    {
+        "name": "Ghost Ship Chart",
+        "type": "toggle",
+        "img": "images/items/item23.png",
+        "codes": "ghost"
+    },
+    {
+        "name": "Cabana Deed",
+        "type": "toggle",
+        "img": "images/items/item24.png",
+        "codes": "deed"
+    },
+    {
+        "name": "Wallet",
+        "type": "progressive",
+        "allow_disabled": true,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "img": "images/items/item25.png",
+                "codes": "wallet",
+                "inherit_codes": true
+            },
+            {
+                "img": "images/items/item25_2.png",
+                "codes": "wallet_2",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
+        "name": "Double Magic",
+        "type": "toggle",
+        "img": "images/items/item26.png",
+        "codes": "magic"
+    },
+    {
+        "name": "Quiver",
+        "type": "progressive",
+        "allow_disabled": true,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "img": "images/items/item28.png",
+                "codes": "quiver",
+                "inherit_codes": true
+            },
+            {
+                "img": "images/items/item28_2.png",
+                "codes": "quiver_2",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
+        "name": "Bomb Bag",
+        "type": "progressive",
+        "allow_disabled": true,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "img": "images/items/item29.png",
+                "codes": "bombbag",
+                "inherit_codes": true
+            },
+            {
+                "img": "images/items/item29_2.png",
+                "codes": "bombbag_2",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
+        "name": "Progressive Shield",
+        "type": "progressive",
+        "allow_disabled": true,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "img": "images/items/item30.png",
+                "codes": "shield",
+                "inherit_codes": true
+            },
+            {
+                "img": "images/items/item30_2.png",
+                "codes": "shield_2",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
+        "name": "Wind's Requiem",
+        "type": "toggle",
+        "img": "images/items/song0.png",
+        "codes": "requiem"
+    },
+    {
+        "name": "Ballad of Gales",
+        "type": "toggle",
+        "img": "images/items/song1.png",
+        "codes": "ballad"
+    },
+    {
+        "name": "Command Melody",
+        "type": "toggle",
+        "img": "images/items/song2.png",
+        "codes": "melody"
+    },
+    {
+        "name": "Earth God's Lyric",
+        "type": "toggle",
+        "img": "images/items/song3.png",
+        "codes": "lyric"
+    },
+    {
+        "name": "Wind God's Aria",
+        "type": "toggle",
+        "img": "images/items/song4.png",
+        "codes": "aria"
+    },
+    {
+        "name": "Song of Passing",
+        "type": "toggle",
+        "img": "images/items/song5.png",
+        "codes": "passing"
+    },
+    {
+        "name": "Triforce Shards",
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "img": "images/items/triforce0.png",
+                "codes": "triforce",
+                "inherit_codes": true
+            },
+            {
+                "img": "images/items/triforce1.png",
+                "codes": "triforce_1",
+                "inherit_codes": true
+            },
+            {
+                "img": "images/items/triforce2.png",
+                "codes": "triforce_2",
+                "inherit_codes": true
+            },
+            {
+                "img": "images/items/triforce3.png",
+                "codes": "triforce_3",
+                "inherit_codes": true
+            },
+            {
+                "img": "images/items/triforce4.png",
+                "codes": "triforce_4",
+                "inherit_codes": true
+            },
+            {
+                "img": "images/items/triforce5.png",
+                "codes": "triforce_5",
+                "inherit_codes": true
+            },
+            {
+                "img": "images/items/triforce6.png",
+                "codes": "triforce_6",
+                "inherit_codes": true
+            },
+            {
+                "img": "images/items/triforce7.png",
+                "codes": "triforce_7",
+                "inherit_codes": true
+            },
+            {
+                "img": "images/items/triforce8.png",
+                "codes": "triforce_8",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
+		"name": "DRC Small Keys",
+		"type": "consumable",
+		"img": "images/items/smallkey.png",
+		"codes": "drc_small",
+		"max_quantity": 4
+	},
+    {
+		"name": "FW Small Keys",
+		"type": "consumable",
+		"img": "images/items/smallkey.png",
+		"codes": "fw_small",
+		"max_quantity": 1
+	},
+    {
+		"name": "TotG Small Keys",
+		"type": "consumable",
+		"img": "images/items/smallkey.png",
+		"codes": "totg_small",
+		"max_quantity": 2
+	},
+    {
+		"name": "ET Small Keys",
+		"type": "consumable",
+		"img": "images/items/smallkey.png",
+		"codes": "et_small",
+		"max_quantity": 3
+	},
+    {
+		"name": "WT Small Keys",
+		"type": "consumable",
+		"img": "images/items/smallkey.png",
+		"codes": "wt_small",
+		"max_quantity": 2
+	},
+    {
+        "name": "DRC Big Key",
+        "type": "toggle",
+        "img": "images/items/bigkey.png",
+        "codes": "drc_big"
+    },
+    {
+        "name": "FW Big Key",
+        "type": "toggle",
+        "img": "images/items/bigkey.png",
+        "codes": "fw_big"
+    },
+    {
+        "name": "TotG Big Key",
+        "type": "toggle",
+        "img": "images/items/bigkey.png",
+        "codes": "totg_big"
+    },
+    {
+        "name": "ET Big Key",
+        "type": "toggle",
+        "img": "images/items/bigkey.png",
+        "codes": "et_big"
+    },
+    {
+        "name": "WT Big Key",
+        "type": "toggle",
+        "img": "images/items/bigkey.png",
+        "codes": "wt_big"
+    },
+    {
+        "name": "DRC Map",
+        "type": "toggle",
+        "img": "images/items/map.png",
+        "codes": "drc_map"
+    },
+    {
+        "name": "FW Map",
+        "type": "toggle",
+        "img": "images/items/map.png",
+        "codes": "fw_map"
+    },
+    {
+        "name": "TotG Map",
+        "type": "toggle",
+        "img": "images/items/map.png",
+        "codes": "totg_map"
+    },
+    {
+        "name": "ET Map",
+        "type": "toggle",
+        "img": "images/items/map.png",
+        "codes": "et_map"
+    },
+    {
+        "name": "WT Map",
+        "type": "toggle",
+        "img": "images/items/map.png",
+        "codes": "wt_map"
+    },
+    {
+        "name": "FF Map",
+        "type": "toggle",
+        "img": "images/items/map.png",
+        "codes": "ff_map"
+    },
+    {
+        "name": "DRC Compass",
+        "type": "toggle",
+        "img": "images/items/compass.png",
+        "codes": "drc_compass"
+    },
+    {
+        "name": "FW Compass",
+        "type": "toggle",
+        "img": "images/items/compass.png",
+        "codes": "fw_compass"
+    },
+    {
+        "name": "TotG Compass",
+        "type": "toggle",
+        "img": "images/items/compass.png",
+        "codes": "totg_compass"
+    },
+    {
+        "name": "ET Compass",
+        "type": "toggle",
+        "img": "images/items/compass.png",
+        "codes": "et_compass"
+    },
+    {
+        "name": "WT Compass",
+        "type": "toggle",
+        "img": "images/items/compass.png",
+        "codes": "wt_compass"
+    },
+    {
+        "name": "FF Compass",
+        "type": "toggle",
+        "img": "images/items/compass.png",
+        "codes": "ff_compass"
+    },
+    {
+        "name": "Din's Pearl",
+        "type": "toggle",
+        "img": "images/items/pearl1.png",
+        "codes": "din"
+    },
+    {
+        "name": "Farore's Pearl",
+        "type": "toggle",
+        "img": "images/items/pearl2.png",
+        "codes": "farore"
+    },
+    {
+        "name": "Nayru's Pearl",
+        "type": "toggle",
+        "img": "images/items/pearl3.png",
+        "codes": "nayru"
+    },
+    {
+        "name": "Gohma",
+        "type": "toggle",
+        "img": "images/items/boss0.png",
+        "codes": "boss0"
+    },
+    {
+        "name": "Kalle Damos",
+        "type": "toggle",
+        "img": "images/items/boss1.png",
+        "codes": "boss1"
+    },
+    {
+        "name": "Gohdan",
+        "type": "toggle",
+        "img": "images/items/boss2.png",
+        "codes": "boss2"
+    },
+    {
+        "name": "Helmaroc King",
+        "type": "toggle",
+        "img": "images/items/boss3.png",
+        "codes": "boss3"
+    },
+    {
+        "name": "Jalhalla",
+        "type": "toggle",
+        "img": "images/items/boss4.png",
+        "codes": "boss4"
+    },
+    {
+        "name": "Molgera",
+        "type": "toggle",
+        "img": "images/items/boss5.png",
+        "codes": "boss5"
+    }
+]
