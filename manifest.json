@@ -1,0 +1,22 @@
+﻿{
+    "name": "Wind Waker Randomizer Tracker",
+    "game_name": "The Legend of Zelda: The Wind Waker",
+    "package_version": "1.0",
+    "package_uid": "template_pack",
+    "platform": "gamecube",
+    "author": "Ouro",
+    "variants": {
+        "standard": {
+            "display_name": "Map Tracker",
+            "flags": [
+                "ap"
+            ]
+        },
+        "var_itemsonly": {
+            "display_name": "Items Only",
+            "flags": [
+                "ap"
+            ]
+        }
+    }
+}
