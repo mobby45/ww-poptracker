@@ -1,6 +1,6 @@
 [
     {
-        "name": "World Map",
+        "name": "The Great Sea",
         "chest_unopened_img": "images/items/chest_closed.png",
         "chest_opened_img": "images/items/chest_open.png",
         "children": [
