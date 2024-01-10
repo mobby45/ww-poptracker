@@ -1,0 +1,1634 @@
+[
+    {
+        "name": "The Great Sea",
+        "chest_unopened_img": "images/items/chest_closed.png",
+        "chest_opened_img": "images/items/chest_open.png",
+        "children": [
+            {
+                "name": "Forsaken Fortress",
+                "access_rules": [
+                    "bombs"                    
+                ],
+                "sections": [
+                    {
+                        "name": "Phantom Ganon",
+                        "item_count": 1,
+                        "access_rules": ["mastersword"]
+                    },
+                    {
+                        "name": "Chest Guarded by Bokoblin",
+                        "item_count": 1,
+                        "access_rules": ["hammer"]
+                    },
+                    {
+                        "name": "Chest on Bed",
+                        "item_count": 1,
+                        "access_rules": ["hammer"]
+                    },
+                    {
+                        "name": "Upper Jail",
+                        "item_count": 1,
+                        "access_rules": ["hammer"]
+                    },
+                    {
+                        "name": "Lower Jail",
+                        "item_count": 1,
+                        "access_rules": ["hammer"]
+                    },
+                    {
+                        "name": "Helmaroc King Heart Container",
+                        "item_count": 1,
+                        "access_rules": ["hammer,leaf","hammer,hookshot"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 31,
+                        "y": 31
+                    }
+                ]
+            },
+            {
+                "name": "Star Island",
+                "sections": [
+                    {
+                        "name": "Free Platform",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Cave",
+                        "item_count": 1,
+                        "access_rules": ["rock,weapon"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 82,
+                        "y": 31
+                    }
+                ]
+            },
+            {
+                "name": "Northern Fairy Island",
+                "sections": [
+                    {
+                        "name": "Submarine",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 132,
+                        "y": 31
+                    }
+                ]
+            },
+            {
+                "name": "Wind Temple",
+                "access_rules": [
+                    "$wt_access"                    
+                ],
+                "sections": [
+                    {
+                        "name": "Two Dirt Patches",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Tingle Chest",
+                        "item_count": 1,
+                        "access_rules": ["leaf,bombs"]
+                    },
+                    {
+                        "name": "Behind Stone Head",
+                        "item_count": 1,
+                        "access_rules": ["leaf,hookshot"]
+                    },
+                    {
+                        "name": "Left Alcove",
+                        "item_count": 1,
+                        "access_rules": ["leaf"]
+                    },
+                    {
+                        "name": "Big Key Chest",
+                        "item_count": 1,
+                        "access_rules": ["leaf,aria"]
+                    },
+                    {
+                        "name": "Many Cyclones Room",
+                        "item_count": 1,
+                        "access_rules": ["leaf"]
+                    },
+                    {
+                        "name": "Middle of Hub Room",
+                        "item_count": 1,
+                        "access_rules": ["leaf"]
+                    },
+                    {
+                        "name": "Spike Room - Free Chest",
+                        "item_count": 1,
+                        "access_rules": ["leaf"]
+                    },
+                    {
+                        "name": "Spike Room - Break All Floors",
+                        "item_count": 1,
+                        "access_rules": ["leaf"]
+                    },
+                    {
+                        "name": "Wizzrobe Mini-Boss",
+                        "item_count": 1,
+                        "access_rules": ["leaf,wt_small:2"]
+                    },
+                    {
+                        "name": "Top of Hub Room",
+                        "item_count": 1,
+                        "access_rules": ["leaf"]
+                    },
+                    {
+                        "name": "Behind 7 Armos",
+                        "item_count": 1,
+                        "access_rules": ["leaf"]
+                    },
+                    {
+                        "name": "Kill Enemies in Basement",
+                        "item_count": 1,
+                        "access_rules": ["leaf,hookshot,wt_small:2"]
+                    },
+                    {
+                        "name": "Molgera Heart Container",
+                        "item_count": 1,
+                        "access_rules": ["leaf,hookshot,wt_small:2,aria,wt_big"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 183,
+                        "y": 31
+                    }
+                ]
+            },
+            {
+                "name": "Crescent Moon Island",
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Submarine",
+                        "item_count": 1,
+                        "access_rules": ["sword","grapple","boomerang","bow","bombs","hammer"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 233,
+                        "y": 31
+                    }
+                ]
+            },
+            {
+                "name": "7 Star Isles",
+                "sections": [
+                    {
+                        "name": "Center Platform",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Northern Platform",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Southern Platform",
+                        "item_count": 1,
+                        "access_rules": ["bow","hookshot"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 284,
+                        "y": 31
+                    }
+                ]
+            },
+            {
+                "name": "Overlook Island",
+                "sections": [
+                    {
+                        "name": "Cave",
+                        "item_count": 1,
+                        "access_rules": ["hookshot,windwaker,requiem,sword","hookshot,windwaker,requiem,hammer",
+                        "hookshot,windwaker,requiem,bombs,bow_3"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 334,
+                        "y": 31
+                    }
+                ]
+            },
+            {
+                "name": "4 Eye Reef",
+                "sections": [
+                    {
+                        "name": "Top of Eye",
+                        "item_count": 1,
+                        "access_rules": ["bombs,leaf"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 31,
+                        "y": 79
+                    }
+                ]
+            },
+            {
+                "name": "Mother & Child Isles",
+                "sections": [
+                    {
+                        "name": "Interior",
+                        "item_count": 1,
+                        "access_rules": ["windwaker,ballad"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 82,
+                        "y": 79
+                    }
+                ]
+            },
+            {
+                "name": "Windfall Island",
+                "sections": [
+                    {
+                        "name": "Jail - Tingle Gift 1",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Jail - Tingle Gift 2",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Jail - Maze",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Green Potion Brewery",
+                        "item_count": 1,
+                        "access_rules": ["grapple,spoils"]
+                    },
+                    {
+                        "name": "Blue Potion Brewery",
+                        "item_count": 1,
+                        "access_rules": ["spoils,grapple,bombs","spoils,grapple,bow",
+                        "spoils,grapple,hammer","spoils,grapple,leaf",
+                        "spoils,grapple,boomerang,sword","spoils,bombs,bow",
+                        "spoils,bombs,hammer","spoils,bombs,leaf",
+                        "spoils,bombs,boomerang,sword","spoils,leaf,bow",
+                        "spoils,leaf,hammer","spoils,leaf,boomerang,sword",
+                        "spoils,power,bombs","spoils,power,grapple",
+                        "spoils,power,bow","spoils,power,hammer",
+                        "spoils,power,leaf,sword","spoils,power,boomerang,sword",
+                        "spoils,hookshot,bombs","spoils,hookshot,grapple",
+                        "spoils,hookshot,bow","spoils,hookshot,hammer",
+                        "spoils,hookshot,leaf,sword","spoils,hookshot,boomerang,sword"]
+                    },
+                    {
+                        "name": "Lenzo Left",
+                        "item_count": 1,
+                        "access_rules": ["picto"]
+                    },
+                    {
+                        "name": "Lenzo Right",
+                        "item_count": 1,
+                        "access_rules": ["picto"]
+                    },
+                    {
+                        "name": "House of Wealth Chest",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Light the Lighthouse",
+                        "item_count": 1,
+                        "access_rules": ["bow_2"]
+                    },
+                    {
+                        "name": "Transparent Chest",
+                        "item_count": 1,
+                        "access_rules": ["bow2,leaf","bow_2,hookshot"]
+                    },
+                    {
+                        "name": "Pirate Ship Chest",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Win Sploosh Kaboom Once",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Win Sploosh Kaboom Twice",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 183,
+                        "y": 79
+                    }
+                ]
+            },
+            {
+                "name": "Pawprint Isle",
+                "sections": [
+                    {
+                        "name": "Chu Cave - Chest",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Chu Cave - Left Boulder",
+                        "item_count": 1,
+                        "access_rules": ["rock"]
+                    },
+                    {
+                        "name": "Chu Cave - Right Boulder",
+                        "item_count": 1,
+                        "access_rules": ["rock"]
+                    },
+                    {
+                        "name": "Chu Cave - Scale Wall",
+                        "item_count": 1,
+                        "access_rules": ["grapple"]
+                    },
+                    {
+                        "name": "Wizzrobe Cave",
+                        "item_count": 1,
+                        "access_rules": ["hookshot,hammer","hookshot,bombs","hookshot,bow",
+                        "hookshot,boomerang,sword","hookshot,leaf,sword"]
+                    },
+                    {
+                        "name": "Free Platform",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 233,
+                        "y": 79
+                    }
+                ]
+            },
+            {
+                "name": "Dragon Roost Island",
+                "sections": [
+                    {
+                        "name": "Wind Shrine",
+                        "item_count": 1,
+                        "access_rules": ["windwaker"]
+                    },
+                    {
+                        "name": "Top of Boulder",
+                        "item_count": 1,
+                        "access_rules": ["bow","bait","boomerang","bombs"]
+                    },
+                    {
+                        "name": "Fly Around Island",
+                        "item_count": 1,
+                        "access_rules": ["leaf,windwaker,requiem,sword","leaf,windwaker,requiem,hammer",
+                        "leaf,windwaker,requiem,boomerang","leaf,windwaker,requiem,bombs",
+                        "leaf,windwaker,requiem,magic"]
+                    },
+                    {
+                        "name": "Mail Game",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Secret Cave",
+                        "item_count": 1,
+                        "access_rules": ["bombs","rock,sword","rock,hammer","rock,bow"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 274,
+                        "y": 79
+                    }
+                ]
+            },
+            {
+                "name": "Dragon Roost Cavern",
+                "sections": [
+                    {
+                        "name": "First Room",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Water Jug Alcove",
+                        "item_count": 1,
+                        "access_rules": ["drc_small:1"]
+                    },
+                    {
+                        "name": "Behind Boards",
+                        "item_count": 1,
+                        "access_rules": ["drc_small:1"]
+                    },
+                    {
+                        "name": "Across Lava Pit",
+                        "item_count": 1,
+                        "access_rules": ["drc_small:2,grapple","drc_small:2,leaf","drc_small:2,hookshot"]
+                    },
+                    {
+                        "name": "Rat Room",
+                        "item_count": 1,
+                        "access_rules": ["drc_small:2"]
+                    },
+                    {
+                        "name": "Rat Room Boarded Chest",
+                        "item_count": 1,
+                        "access_rules": ["drc_small:2"]
+                    },
+                    {
+                        "name": "Bird's Nest",
+                        "item_count": 1,
+                        "access_rules": ["drc_small:3"]
+                    },
+                    {
+                        "name": "Dark Room",
+                        "item_count": 1,
+                        "access_rules": ["drc_small:4"]
+                    },
+                    {
+                        "name": "Tingle Chest in Hub Room",
+                        "item_count": 1,
+                        "access_rules": ["drc_small:4,bombs"]
+                    },
+                    {
+                        "name": "Pot Room",
+                        "item_count": 1,
+                        "access_rules": ["drc_small:4"]
+                    },
+                    {
+                        "name": "Mini-Boss",
+                        "item_count": 1,
+                        "access_rules": ["drc_small:4"]
+                    },
+                    {
+                        "name": "Under Bridge",
+                        "item_count": 1,
+                        "access_rules": ["drc_small:4,grapple","drc_small:4,leaf,windwaker,requiem"]
+                    },
+                    {
+                        "name": "Tingle Chest in Basement",
+                        "item_count": 1,
+                        "access_rules": ["grapple,bombs,drc_small:4","grapple,bombs,drc_small:1,leaf",
+                        "grapple,bombs,drc_small:1,bow_2"]
+                    },
+                    {
+                        "name": "Big Key Chest",
+                        "item_count": 1,
+                        "access_rules": ["grapple,drc_small:4,sword","grapple,drc_small:4,bombs",
+                        "grapple,drc_small:4,bow","grapple,drc_small:4,hammer","grapple,drc_small:1,leaf",
+                        "grapple,drc_small:1,bow_2"]
+                    },
+                    {
+                        "name": "Outside Boss Door Left",
+                        "item_count": 1,
+                        "access_rules": ["drc_small:4,grapple","drc_small:4,leaf","drc_small:4,hookshot",
+                        "drc_small:4,bow_2"]
+                    },
+                    {
+                        "name": "Outside Boss Door Right",
+                        "item_count": 1,
+                        "access_rules": ["drc_small:4,grapple","drc_small:4,leaf","drc_small:4,hookshot",
+                        "drc_small:4,bow_2"]
+                    },
+                    {
+                        "name": "Gohma Heart Container",
+                        "item_count": 1,
+                        "access_rules": ["drc_small:4,grapple,drc_big"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 293,
+                        "y": 79
+                    }
+                ]
+            },
+            {
+                "name": "Flight Control Platform",
+                "sections": [
+                    {
+                        "name": "Submarine",
+                        "item_count": 1,
+                        "access_rules": ["bow","hookshot,sword","hookshot,hammer","hookshot,bombs"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 334,
+                        "y": 79
+                    }
+                ]
+            },
+            {
+                "name": "Western Fairy Island",
+                "sections": [
+                    {
+                        "name": "Free Platform",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 31,
+                        "y": 126
+                    }
+                ]
+            },
+            {
+                "name": "Rock Spire Isle",
+                "sections": [
+                    {
+                        "name": "Cave",
+                        "item_count": 1,
+                        "access_rules": ["bombs"]
+                    },
+                    {
+                        "name": "Beedle's Special Shop - 500 Item",
+                        "item_count": 1,
+                        "access_rules": ["wallet"]
+                    },
+                    {
+                        "name": "Beedle's Special Shop - 900 Item",
+                        "item_count": 1,
+                        "access_rules": ["wallet"]
+                    },
+                    {
+                        "name": "Beedle's Special Shop - 950 Item",
+                        "item_count": 1,
+                        "access_rules": ["wallet"]
+                    },
+                    {
+                        "name": "Western Cannon Platform",
+                        "item_count": 1,
+                        "access_rules": ["bombs,leaf","boomerang,leaf"]
+                    },
+                    {
+                        "name": "Eastern Cannon Platform",
+                        "item_count": 1,
+                        "access_rules": ["bombs,leaf","boomerang,leaf"]
+                    },
+                    {
+                        "name": "Center Platform",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 82,
+                        "y": 126
+                    }
+                ]
+            },
+            {
+                "name": "Eastern Fairy Island",
+                "sections": [
+                    {
+                        "name": "Cannon Platform",
+                        "item_count": 1,
+                        "access_rules": ["bombs","boomerang"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 233,
+                        "y": 126
+                    }
+                ]
+            },
+            {
+                "name": "Fire Mountain",
+                "sections": [
+                    {
+                        "name": "Cave",
+                        "item_count": 1,
+                        "access_rules": ["bow_2"]
+                    },
+                    {
+                        "name": "Free Platform",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Cannon Platform",
+                        "item_count": 1,
+                        "access_rules": ["bombs","boomerang"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 284,
+                        "y": 126
+                    }
+                ]
+            },
+            {
+                "name": "Star Belt Archipelago",
+                "sections": [
+                    {
+                        "name": "Free Platform",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 334,
+                        "y": 126
+                    }
+                ]
+            },
+            {
+                "name": "3 Eye Reef",
+                "sections": [
+                    {
+                        "name": "Top of Eye",
+                        "item_count": 1,
+                        "access_rules": ["bombs,leaf"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 31,
+                        "y": 174
+                    }
+                ]
+            },
+            {
+                "name": "Greatfish Isle",
+                "sections": [
+                    {
+                        "name": "Hidden Chest",
+                        "item_count": 1,
+                        "access_rules": ["leaf"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 82,
+                        "y": 174
+                    }
+                ]
+            },
+            {
+                "name": "Cyclops Reef",
+                "sections": [
+                    {
+                        "name": "Top of Eye",
+                        "item_count": 1,
+                        "access_rules": ["bombs,leaf"]
+                    },
+                    {
+                        "name": "Enemy Platform",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 132,
+                        "y": 174
+                    }
+                ]
+            },
+            {
+                "name": "6 Eye Reef",
+                "sections": [
+                    {
+                        "name": "Top of Eye",
+                        "item_count": 1,
+                        "access_rules": ["bombs,leaf"]
+                    },
+                    {
+                        "name": "Cannon Platform",
+                        "item_count": 1,
+                        "access_rules": ["bombs","boomerang"]
+                    },
+                    {
+                        "name": "Submarine",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 183,
+                        "y": 174
+                    }
+                ]
+            },
+            {
+                "name": "Tower of the Gods",
+                "access_rules": [
+                    "$totg_access"                    
+                ],
+                "sections": [
+                    {
+                        "name": "Behind Bombable Wall",
+                        "item_count": 1,
+                        "access_rules": ["bombs"]
+                    },
+                    {
+                        "name": "Hop Across Boxes",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Light Torches",
+                        "item_count": 1,
+                        "access_rules": ["bombs"]
+                    },
+                    {
+                        "name": "Skull Room",
+                        "item_count": 1,
+                        "access_rules": ["bombs"]
+                    },
+                    {
+                        "name": "Skull Room Shoot the Eye",
+                        "item_count": 1,
+                        "access_rules": ["bombs,bow"]
+                    },
+                    {
+                        "name": "Tingle Chest",
+                        "item_count": 1,
+                        "access_rules": ["bombs,totg_small:1"]
+                    },
+                    {
+                        "name": "First Chest Guarded",
+                        "item_count": 1,
+                        "access_rules": ["bombs,totg_small:1,bow"]
+                    },
+                    {
+                        "name": "Stone Tablet",
+                        "item_count": 1,
+                        "access_rules": ["bombs,totg_small:1,windwaker"]
+                    },
+                    {
+                        "name": "Mini-Boss",
+                        "item_count": 1,
+                        "access_rules": ["bombs,windwaker,totg_small:1,grapple,melody,sword",
+                        "bombs,windwaker,totg_small:1,grapple,bow_3",
+                        "bombs,windwaker,totg_small:1,grapple,melody,hammer",
+                        "bombs,windwaker,totg_small:1,grapple,bow,sword",
+                        "bombs,windwaker,totg_small:1,grapple,bow,hammer",
+                        "bombs,windwaker,totg_small:1,leaf,melody,sword",
+                        "bombs,windwaker,totg_small:1,leaf,bow_3",
+                        "bombs,windwaker,totg_small:1,leaf,melody,hammer",
+                        "bombs,windwaker,totg_small:1,leaf,bow,sword",
+                        "bombs,windwaker,totg_small:1,leaf,bow,hammer"]
+                    },
+                    {
+                        "name": "Second Chest Guarded",
+                        "item_count": 1,
+                        "access_rules": ["bombs,windwaker,melody,bow,requiem,totg_small:1,grapple",
+                        "bombs,windwaker,melody,bow,requiem,totg_small:1,leaf"]
+                    },
+                    {
+                        "name": "Flying Platforms 1",
+                        "item_count": 1,
+                        "access_rules": ["bombs,windwaker,melody,bow,totg_small:1,grapple",
+                        "bombs,windwaker,melody,bow,totg_small:1,leaf"]
+                    },
+                    {
+                        "name": "Flying Platforms 2",
+                        "item_count": 1,
+                        "access_rules": ["bombs,windwaker,melody,bow,totg_small:1,grapple",
+                        "bombs,windwaker,melody,bow,totg_small:1,leaf"]
+                    },
+                    {
+                        "name": "Big Key Chest",
+                        "item_count": 1,
+                        "access_rules": ["bombs,windwaker,melody,bow,totg_small:2,leaf"]
+                    },
+                    {
+                        "name": "Gohdan Heart Container",
+                        "item_count": 1,
+                        "access_rules": ["bombs,windwaker,melody,bow,totg_small:2,leaf,totg_big"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 242,
+                        "y": 174
+                    }
+                ]
+            },
+            {
+                "name": "Hyrule",
+                "sections": [
+                    {
+                        "name": "Master Sword Chamber",
+                        "item_count": 1,
+                        "access_rules": ["triforce_8,sword","triforce_8,bow_3"]
+                    },
+                    {
+                        "name": "Ganon's Tower - Maze Chest",
+                        "item_count": 1,
+                        "access_rules": ["triforce_8,mastersword_full,hookshot",
+                        "triforce_8,mastersword_full,leaf"]
+                    },
+                    {
+                        "name": "Defeat Ganondorf",
+                        "item_count": 1,
+                        "access_rules": ["triforce_8,mastersword_full,bow_3,boomerang,grapple,hookshot,shield"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 223,
+                        "y": 174
+                    }
+                ]
+            },
+            {
+                "name": "Thorned Fairy Island",
+                "sections": [
+                    {
+                        "name": "Cannon Platform",
+                        "item_count": 1,
+                        "access_rules": ["bombs","boomerang"]
+                    },
+                    {
+                        "name": "Enemy Platform",
+                        "item_count": 1,
+                        "access_rules": ["leaf"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 334,
+                        "y": 174
+                    }
+                ]
+            },
+            {
+                "name": "Needle Rock Isle",
+                "sections": [
+                    {
+                        "name": "Chest in Ring of Fire",
+                        "item_count": 1,
+                        "access_rules": ["bait"]
+                    },
+                    {
+                        "name": "Cave",
+                        "item_count": 1,
+                        "access_rules": ["bow_2"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 31,
+                        "y": 222
+                    }
+                ]
+            },
+            {
+                "name": "Islet of Steel",
+                "sections": [
+                    {
+                        "name": "Cave",
+                        "item_count": 1,
+                        "access_rules": ["bombs,windwaker,requiem"]
+                    },
+                    {
+                        "name": "Enemy Platform",
+                        "item_count": 1,
+                        "access_rules": ["bow","hookshot"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 82,
+                        "y": 222
+                    }
+                ]
+            },
+            {
+                "name": "Stone Watcher Island",
+                "sections": [
+                    {
+                        "name": "Cave",
+                        "item_count": 1,
+                        "access_rules": ["power,windwaker,requiem,sword","power,windwaker,requiem,bow_3",
+                        "power,windwaker,requiem,hammer"]
+                    },
+                    {
+                        "name": "Free Platform",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Cannon Platform",
+                        "item_count": 1,
+                        "access_rules": ["bombs","boomerang"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 132,
+                        "y": 222
+                    }
+                ]
+            },
+            {
+                "name": "Private Oasis",
+                "sections": [
+                    {
+                        "name": "Top of Waterfall",
+                        "item_count": 1,
+                        "access_rules": ["hookshot","leaf"]
+                    },
+                    {
+                        "name": "Cabana Labyrinth - Lower",
+                        "item_count": 1,
+                        "access_rules": ["deed,delivery,grapple,hammer"]
+                    },
+                    {
+                        "name": "Cabana Labyrinth - Upper",
+                        "item_count": 1,
+                        "access_rules": ["deed,delivery,grapple,hammer,windwaker,requiem"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 233,
+                        "y": 222
+                    }
+                ]
+            },
+            {
+                "name": "Bomb Island",
+                "sections": [
+                    {
+                        "name": "Cave",
+                        "item_count": 1,
+                        "access_rules": ["rock,weapon"]
+                    },
+                    {
+                        "name": "Free Platform",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Submarine",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 284,
+                        "y": 222
+                    }
+                ]
+            },
+            {
+                "name": "Bird's Peak Rock",
+                "sections": [
+                    {
+                        "name": "Cave",
+                        "item_count": 1,
+                        "access_rules": ["bait,windwaker,requiem"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 334,
+                        "y": 222
+                    }
+                ]
+            },
+            {
+                "name": "Diamond Steppe Island",
+                "sections": [
+                    {
+                        "name": "Warp Maze First Chest",
+                        "item_count": 1,
+                        "access_rules": ["hookshot"]
+                    },
+                    {
+                        "name": "Warp Maze Second Chest",
+                        "item_count": 1,
+                        "access_rules": ["hookshot"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 31,
+                        "y": 270
+                    }
+                ]
+            },
+            {
+                "name": "5 Eye Reef",
+                "sections": [
+                    {
+                        "name": "Top of Eye",
+                        "item_count": 1,
+                        "access_rules": ["bombs,leaf","boomerang,leaf"]
+                    },
+                    {
+                        "name": "Free Platform",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 82,
+                        "y": 270
+                    }
+                ]
+            },
+            {
+                "name": "Shark Island",
+                "sections": [
+                    {
+                        "name": "Cave",
+                        "item_count": 1,
+                        "access_rules": ["boots,hammer"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 132,
+                        "y": 270
+                    }
+                ]
+            },
+            {
+                "name": "Southern Fairy Island",
+                "sections": [
+                    {
+                        "name": "NW Cannon Platform",
+                        "item_count": 1,
+                        "access_rules": ["bombs,leaf","boomerang,leaf"]
+                    },
+                    {
+                        "name": "SE Cannon Platform",
+                        "item_count": 1,
+                        "access_rules": ["bombs,leaf","boomerang,leaf"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 183,
+                        "y": 270
+                    }
+                ]
+            },
+            {
+                "name": "Ice Ring Isle",
+                "access_rules": [
+                    "bow_2"                    
+                ],
+                "sections": [
+                    {
+                        "name": "Frozen Chest",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Cave",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Inner Cave",
+                        "item_count": 1,
+                        "access_rules": ["boots"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 233,
+                        "y": 270
+                    }
+                ]
+            },
+            {
+                "name": "Forest Haven",
+                "access_rules": [
+                    "grapple"                    
+                ],
+                "sections": [
+                    {
+                        "name": "On Tree Branch",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "On Small Island",
+                        "item_count": 1,
+                        "access_rules": ["leaf,windwaker,requiem"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 274,
+                        "y": 270
+                    }
+                ]
+            },
+            {
+                "name": "Forbidden Woods",
+                "access_rules": [
+                    "$fw_access"                    
+                ],
+                "sections": [
+                    {
+                        "name": "First Chest",
+                        "item_count": 1,
+                        "access_rules": ["sword","hammer","boomerang","bombs","magic"]
+                    },
+                    {
+                        "name": "In Bottom Tree",
+                        "item_count": 1,
+                        "access_rules": ["sword","hammer","boomerang","bombs","magic"]
+                    },
+                    {
+                        "name": "Climb to Top",
+                        "item_count": 1,
+                        "access_rules": ["boomerang","bombs","bow,sword","bow,hammer","bow,magic",
+                    "hookshot,sword","hookshot,hammer","hookshot,magic"]
+                    },
+                    {
+                        "name": "Hole in Tree",
+                        "item_count": 1,
+                        "access_rules": ["sword","hammer","boomerang","bombs","magic"]
+                    },
+                    {
+                        "name": "In Morth's Pit",
+                        "item_count": 1,
+                        "access_rules": ["sword","hammer","boomerang","bombs","magic"]
+                    },
+                    {
+                        "name": "Vine Maze Left",
+                        "item_count": 1,
+                        "access_rules": ["sword","hammer","boomerang","bombs","magic"]
+                    },
+                    {
+                        "name": "Vine Maze Right",
+                        "item_count": 1,
+                        "access_rules": ["sword","hammer","boomerang","bombs","magic"]
+                    },
+                    {
+                        "name": "Tall Room Before Mini-Boss",
+                        "item_count": 1,
+                        "access_rules": ["sword,fw_small","boomerang,fw_small","hammer,fw_small",
+                    "bombs,fw_small","fw_small,magic,bow"]
+                    },
+                    {
+                        "name": "Mothula Mini-Boss Room",
+                        "item_count": 1,
+                        "access_rules": ["sword,fw_small","hammer,fw_small","bombs,fw_small",
+                    "boomerang,bow,fw_small","magic,bow,fw_small"]
+                    },
+                    {
+                        "name": "Past Hanging Vines",
+                        "item_count": 1,
+                        "access_rules": ["boomerang,fw_small","bombs,fw_small","fw_small,bow,sword",
+                        "fw_small,bow,hammer","fw_small,bow,magic","fw_small,hookshot,sword",
+                        "fw_small,hookshot,hammer","fw_small,hookshot,magic"]
+                    },
+                    {
+                        "name": "Across the Flower",
+                        "item_count": 1,
+                        "access_rules": ["boomerang"]
+                    },
+                    {
+                        "name": "Tingle Chest",
+                        "item_count": 1,
+                        "access_rules": ["boomerang,bombs"]
+                    },
+                    {
+                        "name": "Locked in Basement Trunk",
+                        "item_count": 1,
+                        "access_rules": ["boomerang"]
+                    },
+                    {
+                        "name": "Big Key Chest",
+                        "item_count": 1,
+                        "access_rules": ["boomerang"]
+                    },
+                    {
+                        "name": "Double Mothula",
+                        "item_count": 1,
+                        "access_rules": ["sword","bombs","hammer","bow,boomerang","bow,magic"]
+                    },
+                    {
+                        "name": "Kalle Demos Heart Container",
+                        "item_count": 1,
+                        "access_rules": ["fw_big,boomerang,sword","fw_big,boomerang,bow",
+                        "fw_big,boomerang,bombs","fw_big,boomerang,hammer"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 293,
+                        "y": 270
+                    }
+                ]
+            },
+            {
+                "name": "Cliff Plateau Isles",
+                "sections": [
+                    {
+                        "name": "Cave",
+                        "item_count": 1,
+                        "access_rules": ["leaf,grapple","sword","boomerang","hammer","bow","hookshot",
+                    "bombs"]
+                    },
+                    {
+                        "name": "Upper",
+                        "item_count": 1,
+                        "access_rules": ["leaf,sword","leaf,boomerang","leaf,hammer","leaf,bow",
+                        "leaf,hookshot","leaf,bombs","leaf,grapple"]
+                    },
+                    {
+                        "name": "Free Platform",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 334,
+                        "y": 270
+                    }
+                ]
+            },
+            {
+                "name": "Horseshoe Island",
+                "sections": [
+                    {
+                        "name": "Play Golf",
+                        "item_count": 1,
+                        "access_rules": ["leaf"]
+                    },
+                    {
+                        "name": "Cave",
+                        "item_count": 1,
+                        "access_rules": ["leaf,sword","leaf,bow","leaf,bombs","leaf,hammer"]
+                    },
+                    {
+                        "name": "NW Free Platform",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "SE Free Platform",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 31,
+                        "y": 318
+                    }
+                ]
+            },
+            {
+                "name": "Outset Island",
+                "sections": [
+                    {
+                        "name": "Under Link's House",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Grasscutter House",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Give Orca 10 Knight's Crests",
+                        "item_count": 1,
+                        "access_rules": ["spoils,grapple,sword,power,windwaker,melody,shield_2,lyric,hammer,et_small:3,bow_2",
+                        "spoils,grapple,sword,power,windwaker,melody,shield_2,lyric,hammer,et_small:3,bombs",
+                        "spoils,grapple,sword,power,windwaker,melody,shield_2,lyric,hammer,et_small:3,leaf",
+                        "spoils,grapple,sword,power,windwaker,melody,shield_2,lyric,hammer,et_small:3,hookshot",
+                        "spoils,grapple,sword,bow_2,boots",
+                        "spoils,grapple,sword,hammer,boots",
+                        "spoils,grapple,sword,power,windwaker,requiem",
+                        "spoils,grapple,sword,hookshot,windwaker,requiem",
+                        "spoils,grapple,sword,triforce_8"]
+                    },
+                    {
+                        "name": "Jabun's Cave",
+                        "item_count": 1,
+                        "access_rules": ["bombs"]
+                    },
+                    {
+                        "name": "Big Pig",
+                        "item_count": 1,
+                        "access_rules": ["bait,power"]
+                    },
+                    {
+                        "name": "Savage Labyrinth Floor 30",
+                        "item_count": 1,
+                        "access_rules": ["windwaker,requiem,power,hookshot,boomerang,sword",
+                        "windwaker,requiem,power,hookshot,hammer",
+                        "windwaker,requiem,power,hookshot,bow_3,sword",
+                        "windwaker,requiem,power,hookshot,bow_3,grapple",
+                        "windwaker,requiem,power,sword,leaf",
+                        "windwaker,requiem,power,boomerang,leaf,hammer",
+                        "windwaker,requiem,power,boomerang,leaf,bow_3,grapple",
+                        "windwaker,requiem,power,hammer,leaf,"]
+                    },
+                    {
+                        "name": "Savage Labyrinth Floor 50",
+                        "item_count": 1,
+                        "access_rules": ["leaf,power,windwaker,requiem,shield_2,hammer",
+                        "hookshot,power,windwaker,requiem,shield_2,hammer"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 72,
+                        "y": 318
+                    }
+                ]
+            },
+            {
+                "name": "Great Sea",
+                "sections": [
+                    {
+                        "name": "Defeat Cyclos",
+                        "item_count": 1,
+                        "access_rules": ["bow"]
+                    },
+                    {
+                        "name": "Withered Trees",
+                        "item_count": 1,
+                        "access_rules": ["grapple,bottle,leaf"]
+                    },
+                    {
+                        "name": "Ghost Ship",
+                        "item_count": 1,
+                        "access_rules": ["ghost,sword","ghost,bombs","ghost,hammer","ghost,bow_3"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 91,
+                        "y": 318
+                    }
+                ]
+            },
+            {
+                "name": "Headstone Island",
+                "sections": [
+                    {
+                        "name": "Top of Island",
+                        "item_count": 1,
+                        "access_rules": ["bait"]
+                    },
+                    {
+                        "name": "Submarine",
+                        "item_count": 1,
+                        "access_rules": ["sword","bow","boomerang","hammer","hook"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 122,
+                        "y": 318
+                    }
+                ]
+            },
+            {
+                "name": "Earth Temple",
+                "access_rules": [
+                    "$et_access"                    
+                ],
+                "sections": [
+                    {
+                        "name": "First Room",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Behind Destructible Walls",
+                        "item_count": 1,
+                        "access_rules": ["shield_2,hammer"]
+                    },
+                    {
+                        "name": "Transparent Chest in 1st Crypt",
+                        "item_count": 1,
+                        "access_rules": ["hammer"]
+                    },
+                    {
+                        "name": "3 Blocks Room",
+                        "item_count": 1,
+                        "access_rules": ["et_small:2,bow_2"]
+                    },
+                    {
+                        "name": "Behind Statues",
+                        "item_count": 1,
+                        "access_rules": ["et_small:2,bow_2"]
+                    },
+                    {
+                        "name": "Casket in 2nd Crypt",
+                        "item_count": 1,
+                        "access_rules": ["et_small:2,bow_2"]
+                    },
+                    {
+                        "name": "Stalfos Mini-Boss",
+                        "item_count": 1,
+                        "access_rules": ["et_small:3,bow_2,sword","et_small:3,bow_2,bombs","et_small:3,bow_2,hammer",
+                        "et_small:3,bow_2,hookshot","et_small:3,bow_3"]
+                    },
+                    {
+                        "name": "Tingle Chest",
+                        "item_count": 1,
+                        "access_rules": ["shield_2,bombs"]
+                    },
+                    {
+                        "name": "Floormaster Room Free",
+                        "item_count": 1,
+                        "access_rules": ["shield_2,lyric"]
+                    },
+                    {
+                        "name": "Floormaster Room Fight",
+                        "item_count": 1,
+                        "access_rules": ["shield_2,lyric,sword","shield_2,lyric,bow"]
+                    },
+                    {
+                        "name": "3rd Crypt Chest",
+                        "item_count": 1,
+                        "access_rules": ["shield_2,lyric,hammer,et_small:3"]
+                    },
+                    {
+                        "name": "Many Mirrors Left",
+                        "item_count": 1,
+                        "access_rules": ["shield_2,lyric,hammer,et_small:3"]
+                    },
+                    {
+                        "name": "Many Mirrors Right",
+                        "item_count": 1,
+                        "access_rules": ["shield_2,lyric,hammer,et_small:3"]
+                    },
+                    {
+                        "name": "Stalfos Crypt Room",
+                        "item_count": 1,
+                        "access_rules": ["shield_2,lyric,hammer,et_small:3"]
+                    },
+                    {
+                        "name": "Big Key Chest",
+                        "item_count": 1,
+                        "access_rules": ["shield_2,lyric,hammer,et_small:3,bow_2",
+                        "shield_2,lyric,hammer,et_small:3,bombs","shield_2,lyric,hammer,et_small:3,leaf",
+                        "shield_2,lyric,hammer,et_small:3,hookshot"]
+                    },
+                    {
+                        "name": "Jalhalla Heart Container",
+                        "item_count": 1,
+                        "access_rules": ["shield_2,lyric,hammer,et_small:3,et_big"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 141,
+                        "y": 318
+                    }
+                ]
+            },
+            {
+                "name": "2 Eye Reef",
+                "sections": [
+                    {
+                        "name": "Top of Eye",
+                        "item_count": 1,
+                        "access_rules": ["bombs,leaf"]
+                    },
+                    {
+                        "name": "Free Platform",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Big Octo Fairy",
+                        "item_count": 1,
+                        "access_rules": ["bow","bombs","boomerang"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 183,
+                        "y": 318
+                    }
+                ]
+            },
+            {
+                "name": "Angular Isles",
+                "sections": [
+                    {
+                        "name": "Peak",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Cave",
+                        "item_count": 1,
+                        "access_rules": ["shield_2,leaf","shield_2,hookshot"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 233,
+                        "y": 318
+                    }
+                ]
+            },
+            {
+                "name": "Boating Course",
+                "sections": [
+                    {
+                        "name": "Raft",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Cave",
+                        "item_count": 1,
+                        "access_rules": ["hookshot,sword","hookshot,boomerang","hookshot,bow",
+                        "hookshot,bombs","hookshot,hammer","leaf,bow","leaf,boomerang,sword",
+                        "leaf,boomerang,bombs","leaf,boomerang,hammer"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 284,
+                        "y": 318
+                    }
+                ]
+            },
+            {
+                "name": "5 Star Isles",
+                "sections": [
+                    {
+                        "name": "Raft",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Submarine",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Cannon Platform",
+                        "item_count": 1,
+                        "access_rules": ["bombs","boomerang"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 334,
+                        "y": 318
+                    }
+                ]
+            }                                        
+        ]
+    }
+]
