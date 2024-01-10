@@ -555,36 +555,42 @@
         "name": "Gohma",
         "type": "toggle",
         "img": "images/items/boss0.png",
+        "initial_active_state": true,
         "codes": "boss0"
     },
     {
         "name": "Kalle Damos",
         "type": "toggle",
         "img": "images/items/boss1.png",
+        "initial_active_state": true,
         "codes": "boss1"
     },
     {
         "name": "Gohdan",
         "type": "toggle",
         "img": "images/items/boss2.png",
+        "initial_active_state": true,
         "codes": "boss2"
     },
     {
         "name": "Helmaroc King",
         "type": "toggle",
         "img": "images/items/boss3.png",
+        "initial_active_state": true,
         "codes": "boss3"
     },
     {
         "name": "Jalhalla",
         "type": "toggle",
         "img": "images/items/boss4.png",
+        "initial_active_state": true,
         "codes": "boss4"
     },
     {
         "name": "Molgera",
         "type": "toggle",
         "img": "images/items/boss5.png",
+        "initial_active_state": true,
         "codes": "boss5"
     }
 ]

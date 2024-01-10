@@ -1,0 +1,205 @@
+[
+    {
+        "name": "Tower of the Gods",
+        "chest_unopened_img": "images/items/chest_closed.png",
+        "chest_opened_img": "images/items/chest_open.png",
+        "children": [
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Tower of the Gods/Behind Bombable Wall"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "totg",
+						"x": 138,
+						"y": 153
+					}
+				]
+			},
+            {
+				"sections": [
+                    {
+                        "ref": "World Map/Tower of the Gods/Hop Across Boxes"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "totg",
+						"x": 155,
+						"y": 176
+					}
+				]
+			},
+            {
+				"sections": [
+                    {
+                        "ref": "World Map/Tower of the Gods/Light Torches"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "totg",
+						"x": 49,
+						"y": 124
+					}
+				]
+			},
+            {
+				"sections": [
+                    {
+                        "ref": "World Map/Tower of the Gods/Skull Room"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "totg",
+						"x": 39,
+						"y": 108
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Tower of the Gods/Skull Room Shoot the Eye"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "totg",
+						"x": 27,
+						"y": 108
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Tower of the Gods/Tingle Chest"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "totg",
+						"x": 265,
+						"y": 179
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Tower of the Gods/First Chest Guarded"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "totg",
+						"x": 301,
+						"y": 179
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Tower of the Gods/Stone Tablet"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "totg",
+						"x": 265,
+						"y": 146
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Tower of the Gods/Mini-Boss"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "totg",
+						"x": 229,
+						"y": 179
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Tower of the Gods/Second Chest Guarded"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "totg",
+						"x": 233,
+						"y": 105
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Tower of the Gods/Flying Platforms 1"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "totg",
+						"x": 303,
+						"y": 118
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Tower of the Gods/Flying Platforms 2"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "totg",
+						"x": 303,
+						"y": 93
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Tower of the Gods/Big Key Chest"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "totg",
+						"x": 151,
+						"y": 250
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Tower of the Gods/Gohdan Heart Container"
+					}
+                ],
+				"map_locations": [
+					{
+						"map": "totg",
+						"x": 260,
+						"y": 335
+					}
+				]
+			}                                       
+        ]
+    }
+]

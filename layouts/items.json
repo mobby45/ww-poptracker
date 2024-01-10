@@ -9,11 +9,11 @@
                 "item_margin": "3,3",
                 "item_size": "48,48",
                 "rows": [
-                    ["telescope","sail","windwaker","grapple","spoils","boomerang","leaf","sword"],
-                    ["tuner","picto","boots","armor","bait","bow","bombs","shield"],
-                    ["bottle","crest","green","blue","delivery","hookshot","hammer","power"],
-                    ["deed","requiem","ballad","melody","lyric","aria","passing","charm"],
-                    ["din","farore","nayru","ghost","bombbag","quiver","wallet","magic"]
+                    ["sail","windwaker","grapple","spoils","boomerang","leaf","sword"],
+                    ["picto","boots","armor","bait","bow","bombs","shield"],
+                    ["bottle","ghost","deed","delivery","hookshot","hammer","power"],
+                    ["requiem","ballad","melody","lyric","aria","passing","charm"],
+                    ["din","farore","nayru","bombbag","quiver","wallet","magic"]
                 ]
             }
         ]
@@ -39,8 +39,7 @@
               "rows": [
                 ["drc_small","drc_big","drc_map","drc_compass",
                 "fw_small","fw_big","fw_map","fw_compass",
-                "totg_small","totg_big","totg_map","totg_compass"
-                ]
+                "totg_small","totg_big","totg_map","totg_compass"]
               ]
             },
             {
@@ -59,8 +58,7 @@
                 "h_alignment": "center",
                 "rows": [
                   ["et_small","et_big","et_map","et_compass",
-                  "wt_small","wt_big","wt_map","wt_compass"
-                  ]
+                  "wt_small","wt_big","wt_map","wt_compass"]
                 ]
               }
             ]

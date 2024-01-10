@@ -1,0 +1,247 @@
+[
+    {
+        "name": "Dragon Roost Cavern",
+        "chest_unopened_img": "images/items/chest_closed.png",
+        "chest_opened_img": "images/items/chest_open.png",
+        "children": [
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Dragon Roost Cavern/First Room"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "drc",
+						"x": 62,
+						"y": 121
+					}
+				]
+			},
+            {
+				"sections": [
+                    {
+                        "ref": "World Map/Dragon Roost Cavern/Water Jug Alcove"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "drc",
+						"x": 132,
+						"y": 82
+					}
+				]
+			},
+            {
+				"sections": [
+                    {
+                        "ref": "World Map/Dragon Roost Cavern/Behind Boards"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "drc",
+						"x": 92,
+						"y": 118
+					}
+				]
+			},
+            {
+				"sections": [
+                    {
+                        "ref": "World Map/Dragon Roost Cavern/Across Lava Pit"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "drc",
+						"x": 43,
+						"y": 65
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Dragon Roost Cavern/Rat Room"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "drc",
+						"x": 67,
+						"y": 217
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Dragon Roost Cavern/Rat Room Boarded Chest"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "drc",
+						"x": 63,
+						"y": 230
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Dragon Roost Cavern/Bird's Nest"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "drc",
+						"x": 93,
+						"y": 184
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Dragon Roost Cavern/Dark Room"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "drc",
+						"x": 113,
+						"y": 212
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Dragon Roost Cavern/Tingle Chest in Hub Room"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "drc",
+						"x": 91,
+						"y": 260
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Dragon Roost Cavern/Pot Room"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "drc",
+						"x": 84,
+						"y": 279
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Dragon Roost Cavern/Mini-Boss"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "drc",
+						"x": 223,
+						"y": 173
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Dragon Roost Cavern/Under Bridge"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "drc",
+						"x": 145,
+						"y": 246
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Dragon Roost Cavern/Tingle Chest in Basement"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "drc",
+						"x": 80,
+						"y": 17
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Dragon Roost Cavern/Big Key Chest"
+					}
+                ],
+				"map_locations": [
+					{
+						"map": "drc",
+						"x": 149,
+						"y": 48
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Dragon Roost Cavern/Outside Boss Door Left"
+					}
+                ],
+				"map_locations": [
+					{
+						"map": "drc",
+						"x": 247,
+						"y": 66
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Dragon Roost Cavern/Outside Boss Door Right"
+					}
+                ],
+				"map_locations": [
+					{
+						"map": "drc",
+						"x": 261,
+						"y": 66
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Dragon Roost Cavern/Gohma Heart Container"
+					}
+                ],
+				"map_locations": [
+					{
+						"map": "drc",
+						"x": 254,
+						"y": 25
+					}
+				]
+			}                                            
+        ]
+    }
+]

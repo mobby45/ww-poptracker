@@ -1,0 +1,205 @@
+[
+    {
+        "name": "Wind Temple",
+        "chest_unopened_img": "images/items/chest_closed.png",
+        "chest_opened_img": "images/items/chest_open.png",
+        "children": [
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Wind Temple/Two Dirt Patches"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "wt",
+						"x": 48,
+						"y": 143
+					}
+				]
+			},
+            {
+				"sections": [
+                    {
+                        "ref": "World Map/Wind Temple/Tingle Chest"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "wt",
+						"x": 48,
+						"y": 73
+					}
+				]
+			},
+            {
+				"sections": [
+                    {
+                        "ref": "World Map/Wind Temple/Behind Stone Head"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "wt",
+						"x": 77,
+						"y": 57
+					}
+				]
+			},
+            {
+				"sections": [
+                    {
+                        "ref": "World Map/Wind Temple/Left Alcove"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "wt",
+						"x": 127,
+						"y": 70
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Wind Temple/Big Key Chest"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "wt",
+						"x": 167,
+						"y": 77
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Wind Temple/Many Cyclones Room"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "wt",
+						"x": 142,
+						"y": 149
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Wind Temple/Middle of Hub Room"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "wt",
+						"x": 198,
+						"y": 89
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Wind Temple/Spike Room - Free Chest"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "wt",
+						"x": 215,
+						"y": 123
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Wind Temple/Spike Room - Break All Floors"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "wt",
+						"x": 201,
+						"y": 123
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Wind Temple/Wizzrobe Mini-Boss"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "wt",
+						"x": 208,
+						"y": 62
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Wind Temple/Top of Hub Room"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "wt",
+						"x": 145,
+						"y": 243
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Wind Temple/Behind 7 Armos"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "wt",
+						"x": 129,
+						"y": 287
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Wind Temple/Kill Enemies in Basement"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "wt",
+						"x": 231,
+						"y": 89
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Wind Temple/Molgera Heart Container"
+					}
+                ],
+				"map_locations": [
+					{
+						"map": "wt",
+						"x": 314,
+						"y": 177
+					}
+				]
+			}                                            
+        ]
+    }
+]

@@ -89,7 +89,7 @@
             {
                 "name": "Wind Temple",
                 "access_rules": [
-                    "boots,hammer,windwaker,melody"                    
+                    "$wt_access"                    
                 ],
                 "sections": [
                     {
@@ -286,31 +286,31 @@
                     {
                         "name": "Green Potion Brewery",
                         "item_count": 1,
-                        "access_rules": ["green:15,grapple,spoils"]
+                        "access_rules": ["grapple,spoils"]
                     },
                     {
                         "name": "Blue Potion Brewery",
                         "item_count": 1,
-                        "access_rules": ["blue:15,spoils,grapple,bombs","blue:15,spoils,grapple,bow",
-                        "blue:15,spoils,grapple,hammer","blue:15,spoils,grapple,leaf",
-                        "blue:15,spoils,grapple,boomerang,sword","blue:15,spoils,bombs,bow",
-                        "blue:15,spoils,bombs,hammer","blue:15,spoils,bombs,leaf",
-                        "blue:15,spoils,bombs,boomerang,sword","blue:15,spoils,leaf,bow",
-                        "blue:15,spoils,leaf,hammer","blue:15,spoils,leaf,boomerang,sword",
-                        "blue:15,spoils,power,bombs","blue:15,spoils,power,grapple",
-                        "blue:15,spoils,power,bow","blue:15,spoils,power,hammer",
-                        "blue:15,spoils,power,leaf,sword","blue:15,spoils,power,boomerang,sword",
-                        "blue:15,spoils,hookshot,bombs","blue:15,spoils,hookshot,grapple",
-                        "blue:15,spoils,hookshot,bow","blue:15,spoils,hookshot,hammer",
-                        "blue:15,spoils,hookshot,leaf,sword","blue:15,spoils,hookshot,boomerang,sword"]
+                        "access_rules": ["spoils,grapple,bombs","spoils,grapple,bow",
+                        "spoils,grapple,hammer","spoils,grapple,leaf",
+                        "spoils,grapple,boomerang,sword","spoils,bombs,bow",
+                        "spoils,bombs,hammer","spoils,bombs,leaf",
+                        "spoils,bombs,boomerang,sword","spoils,leaf,bow",
+                        "spoils,leaf,hammer","spoils,leaf,boomerang,sword",
+                        "spoils,power,bombs","spoils,power,grapple",
+                        "spoils,power,bow","spoils,power,hammer",
+                        "spoils,power,leaf,sword","spoils,power,boomerang,sword",
+                        "spoils,hookshot,bombs","spoils,hookshot,grapple",
+                        "spoils,hookshot,bow","spoils,hookshot,hammer",
+                        "spoils,hookshot,leaf,sword","spoils,hookshot,boomerang,sword"]
                     },
                     {
-                        "name": "Lenzo Chest Left",
+                        "name": "Lenzo Left",
                         "item_count": 1,
                         "access_rules": ["picto"]
                     },
                     {
-                        "name": "Lenzo Chest Right",
+                        "name": "Lenzo Right",
                         "item_count": 1,
                         "access_rules": ["picto"]
                     },
@@ -468,7 +468,7 @@
                     {
                         "name": "Dark Room",
                         "item_count": 1,
-                        "access_rules": ["drc_small;4"]
+                        "access_rules": ["drc_small:4"]
                     },
                     {
                         "name": "Tingle Chest in Hub Room",
@@ -751,7 +751,7 @@
             {
                 "name": "Tower of the Gods",
                 "access_rules": [
-                    "din,farore,nayru"                    
+                    "$totg_access"                    
                 ],
                 "sections": [
                     {
@@ -794,7 +794,7 @@
                         "access_rules": ["bombs,totg_small:1,windwaker"]
                     },
                     {
-                        "name": "Darknut Mini-Boss",
+                        "name": "Mini-Boss",
                         "item_count": 1,
                         "access_rules": ["bombs,windwaker,totg_small:1,grapple,melody,sword",
                         "bombs,windwaker,totg_small:1,grapple,bow_3",
@@ -1171,7 +1171,7 @@
             {
                 "name": "Forbidden Woods",
                 "access_rules": [
-                    "grapple,leaf,windwaker,requiem"                    
+                    "$fw_access"                    
                 ],
                 "sections": [
                     {
@@ -1341,15 +1341,15 @@
                     {
                         "name": "Give Orca 10 Knight's Crests",
                         "item_count": 1,
-                        "access_rules": ["crest:10,spoils,grapple,sword,power,windwaker,melody,shield_2,lyric,hammer,et_small:3,bow_2",
-                        "crest:10,spoils,grapple,sword,power,windwaker,melody,shield_2,lyric,hammer,et_small:3,bombs",
-                        "crest:10,spoils,grapple,sword,power,windwaker,melody,shield_2,lyric,hammer,et_small:3,leaf",
-                        "crest:10,spoils,grapple,sword,power,windwaker,melody,shield_2,lyric,hammer,et_small:3,hookshot",
-                        "crest:10,spoils,grapple,sword,bow_2,boots",
-                        "crest:10,spoils,grapple,sword,hammer,boots",
-                        "crest:10,spoils,grapple,sword,power,windwaker,requiem",
-                        "crest:10,spoils,grapple,sword,hookshot,windwaker,requiem",
-                        "crest:10,spoils,grapple,sword,triforce_8"]
+                        "access_rules": ["spoils,grapple,sword,power,windwaker,melody,shield_2,lyric,hammer,et_small:3,bow_2",
+                        "spoils,grapple,sword,power,windwaker,melody,shield_2,lyric,hammer,et_small:3,bombs",
+                        "spoils,grapple,sword,power,windwaker,melody,shield_2,lyric,hammer,et_small:3,leaf",
+                        "spoils,grapple,sword,power,windwaker,melody,shield_2,lyric,hammer,et_small:3,hookshot",
+                        "spoils,grapple,sword,bow_2,boots",
+                        "spoils,grapple,sword,hammer,boots",
+                        "spoils,grapple,sword,power,windwaker,requiem",
+                        "spoils,grapple,sword,hookshot,windwaker,requiem",
+                        "spoils,grapple,sword,triforce_8"]
                     },
                     {
                         "name": "Jabun's Cave",
@@ -1392,7 +1392,7 @@
                 "name": "Great Sea",
                 "sections": [
                     {
-                        "name": "Cyclos",
+                        "name": "Defeat Cyclos",
                         "item_count": 1,
                         "access_rules": ["bow"]
                     },
@@ -1440,13 +1440,12 @@
             {
                 "name": "Earth Temple",
                 "access_rules": [
-                    "power,windwaker,melody"                    
+                    "$et_access"                    
                 ],
                 "sections": [
                     {
                         "name": "First Room",
-                        "item_count": 1,
-                        "access_rules": ["bait"]
+                        "item_count": 1
                     },
                     {
                         "name": "Behind Destructible Walls",
@@ -1495,7 +1494,7 @@
                         "access_rules": ["shield_2,lyric,sword","shield_2,lyric,bow"]
                     },
                     {
-                        "name": "Chest in 3rd Crypt",
+                        "name": "3rd Crypt Chest",
                         "item_count": 1,
                         "access_rules": ["shield_2,lyric,hammer,et_small:3"]
                     },

@@ -35,12 +35,51 @@
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "World Map",
+                            "title": "The Great Sea",
                             "content": {
                                 "type": "map",
-                                "maps": [
-                                    "seachart"
-                                ]
+                                "maps": ["seachart"]
+                            }
+                        },{
+                            "title": "Dragon Roost Cavern",
+                            "content": {
+                                "type": "map",
+                                "maps": ["drc"]
+                            }
+                        },
+                        {
+                            "title": "Forbidden Woods",
+                            "content": {
+                                "type": "map",
+                                "maps": ["fw"]
+                            }
+                        },
+                        {
+                            "title": "Tower of the Gods",
+                            "content": {
+                                "type": "map",
+                                "maps": ["totg"]
+                            }
+                        },
+                        {
+                            "title": "Forsaken Fortress",
+                            "content": {
+                                "type": "map",
+                                "maps": ["ff"]
+                            }
+                        },
+                        {
+                            "title": "Earth Temple",
+                            "content": {
+                                "type": "map",
+                                "maps": ["et"]
+                            }
+                        },
+                        {
+                            "title": "Wind Temple",
+                            "content": {
+                                "type": "map",
+                                "maps": ["wt"]
                             }
                         }
                     ]

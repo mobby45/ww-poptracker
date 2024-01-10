@@ -1,0 +1,233 @@
+[
+    {
+        "name": "Earth Temple",
+        "chest_unopened_img": "images/items/chest_closed.png",
+        "chest_opened_img": "images/items/chest_open.png",
+        "children": [
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Earth Temple/First Room"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "et",
+						"x": 70,
+						"y": 85
+					}
+				]
+			},
+            {
+				"sections": [
+                    {
+                        "ref": "World Map/Earth Temple/Behind Destructible Walls"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "et",
+						"x": 72,
+						"y": 140
+					}
+				]
+			},
+            {
+				"sections": [
+                    {
+                        "ref": "World Map/Earth Temple/Transparent Chest in 1st Crypt"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "et",
+						"x": 97,
+						"y": 148
+					}
+				]
+			},
+            {
+				"sections": [
+                    {
+                        "ref": "World Map/Earth Temple/3 Blocks Room"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "et",
+						"x": 148,
+						"y": 67
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Earth Temple/Behind Statues"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "et",
+						"x": 159,
+						"y": 96
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Earth Temple/Casket in 2nd Crypt"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "et",
+						"x": 180,
+						"y": 117
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Earth Temple/Stalfos Mini-Boss"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "et",
+						"x": 147,
+						"y": 152
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Earth Temple/Tingle Chest"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "et",
+						"x": 338,
+						"y": 76
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Earth Temple/Floormaster Room Free"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "et",
+						"x": 288,
+						"y": 76
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Earth Temple/Floormaster Room Fight"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "et",
+						"x": 288,
+						"y": 100
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Earth Temple/3rd Crypt Chest"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "et",
+						"x": 275,
+						"y": 133
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Earth Temple/Many Mirrors Left"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "et",
+						"x": 112,
+						"y": 232
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Earth Temple/Many Mirrors Right"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "et",
+						"x": 138,
+						"y": 236
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Earth Temple/Stalfos Crypt Room"
+					}
+                ],
+				"map_locations": [
+					{
+						"map": "et",
+						"x": 89,
+						"y": 235
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Earth Temple/Big Key Chest"
+					}
+                ],
+				"map_locations": [
+					{
+						"map": "et",
+						"x": 125,
+						"y": 175
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Earth Temple/Jalhalla Heart Container"
+					}
+                ],
+				"map_locations": [
+					{
+						"map": "et",
+						"x": 206,
+						"y": 142
+					}
+				]
+			}                                            
+        ]
+    }
+]

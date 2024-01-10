@@ -1,0 +1,233 @@
+[
+    {
+        "name": "Forbidden Woods",
+        "chest_unopened_img": "images/items/chest_closed.png",
+        "chest_opened_img": "images/items/chest_open.png",
+        "children": [
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Forbidden Woods/First Chest"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "fw",
+						"x": 50,
+						"y": 134
+					}
+				]
+			},
+            {
+				"sections": [
+                    {
+                        "ref": "World Map/Forbidden Woods/In Bottom Tree"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "fw",
+						"x": 98,
+						"y": 285
+					}
+				]
+			},
+            {
+				"sections": [
+                    {
+                        "ref": "World Map/Forbidden Woods/Climb to Top"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "fw",
+						"x": 239,
+						"y": 167
+					}
+				]
+			},
+            {
+				"sections": [
+                    {
+                        "ref": "World Map/Forbidden Woods/Hole in Tree"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "fw",
+						"x": 94,
+						"y": 85
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Forbidden Woods/In Morth's Pit"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "fw",
+						"x": 221,
+						"y": 77
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Forbidden Woods/Vine Maze Left"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "fw",
+						"x": 205,
+						"y": 87
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Forbidden Woods/Vine Maze Right"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "fw",
+						"x": 193,
+						"y": 83
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Forbidden Woods/Tall Room Before Mini-Boss"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "fw",
+						"x": 152,
+						"y": 192
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Forbidden Woods/Mothula Mini-Boss Room"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "fw",
+						"x": 139,
+						"y": 171
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Forbidden Woods/Past Hanging Vines"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "fw",
+						"x": 147,
+						"y": 213
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Forbidden Woods/Across the Flower"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "fw",
+						"x": 55,
+						"y": 211
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Forbidden Woods/Tingle Chest"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "fw",
+						"x": 69,
+						"y": 202
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Forbidden Woods/Locked in Basement Trunk"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "fw",
+						"x": 60,
+						"y": 189
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Forbidden Woods/Big Key Chest"
+					}
+                ],
+				"map_locations": [
+					{
+						"map": "fw",
+						"x": 62,
+						"y": 225
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Forbidden Woods/Double Mothula"
+					}
+                ],
+				"map_locations": [
+					{
+						"map": "fw",
+						"x": 116,
+						"y": 55
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "World Map/Forbidden Woods/Kalle Demos Heart Container"
+					}
+                ],
+				"map_locations": [
+					{
+						"map": "fw",
+						"x": 159,
+						"y": 53
+					}
+				]
+			}                                          
+        ]
+    }
+]
