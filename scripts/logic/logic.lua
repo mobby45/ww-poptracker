@@ -10,6 +10,6 @@ function et_access()
     return (has("power") and has("windwaker") and has("melody"))
 end
 
-function fw_access()
+function wt_access()
     return (has("boots") and has("hammer") and has("windwaker") and has("melody"))
 end
