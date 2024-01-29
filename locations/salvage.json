@@ -1,0 +1,940 @@
+[
+    {
+        "name": "Salvaging",
+        "chest_unopened_img": "images/items/chest_closed.png",
+        "chest_opened_img": "images/items/chest_open.png",
+        "children": [
+            {
+                "name": "Triforce Chart 1",
+                "access_rules": [
+                    "triforce1,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 171,
+                        "y": 392
+                    }
+                ]
+            },
+			{
+                "name": "Triforce Chart 2",
+                "access_rules": [
+                    "triforce2,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 408,
+                        "y": 41
+                    }
+                ]
+            },
+			{
+                "name": "Triforce Chart 3",
+                "access_rules": [
+                    "triforce3,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 260,
+                        "y": 501
+                    }
+                ]
+            },
+			{
+                "name": "Triforce Chart 4",
+                "access_rules": [
+                    "triforce4,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 171,
+                        "y": 738
+                    }
+                ]
+            },
+			{
+                "name": "Triforce Chart 5",
+                "access_rules": [
+                    "triforce5,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 699,
+                        "y": 588
+                    }
+                ]
+            },
+			{
+                "name": "Triforce Chart 6",
+                "access_rules": [
+                    "triforce6,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 389,
+                        "y": 499
+                    }
+                ]
+            },
+			{
+                "name": "Triforce Chart 7",
+                "access_rules": [
+                    "triforce7,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 626,
+                        "y": 41
+                    }
+                ]
+            },
+			{
+                "name": "Triforce Chart 8",
+                "access_rules": [
+                    "triforce8,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 388,
+                        "y": 699
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 1",
+                "access_rules": [
+                    "treasure1,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 519,
+                        "y": 520
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 2",
+                "access_rules": [
+                    "treasure2,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 149,
+                        "y": 260
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 3",
+                "access_rules": [
+                    "treasure3,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 519,
+                        "y": 302
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 4",
+                "access_rules": [
+                    "treasure4,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 369,
+                        "y": 590
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 5",
+                "access_rules": [
+                    "treasure5,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 736,
+                        "y": 407
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 6",
+                "access_rules": [
+                    "treasure6,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 410,
+                        "y": 371
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 7",
+                "access_rules": [
+                    "treasure7,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 170,
+                        "y": 42
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 8",
+                "access_rules": [
+                    "treasure8,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 40,
+                        "y": 281
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 9",
+                "access_rules": [
+                    "treasure9,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 40,
+                        "y": 720
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 10",
+                "access_rules": [
+                    "treasure10,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 281,
+                        "y": 302
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 11",
+                "access_rules": [
+                    "treasure11,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 499,
+                        "y": 62
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 12",
+                "access_rules": [
+                    "treasure12,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 150,
+                        "y": 590
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 13",
+                "access_rules": [
+                    "treasure13,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 716,
+                        "y": 63
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 14",
+                "access_rules": [
+                    "treasure14,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 499,
+                        "y": 391
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 15",
+                "access_rules": [
+                    "treasure15,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 501,
+                        "y": 741
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 16",
+                "access_rules": [
+                    "treasure16,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 279,
+                        "y": 633
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 17",
+                "access_rules": [
+                    "treasure17,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 479,
+                        "y": 630
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 18",
+                "access_rules": [
+                    "treasure18,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 390,
+                        "y": 170
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 19",
+                "access_rules": [
+                    "treasure19,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 716,
+                        "y": 169
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 20",
+                "access_rules": [
+                    "treasure20,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 628,
+                        "y": 479
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 21",
+                "access_rules": [
+                    "treasure21,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 301,
+                        "y": 411
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 22",
+                "access_rules": [
+                    "treasure22,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 263,
+                        "y": 190
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 23",
+                "access_rules": [
+                    "treasure23,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 63,
+                        "y": 609
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 24",
+                "access_rules": [
+                    "treasure24,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 300,
+                        "y": 82
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 25",
+                "access_rules": [
+                    "treasure25,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 61,
+                        "y": 60
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 26",
+                "access_rules": [
+                    "treasure26,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 390,
+                        "y": 281
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 27",
+                "access_rules": [
+                    "treasure27,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 698,
+                        "y": 281
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 28",
+                "access_rules": [
+                    "treasure28,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 81,
+                        "y": 521
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 29",
+                "access_rules": [
+                    "treasure29,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 190,
+                        "y": 175
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 30",
+                "access_rules": [
+                    "treasure30,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 479,
+                        "y": 190
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 31",
+                "access_rules": [
+                    "treasure31,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 620,
+                        "y": 610
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 32",
+                "access_rules": [
+                    "treasure32,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 588,
+                        "y": 699
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 33",
+                "access_rules": [
+                    "treasure33,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 738,
+                        "y": 696
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 34",
+                "access_rules": [
+                    "treasure34,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 609,
+                        "y": 392
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 35",
+                "access_rules": [
+                    "treasure35,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 191,
+                        "y": 480
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 36",
+                "access_rules": [
+                    "treasure36,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 718,
+                        "y": 501
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 37",
+                "access_rules": [
+                    "treasure37,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 588,
+                        "y": 258
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 38",
+                "access_rules": [
+                    "treasure38,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 42,
+                        "y": 410
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 39",
+                "access_rules": [
+                    "treasure39,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 610,
+                        "y": 168
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 40",
+                "access_rules": [
+                    "treasure40,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 301,
+                        "y": 740
+                    }
+                ]
+            },
+			{
+                "name": "Treasure Chart 41",
+                "access_rules": [
+                    "treasure41,grapple"                    
+                ],
+				"sections": [
+                    {
+                        "name": "Salvage",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "salvage",
+                        "x": 81,
+                        "y": 152
+                    }
+                ]
+            }                                                        
+        ]
+    }
+]

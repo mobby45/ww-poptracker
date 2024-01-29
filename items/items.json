@@ -590,7 +590,350 @@
         "name": "Molgera",
         "type": "toggle",
         "img": "images/items/boss5.png",
-        "initial_active_state": true,
+        "initial_active_state": false,
         "codes": "boss5"
+    },
+    {
+        "name": "Triforce Chart 1",
+        "type": "toggle",
+        "img": "images/items/chart2.png",
+        "initial_active_state": false,
+        "codes": "triforce1"
+    },
+    {
+        "name": "Triforce Chart 2",
+        "type": "toggle",
+        "img": "images/items/chart2.png",
+        "initial_active_state": false,
+        "codes": "triforce2"
+    },
+    {
+        "name": "Triforce Chart 3",
+        "type": "toggle",
+        "img": "images/items/chart2.png",
+        "initial_active_state": false,
+        "codes": "triforce3"
+    },
+    {
+        "name": "Triforce Chart 4",
+        "type": "toggle",
+        "img": "images/items/chart2.png",
+        "initial_active_state": false,
+        "codes": "triforce4"
+    },
+    {
+        "name": "Triforce Chart 5",
+        "type": "toggle",
+        "img": "images/items/chart2.png",
+        "initial_active_state": false,
+        "codes": "triforce5"
+    },
+    {
+        "name": "Triforce Chart 6",
+        "type": "toggle",
+        "img": "images/items/chart2.png",
+        "initial_active_state": false,
+        "codes": "triforce6"
+    },
+    {
+        "name": "Triforce Chart 7",
+        "type": "toggle",
+        "img": "images/items/chart2.png",
+        "initial_active_state": false,
+        "codes": "triforce7"
+    },
+    {
+        "name": "Triforce Chart 8",
+        "type": "toggle",
+        "img": "images/items/chart2.png",
+        "initial_active_state": false,
+        "codes": "triforce8"
+    },
+    {
+        "name": "Treasure Chart 1",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure1"
+    },
+    {
+        "name": "Treasure Chart 2",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure2"
+    },
+    {
+        "name": "Treasure Chart 3",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure3"
+    },
+    {
+        "name": "Treasure Chart 4",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure4"
+    },
+    {
+        "name": "Treasure Chart 5",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure5"
+    },
+    {
+        "name": "Treasure Chart 6",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure6"
+    },
+    {
+        "name": "Treasure Chart 7",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure7"
+    },
+    {
+        "name": "Treasure Chart 8",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure8"
+    },
+    {
+        "name": "Treasure Chart 9",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure9"
+    },
+    {
+        "name": "Treasure Chart 10",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure10"
+    },
+    {
+        "name": "Treasure Chart 11",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure11"
+    },
+    {
+        "name": "Treasure Chart 12",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure12"
+    },
+    {
+        "name": "Treasure Chart 13",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure13"
+    },
+    {
+        "name": "Treasure Chart 14",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure14"
+    },
+    {
+        "name": "Treasure Chart 15",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure15"
+    },
+    {
+        "name": "Treasure Chart 16",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure16"
+    },
+    {
+        "name": "Treasure Chart 17",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure17"
+    },
+    {
+        "name": "Treasure Chart 18",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure18"
+    },
+    {
+        "name": "Treasure Chart 19",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure19"
+    },
+    {
+        "name": "Treasure Chart 20",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure20"
+    },
+    {
+        "name": "Treasure Chart 21",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure21"
+    },
+    {
+        "name": "Treasure Chart 22",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure22"
+    },
+    {
+        "name": "Treasure Chart 23",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure23"
+    },
+    {
+        "name": "Treasure Chart 24",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure24"
+    },
+    {
+        "name": "Treasure Chart 25",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure25"
+    },
+    {
+        "name": "Treasure Chart 26",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure26"
+    },
+    {
+        "name": "Treasure Chart 27",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure27"
+    },
+    {
+        "name": "Treasure Chart 28",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure28"
+    },
+    {
+        "name": "Treasure Chart 29",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure29"
+    },
+    {
+        "name": "Treasure Chart 30",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure30"
+    },
+    {
+        "name": "Treasure Chart 31",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure31"
+    },
+    {
+        "name": "Treasure Chart 32",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure32"
+    },
+    {
+        "name": "Treasure Chart 33",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure33"
+    },
+    {
+        "name": "Treasure Chart 34",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure34"
+    },
+    {
+        "name": "Treasure Chart 35",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure35"
+    },
+    {
+        "name": "Treasure Chart 36",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure36"
+    },
+    {
+        "name": "Treasure Chart 37",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure37"
+    },
+    {
+        "name": "Treasure Chart 38",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure38"
+    },
+    {
+        "name": "Treasure Chart 39",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure39"
+    },
+    {
+        "name": "Treasure Chart 40",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure40"
+    },
+    {
+        "name": "Treasure Chart 41",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure41"
     }
 ]
