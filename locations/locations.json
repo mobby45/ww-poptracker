@@ -6,9 +6,8 @@
         "children": [
             {
                 "name": "Forsaken Fortress",
-                "access_rules": [
-                    "bombs"                    
-                ],
+                "access_rules": ["bombs"],
+                "visibility_rules": ["dungeons_on"],
                 "sections": [
                     {
                         "name": "Phantom Ganon",
@@ -54,12 +53,14 @@
                 "sections": [
                     {
                         "name": "Free Platform",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["lookouts_on"]
                     },
                     {
                         "name": "Cave",
                         "item_count": 1,
-                        "access_rules": ["rock,weapon"]
+                        "access_rules": ["rock,weapon"],
+                        "visibility_rules": ["combat_on","lookouts_on"]
                     }
                 ],
                 "map_locations": [
@@ -75,7 +76,8 @@
                 "sections": [
                     {
                         "name": "Submarine",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["submarines_on"]
                     }
                 ],
                 "map_locations": [
@@ -88,9 +90,8 @@
             },
             {
                 "name": "Wind Temple",
-                "access_rules": [
-                    "$wt_access"                    
-                ],
+                "access_rules": ["$wt_access"],
+                "visibility_rules": ["dungeons_on"],
                 "sections": [
                     {
                         "name": "Two Dirt Patches",
@@ -99,7 +100,8 @@
                     {
                         "name": "Tingle Chest",
                         "item_count": 1,
-                        "access_rules": ["leaf,bombs"]
+                        "access_rules": ["leaf,bombs"],
+                        "visibility_rules": ["tinglechests_on"]
                     },
                     {
                         "name": "Behind Stone Head",
@@ -175,12 +177,14 @@
                 "sections": [
                     {
                         "name": "Chest",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["misc_on"]
                     },
                     {
                         "name": "Submarine",
                         "item_count": 1,
-                        "access_rules": ["sword","grapple","boomerang","bow","bombs","hammer"]
+                        "access_rules": ["sword","grapple","boomerang","bow","bombs","hammer"],
+                        "visibility_rules": ["submarines_on"]
                     }
                 ],
                 "map_locations": [
@@ -196,16 +200,19 @@
                 "sections": [
                     {
                         "name": "Center Platform",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["lookouts_on"]
                     },
                     {
                         "name": "Northern Platform",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["lookouts_on"]
                     },
                     {
                         "name": "Southern Platform",
                         "item_count": 1,
-                        "access_rules": ["bow","hookshot"]
+                        "access_rules": ["bow","hookshot"],
+                        "visibility_rules": ["lookouts_on"]
                     }
                 ],
                 "map_locations": [
@@ -223,7 +230,8 @@
                         "name": "Cave",
                         "item_count": 1,
                         "access_rules": ["hookshot,windwaker,requiem,sword","hookshot,windwaker,requiem,hammer",
-                        "hookshot,windwaker,requiem,bombs,bow_3"]
+                        "hookshot,windwaker,requiem,bombs,bow_3"],
+                        "visibility_rules": ["combat_on"]
                     }
                 ],
                 "map_locations": [
@@ -240,7 +248,8 @@
                     {
                         "name": "Top of Eye",
                         "item_count": 1,
-                        "access_rules": ["bombs,leaf"]
+                        "access_rules": ["bombs,leaf"],
+						"visibility_rules": ["reefs_on"]
                     }
                 ],
                 "map_locations": [
@@ -257,7 +266,8 @@
                     {
                         "name": "Interior",
                         "item_count": 1,
-                        "access_rules": ["windwaker,ballad"]
+                        "access_rules": ["windwaker,ballad"],
+                        "visibility_rules": ["misc_on"]
                     }
                 ],
                 "map_locations": [
@@ -273,20 +283,24 @@
                 "sections": [
                     {
                         "name": "Jail - Tingle Gift 1",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["gifts_on"]
                     },
                     {
                         "name": "Jail - Tingle Gift 2",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["gifts_on"]
                     },
                     {
                         "name": "Jail - Maze",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["islandpuzzles_on"]
                     },
                     {
                         "name": "Green Potion Brewery",
                         "item_count": 1,
-                        "access_rules": ["grapple,spoils"]
+                        "access_rules": ["grapple,spoils"],
+                        "visibility_rules": ["spoilssq_on"]
                     },
                     {
                         "name": "Blue Potion Brewery",
@@ -302,43 +316,52 @@
                         "spoils,power,leaf,sword","spoils,power,boomerang,sword",
                         "spoils,hookshot,bombs","spoils,hookshot,grapple",
                         "spoils,hookshot,bow","spoils,hookshot,hammer",
-                        "spoils,hookshot,leaf,sword","spoils,hookshot,boomerang,sword"]
+                        "spoils,hookshot,leaf,sword","spoils,hookshot,boomerang,sword"],
+                        "visibility_rules": ["spoilssq_on"]
                     },
                     {
                         "name": "Lenzo Left",
                         "item_count": 1,
-                        "access_rules": ["picto"]
+                        "access_rules": ["picto"],
+                        "visibility_rules": ["shortsq_on"]
                     },
                     {
                         "name": "Lenzo Right",
                         "item_count": 1,
-                        "access_rules": ["picto"]
+                        "access_rules": ["picto"],
+                        "visibility_rules": ["shortsq_on"]
                     },
                     {
                         "name": "House of Wealth Chest",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["misc_on"]
                     },
                     {
                         "name": "Light the Lighthouse",
                         "item_count": 1,
-                        "access_rules": ["bow_2"]
+                        "access_rules": ["bow_2"],
+                        "visibility_rules": ["shortsq_on"]
                     },
                     {
                         "name": "Transparent Chest",
                         "item_count": 1,
-                        "access_rules": ["bow2,leaf","bow_2,hookshot"]
+                        "access_rules": ["bow2,leaf","bow_2,hookshot"],
+                        "visibility_rules": ["shortsq_on"]
                     },
                     {
                         "name": "Pirate Ship Chest",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["minigames_on"]
                     },
                     {
                         "name": "Win Sploosh Kaboom Once",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["sploosh_on"]
                     },
                     {
                         "name": "Win Sploosh Kaboom Twice",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["sploosh_on"]
                     }
                 ],
                 "map_locations": [
@@ -354,32 +377,38 @@
                 "sections": [
                     {
                         "name": "Chu Cave - Chest",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["puzzlecaves_on"]
                     },
                     {
                         "name": "Chu Cave - Left Boulder",
                         "item_count": 1,
-                        "access_rules": ["rock"]
+                        "access_rules": ["rock"],
+                        "visibility_rules": ["puzzlecaves_on"]
                     },
                     {
                         "name": "Chu Cave - Right Boulder",
                         "item_count": 1,
-                        "access_rules": ["rock"]
+                        "access_rules": ["rock"],
+                        "visibility_rules": ["puzzlecaves_on"]
                     },
                     {
                         "name": "Chu Cave - Scale Wall",
                         "item_count": 1,
-                        "access_rules": ["grapple"]
+                        "access_rules": ["grapple"],
+                        "visibility_rules": ["puzzlecaves_on"]
                     },
                     {
                         "name": "Wizzrobe Cave",
                         "item_count": 1,
                         "access_rules": ["hookshot,hammer","hookshot,bombs","hookshot,bow",
-                        "hookshot,boomerang,sword","hookshot,leaf,sword"]
+                        "hookshot,boomerang,sword","hookshot,leaf,sword"],
+                        "visibility_rules": ["combat_on"]
                     },
                     {
                         "name": "Free Platform",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["lookouts_on"]
                     }
                 ],
                 "map_locations": [
@@ -396,28 +425,33 @@
                     {
                         "name": "Wind Shrine",
                         "item_count": 1,
-                        "access_rules": ["windwaker"]
+                        "access_rules": ["windwaker"],
+                        "visibility_rules": ["misc_on"]
                     },
                     {
                         "name": "Top of Boulder",
                         "item_count": 1,
-                        "access_rules": ["bow","bait","boomerang","bombs"]
+                        "access_rules": ["bow","bait","boomerang","bombs"],
+                        "visibility_rules": ["islandpuzzles_on"]
                     },
                     {
                         "name": "Fly Around Island",
                         "item_count": 1,
                         "access_rules": ["leaf,windwaker,requiem,sword","leaf,windwaker,requiem,hammer",
                         "leaf,windwaker,requiem,boomerang","leaf,windwaker,requiem,bombs",
-                        "leaf,windwaker,requiem,magic"]
+                        "leaf,windwaker,requiem,magic"],
+                        "visibility_rules": ["islandpuzzles_on"]
                     },
                     {
                         "name": "Mail Game",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["minigames_on"]
                     },
                     {
                         "name": "Secret Cave",
                         "item_count": 1,
-                        "access_rules": ["bombs","rock,sword","rock,hammer","rock,bow"]
+                        "access_rules": ["bombs","rock,sword","rock,hammer","rock,bow"],
+                        "visibility_rules": ["combat_on"]
                     }
                 ],
                 "map_locations": [
@@ -430,6 +464,7 @@
             },
             {
                 "name": "Dragon Roost Cavern",
+                "visibility_rules": ["dungeons_on"],
                 "sections": [
                     {
                         "name": "First Room",
@@ -473,7 +508,8 @@
                     {
                         "name": "Tingle Chest in Hub Room",
                         "item_count": 1,
-                        "access_rules": ["drc_small:4,bombs"]
+                        "access_rules": ["drc_small:4,bombs"],
+                        "visibility_rules": ["tinglechests_on"]
                     },
                     {
                         "name": "Pot Room",
@@ -494,7 +530,8 @@
                         "name": "Tingle Chest in Basement",
                         "item_count": 1,
                         "access_rules": ["grapple,bombs,drc_small:4","grapple,bombs,drc_small:1,leaf",
-                        "grapple,bombs,drc_small:1,bow_2"]
+                        "grapple,bombs,drc_small:1,bow_2"],
+                        "visibility_rules": ["tinglechests_on"]
                     },
                     {
                         "name": "Big Key Chest",
@@ -535,7 +572,8 @@
                     {
                         "name": "Submarine",
                         "item_count": 1,
-                        "access_rules": ["bow","hookshot,sword","hookshot,hammer","hookshot,bombs"]
+                        "access_rules": ["bow","hookshot,sword","hookshot,hammer","hookshot,bombs"],
+                        "visibility_rules": ["submarines_on"]
                     }
                 ],
                 "map_locations": [
@@ -551,7 +589,8 @@
                 "sections": [
                     {
                         "name": "Free Platform",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["lookouts_on"]
                     }
                 ],
                 "map_locations": [
@@ -568,36 +607,43 @@
                     {
                         "name": "Cave",
                         "item_count": 1,
-                        "access_rules": ["bombs"]
+                        "access_rules": ["bombs"],
+                        "visibility_rules": ["combat_on"]
                     },
                     {
                         "name": "Beedle's Special Shop - 500 Item",
                         "item_count": 1,
-                        "access_rules": ["wallet"]
+                        "access_rules": ["wallet"],
+                        "visibility_rules": ["expensive_on"]
                     },
                     {
                         "name": "Beedle's Special Shop - 900 Item",
                         "item_count": 1,
-                        "access_rules": ["wallet"]
+                        "access_rules": ["wallet"],
+                        "visibility_rules": ["expensive_on"]
                     },
                     {
                         "name": "Beedle's Special Shop - 950 Item",
                         "item_count": 1,
-                        "access_rules": ["wallet"]
+                        "access_rules": ["wallet"],
+                        "visibility_rules": ["expensive_on"]
                     },
                     {
                         "name": "Western Cannon Platform",
                         "item_count": 1,
-                        "access_rules": ["bombs,leaf","boomerang,leaf"]
+                        "access_rules": ["bombs,leaf","boomerang,leaf"],
+                        "visibility_rules": ["lookouts_on"]
                     },
                     {
                         "name": "Eastern Cannon Platform",
                         "item_count": 1,
-                        "access_rules": ["bombs,leaf","boomerang,leaf"]
+                        "access_rules": ["bombs,leaf","boomerang,leaf"],
+                        "visibility_rules": ["lookouts_on"]
                     },
                     {
                         "name": "Center Platform",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["lookouts_on"]
                     }
                 ],
                 "map_locations": [
@@ -614,7 +660,8 @@
                     {
                         "name": "Cannon Platform",
                         "item_count": 1,
-                        "access_rules": ["bombs","boomerang"]
+                        "access_rules": ["bombs","boomerang"],
+                        "visibility_rules": ["lookouts_on"]
                     }
                 ],
                 "map_locations": [
@@ -631,16 +678,19 @@
                     {
                         "name": "Cave",
                         "item_count": 1,
-                        "access_rules": ["bow_2"]
+                        "access_rules": ["bow_2"],
+                        "visibility_rules": ["puzzlecaves_on","combat_on"]
                     },
                     {
                         "name": "Free Platform",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["lookouts_on"]
                     },
                     {
                         "name": "Cannon Platform",
                         "item_count": 1,
-                        "access_rules": ["bombs","boomerang"]
+                        "access_rules": ["bombs","boomerang"],
+                        "visibility_rules": ["lookouts_on"]
                     }
                 ],
                 "map_locations": [
@@ -656,7 +706,8 @@
                 "sections": [
                     {
                         "name": "Free Platform",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["lookouts_on"]
                     }
                 ],
                 "map_locations": [
@@ -673,7 +724,8 @@
                     {
                         "name": "Top of Eye",
                         "item_count": 1,
-                        "access_rules": ["bombs,leaf"]
+                        "access_rules": ["bombs,leaf"],
+						"visibility_rules": ["reefs_on"]
                     }
                 ],
                 "map_locations": [
@@ -690,7 +742,8 @@
                     {
                         "name": "Hidden Chest",
                         "item_count": 1,
-                        "access_rules": ["leaf"]
+                        "access_rules": ["leaf"],
+                        "visibility_rules": ["islandpuzzles_on"]
                     }
                 ],
                 "map_locations": [
@@ -707,11 +760,13 @@
                     {
                         "name": "Top of Eye",
                         "item_count": 1,
-                        "access_rules": ["bombs,leaf"]
+                        "access_rules": ["bombs,leaf"],
+						"visibility_rules": ["reefs_on"]
                     },
                     {
                         "name": "Enemy Platform",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["lookouts_on"]
                     }
                 ],
                 "map_locations": [
@@ -728,16 +783,19 @@
                     {
                         "name": "Top of Eye",
                         "item_count": 1,
-                        "access_rules": ["bombs,leaf"]
+                        "access_rules": ["bombs,leaf"],
+						"visibility_rules": ["reefs_on"]
                     },
                     {
                         "name": "Cannon Platform",
                         "item_count": 1,
-                        "access_rules": ["bombs","boomerang"]
+                        "access_rules": ["bombs","boomerang"],
+                        "visibility_rules": ["lookouts_on"]
                     },
                     {
                         "name": "Submarine",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["submarines_on"]
                     }
                 ],
                 "map_locations": [
@@ -750,9 +808,8 @@
             },
             {
                 "name": "Tower of the Gods",
-                "access_rules": [
-                    "$totg_access"                    
-                ],
+                "access_rules": ["$totg_access"],
+                "visibility_rules": ["dungeons_on"],
                 "sections": [
                     {
                         "name": "Behind Bombable Wall",
@@ -781,7 +838,8 @@
                     {
                         "name": "Tingle Chest",
                         "item_count": 1,
-                        "access_rules": ["bombs,totg_small:1"]
+                        "access_rules": ["bombs,totg_small:1"],
+                        "visibility_rules": ["tinglechests_on"]
                     },
                     {
                         "name": "First Chest Guarded",
@@ -878,12 +936,14 @@
                     {
                         "name": "Cannon Platform",
                         "item_count": 1,
-                        "access_rules": ["bombs","boomerang"]
+                        "access_rules": ["bombs","boomerang"],
+                        "visibility_rules": ["lookouts_on"]
                     },
                     {
                         "name": "Enemy Platform",
                         "item_count": 1,
-                        "access_rules": ["leaf"]
+                        "access_rules": ["leaf"],
+                        "visibility_rules": ["lookouts_on"]
                     }
                 ],
                 "map_locations": [
@@ -900,12 +960,14 @@
                     {
                         "name": "Chest in Ring of Fire",
                         "item_count": 1,
-                        "access_rules": ["bait"]
+                        "access_rules": ["bait"],
+                        "visibility_rules": ["islandpuzzles_on"]
                     },
                     {
                         "name": "Cave",
                         "item_count": 1,
-                        "access_rules": ["bow_2"]
+                        "access_rules": ["bow_2"],
+                        "visibility_rules": ["puzzlecaves_on"]
                     }
                 ],
                 "map_locations": [
@@ -922,12 +984,14 @@
                     {
                         "name": "Cave",
                         "item_count": 1,
-                        "access_rules": ["bombs,windwaker,requiem"]
+                        "access_rules": ["bombs,windwaker,requiem"],
+                        "visibility_rules": ["misc_on"]
                     },
                     {
                         "name": "Enemy Platform",
                         "item_count": 1,
-                        "access_rules": ["bow","hookshot"]
+                        "access_rules": ["bow","hookshot"],
+                        "visibility_rules": ["lookouts_on"]
                     }
                 ],
                 "map_locations": [
@@ -945,16 +1009,19 @@
                         "name": "Cave",
                         "item_count": 1,
                         "access_rules": ["power,windwaker,requiem,sword","power,windwaker,requiem,bow_3",
-                        "power,windwaker,requiem,hammer"]
+                        "power,windwaker,requiem,hammer"],
+                        "visibility_rules": ["combat_on"]
                     },
                     {
                         "name": "Free Platform",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["lookouts_on"]
                     },
                     {
                         "name": "Cannon Platform",
                         "item_count": 1,
-                        "access_rules": ["bombs","boomerang"]
+                        "access_rules": ["bombs","boomerang"],
+                        "visibility_rules": ["lookouts_on"]
                     }
                 ],
                 "map_locations": [
@@ -971,17 +1038,20 @@
                     {
                         "name": "Top of Waterfall",
                         "item_count": 1,
-                        "access_rules": ["hookshot","leaf"]
+                        "access_rules": ["hookshot","leaf"],
+                        "visibility_rules": ["islandpuzzles_on"]
                     },
                     {
                         "name": "Cabana Labyrinth - Lower",
                         "item_count": 1,
-                        "access_rules": ["deed,delivery,grapple,hammer"]
+                        "access_rules": ["deed,delivery,grapple,hammer"],
+                        "visibility_rules": ["puzzlecaves_on"]
                     },
                     {
                         "name": "Cabana Labyrinth - Upper",
                         "item_count": 1,
-                        "access_rules": ["deed,delivery,grapple,hammer,windwaker,requiem"]
+                        "access_rules": ["deed,delivery,grapple,hammer,windwaker,requiem"],
+                        "visibility_rules": ["puzzlecaves_on"]
                     }
                 ],
                 "map_locations": [
@@ -998,15 +1068,18 @@
                     {
                         "name": "Cave",
                         "item_count": 1,
-                        "access_rules": ["rock,weapon"]
+                        "access_rules": ["rock,weapon"],
+                        "visibility_rules": ["puzzlecaves_on"]
                     },
                     {
                         "name": "Free Platform",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["lookouts_on"]
                     },
                     {
                         "name": "Submarine",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["submarines_on"]
                     }
                 ],
                 "map_locations": [
@@ -1023,7 +1096,8 @@
                     {
                         "name": "Cave",
                         "item_count": 1,
-                        "access_rules": ["bait,windwaker,requiem"]
+                        "access_rules": ["bait,windwaker,requiem"],
+                        "visibility_rules": ["puzzlecaves_on"]
                     }
                 ],
                 "map_locations": [
@@ -1040,12 +1114,14 @@
                     {
                         "name": "Warp Maze First Chest",
                         "item_count": 1,
-                        "access_rules": ["hookshot"]
+                        "access_rules": ["hookshot"],
+                        "visibility_rules": ["puzzlecaves_on"]
                     },
                     {
                         "name": "Warp Maze Second Chest",
                         "item_count": 1,
-                        "access_rules": ["hookshot"]
+                        "access_rules": ["hookshot"],
+                        "visibility_rules": ["puzzlecaves_on"]
                     }
                 ],
                 "map_locations": [
@@ -1062,11 +1138,13 @@
                     {
                         "name": "Top of Eye",
                         "item_count": 1,
-                        "access_rules": ["bombs,leaf","boomerang,leaf"]
+                        "access_rules": ["bombs,leaf","boomerang,leaf"],
+						"visibility_rules": ["reefs_on"]
                     },
                     {
                         "name": "Free Platform",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["lookouts_on"]
                     }
                 ],
                 "map_locations": [
@@ -1083,7 +1161,8 @@
                     {
                         "name": "Cave",
                         "item_count": 1,
-                        "access_rules": ["boots,hammer"]
+                        "access_rules": ["boots,hammer"],
+                        "visibility_rules": ["combat_on"]
                     }
                 ],
                 "map_locations": [
@@ -1100,12 +1179,14 @@
                     {
                         "name": "NW Cannon Platform",
                         "item_count": 1,
-                        "access_rules": ["bombs,leaf","boomerang,leaf"]
+                        "access_rules": ["bombs,leaf","boomerang,leaf"],
+                        "visibility_rules": ["lookouts_on"]
                     },
                     {
                         "name": "SE Cannon Platform",
                         "item_count": 1,
-                        "access_rules": ["bombs,leaf","boomerang,leaf"]
+                        "access_rules": ["bombs,leaf","boomerang,leaf"],
+                        "visibility_rules": ["lookouts_on"]
                     }
                 ],
                 "map_locations": [
@@ -1124,16 +1205,19 @@
                 "sections": [
                     {
                         "name": "Frozen Chest",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["islandpuzzles_on"]
                     },
                     {
                         "name": "Cave",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["puzzlecaves_on"]
                     },
                     {
                         "name": "Inner Cave",
                         "item_count": 1,
-                        "access_rules": ["boots"]
+                        "access_rules": ["boots"],
+                        "visibility_rules": ["puzzlecaves_on","combat_on"]
                     }
                 ],
                 "map_locations": [
@@ -1152,12 +1236,14 @@
                 "sections": [
                     {
                         "name": "On Tree Branch",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["islandpuzzles_on"]
                     },
                     {
                         "name": "On Small Island",
                         "item_count": 1,
-                        "access_rules": ["leaf,windwaker,requiem"]
+                        "access_rules": ["leaf,windwaker,requiem"],
+                        "visibility_rules": ["islandpuzzles_on"]
                     }
                 ],
                 "map_locations": [
@@ -1170,9 +1256,8 @@
             },
             {
                 "name": "Forbidden Woods",
-                "access_rules": [
-                    "$fw_access"                    
-                ],
+                "access_rules": ["$fw_access"],
+                "visibility_rules": ["dungeons_on"],
                 "sections": [
                     {
                         "name": "First Chest",
@@ -1237,7 +1322,8 @@
                     {
                         "name": "Tingle Chest",
                         "item_count": 1,
-                        "access_rules": ["boomerang,bombs"]
+                        "access_rules": ["boomerang,bombs"],
+                        "visibility_rules": ["tinglechests_on"]
                     },
                     {
                         "name": "Locked in Basement Trunk",
@@ -1276,17 +1362,20 @@
                         "name": "Cave",
                         "item_count": 1,
                         "access_rules": ["leaf,grapple","sword","boomerang","hammer","bow","hookshot",
-                    "bombs"]
+                        "bombs"],
+                        "visibility_rules": ["puzzlecaves_on"]
                     },
                     {
                         "name": "Upper",
                         "item_count": 1,
                         "access_rules": ["leaf,sword","leaf,boomerang","leaf,hammer","leaf,bow",
-                        "leaf,hookshot","leaf,bombs","leaf,grapple"]
+                        "leaf,hookshot","leaf,bombs","leaf,grapple"],
+                        "visibility_rules": ["puzzlecaves_on"]
                     },
                     {
                         "name": "Free Platform",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["lookouts_on"]
                     }
                 ],
                 "map_locations": [
@@ -1303,20 +1392,24 @@
                     {
                         "name": "Play Golf",
                         "item_count": 1,
-                        "access_rules": ["leaf"]
+                        "access_rules": ["leaf"],
+                        "visibility_rules": ["islandpuzzles_on"]
                     },
                     {
                         "name": "Cave",
                         "item_count": 1,
-                        "access_rules": ["leaf,sword","leaf,bow","leaf,bombs","leaf,hammer"]
+                        "access_rules": ["leaf,sword","leaf,bow","leaf,bombs","leaf,hammer"],
+                        "visibility_rules": ["combat_on"]
                     },
                     {
                         "name": "NW Free Platform",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["lookouts_on"]
                     },
                     {
                         "name": "SE Free Platform",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["lookouts_on"]
                     }
                 ],
                 "map_locations": [
@@ -1332,11 +1425,13 @@
                 "sections": [
                     {
                         "name": "Under Link's House",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["misc_on"]
                     },
                     {
                         "name": "Grasscutter House",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["misc_on"]
                     },
                     {
                         "name": "Give Orca 10 Knight's Crests",
@@ -1349,17 +1444,20 @@
                         "spoils,grapple,sword,hammer,boots",
                         "spoils,grapple,sword,power,windwaker,requiem",
                         "spoils,grapple,sword,hookshot,windwaker,requiem",
-                        "spoils,grapple,sword,triforce_8"]
+                        "spoils,grapple,sword,triforce_8"],
+                        "visibility_rules": ["spoilssq_on"]
                     },
                     {
                         "name": "Jabun's Cave",
                         "item_count": 1,
-                        "access_rules": ["bombs"]
+                        "access_rules": ["bombs"],
+                        "visibility_rules": ["islandpuzzles_on"]
                     },
                     {
                         "name": "Big Pig",
                         "item_count": 1,
-                        "access_rules": ["bait,power"]
+                        "access_rules": ["bait,power"],
+                        "visibility_rules": ["islandpuzzles_on"]
                     },
                     {
                         "name": "Savage Labyrinth Floor 30",
@@ -1371,13 +1469,15 @@
                         "windwaker,requiem,power,sword,leaf",
                         "windwaker,requiem,power,boomerang,leaf,hammer",
                         "windwaker,requiem,power,boomerang,leaf,bow_3,grapple",
-                        "windwaker,requiem,power,hammer,leaf,"]
+                        "windwaker,requiem,power,hammer,leaf,"],
+                        "visibility_rules": ["labyrinth_on"]
                     },
                     {
                         "name": "Savage Labyrinth Floor 50",
                         "item_count": 1,
                         "access_rules": ["leaf,power,windwaker,requiem,shield_2,hammer",
-                        "hookshot,power,windwaker,requiem,shield_2,hammer"]
+                        "hookshot,power,windwaker,requiem,shield_2,hammer"],
+                        "visibility_rules": ["labyrinth_on"]
                     }
                 ],
                 "map_locations": [
@@ -1394,17 +1494,20 @@
                     {
                         "name": "Defeat Cyclos",
                         "item_count": 1,
-                        "access_rules": ["bow"]
+                        "access_rules": ["bow"],
+                        "visibility_rules": ["misc_on"]
                     },
                     {
                         "name": "Withered Trees",
                         "item_count": 1,
-                        "access_rules": ["grapple,bottle,leaf"]
+                        "access_rules": ["grapple,bottle,leaf"],
+                        "visibility_rules": ["longsq_on"]
                     },
                     {
                         "name": "Ghost Ship",
                         "item_count": 1,
-                        "access_rules": ["ghost,sword","ghost,bombs","ghost,hammer","ghost,bow_3"]
+                        "access_rules": ["ghost,sword","ghost,bombs","ghost,hammer","ghost,bow_3"],
+                        "visibility_rules": ["misc_on"]
                     }
                 ],
                 "map_locations": [
@@ -1421,12 +1524,14 @@
                     {
                         "name": "Top of Island",
                         "item_count": 1,
-                        "access_rules": ["bait"]
+                        "access_rules": ["bait"],
+                        "visibility_rules": ["islandpuzzles_on"]
                     },
                     {
                         "name": "Submarine",
                         "item_count": 1,
-                        "access_rules": ["sword","bow","boomerang","hammer","hook"]
+                        "access_rules": ["sword","bow","boomerang","hammer","hook"],
+                        "visibility_rules": ["submarines_on"]
                     }
                 ],
                 "map_locations": [
@@ -1439,9 +1544,8 @@
             },
             {
                 "name": "Earth Temple",
-                "access_rules": [
-                    "$et_access"                    
-                ],
+                "access_rules": ["$et_access"],
+                "visibility_rules": ["dungeons_on"],
                 "sections": [
                     {
                         "name": "First Room",
@@ -1481,7 +1585,8 @@
                     {
                         "name": "Tingle Chest",
                         "item_count": 1,
-                        "access_rules": ["shield_2,bombs"]
+                        "access_rules": ["shield_2,bombs"],
+                        "visibility_rules": ["tinglechests_on"]
                     },
                     {
                         "name": "Floormaster Room Free",
@@ -1540,16 +1645,19 @@
                     {
                         "name": "Top of Eye",
                         "item_count": 1,
-                        "access_rules": ["bombs,leaf"]
+                        "access_rules": ["bombs,leaf"],
+						"visibility_rules": ["reefs_on"]
                     },
                     {
                         "name": "Free Platform",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["lookouts_on"]
                     },
                     {
                         "name": "Big Octo Fairy",
                         "item_count": 1,
-                        "access_rules": ["bow","bombs","boomerang"]
+                        "access_rules": ["bow","bombs","boomerang"],
+						"visibility_rules": ["fairies_on","octos_on"]
                     }
                 ],
                 "map_locations": [
@@ -1565,12 +1673,14 @@
                 "sections": [
                     {
                         "name": "Peak",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["islandpuzzles_on"]
                     },
                     {
                         "name": "Cave",
                         "item_count": 1,
-                        "access_rules": ["shield_2,leaf","shield_2,hookshot"]
+                        "access_rules": ["shield_2,leaf","shield_2,hookshot"],
+                        "visibility_rules": ["puzzlecaves_on"]
                     }
                 ],
                 "map_locations": [
@@ -1586,14 +1696,16 @@
                 "sections": [
                     {
                         "name": "Raft",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["lookouts_on"]
                     },
                     {
                         "name": "Cave",
                         "item_count": 1,
                         "access_rules": ["hookshot,sword","hookshot,boomerang","hookshot,bow",
                         "hookshot,bombs","hookshot,hammer","leaf,bow","leaf,boomerang,sword",
-                        "leaf,boomerang,bombs","leaf,boomerang,hammer"]
+                        "leaf,boomerang,bombs","leaf,boomerang,hammer"],
+                        "visibility_rules": ["puzzlecaves_on","combat_on"]
                     }
                 ],
                 "map_locations": [
@@ -1609,16 +1721,19 @@
                 "sections": [
                     {
                         "name": "Raft",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["lookouts_on"]
                     },
                     {
                         "name": "Submarine",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": ["submarines_on"]
                     },
                     {
                         "name": "Cannon Platform",
                         "item_count": 1,
-                        "access_rules": ["bombs","boomerang"]
+                        "access_rules": ["bombs","boomerang"],
+                        "visibility_rules": ["lookouts_on"]
                     }
                 ],
                 "map_locations": [

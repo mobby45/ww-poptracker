@@ -19,5 +19,4 @@ Treasure/Triforce Chart salvaging is supported but does not factor in if they're
 
 1. Higher resolution sea chart and dungeon maps.
 2. More precise location icons on the world map.
-3. Settings for key placement options (full keysanity/dungeon shuffle/vanilla).
-4. Add details for doing checks out of logic.
+3. Add details for doing checks out of logic.

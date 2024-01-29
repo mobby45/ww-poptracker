@@ -9,6 +9,7 @@
                 {
                     "type": "dock",
                     "dock": "bottom",
+                    "h_alignment": "stretch",
                     "v_alignment": "stretch",
                     "content": [
                         {
@@ -36,6 +37,15 @@
                             "content": {
                                 "type": "layout",
                                 "key": "chart_grid"
+                            }
+                        },
+                        {
+                            "type": "group",
+                            "header": "Settings",
+                            "dock": "left",
+                            "content": {
+                                "type": "layout",
+                                "key": "setting_grid"
                             }
                         }
                     ]

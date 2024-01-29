@@ -1,8 +1,3 @@
--- this is an example/ default implementation for AP autotracking
--- it will use the mappings defined in item_mapping.lua and location_mapping.lua to track items and locations via thier ids
--- it will also load the AP slot data in the global SLOT_DATA, keep track of the current index of on_item messages in CUR_INDEX
--- addition it will keep track of what items are local items and which one are remote using the globals LOCAL_ITEMS and GLOBAL_ITEMS
--- this is useful since remote items will not reset but local items might
 ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
 
@@ -12,6 +7,162 @@ LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
 
 function onClear(slot_data)
+    -- autotracking settings from YAML
+    if slot_data['dungeons'] then
+        local obj = Tracker:FindObjectForCode("dungeons")
+        if obj then
+            obj.Active = slot_data['dungeons']
+        end
+    end
+
+    if slot_data['puzzle_caves'] then
+        local obj = Tracker:FindObjectForCode("puzzlecaves")
+        if obj then
+            obj.Active = slot_data['puzzle_caves']
+        end
+    end
+
+    if slot_data['island_puzzles'] then
+        local obj = Tracker:FindObjectForCode("islandpuzzles")
+        if obj then
+            obj.Active = slot_data['island_puzzles']
+        end
+    end
+    
+    if slot_data['combat_caves'] then
+        local obj = Tracker:FindObjectForCode("combat")
+        if obj then
+            obj.Active = slot_data['combat_caves']
+        end
+    end
+
+    if slot_data['savage_labyrinth'] then
+        local obj = Tracker:FindObjectForCode("labyrinth")
+        if obj then
+            obj.Active = slot_data['savage_labyrinth']
+        end
+    end
+    
+    if slot_data['great_fairies'] then
+        local obj = Tracker:FindObjectForCode("fairies")
+        if obj then
+            obj.Active = slot_data['great_fairies']
+        end
+    end
+    
+    if slot_data['free_gifts'] then
+        local obj = Tracker:FindObjectForCode("gifts")
+        if obj then
+            obj.Active = slot_data['free_gifts']
+        end
+    end
+    
+    if slot_data['tingle_chests'] then
+        local obj = Tracker:FindObjectForCode("tinglechests")
+        if obj then
+            obj.Active = slot_data['tingle_chests']
+        end
+    end
+    
+    if slot_data['short_sq'] then
+        local obj = Tracker:FindObjectForCode("shortsq")
+        if obj then
+            obj.Active = slot_data['short_sq']
+        end
+    end
+    
+    if slot_data['long_sq'] then
+        local obj = Tracker:FindObjectForCode("longsq")
+        if obj then
+            obj.Active = slot_data['long_sq']
+        end
+    end
+    
+    if slot_data['spoils'] then
+        local obj = Tracker:FindObjectForCode("spoilssq")
+        if obj then
+            obj.Active = slot_data['spoils']
+        end
+    end
+    
+    if slot_data['expensive_purchases'] then
+        local obj = Tracker:FindObjectForCode("expensive")
+        if obj then
+            obj.Active = slot_data['expensive_purchases']
+        end
+    end
+    
+    if slot_data['misc'] then
+        local obj = Tracker:FindObjectForCode("misc")
+        if obj then
+            obj.Active = slot_data['misc']
+        end
+    end
+    
+    if slot_data['sploosh_kaboom'] then
+        local obj = Tracker:FindObjectForCode("sploosh")
+        if obj then
+            obj.Active = slot_data['sploosh_kaboom']
+        end
+    end
+    
+    if slot_data['lookouts_and_rafts'] then
+        local obj = Tracker:FindObjectForCode("lookouts")
+        if obj then
+            obj.Active = slot_data['lookouts_and_rafts']
+        end
+    end
+    
+    if slot_data['submarines'] then
+        local obj = Tracker:FindObjectForCode("submarines")
+        if obj then
+            obj.Active = slot_data['submarines']
+        end
+    end
+    
+    if slot_data['sunken_triforce'] then
+        local obj = Tracker:FindObjectForCode("triforcesalvage")
+        if obj then
+            obj.Active = slot_data['sunken_triforce']
+        end
+    end
+    
+    if slot_data['sunken_treasure'] then
+        local obj = Tracker:FindObjectForCode("treasuresalvage")
+        if obj then
+            obj.Active = slot_data['sunken_treasure']
+        end
+    end
+    
+    if slot_data['eye_reefs'] then
+        local obj = Tracker:FindObjectForCode("reefs")
+        if obj then
+            obj.Active = slot_data['eye_reefs']
+        end
+    end
+    
+    if slot_data['sunken_triforce'] then
+        local obj = Tracker:FindObjectForCode("triforcesalvage")
+        if obj then
+            obj.Active = slot_data['sunken_triforce']
+        end
+    end
+    
+    if slot_data['big_octos'] then
+        local obj = Tracker:FindObjectForCode("octos")
+        if obj then
+            obj.Active = slot_data['big_octos']
+        end
+    end
+    
+    if slot_data['minigames'] then
+        local obj = Tracker:FindObjectForCode("minigames")
+        if obj then
+            obj.Active = slot_data['minigames']
+        end
+    end
+    
+    -- junk that was in here from the template
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("called onClear, slot_data:\n%s", dump_table(slot_data)))
     end

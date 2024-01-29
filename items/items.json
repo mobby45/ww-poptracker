@@ -590,7 +590,7 @@
         "name": "Molgera",
         "type": "toggle",
         "img": "images/items/boss5.png",
-        "initial_active_state": false,
+        "initial_active_state": true,
         "codes": "boss5"
     },
     {

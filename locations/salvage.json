@@ -1,8 +1,9 @@
 [
     {
-        "name": "Salvaging",
+        "name": "Triforce Salvaging",
         "chest_unopened_img": "images/items/chest_closed.png",
         "chest_opened_img": "images/items/chest_open.png",
+        "visibility_rules": ["triforcesalvage_on"],
         "children": [
             {
                 "name": "Triforce Chart 1",
@@ -155,7 +156,15 @@
                         "y": 699
                     }
                 ]
-            },
+            }
+        ]
+    },
+    {
+        "name": "Treasure Salvaging",
+        "chest_unopened_img": "images/items/chest_closed.png",
+        "chest_opened_img": "images/items/chest_open.png",
+        "visibility_rules": ["treasuresalvage_on"],
+        "children": [        
 			{
                 "name": "Treasure Chart 1",
                 "access_rules": [

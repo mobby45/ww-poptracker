@@ -1,0 +1,149 @@
+[
+	{
+		"name": "Dungeons",
+		"type": "toggle",
+        "img": "images/items/bigkey.png",
+        "codes": "dungeons,dungeons_on",
+        "initial_active_state": true
+	},
+    {
+		"name": "Puzzle Secret Caves",
+		"type": "toggle",
+		"img": "images/items/item24.png",
+		"codes": "puzzlecaves,puzzlecaves_on",
+        "initial_active_state": true
+	},
+    {
+		"name": "Island Puzzles",
+		"type": "toggle",
+		"img": "images/items/item11.png",
+		"codes": "islandpuzzles,islandpuzzles_on",
+        "initial_active_state": true
+	},
+    {
+		"name": "Combat Secret Caves",
+		"type": "toggle",
+		"img": "images/items/item21.png",
+		"codes": "combat,combat_on",
+        "initial_active_state": true
+	},
+    {
+		"name": "Savage Labyrinth",
+		"type": "toggle",
+		"img": "images/items/item27.png",
+		"codes": "labyrinth,labyrinth_on",
+        "initial_active_state": true
+	},
+    {
+		"name": "Great Fairies",
+		"type": "toggle",
+		"img": "images/items/greatfairy.png",
+		"codes": "fairies,fairies_on",
+        "initial_active_state": true
+	},
+    {
+		"name": "Free Gifts",
+		"type": "toggle",
+		"img": "images/items/tingle.png",
+		"codes": "gifts,gifts_on",
+        "initial_active_state": true
+	},
+    {
+		"name": "Tingle Chests",
+		"type": "toggle",
+		"img": "images/items/item7.png",
+		"codes": "tinglechests,tinglechests_on",
+        "initial_active_state": true
+	},
+    {
+		"name": "Short Sidequests",
+		"type": "toggle",
+		"img": "images/items/item8.png",
+		"codes": "shortsq,shortsq_on",
+		"initial_active_state": true
+	},
+    {
+		"name": "Long Sidequests",
+		"type": "toggle",
+		"img": "images/items/bottle.png",
+		"codes": "longsq,longsq_on",
+		"initial_active_state": true
+	},
+    {
+		"name": "Spoils Trading",
+		"type": "toggle",
+		"img": "images/items/item4.png",
+		"codes": "spoilssq,spoilssq_on",
+		"initial_active_state": true
+	},
+    {
+		"name": "Minigames",
+		"type": "toggle",
+		"img": "images/items/item18.png",
+		"codes": "minigames,minigames_on",
+		"initial_active_state": true
+	},
+    {
+		"name": "Battlesquid Minigame",
+		"type": "toggle",
+		"img": "images/items/sploosh.png",
+		"codes": "sploosh,sploosh_on",
+		"initial_active_state": true
+	},
+    {
+		"name": "Expensive Purchases",
+		"type": "toggle",
+		"img": "images/items/beedle.png",
+		"codes": "expensive,expensive_on",
+		"initial_active_state": true
+	},
+    {
+		"name": "Lookout Platforms and Rafts",
+		"type": "toggle",
+		"img": "images/items/item0.png",
+		"codes": "lookouts,lookouts_on",
+		"initial_active_state": true
+	},
+    {
+		"name": "Submarines",
+		"type": "toggle",
+		"img": "images/items/submarine.png",
+		"codes": "submarines,submarines_on",
+		"initial_active_state": true
+	},
+    {
+		"name": "Big Octos And Gunboats",
+		"type": "toggle",
+		"img": "images/items/octo.png",
+		"codes": "octos,octos_on",
+		"initial_active_state": true
+	},
+    {
+		"name": "Eye Reef Chests",
+		"type": "toggle",
+		"img": "images/items/warship.png",
+		"codes": "reefs,reefs_on",
+		"initial_active_state": true
+	},
+    {
+		"name": "Sunken Treasure (From Triforce Charts)",
+		"type": "toggle",
+		"img": "images/items/chart2.png",
+		"codes": "triforcesalvage,triforcesalvage_on",
+		"initial_active_state": true
+	},
+    {
+		"name": "Sunken Treasure (From Treasure Charts)",
+		"type": "toggle",
+		"img": "images/items/chart1.png",
+		"codes": "treasuresalvage,treasuresalvage_on",
+		"initial_active_state": true
+	},
+    {
+		"name": "Miscellaneous Checks",
+		"type": "toggle",
+		"img": "images/items/item23.png",
+		"codes": "misc,misc_on",
+		"initial_active_state": true
+	}
+]
