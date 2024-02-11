@@ -96,7 +96,7 @@ LOCATION_MAPPING = {
     [0x2380A9] = {"@The Great Sea/Rock Spire Isle/Eastern Cannon Platform"},
     [0x2380AA] = {"@The Great Sea/Rock Spire Isle/Center Platform"},
     
-    [0x238098] = {"@The Great Sea/Eastern Fairy Island/Cannon Platform"},
+    [0x238098] = {"@The Great Sea/Eastern Fairy Island/Enemy Platform"},
     
     [0x238053] = {"@The Great Sea/Fire Mountain/Cave"},
     [0x238054] = {"@The Great Sea/Fire Mountain/Free Platform"},

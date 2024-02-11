@@ -2,7 +2,7 @@
 	{
 		"name": "Dungeons",
 		"type": "toggle",
-        "img": "images/items/bigkey.png",
+        "img": "images/items/bigkey2.png",
         "codes": "dungeons,dungeons_on",
         "initial_active_state": true
 	},

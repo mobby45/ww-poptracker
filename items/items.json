@@ -552,46 +552,34 @@
         "codes": "nayru"
     },
     {
-        "name": "Gohma",
-        "type": "toggle",
-        "img": "images/items/boss0.png",
-        "initial_active_state": true,
-        "codes": "boss0"
+        "name": "Dragon Roost Cavern",
+        "type": "static",
+        "img": "images/items/dungeon1.png",
+        "codes": "dungeon1"
     },
     {
-        "name": "Kalle Damos",
-        "type": "toggle",
-        "img": "images/items/boss1.png",
-        "initial_active_state": true,
-        "codes": "boss1"
+        "name": "Forbidden Woods",
+        "type": "static",
+        "img": "images/items/dungeon2.png",
+        "codes": "dungeon2"
     },
     {
-        "name": "Gohdan",
-        "type": "toggle",
-        "img": "images/items/boss2.png",
-        "initial_active_state": true,
-        "codes": "boss2"
+        "name": "Tower of the Gods",
+        "type": "static",
+        "img": "images/items/dungeon3.png",
+        "codes": "dungeon3"
     },
     {
-        "name": "Helmaroc King",
-        "type": "toggle",
-        "img": "images/items/boss3.png",
-        "initial_active_state": true,
-        "codes": "boss3"
+        "name": "Earth Temple",
+        "type": "static",
+        "img": "images/items/dungeon4.png",
+        "codes": "dungeon4"
     },
     {
-        "name": "Jalhalla",
-        "type": "toggle",
-        "img": "images/items/boss4.png",
-        "initial_active_state": true,
-        "codes": "boss4"
-    },
-    {
-        "name": "Molgera",
-        "type": "toggle",
-        "img": "images/items/boss5.png",
-        "initial_active_state": true,
-        "codes": "boss5"
+        "name": "Wind Temple",
+        "type": "static",
+        "img": "images/items/dungeon5.png",
+        "codes": "dungeon5"
     },
     {
         "name": "Triforce Chart 1",

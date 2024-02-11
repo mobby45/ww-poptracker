@@ -6,7 +6,7 @@
         "children": [
             {
                 "name": "Forsaken Fortress",
-                "access_rules": ["bombs"],
+                "access_rules": ["[bombs]"],
                 "visibility_rules": ["dungeons_on"],
                 "sections": [
                     {
@@ -60,7 +60,7 @@
                         "name": "Cave",
                         "item_count": 1,
                         "access_rules": ["rock,weapon"],
-                        "visibility_rules": ["combat_on","lookouts_on"]
+                        "visibility_rules": ["combat_on,lookouts_on"]
                     }
                 ],
                 "map_locations": [
@@ -345,7 +345,7 @@
                     {
                         "name": "Transparent Chest",
                         "item_count": 1,
-                        "access_rules": ["bow2,leaf","bow_2,hookshot"],
+                        "access_rules": ["bow_2,leaf","bow_2,hookshot"],
                         "visibility_rules": ["shortsq_on"]
                     },
                     {
@@ -658,7 +658,7 @@
                 "name": "Eastern Fairy Island",
                 "sections": [
                     {
-                        "name": "Cannon Platform",
+                        "name": "Enemy Platform",
                         "item_count": 1,
                         "access_rules": ["bombs","boomerang"],
                         "visibility_rules": ["lookouts_on"]

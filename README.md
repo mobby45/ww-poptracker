@@ -12,11 +12,11 @@ Treasure/Triforce Chart salvaging is supported but does not factor in if they're
     Green - Can get
     Red - Can't get
     Orange - Can get some items in a given area but not all of them
-    Yellow - Can reach by breaking logic (tracker does not account for these yet)
+    Yellow - Can reach by breaking logic (tracker does not account for all of these yet)
 4. Poptracker has a broadcast view designed to be used as a display on streams and videos. You can open this popout window by clicking the radio tower button next to the settings button in the top left corner.
 
 ## To-Do List
 
-1. Higher resolution sea chart and dungeon maps.
-2. More precise location icons on the world map.
-3. Add details for doing checks out of logic.
+1. Higher resolution sea chart and dungeon maps. I'm still waiting on Temple of the Gods and Forsaken Fortress 3D maps.
+2. More precise location icons on the Sea Chart map.
+3. Add more "out of logic" checks".
