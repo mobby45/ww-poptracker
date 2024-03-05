@@ -49,7 +49,7 @@
             {
 				"sections": [
                     {
-                        "ref": "The Great Sea/Forsaken Fortress/Upper Jail"
+                        "ref": "The Great Sea/Forsaken Fortress/Chest Outside Upper Jail Cell"
                     }
                 ],
 				"map_locations": [
@@ -63,7 +63,7 @@
             {
 				"sections": [
 					{
-                        "ref": "The Great Sea/Forsaken Fortress/Lower Jail"
+                        "ref": "The Great Sea/Forsaken Fortress/Chest Inside Lower Jail Cell"
                     }
                 ],
 				"map_locations": [

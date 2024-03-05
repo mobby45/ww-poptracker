@@ -91,6 +91,11 @@
         "codes": "charm"
     },
     {
+        "name": "Hurricane Spin",
+        "type": "toggle",
+        "codes": "hurricane"
+    },
+    {
         "name": "Hero's Bow",
         "type": "progressive",
         "allow_disabled": true,
@@ -125,6 +130,27 @@
 		"img": "images/items/bottle.png",
 		"codes": "bottle",
 		"max_quantity": 4
+	},
+    {
+		"name": "Tingle Statue",
+		"type": "consumable",
+		"img": "images/items/item31.png",
+		"codes": "statue",
+		"max_quantity": 5
+	},
+    {
+		"name": "Piece of Heart",
+		"type": "consumable",
+		"img": "images/items/heart1.png",
+		"codes": "heart_piece",
+		"max_quantity": 44
+	},
+    {
+		"name": "Piece of Heart",
+		"type": "consumable",
+		"img": "images/items/heart2.png",
+		"codes": "heart_container",
+		"max_quantity": 6
 	},
     {
 		"name": "Green Chu Jelly",
@@ -230,7 +256,7 @@
         "codes": "deed"
     },
     {
-        "name": "Wallet",
+        "name": "Progressive Wallet",
         "type": "progressive",
         "allow_disabled": true,
         "initial_stage_idx": 0,
@@ -248,13 +274,25 @@
         ]
     },
     {
-        "name": "Double Magic",
-        "type": "toggle",
-        "img": "images/items/item26.png",
-        "codes": "magic"
+        "name": "Progressive Magic Meter",
+        "type": "progressive",
+        "allow_disabled": true,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "img": "images/items/item26.png",
+                "codes": "magic",
+                "inherit_codes": true
+            },
+            {
+                "img": "images/items/item26_2.png",
+                "codes": "magic_2",
+                "inherit_codes": true
+            }
+        ]
     },
     {
-        "name": "Quiver",
+        "name": "Progressive Quiver",
         "type": "progressive",
         "allow_disabled": true,
         "initial_stage_idx": 0,
@@ -272,7 +310,7 @@
         ]
     },
     {
-        "name": "Bomb Bag",
+        "name": "Progressive Bomb Bag",
         "type": "progressive",
         "allow_disabled": true,
         "initial_stage_idx": 0,

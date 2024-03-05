@@ -2,8 +2,6 @@
 
 PopTracker pack for The Legend of Zelda: The Wind Waker
 
-Treasure/Triforce Chart salvaging is supported but does not factor in if they're shuffled in the Rupee ISO.
-
 ## Installation
 
 1. Add the "ww-poptracker" folder into your poptracker/packs folder.

@@ -11,9 +11,9 @@
                 "rows": [
                     ["sail","windwaker","grapple","spoils","boomerang","leaf","sword"],
                     ["picto","boots","armor","bait","bow","bombs","shield"],
-                    ["bottle","ghost","deed","delivery","hookshot","hammer","power"],
+                    ["magic","ghost","deed","delivery","hookshot","hammer","power"],
                     ["requiem","ballad","melody","lyric","aria","passing","triforce"],
-                    ["din","farore","nayru","bombbag","quiver","wallet","magic"]
+                    ["din","farore","nayru","bombbag","quiver","wallet","bottle"]
                 ]
             }
         ]
@@ -160,7 +160,7 @@
                             ["dungeons","puzzlecaves","islandpuzzles","combat"],
                             ["labyrinth","fairies","gifts","tinglechests"],
                             ["shortsq","longsq","spoilssq","expensive"],
-                            ["minigames","sploosh","lookouts","submarines"],
+                            ["minigames","sploosh","lookouts","submarines","secretpot"],
                             ["octos","reefs","triforcesalvage","treasuresalvage","misc"]
                         ]
                     }

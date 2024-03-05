@@ -7,7 +7,7 @@
             {
 				"sections": [
 					{
-                        "ref": "The Great Sea/Earth Temple/First Room"
+                        "ref": "The Great Sea/Earth Temple/Transparent Chest In Warp Pot Room"
                     }
                 ],
 				"map_locations": [
@@ -20,8 +20,22 @@
 			},
             {
 				"sections": [
+					{
+                        "ref": "The Great Sea/Earth Temple/Behind Curtain In Warp Pot Room"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "et",
+						"x": 225,
+						"y": 202
+					}
+				]
+			},
+            {
+				"sections": [
                     {
-                        "ref": "The Great Sea/Earth Temple/Behind Destructible Walls"
+                        "ref": "The Great Sea/Earth Temple/Chest Behind Destructible Walls"
                     }
                 ],
 				"map_locations": [
@@ -35,7 +49,7 @@
             {
 				"sections": [
                     {
-                        "ref": "The Great Sea/Earth Temple/Transparent Chest in 1st Crypt"
+                        "ref": "The Great Sea/Earth Temple/Transparent Chest in First Crypt"
                     }
                 ],
 				"map_locations": [
@@ -49,7 +63,7 @@
             {
 				"sections": [
                     {
-                        "ref": "The Great Sea/Earth Temple/3 Blocks Room"
+                        "ref": "The Great Sea/Earth Temple/Chest In Three Blocks Room"
                     }
                 ],
 				"map_locations": [
@@ -63,7 +77,7 @@
             {
 				"sections": [
 					{
-                        "ref": "The Great Sea/Earth Temple/Behind Statues"
+                        "ref": "The Great Sea/Earth Temple/Chest Behind Statues"
                     }
                 ],
 				"map_locations": [
@@ -77,7 +91,7 @@
             {
 				"sections": [
 					{
-                        "ref": "The Great Sea/Earth Temple/Casket in 2nd Crypt"
+                        "ref": "The Great Sea/Earth Temple/Casket in Second Crypt"
                     }
                 ],
 				"map_locations": [
@@ -91,7 +105,7 @@
             {
 				"sections": [
 					{
-                        "ref": "The Great Sea/Earth Temple/Stalfos Mini-Boss"
+                        "ref": "The Great Sea/Earth Temple/Stalfos Miniboss Room"
                     }
                 ],
 				"map_locations": [
@@ -105,7 +119,7 @@
             {
 				"sections": [
 					{
-                        "ref": "The Great Sea/Earth Temple/Tingle Chest"
+                        "ref": "The Great Sea/Earth Temple/Tingle Statue Chest"
                     }
                 ],
 				"map_locations": [
@@ -119,7 +133,7 @@
             {
 				"sections": [
 					{
-                        "ref": "The Great Sea/Earth Temple/Floormaster Room Free"
+                        "ref": "The Great Sea/Earth Temple/End of Foggy Room With Floormasters"
                     }
                 ],
 				"map_locations": [
@@ -133,7 +147,7 @@
             {
 				"sections": [
 					{
-                        "ref": "The Great Sea/Earth Temple/Floormaster Room Fight"
+                        "ref": "The Great Sea/Earth Temple/Kill All Floormasters in Foggy Room"
                     }
                 ],
 				"map_locations": [
@@ -147,7 +161,21 @@
             {
 				"sections": [
 					{
-                        "ref": "The Great Sea/Earth Temple/3rd Crypt Chest"
+                        "ref": "The Great Sea/Earth Temple/Behind Curtain Next to Hammer Button"
+                    }
+                ],
+				"map_locations": [
+					{
+						"map": "et",
+						"x": 704,
+						"y": 317
+					}
+				]
+			},
+            {
+				"sections": [
+					{
+                        "ref": "The Great Sea/Earth Temple/Chest in Third Crypt"
                     }
                 ],
 				"map_locations": [
@@ -161,7 +189,7 @@
             {
 				"sections": [
 					{
-                        "ref": "The Great Sea/Earth Temple/Many Mirrors Left"
+                        "ref": "The Great Sea/Earth Temple/Many Mirrors Room Left Chest"
                     }
                 ],
 				"map_locations": [
@@ -175,7 +203,7 @@
             {
 				"sections": [
 					{
-                        "ref": "The Great Sea/Earth Temple/Many Mirrors Right"
+                        "ref": "The Great Sea/Earth Temple/Many Mirrors Room Right Chest"
                     }
                 ],
 				"map_locations": [

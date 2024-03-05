@@ -162,6 +162,20 @@ function onClear(slot_data)
         end
     end
     
+    if slot_data['dungeon_secrets'] then
+        local obj = Tracker:FindObjectForCode("dungeon_secrets")
+        if obj then
+            obj.Active = slot_data['dungeon_secrets']
+        end
+    end
+    
+    if slot_data['mail'] then
+        local obj = Tracker:FindObjectForCode("mail")
+        if obj then
+            obj.Active = slot_data['mail']
+        end
+    end
+    
     -- junk that was in here from the template
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("called onClear, slot_data:\n%s", dump_table(slot_data)))
