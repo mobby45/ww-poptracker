@@ -5,15 +5,15 @@
         "content": [
             {
                 "type": "itemgrid",
-                "h_alignment": "left",
-                "item_margin": "3,3",
+                "h_alignment": "center",
+                "item_margin": "5,3",
                 "item_size": "48,48",
                 "rows": [
-                    ["sail","windwaker","grapple","spoils","boomerang","leaf","sword"],
-                    ["picto","boots","armor","bait","bow","bombs","shield"],
-                    ["magic","ghost","deed","delivery","hookshot","hammer","power"],
-                    ["requiem","ballad","melody","lyric","aria","passing","triforce"],
-                    ["din","farore","nayru","bombbag","quiver","wallet","bottle"]
+                    ["sail","windwaker","grapple","spoils","boomerang","leaf","sword","triforce"],
+                    ["picto","boots","armor","bait","bow","bombs","shield","din"],
+                    ["bottle","statue","delivery","hookshot","hammer","magic","power","farore"],
+                    ["requiem","ballad","melody","lyric","aria","passing","charm","nayru"],
+                    ["ghost","deed","maggie","moblin","mom","bombbag","quiver","wallet"]
                 ]
             }
         ]
@@ -24,9 +24,9 @@
       "content": [
               {
                 "type": "itemgrid",
-                "margin": "0,0,0,7",
+                "margin": "9,5,0,7",
                 "item_margin": "0,0",
-                "item_size": "220,22",
+                "item_size": "100,20",
                 "h_alignment": "center",
                 "rows": [
                   ["dungeon1"]
@@ -34,7 +34,7 @@
               },
               {
                 "type": "itemgrid",
-                "margin": "52,0",
+                "margin": "0,0",
                 "item_margin": "5,0",
                 "item_size": 20,
                 "h_alignment": "center",
@@ -44,9 +44,9 @@
               },
               {
                 "type": "itemgrid",
-                "margin": "0,7",
+                "margin": "9,7",
                 "item_margin": "0,0",
-                "item_size": "220,22",
+                "item_size": "100,20",
                 "h_alignment": "center",
                 "rows": [
                   ["dungeon2"]
@@ -54,7 +54,7 @@
               },
               {
                 "type": "itemgrid",
-                "margin": "52,0",
+                "margin": "0,0",
                 "item_margin": "5,0",
                 "item_size": 20,
                 "h_alignment": "center",
@@ -64,9 +64,9 @@
               },
               {
                 "type": "itemgrid",
-                "margin": "0,7",
+                "margin": "9,7",
                 "item_margin": "0,0",
-                "item_size": "220,22",
+                "item_size": "100,20",
                 "h_alignment": "center",
                 "rows": [
                   ["dungeon3"]
@@ -74,7 +74,7 @@
               },
               {
                 "type": "itemgrid",
-                "margin": "52,0",
+                "margin": "0,0",
                 "item_margin": "5,0",
                 "item_size": 20,
                 "h_alignment": "center",
@@ -84,9 +84,9 @@
               },
               {
                 "type": "itemgrid",
-                "margin": "0,7",
+                "margin": "9,7",
                 "item_margin": "0,0",
-                "item_size": "220,22",
+                "item_size": "100,20",
                 "h_alignment": "center",
                 "rows": [
                   ["dungeon4"]
@@ -94,7 +94,7 @@
               },
               {
                 "type": "itemgrid",
-                "margin": "52,0",
+                "margin": "0,0",
                 "item_margin": "5,0",
                 "item_size": 20,
                 "h_alignment": "center",
@@ -104,9 +104,9 @@
               },
               {
                 "type": "itemgrid",
-                "margin": "0,7",
+                "margin": "9,7",
                 "item_margin": "0,0",
-                "item_size": "220,22",
+                "item_size": "100,20",
                 "h_alignment": "center",
                 "rows": [
                   ["dungeon5"]
@@ -114,7 +114,7 @@
               },
               {
                 "type": "itemgrid",
-                "margin": "52,0",
+                "margin": "0,0",
                 "item_margin": "5,0",
                 "item_size": 20,
                 "h_alignment": "center",
@@ -131,7 +131,7 @@
               {
                 "type": "itemgrid",
                 "h_alignment": "center",
-                "item_margin": "3,3",
+                "item_margin": "2,3",
                 "item_size": "24,24",
                 "rows": [
                     ["triforce1","triforce2","triforce3","triforce4"],
@@ -154,14 +154,17 @@
                 {
                     "type": "itemgrid",
                     "h_alignment": "center",
-                    "item_margin": "3,5",
-                    "item_size": "36,36",
+                    "item_margin": "4,2",
+                    "item_size": "30,30",
                     "rows": [
-                            ["dungeons","puzzlecaves","islandpuzzles","combat"],
-                            ["labyrinth","fairies","gifts","tinglechests"],
-                            ["shortsq","longsq","spoilssq","expensive"],
-                            ["minigames","sploosh","lookouts","submarines","secretpot"],
-                            ["octos","reefs","triforcesalvage","treasuresalvage","misc"]
+                            ["dungeons","tinglechests","secretpot"],
+                            ["puzzlecaves","combat","labyrinth"],
+                            ["fairies","shortsq","longsq"],
+                            ["spoilssq","minigames","sploosh"],
+                            ["gifts","mail","lookouts"],
+                            ["submarines","reefs","octos"],
+                            ["triforcesalvage","treasuresalvage","expensive"],
+                            ["islandpuzzles","misc"]
                         ]
                     }
                 ]

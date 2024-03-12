@@ -1,8 +1,8 @@
 [
     {
         "name": "seachart",
-        "location_size": 12,
-        "location_border_thickness": 1,
+        "location_size": 18,
+        "location_border_thickness": 2,
         "img": "images/maps/sea_chart.png"
     },
     {

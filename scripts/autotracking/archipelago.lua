@@ -8,171 +8,164 @@ GLOBAL_ITEMS = {}
 
 function onClear(slot_data)
     -- autotracking settings from YAML
-    if slot_data['dungeons'] then
+    if slot_data['progression_dungeons'] then
         local obj = Tracker:FindObjectForCode("dungeons")
         if obj then
-            obj.Active = slot_data['dungeons']
+            obj.Active = slot_data['progression_dungeons']
         end
     end
 
-    if slot_data['puzzle_caves'] then
+    if slot_data['progression_puzzle_secret_caves'] then
         local obj = Tracker:FindObjectForCode("puzzlecaves")
         if obj then
-            obj.Active = slot_data['puzzle_caves']
+            obj.Active = slot_data['progression_puzzle_secret_caves']
         end
     end
 
-    if slot_data['island_puzzles'] then
+    if slot_data['progression_island_puzzles'] then
         local obj = Tracker:FindObjectForCode("islandpuzzles")
         if obj then
-            obj.Active = slot_data['island_puzzles']
+            obj.Active = slot_data['progression_island_puzzles']
         end
     end
     
-    if slot_data['combat_caves'] then
+    if slot_data['progression_combat_secret_caves'] then
         local obj = Tracker:FindObjectForCode("combat")
         if obj then
-            obj.Active = slot_data['combat_caves']
+            obj.Active = slot_data['progression_combat_secret_caves']
         end
     end
 
-    if slot_data['savage_labyrinth'] then
+    if slot_data['progression_savage_labyrinth'] then
         local obj = Tracker:FindObjectForCode("labyrinth")
         if obj then
-            obj.Active = slot_data['savage_labyrinth']
+            obj.Active = slot_data['progression_savage_labyrinth']
         end
     end
     
-    if slot_data['great_fairies'] then
+    if slot_data['progression_great_fairies'] then
         local obj = Tracker:FindObjectForCode("fairies")
         if obj then
-            obj.Active = slot_data['great_fairies']
+            obj.Active = slot_data['progression_great_fairies']
         end
     end
     
-    if slot_data['free_gifts'] then
+    if slot_data['progression_free_gifts'] then
         local obj = Tracker:FindObjectForCode("gifts")
         if obj then
-            obj.Active = slot_data['free_gifts']
+            obj.Active = slot_data['progression_free_gifts']
         end
     end
     
-    if slot_data['tingle_chests'] then
+    if slot_data['progression_tingle_chests'] then
         local obj = Tracker:FindObjectForCode("tinglechests")
         if obj then
-            obj.Active = slot_data['tingle_chests']
+            obj.Active = slot_data['progression_tingle_chests']
         end
     end
     
-    if slot_data['short_sq'] then
+    if slot_data['progression_short_sidequests'] then
         local obj = Tracker:FindObjectForCode("shortsq")
         if obj then
-            obj.Active = slot_data['short_sq']
+            obj.Active = slot_data['progression_short_sidequests']
         end
     end
     
-    if slot_data['long_sq'] then
+    if slot_data['progression_long_sidequests'] then
         local obj = Tracker:FindObjectForCode("longsq")
         if obj then
-            obj.Active = slot_data['long_sq']
+            obj.Active = slot_data['progression_long_sidequests']
         end
     end
     
-    if slot_data['spoils'] then
+    if slot_data['progression_spoils_trading'] then
         local obj = Tracker:FindObjectForCode("spoilssq")
         if obj then
-            obj.Active = slot_data['spoils']
+            obj.Active = slot_data['progression_spoils_trading']
         end
     end
     
-    if slot_data['expensive_purchases'] then
+    if slot_data['progression_expensive_purchases'] then
         local obj = Tracker:FindObjectForCode("expensive")
         if obj then
-            obj.Active = slot_data['expensive_purchases']
+            obj.Active = slot_data['progression_expensive_purchases']
         end
     end
     
-    if slot_data['misc'] then
+    if slot_data['progression_misc'] then
         local obj = Tracker:FindObjectForCode("misc")
         if obj then
-            obj.Active = slot_data['misc']
+            obj.Active = slot_data['progression_misc']
         end
     end
     
-    if slot_data['sploosh_kaboom'] then
+    if slot_data['progression_battlesquid'] then
         local obj = Tracker:FindObjectForCode("sploosh")
         if obj then
-            obj.Active = slot_data['sploosh_kaboom']
+            obj.Active = slot_data['progression_battlesquid']
         end
     end
     
-    if slot_data['lookouts_and_rafts'] then
+    if slot_data['progression_platforms_rafts'] then
         local obj = Tracker:FindObjectForCode("lookouts")
         if obj then
-            obj.Active = slot_data['lookouts_and_rafts']
+            obj.Active = slot_data['progression_platforms_rafts']
         end
     end
     
-    if slot_data['submarines'] then
+    if slot_data['progression_submarines'] then
         local obj = Tracker:FindObjectForCode("submarines")
         if obj then
-            obj.Active = slot_data['submarines']
+            obj.Active = slot_data['progression_submarines']
         end
     end
     
-    if slot_data['sunken_triforce'] then
+    if slot_data['progression_triforce_charts'] then
         local obj = Tracker:FindObjectForCode("triforcesalvage")
         if obj then
-            obj.Active = slot_data['sunken_triforce']
+            obj.Active = slot_data['progression_triforce_charts']
         end
     end
     
-    if slot_data['sunken_treasure'] then
+    if slot_data['progression_treasure_charts'] then
         local obj = Tracker:FindObjectForCode("treasuresalvage")
         if obj then
-            obj.Active = slot_data['sunken_treasure']
+            obj.Active = slot_data['progression_treasure_charts']
         end
     end
     
-    if slot_data['eye_reefs'] then
+    if slot_data['progression_eye_reef_chests'] then
         local obj = Tracker:FindObjectForCode("reefs")
         if obj then
-            obj.Active = slot_data['eye_reefs']
+            obj.Active = slot_data['progression_eye_reef_chests']
         end
     end
     
-    if slot_data['sunken_triforce'] then
-        local obj = Tracker:FindObjectForCode("triforcesalvage")
-        if obj then
-            obj.Active = slot_data['sunken_triforce']
-        end
-    end
-    
-    if slot_data['big_octos'] then
-        local obj = Tracker:FindObjectForCode("octos")
-        if obj then
-            obj.Active = slot_data['big_octos']
-        end
-    end
-    
-    if slot_data['minigames'] then
-        local obj = Tracker:FindObjectForCode("minigames")
-        if obj then
-            obj.Active = slot_data['minigames']
-        end
-    end
-    
-    if slot_data['dungeon_secrets'] then
-        local obj = Tracker:FindObjectForCode("dungeon_secrets")
-        if obj then
-            obj.Active = slot_data['dungeon_secrets']
-        end
-    end
-    
-    if slot_data['mail'] then
+    if slot_data['progression_mail'] then
         local obj = Tracker:FindObjectForCode("mail")
         if obj then
-            obj.Active = slot_data['mail']
+            obj.Active = slot_data['progression_mail']
+        end
+    end
+    
+    if slot_data['progression_big_octos_gunboats'] then
+        local obj = Tracker:FindObjectForCode("octos")
+        if obj then
+            obj.Active = slot_data['progression_big_octos_gunboats']
+        end
+    end
+    
+    if slot_data['progression_minigames'] then
+        local obj = Tracker:FindObjectForCode("minigames")
+        if obj then
+            obj.Active = slot_data['progression_minigames']
+        end
+    end
+    
+    if slot_data['progression_dungeon_secrets'] then
+        local obj = Tracker:FindObjectForCode("dungeon_secrets")
+        if obj then
+            obj.Active = slot_data['progression_dungeon_secrets']
         end
     end
     

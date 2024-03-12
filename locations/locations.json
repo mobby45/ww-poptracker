@@ -1,8 +1,8 @@
 [
     {
         "name": "The Great Sea",
-        "chest_unopened_img": "images/items/chest_closed.png",
-        "chest_opened_img": "images/items/chest_open.png",
+        "chest_unopened_img": "images/items/chest_wood.png",
+        "chest_opened_img": "images/items/chest_wood_gray.png",
         "children": [
             {
                 "name": "Forsaken Fortress",
@@ -12,11 +12,15 @@
                     {
                         "name": "Phantom Ganon",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "access_rules": ["mastersword"]
                     },
                     {
                         "name": "Chest Guarded by Bokoblin",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["hammer"]
                     },
                     {
@@ -27,24 +31,30 @@
                     {
                         "name": "Chest Outside Upper Jail Cell",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["hammer"]
                     },
                     {
                         "name": "Chest Inside Lower Jail Cell",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "access_rules": ["hammer"]
                     },
                     {
                         "name": "Helmaroc King Heart Container",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/heart2.png",
+                        "chest_opened_img": "images/items/heart2_gray.png",
                         "access_rules": ["hammer,leaf","hammer,hookshot"]
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 31,
-                        "y": 31
+                        "x": 55,
+                        "y": 55
                     }
                 ]
             },
@@ -59,6 +69,8 @@
                     {
                         "name": "Cave",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "access_rules": ["rock,weapon"],
                         "visibility_rules": ["combat_on"]
                     }
@@ -66,8 +78,8 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 82,
-                        "y": 31
+                        "x": 140,
+                        "y": 55
                     }
                 ]
             },
@@ -75,16 +87,49 @@
                 "name": "Northern Fairy Island",
                 "sections": [
                     {
+                        "name": "Great Fairy",
+                        "item_count": 1,
+                        "visibility_rules": ["fairies_on"]
+                    },
+                    {
                         "name": "Submarine",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "visibility_rules": ["submarines_on"]
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 132,
-                        "y": 31
+                        "x": 225,
+                        "y": 55
+                    }
+                ]
+            },
+            {
+                "name": "Tingle Island",
+                "sections": [
+		            {
+                        "name": "Ankle - Reward for All Tingle Statues",
+                        "item_count": 1,
+                        "access_rules": ["statue:5"],
+                        "visibility_rules": ["misc_on"]
+                    },
+		            {
+                        "name": "Big Octo",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_salvage.png",
+                        "chest_opened_img": "images/items/chest_salvage_gray.png",
+                        "access_rules": ["grapple,bow_3","grapple,bow,quiver","grapple,bombs","grapple,boomerang"],
+                        "visibility_rules": ["octos_on"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 225,
+                        "y": 219
                     }
                 ]
             },
@@ -106,6 +151,8 @@
                     {
                         "name": "Tingle Statue Chest",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "access_rules": ["$can_fly,bombs"],
                         "visibility_rules": ["tinglechests_on"]
                     },
@@ -122,6 +169,8 @@
                     {
                         "name": "Big Key Chest",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_bigkey.png",
+                        "chest_opened_img": "images/items/chest_bigkey_gray.png",
                         "access_rules": ["$can_fly,aria"]
                     },
                     {
@@ -138,6 +187,8 @@
                     {
                         "name": "Chest In Middle of Hub Room",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["$can_fly"]
                     },
                     {
@@ -148,11 +199,15 @@
                     {
                         "name": "Spike Wall Room - Destroy All Cracked Floors",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["$can_fly"]
                     },
                     {
                         "name": "Wizzrobe Miniboss Room",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "access_rules": ["$can_fly,wt_small:2"]
                     },
                     {
@@ -173,14 +228,16 @@
                     {
                         "name": "Molgera Heart Container",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/heart2.png",
+                        "chest_opened_img": "images/items/heart2_gray.png",
                         "access_rules": ["$can_fly,hookshot,wt_small:2,aria,wt_big"]
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 183,
-                        "y": 31
+                        "x": 695,
+                        "y": 412
                     }
                 ]
             },
@@ -190,11 +247,15 @@
                     {
                         "name": "Chest",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "visibility_rules": ["misc_on"]
                     },
                     {
                         "name": "Submarine",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["sword","grapple","boomerang","bow","bombs","hammer"],
                         "visibility_rules": ["submarines_on"]
                     }
@@ -202,8 +263,8 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 233,
-                        "y": 31
+                        "x": 398,
+                        "y": 55
                     }
                 ]
             },
@@ -223,15 +284,25 @@
                     {
                         "name": "Southern Platform",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["bow","hookshot"],
                         "visibility_rules": ["lookouts_on"]
+                    },
+		            {
+                        "name": "Big Octo",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_salvage.png",
+                        "chest_opened_img": "images/items/chest_salvage_gray.png",
+                        "access_rules": ["grapple,bow_3","grapple,bow,quiver","grapple,bombs","grapple,boomerang"],
+                        "visibility_rules": ["octos_on"]
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 284,
-                        "y": 31
+                        "x": 485,
+                        "y": 55
                     }
                 ]
             },
@@ -241,16 +312,18 @@
                     {
                         "name": "Cave",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "access_rules": ["hookshot,windwaker,requiem,sword","hookshot,windwaker,requiem,hammer",
-                        "hookshot,windwaker,requiem,bombs,can_lightarrow"],
+                        "hookshot,windwaker,requiem,bombs,$can_lightarrow"],
                         "visibility_rules": ["combat_on"]
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 334,
-                        "y": 31
+                        "x": 573,
+                        "y": 55
                     }
                 ]
             },
@@ -260,6 +333,8 @@
                     {
                         "name": "Destroy the Cannons and Gunboats",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["bombs,$can_fly"],
 						"visibility_rules": ["reefs_on"]
                     }
@@ -267,8 +342,8 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 31,
-                        "y": 79
+                        "x": 55,
+                        "y": 138
                     }
                 ]
             },
@@ -278,6 +353,8 @@
                     {
                         "name": "Inside Mother Isle",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "access_rules": ["windwaker,ballad"],
                         "visibility_rules": ["misc_on"]
                     }
@@ -285,13 +362,13 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 82,
-                        "y": 79
+                        "x": 140,
+                        "y": 138
                     }
                 ]
             },
             {
-                "name": "Windfall Island",
+                "name": "Windfall Island - Free",
                 "sections": [
                     {
                         "name": "Jail - Tingle - First Gift",
@@ -306,8 +383,121 @@
                     {
                         "name": "Jail - Maze Chest",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "visibility_rules": ["islandpuzzles_on"]
                     },
+		            {
+                        "name": "Maggie - Free Item",
+                        "item_count": 1,
+                        "visibility_rules": ["gifts_on"]
+                    },
+		            {
+                        "name": "Tott - Teach Rhythm",
+                        "item_count": 1,
+                        "access_rules": ["windwaker"],
+                        "visibility_rules": ["gifts_on"]
+                    },
+                    {
+                        "name": "House of Wealth Chest",
+                        "item_count": 1,
+                        "visibility_rules": ["misc_on"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 302,
+                        "y": 126
+                    }
+                ]
+            },
+            {
+                "name": "Windfall Island - Short Sidequests",
+                "sections": [
+                    {
+                        "name": "Ivan - Catch Killer Bees",
+                        "item_count": 1,
+                        "visibility_rules": ["shortsq_on"]
+                    },
+		            {
+                        "name": "Mrs. Marie - Catch Killer Bees",
+                        "item_count": 1,
+                        "visibility_rules": ["shortsq_on"]
+                    },
+                    {
+                        "name": "Lenzo's House - Left Chest",
+                        "item_count": 1,
+                        "access_rules": ["picto"],
+                        "visibility_rules": ["shortsq_on"]
+                    },
+                    {
+                        "name": "Lenzo's House - Right Chest",
+                        "item_count": 1,
+                        "access_rules": ["picto"],
+                        "visibility_rules": ["shortsq_on"]
+                    },
+		            {
+                        "name": "Maggie - Delivery Reward",
+                        "item_count": 1,
+                        "access_rules": ["delivery,moblin"],
+                        "visibility_rules": ["shortsq_on"]
+                    },
+		            {
+                        "name": "Cafe Bar - Postman",
+                        "item_count": 1,
+                        "access_rules": ["delivery,maggie"],
+                        "visibility_rules": ["shortsq_on"]
+                    },
+                    {
+                        "name": "Kreeb - Light Up Lighthouse",
+                        "item_count": 1,
+                        "access_rules": ["$can_magicarrow"],
+                        "visibility_rules": ["shortsq_on"]
+                    },
+                    {
+                        "name": "Transparent Chest",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
+                        "access_rules": ["$can_magicarrow,$can_fly","$can_magicarrow,hookshot"],
+                        "visibility_rules": ["shortsq_on"]
+                    },
+		            {
+                        "name": "Zunari - Stock Exotic Flower in Zunari's Shop",
+                        "item_count": 1,
+                        "access_rules": ["delivery"],
+                        "visibility_rules": ["shortsq_on"]
+                    },
+		            {
+                        "name": "Mila - Follow the Thief",
+                        "item_count": 1,
+                        "visibility_rules": ["shortsq_on"]
+                    },
+		            {
+                        "name": "Pompie and Vera - Secret Meeting Photo",
+                        "item_count": 1,
+                        "access_rules": ["picto"],
+                        "visibility_rules": ["shortsq_on"]
+                    },
+		            {
+                        "name": "Minenco - Miss Windfall Photo",
+                        "item_count": 1,
+                        "access_rules": ["picto_2"],
+                        "visibility_rules": ["shortsq_on"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 324,
+                        "y": 126
+                    }
+                ]
+            },
+            {
+                "name": "Windfall Island - Long Sidequests",
+                "sections": [
                     {
                         "name": "Chu Jelly Juice Shop - Give 15 Green Chu Jelly",
                         "item_count": 1,
@@ -331,39 +521,98 @@
                         "spoils,hookshot,leaf,sword","spoils,hookshot,boomerang,sword"],
                         "visibility_rules": ["spoilssq_on"]
                     },
-                    {
-                        "name": "Lenzo's House - Left Chest",
+		            {
+                        "name": "Mrs. Marie - Give 1 Joy Pendant",
+                        "item_count": 1,
+                        "access_rules": ["spoils"],
+                        "visibility_rules": ["spoilssq_on"]
+                    },
+		            {
+                        "name": "Mrs. Marie - Give 21 Joy Pendants",
+                        "item_count": 1,
+                        "access_rules": ["grapple,spoils"],
+                        "visibility_rules": ["spoilssq_on"]
+                    },
+		            {
+                        "name": "Mrs. Marie - Give 40 Joy Pendants",
+                        "item_count": 1,
+                        "access_rules": ["grapple,spoils"],
+                        "visibility_rules": ["spoilssq_on"]
+                    },
+		            {
+                        "name": "Maggie's Father - Give 20 Skull Necklaces",
+                        "item_count": 1,
+                        "access_rules": ["grapple,spoils"],
+                        "visibility_rules": ["spoilssq_on"]
+                    },
+		            {
+                        "name": "Lenzo's House - Become Lenzo's Assistant",
                         "item_count": 1,
                         "access_rules": ["picto"],
-                        "visibility_rules": ["shortsq_on"]
+                        "visibility_rules": ["longsq_on"]
                     },
-                    {
-                        "name": "Lenzo's House - Right Chest",
+		            {
+                        "name": "Lenzo's House - Bring Forest Firefly",
                         "item_count": 1,
-                        "access_rules": ["picto"],
-                        "visibility_rules": ["shortsq_on"]
+                        "access_rules": ["picto,bottle,grapple","picto,bottle,$can_fly"],
+                        "visibility_rules": ["longsq_on"]
                     },
-                    {
-                        "name": "House of Wealth Chest",
+		            {
+                        "name": "Sam - Decorate the Town",
                         "item_count": 1,
-                        "visibility_rules": ["misc_on"]
+                        "access_rules": ["delivery"],
+                        "visibility_rules": ["longsq_on"]
                     },
-                    {
-                        "name": "Kreeb - Light Up Lighthouse",
+		            {
+                        "name": "Kamo - Full Moon Photo",
                         "item_count": 1,
-                        "access_rules": ["$can_magicarrow"],
-                        "visibility_rules": ["shortsq_on"]
+                        "access_rules": ["picto_2,windwaker,passing"],
+                        "visibility_rules": ["longsq_on"]
                     },
-                    {
-                        "name": "Transparent Chest",
+		            {
+                        "name": "Linda and Anton",
                         "item_count": 1,
-                        "access_rules": ["$can_magicarrow,$can_fly","$can_magicarrow,hookshot"],
-                        "visibility_rules": ["shortsq_on"]
-                    },
+                        "access_rules": ["picto_2,windwaker,passing"],
+                        "visibility_rules": ["longsq_on"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 302,
+                        "y": 146
+                    }
+                ]
+            },
+            {
+                "name": "Windfall Island - Minigames",
+                "sections": [
                     {
                         "name": "Pirate Ship",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "visibility_rules": ["minigames_on"]
+                    },
+		            {
+                        "name": "5 Rupee Auction",
+                        "item_count": 1,
+                        "visibility_rules": ["expensive_on,minigames_on"]
+                    },
+		            {
+                        "name": "40 Rupee Auction",
+                        "item_count": 1,
+                        "visibility_rules": ["expensive_on,minigames_on"]
+                    },
+		            {
+                        "name": "60 Rupee Auction",
+                        "item_count": 1,
+                        "visibility_rules": ["expensive_on,minigames_on"]
+                    },
+		            {
+                        "name": "80 Rupee Auction",
+                        "item_count": 1,
+                        "visibility_rules": ["expensive_on,minigames_on"]
                     },
                     {
                         "name": "Battlesquid - First Prize",
@@ -380,12 +629,13 @@
                         "item_count": 1,
                         "visibility_rules": ["sploosh_on"]
                     }
+
                 ],
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 183,
-                        "y": 79
+                        "x": 324,
+                        "y": 146
                     }
                 ]
             },
@@ -395,6 +645,8 @@
                     {
                         "name": "Chuchu Cave - Chest",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "visibility_rules": ["puzzlecaves_on"]
                     },
                     {
@@ -431,8 +683,8 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 233,
-                        "y": 79
+                        "x": 398,
+                        "y": 138
                     }
                 ]
             },
@@ -444,6 +696,12 @@
                         "item_count": 1,
                         "access_rules": ["windwaker"],
                         "visibility_rules": ["misc_on"]
+                    },
+		            {
+                        "name": "Rito Aerie - Give Hoskit 20 Golden Feathers",
+                        "item_count": 1,
+                        "access_rules": ["grapple,spoils"],
+                        "visibility_rules": ["spoils_on"]
                     },
                     {
                         "name": "Chest on Top of Boulder",
@@ -474,8 +732,8 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 274,
-                        "y": 79
+                        "x": 485,
+                        "y": 138
                     }
                 ]
             },
@@ -490,6 +748,8 @@
                     {
                         "name": "Alcove With Water Jugs",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["drc_small:1"]
                     },
                     {
@@ -506,11 +766,15 @@
                     {
                         "name": "Chest Across Lava Pit",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["drc_small:2,grapple","drc_small:2,$can_fly","drc_small:2,hookshot"]
                     },
                     {
                         "name": "Rat Room",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["drc_small:2"]
                     },
                     {
@@ -529,7 +793,7 @@
                         "access_rules": ["drc_small:4"]
                     },
                     {
-                        "name": "Tingle Chest in Hub Room",
+                        "name": "Tingle Statue Chest",
                         "item_count": 1,
                         "access_rules": ["drc_small:4,bombs"],
                         "visibility_rules": ["tinglechests_on"]
@@ -548,6 +812,8 @@
                     {
                         "name": "Miniboss",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "access_rules": ["drc_small:4"]
                     },
                     {
@@ -556,7 +822,7 @@
                         "access_rules": ["drc_small:4,grapple","drc_small:4,$can_fly,windwaker,requiem"]
                     },
                     {
-                        "name": "Tingle Statue Chest",
+                        "name": "Tingle Chest in Hub Room",
                         "item_count": 1,
                         "access_rules": ["grapple,bombs,drc_small:4","grapple,bombs,drc_small:1,$can_fly",
                         "grapple,bombs,drc_small:1,$can_magicarrow"],
@@ -565,6 +831,8 @@
                     {
                         "name": "Big Key Chest",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_bigkey.png",
+                        "chest_opened_img": "images/items/chest_bigkey_gray.png",
                         "access_rules": ["grapple,drc_small:4,sword","grapple,drc_small:4,bombs",
                         "grapple,drc_small:4,bow","grapple,drc_small:4,hammer","grapple,drc_small:1,$can_fly",
                         "grapple,drc_small:1,$can_magicarrow"]
@@ -591,23 +859,33 @@
                     {
                         "name": "Gohma Heart Container",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/heart2.png",
+                        "chest_opened_img": "images/items/heart2_gray.png",
                         "access_rules": ["drc_small:4,grapple,drc_big"]
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 293,
-                        "y": 79
+                        "x": 695,
+                        "y": 70
                     }
                 ]
             },
             {
                 "name": "Flight Control Platform",
                 "sections": [
+		            {
+                        "name": "Bird-Man Contest - First Prize",
+                        "item_count": 1,
+                        "access_rules": ["leaf,magic_2"],
+                        "visibility_rules": ["minigames_on"]
+                    },
                     {
                         "name": "Submarine",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["bow","hookshot,sword","hookshot,hammer","hookshot,bombs"],
                         "visibility_rules": ["submarines_on"]
                     }
@@ -615,14 +893,20 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 334,
-                        "y": 79
+                        "x": 573,
+                        "y": 138
                     }
                 ]
             },
             {
                 "name": "Western Fairy Island",
                 "sections": [
+                    {
+                        "name": "Great Fairy",
+                        "item_count": 1,
+                        "access_rules": ["hammer"],
+                        "visibility_rules": ["fairies_on"]
+                    },
                     {
                         "name": "Lookout Platform",
                         "item_count": 1,
@@ -632,8 +916,8 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 31,
-                        "y": 126
+                        "x": 55,
+                        "y": 219
                     }
                 ]
             },
@@ -643,6 +927,8 @@
                     {
                         "name": "Cave",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["bombs"],
                         "visibility_rules": ["combat_on"]
                     },
@@ -680,19 +966,33 @@
                         "name": "Center Lookout Platform",
                         "item_count": 1,
                         "visibility_rules": ["lookouts_on"]
+                    },
+		            {
+                        "name": "Southeast Gunboat",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_salvage.png",
+                        "chest_opened_img": "images/items/chest_salvage_gray.png",
+                        "access_rules": ["grapple,bombs"],
+                        "visibility_rules": ["octos_on"]
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 82,
-                        "y": 126
+                        "x": 140,
+                        "y": 219
                     }
                 ]
             },
             {
                 "name": "Eastern Fairy Island",
                 "sections": [
+                    {
+                        "name": "Great Fairy",
+                        "item_count": 1,
+                        "access_rules": ["rock"],
+                        "visibility_rules": ["fairies_on"]
+                    },
                     {
                         "name": "Lookout Platform - Defeat the Cannons and Enemies",
                         "item_count": 1,
@@ -703,8 +1003,8 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 233,
-                        "y": 126
+                        "x": 398,
+                        "y": 219
                     }
                 ]
             },
@@ -714,6 +1014,8 @@
                     {
                         "name": "Cave - Chest",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "access_rules": ["$can_magicarrow"],
                         "visibility_rules": ["puzzlecaves_on","combat_on"]
                     },
@@ -727,13 +1029,21 @@
                         "item_count": 1,
                         "access_rules": ["bombs","boomerang"],
                         "visibility_rules": ["lookouts_on"]
+                    },
+		            {
+                        "name": "Big Octo",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_salvage.png",
+                        "chest_opened_img": "images/items/chest_salvage_gray.png",
+                        "access_rules": ["grapple,bow","grapple,bombs","grapple,boomerang"],
+                        "visibility_rules": ["octos_on"]
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 284,
-                        "y": 126
+                        "x": 485,
+                        "y": 219
                     }
                 ]
             },
@@ -749,8 +1059,8 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 334,
-                        "y": 126
+                        "x": 573,
+                        "y": 219
                     }
                 ]
             },
@@ -760,6 +1070,8 @@
                     {
                         "name": "Destroy the Cannons and Gunboats",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["bombs,$can_fly"],
 						"visibility_rules": ["reefs_on"]
                     }
@@ -767,8 +1079,8 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 31,
-                        "y": 174
+                        "x": 55,
+                        "y": 300
                     }
                 ]
             },
@@ -778,6 +1090,8 @@
                     {
                         "name": "Hidden Chest",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "access_rules": ["$can_fly"],
                         "visibility_rules": ["islandpuzzles_on"]
                     }
@@ -785,8 +1099,8 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 82,
-                        "y": 174
+                        "x": 140,
+                        "y": 300
                     }
                 ]
             },
@@ -796,6 +1110,8 @@
                     {
                         "name": "Destroy the Cannons and Gunboats",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["bombs,$can_fly"],
 						"visibility_rules": ["reefs_on"]
                     },
@@ -808,8 +1124,8 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 132,
-                        "y": 174
+                        "x": 225,
+                        "y": 300
                     }
                 ]
             },
@@ -819,6 +1135,8 @@
                     {
                         "name": "Destroy the Cannons and Gunboats",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["bombs,$can_fly"],
 						"visibility_rules": ["reefs_on"]
                     },
@@ -831,14 +1149,16 @@
                     {
                         "name": "Submarine",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "visibility_rules": ["submarines_on"]
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 183,
-                        "y": 174
+                        "x": 311,
+                        "y": 300
                     }
                 ]
             },
@@ -896,13 +1216,15 @@
                     {
                         "name": "Darknut Miniboss Room",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "access_rules": ["bombs,windwaker,totg_small:1,grapple,melody,sword",
                         "bombs,windwaker,totg_small:1,grapple,$can_lightarrow",
                         "bombs,windwaker,totg_small:1,grapple,melody,hammer",
                         "bombs,windwaker,totg_small:1,grapple,bow,sword",
                         "bombs,windwaker,totg_small:1,grapple,bow,hammer",
                         "bombs,windwaker,totg_small:1,$can_fly,melody,sword",
-                        "bombs,windwaker,totg_small:1,$can_fly,can_lightarrow",
+                        "bombs,windwaker,totg_small:1,$can_fly,$can_lightarrow",
                         "bombs,windwaker,totg_small:1,$can_fly,melody,hammer",
                         "bombs,windwaker,totg_small:1,$can_fly,bow,sword",
                         "bombs,windwaker,totg_small:1,$can_fly,bow,hammer"]
@@ -934,19 +1256,23 @@
                     {
                         "name": "Big Key Chest",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_bigkey.png",
+                        "chest_opened_img": "images/items/chest_bigkey_gray.png",
                         "access_rules": ["bombs,windwaker,melody,bow,totg_small:2,$can_fly"]
                     },
                     {
                         "name": "Gohdan Heart Container",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/heart2.png",
+                        "chest_opened_img": "images/items/heart2_gray.png",
                         "access_rules": ["bombs,windwaker,melody,bow,totg_small:2,$can_fly,totg_big"]
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 242,
-                        "y": 174
+                        "x": 695,
+                        "y": 242
                     }
                 ]
             },
@@ -956,7 +1282,7 @@
                     {
                         "name": "Master Sword Chamber",
                         "item_count": 1,
-                        "access_rules": ["triforce_8,sword","triforce_8,can_lightarrow"]
+                        "access_rules": ["triforce_8,sword","triforce_8,$can_lightarrow"]
                     },
                     {
                         "name": "Ganon's Tower - Maze Chest",
@@ -967,20 +1293,26 @@
                     {
                         "name": "Defeat Ganondorf",
                         "item_count": 1,
-                        "access_rules": ["triforce_8,mastersword_full,can_lightarrow,boomerang,grapple,hookshot,shield"]
+                        "access_rules": ["triforce_8,mastersword_full,$can_lightarrow,boomerang,grapple,hookshot,shield"]
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 223,
-                        "y": 174
+                        "x": 398,
+                        "y": 300
                     }
                 ]
             },
             {
                 "name": "Thorned Fairy Island",
                 "sections": [
+                    {
+                        "name": "Great Fairy",
+                        "item_count": 1,
+                        "access_rules": ["hammer"],
+                        "visibility_rules": ["fairies_on"]
+                    },
                     {
                         "name": "Northeastern Lookout Platform - Destroy the Cannons",
                         "item_count": 1,
@@ -997,8 +1329,8 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 334,
-                        "y": 174
+                        "x": 573,
+                        "y": 300
                     }
                 ]
             },
@@ -1008,6 +1340,8 @@
                     {
                         "name": "Chest in Ring of Fire",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "access_rules": ["bait"],
                         "visibility_rules": ["islandpuzzles_on"]
                     },
@@ -1016,13 +1350,21 @@
                         "item_count": 1,
                         "access_rules": ["$can_magicarrow"],
                         "visibility_rules": ["puzzlecaves_on"]
+                    },
+		            {
+                        "name": "Golden Gunboat",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_salvage.png",
+                        "chest_opened_img": "images/items/chest_salvage_gray.png",
+                        "access_rules": ["grapple,bombs"],
+                        "visibility_rules": ["octos_on"]
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 31,
-                        "y": 222
+                        "x": 55,
+                        "y": 382
                     }
                 ]
             },
@@ -1032,6 +1374,8 @@
                     {
                         "name": "Interior",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "access_rules": ["bombs,windwaker,requiem"],
                         "visibility_rules": ["misc_on"]
                     },
@@ -1045,8 +1389,8 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 82,
-                        "y": 222
+                        "x": 140,
+                        "y": 382
                     }
                 ]
             },
@@ -1056,7 +1400,9 @@
                     {
                         "name": "Cave",
                         "item_count": 1,
-                        "access_rules": ["power,windwaker,requiem,sword","power,windwaker,requiem,can_lightarrow",
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
+                        "access_rules": ["power,windwaker,requiem,sword","power,windwaker,requiem,$can_lightarrow",
                         "power,windwaker,requiem,hammer"],
                         "visibility_rules": ["combat_on"]
                     },
@@ -1068,6 +1414,8 @@
                     {
                         "name": "Lookout Platform - Destroy the Cannons",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "access_rules": ["bombs","boomerang"],
                         "visibility_rules": ["lookouts_on"]
                     }
@@ -1075,8 +1423,8 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 132,
-                        "y": 222
+                        "x": 225,
+                        "y": 382
                     }
                 ]
             },
@@ -1086,6 +1434,8 @@
                     {
                         "name": "Chest at Top of Waterfall",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "access_rules": ["hookshot","$can_fly"],
                         "visibility_rules": ["islandpuzzles_on"]
                     },
@@ -1098,15 +1448,47 @@
                     {
                         "name": "Cabana Labyrinth - Upper Floor Chest",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "access_rules": ["deed,delivery,grapple,hammer,windwaker,requiem"],
                         "visibility_rules": ["puzzlecaves_on"]
+                    },
+		            {
+                        "name": "Big Octo",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_salvage.png",
+                        "chest_opened_img": "images/items/chest_salvage_gray.png",
+                        "access_rules": ["grapple,bow","grapple,bombs","grapple,boomerang"],
+                        "visibility_rules": ["octos_on"]
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 233,
-                        "y": 222
+                        "x": 398,
+                        "y": 382
+                    }
+                ]
+            },
+            {
+                "name": "Spectacle Island",
+                "sections": [
+		            {
+                        "name": "Spectacle Island - Barrel Shooting - First Prize",
+                        "item_count": 1,
+                        "visibility_rules": ["minigames_on"]
+                    },
+		            {
+                        "name": "Spectacle Island - Barrel Shooting - Second Prize",
+                        "item_count": 1,
+                        "visibility_rules": ["minigames_on"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "seachart",
+                        "x": 225,
+                        "y": 138
                     }
                 ]
             },
@@ -1116,6 +1498,8 @@
                     {
                         "name": "Cave",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "access_rules": ["rock,weapon"],
                         "visibility_rules": ["puzzlecaves_on"]
                     },
@@ -1133,8 +1517,8 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 284,
-                        "y": 222
+                        "x": 485,
+                        "y": 382
                     }
                 ]
             },
@@ -1144,6 +1528,8 @@
                     {
                         "name": "Cave",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "access_rules": ["bait,windwaker,requiem"],
                         "visibility_rules": ["puzzlecaves_on"]
                     }
@@ -1151,8 +1537,8 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 334,
-                        "y": 222
+                        "x": 573,
+                        "y": 382
                     }
                 ]
             },
@@ -1168,15 +1554,25 @@
                     {
                         "name": "Warp Maze Cave - Second Chest",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["hookshot"],
                         "visibility_rules": ["puzzlecaves_on"]
+                    },
+		            {
+                        "name": "Big Octo",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_salvage.png",
+                        "chest_opened_img": "images/items/chest_salvage_gray.png",
+                        "access_rules": ["grapple,bow","grapple,bombs","grapple,boomerang"],
+                        "visibility_rules": ["octos_on"]
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 31,
-                        "y": 270
+                        "x": 55,
+                        "y": 464
                     }
                 ]
             },
@@ -1186,6 +1582,8 @@
                     {
                         "name": "Destroy the Cannons",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["bombs,$can_fly","boomerang,$can_fly"],
 						"visibility_rules": ["reefs_on"]
                     },
@@ -1198,8 +1596,8 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 82,
-                        "y": 270
+                        "x": 140,
+                        "y": 464
                     }
                 ]
             },
@@ -1216,8 +1614,8 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 132,
-                        "y": 270
+                        "x": 225,
+                        "y": 464
                     }
                 ]
             },
@@ -1225,8 +1623,16 @@
                 "name": "Southern Fairy Island",
                 "sections": [
                     {
+                        "name": "Great Fairy",
+                        "item_count": 1,
+                        "access_rules": ["bombs","$can_magicarrow"],
+                        "visibility_rules": ["fairies_on"]
+                    },
+                    {
                         "name": "Lookout Platform - Destroy the Northwest Cannons",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["bombs,$can_fly","boomerang,$can_fly"],
                         "visibility_rules": ["lookouts_on"]
                     },
@@ -1240,8 +1646,8 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 183,
-                        "y": 270
+                        "x": 311,
+                        "y": 464
                     }
                 ]
             },
@@ -1254,11 +1660,15 @@
                     {
                         "name": "Frozen Chest",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "visibility_rules": ["islandpuzzles_on"]
                     },
                     {
                         "name": "Cave - Chest",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "visibility_rules": ["puzzlecaves_on"]
                     },
                     {
@@ -1271,8 +1681,8 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 233,
-                        "y": 270
+                        "x": 398,
+                        "y": 464
                     }
                 ]
             },
@@ -1290,6 +1700,8 @@
                     {
                         "name": "Small Island Chest",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["$can_fly,windwaker,requiem"],
                         "visibility_rules": ["islandpuzzles_on"]
                     }
@@ -1297,8 +1709,8 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 274,
-                        "y": 270
+                        "x": 485,
+                        "y": 464
                     }
                 ]
             },
@@ -1310,6 +1722,8 @@
                     {
                         "name": "First Room",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["sword","hammer","boomerang","bombs","magic_2"]
                     },
                     {
@@ -1320,6 +1734,8 @@
                     {
                         "name": "Climb to Top Using Boko Baba Bulbs",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["boomerang","bombs","bow,sword","bow,hammer","bow,magic_2",
                     "hookshot,sword","hookshot,hammer","hookshot,magic_2"]
                     },
@@ -1342,6 +1758,8 @@
                     {
                         "name": "Vine Maze Left Chest",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["sword","hammer","boomerang","bombs","magic_2"]
                     },
                     {
@@ -1364,6 +1782,8 @@
                     {
                         "name": "Mothula Miniboss Room",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "access_rules": ["sword,fw_small","hammer,fw_small","bombs,fw_small",
                     "boomerang,bow,fw_small","magic_2,bow,fw_small"]
                     },
@@ -1382,17 +1802,23 @@
                     {
                         "name": "Tingle Statue Chest",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "access_rules": ["boomerang,bombs"],
                         "visibility_rules": ["tinglechests_on"]
                     },
                     {
                         "name": "Chest in Locked Tree Trunk",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["boomerang"]
                     },
                     {
                         "name": "Big Key Chest",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_bigkey.png",
+                        "chest_opened_img": "images/items/chest_bigkey_gray.png",
                         "access_rules": ["boomerang"]
                     },
                     {
@@ -1403,6 +1829,8 @@
                     {
                         "name": "Kalle Demos Heart Container",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/heart2.png",
+                        "chest_opened_img": "images/items/heart2_gray.png",
                         "access_rules": ["fw_big,boomerang,sword","fw_big,boomerang,bow",
                         "fw_big,boomerang,bombs","fw_big,boomerang,hammer"]
                     }
@@ -1410,8 +1838,8 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 293,
-                        "y": 270
+                        "x": 695,
+                        "y": 157
                     }
                 ]
             },
@@ -1426,6 +1854,8 @@
                     {
                         "name": "Highest Isle",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["$can_fly,sword","$can_fly,boomerang","$can_fly,hammer","$can_fly,bow",
                         "$can_fly,hookshot","$can_fly,bombs","$can_fly,grapple"],
                         "visibility_rules": ["puzzlecaves_on"]
@@ -1439,8 +1869,8 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 334,
-                        "y": 270
+                        "x": 573,
+                        "y": 464
                     }
                 ]
             },
@@ -1450,12 +1880,16 @@
                     {
                         "name": "Play Golf",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["leaf"],
                         "visibility_rules": ["islandpuzzles_on"]
                     },
                     {
                         "name": "Cave",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["$can_fly,sword","$can_fly,bow","$can_fly,bombs","$can_fly,hammer"],
                         "visibility_rules": ["combat_on"]
                     },
@@ -1473,8 +1907,8 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 31,
-                        "y": 318
+                        "x": 55,
+                        "y": 546
                     }
                 ]
             },
@@ -1506,8 +1940,16 @@
                         "visibility_rules": ["spoilssq_on"]
                     },
                     {
+                        "name": "Great Fairy",
+                        "item_count": 1,
+                        "access_rules": ["$can_fly,rock"],
+                        "visibility_rules": ["fairies_on"]
+                    },
+                    {
                         "name": "Jabun's Cave",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "access_rules": ["bombs"],
                         "visibility_rules": ["islandpuzzles_on"]
                     },
@@ -1522,11 +1964,11 @@
                         "item_count": 1,
                         "access_rules": ["windwaker,requiem,power,hookshot,boomerang,sword",
                         "windwaker,requiem,power,hookshot,hammer",
-                        "windwaker,requiem,power,hookshot,can_lightarrow,sword",
-                        "windwaker,requiem,power,hookshot,can_lightarrow,grapple",
+                        "windwaker,requiem,power,hookshot,$can_lightarrow,sword",
+                        "windwaker,requiem,power,hookshot,$can_lightarrow,grapple",
                         "windwaker,requiem,power,sword,leaf",
                         "windwaker,requiem,power,boomerang,leaf,hammer",
-                        "windwaker,requiem,power,boomerang,leaf,can_lightarrow,grapple",
+                        "windwaker,requiem,power,boomerang,leaf,$can_lightarrow,grapple",
                         "windwaker,requiem,power,hammer,leaf,"],
                         "visibility_rules": ["labyrinth_on"]
                     },
@@ -1541,19 +1983,35 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 72,
-                        "y": 318
+                        "x": 140,
+                        "y": 546
                     }
                 ]
             },
             {
                 "name": "Great Sea",
                 "sections": [
+		            {
+                        "name": "Beedle's Shop Ship - 20 Rupee Item",
+                        "item_count": 1,
+                        "visibility_rules": ["misc_on"]
+                    },
+		            {
+                        "name": "Salvage Corp Gift",
+                        "item_count": 1,
+                        "visibility_rules": ["gifts_on"]
+                    },
                     {
                         "name": "Cyclos",
                         "item_count": 1,
                         "access_rules": ["bow"],
                         "visibility_rules": ["misc_on"]
+                    },
+		            {
+                        "name": "Goron Trading Reward",
+                        "item_count": 1,
+                        "access_rules": ["delivery"],
+                        "visibility_rules": ["longsq_on"]
                     },
                     {
                         "name": "Withered Trees",
@@ -1564,15 +2022,17 @@
                     {
                         "name": "Ghost Ship",
                         "item_count": 1,
-                        "access_rules": ["ghost,sword","ghost,bombs","ghost,hammer","ghost,can_lightarrow"],
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
+                        "access_rules": ["ghost,sword","ghost,bombs","ghost,hammer","ghost,$can_lightarrow"],
                         "visibility_rules": ["misc_on"]
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 91,
-                        "y": 318
+                        "x": 695,
+                        "y": 582
                     }
                 ]
             },
@@ -1588,6 +2048,8 @@
                     {
                         "name": "Submarine",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["sword","bow","boomerang","hammer","hook"],
                         "visibility_rules": ["submarines_on"]
                     }
@@ -1595,8 +2057,8 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 122,
-                        "y": 318
+                        "x": 225,
+                        "y": 546
                     }
                 ]
             },
@@ -1607,7 +2069,9 @@
                 "sections": [
                     {
                         "name": "Transparent Chest In Warp Pot Room",
-                        "item_count": 1
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png"
                     },
                     {
                         "name": "Behind Curtain In Warp Pot Room",
@@ -1628,6 +2092,8 @@
                     {
                         "name": "Chest In Three Blocks Room",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["et_small:2,$can_magicarrow"]
                     },
                     {
@@ -1643,12 +2109,16 @@
                     {
                         "name": "Stalfos Miniboss Room",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "access_rules": ["et_small:3,$can_magicarrow,sword","et_small:3,$can_magicarrow,bombs","et_small:3,$can_magicarrow,hammer",
-                        "et_small:3,$can_magicarrow,hookshot","et_small:3,can_lightarrow"]
+                        "et_small:3,$can_magicarrow,hookshot","et_small:3,$can_lightarrow"]
                     },
                     {
                         "name": "Tingle Statue Chest",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "access_rules": ["shield_2,bombs"],
                         "visibility_rules": ["tinglechests_on"]
                     },
@@ -1660,6 +2130,8 @@
                     {
                         "name": "Kill All Floormasters in Foggy Room",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["shield_2,lyric,sword","shield_2,lyric,bow"]
                     },
                     {
@@ -1686,11 +2158,15 @@
                     {
                         "name": "Stalfos Crypt Room",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["shield_2,lyric,hammer,et_small:3"]
                     },
                     {
                         "name": "Big Key Chest",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_bigkey.png",
+                        "chest_opened_img": "images/items/chest_bigkey_gray.png",
                         "access_rules": ["shield_2,lyric,hammer,et_small:3,$can_magicarrow",
                         "shield_2,lyric,hammer,et_small:3,bombs","shield_2,lyric,hammer,et_small:3,leaf",
                         "shield_2,lyric,hammer,et_small:3,hookshot"]
@@ -1698,14 +2174,16 @@
                     {
                         "name": "Jalhalla Heart Container",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/heart2.png",
+                        "chest_opened_img": "images/items/heart2_gray.png",
                         "access_rules": ["shield_2,lyric,hammer,et_small:3,et_big"]
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 141,
-                        "y": 318
+                        "x": 695,
+                        "y": 327
                     }
                 ]
             },
@@ -1715,6 +2193,8 @@
                     {
                         "name": "Destroy the Cannons and Gunboats",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["bombs,$can_fly"],
 						"visibility_rules": ["reefs_on"]
                     },
@@ -1726,6 +2206,8 @@
                     {
                         "name": "Big Octo Great Fairy",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_salvage.png",
+                        "chest_opened_img": "images/items/chest_salvage_gray.png",
                         "access_rules": ["bow","bombs","boomerang"],
 						"visibility_rules": ["fairies_on,octos_on"]
                     }
@@ -1733,8 +2215,8 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 183,
-                        "y": 318
+                        "x": 311,
+                        "y": 546
                     }
                 ]
             },
@@ -1744,6 +2226,8 @@
                     {
                         "name": "Peak",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "visibility_rules": ["islandpuzzles_on"]
                     },
                     {
@@ -1756,8 +2240,8 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 233,
-                        "y": 318
+                        "x": 398,
+                        "y": 546
                     }
                 ]
             },
@@ -1772,6 +2256,8 @@
                     {
                         "name": "Cave",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_metal.png",
+                        "chest_opened_img": "images/items/chest_metal_gray.png",
                         "access_rules": ["hookshot,sword","hookshot,boomerang","hookshot,bow",
                         "hookshot,bombs","hookshot,hammer","$can_fly,bow","$can_fly,boomerang,sword",
                         "$can_fly,boomerang,bombs","$can_fly,boomerang,hammer"],
@@ -1781,8 +2267,8 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 284,
-                        "y": 318
+                        "x": 485,
+                        "y": 546
                     }
                 ]
             },
@@ -1797,6 +2283,8 @@
                     {
                         "name": "Submarine",
                         "item_count": 1,
+                        "chest_unopened_img": "images/items/chest_spiky.png",
+                        "chest_opened_img": "images/items/chest_spiky_gray.png",
                         "visibility_rules": ["submarines_on"]
                     },
                     {
@@ -1809,11 +2297,86 @@
                 "map_locations": [
                     {
                         "map": "seachart",
-                        "x": 334,
-                        "y": 318
+                        "x": 573,
+                        "y": 546
                     }
                 ]
+            },
+            {
+                "name": "Mailbox",
+                        "sections": [
+                            {
+                                "name": "Letter from Hoskit's Girlfriend",
+                                "item_count": 1,
+                                "access_rules": ["spoils,grapple"],
+                                "visibility_rules": ["mail_on,spoils_on"]
+                            },
+                            {
+                                "name": "Letter from Baito's Mother",
+                                "item_count": 1,
+                                "access_rules": ["delivery,mom"],
+                                "visibility_rules": ["mail_on"]
+                            },
+                            {
+                                "name": "Letter from Baito",
+                                "item_count": 1,
+                                "access_rules": ["delivery,mom,power,windwaker,melody,shield_2,lyric,hammer,et_small:3,et_big"],
+                                "visibility_rules": ["mail_on,dungeons_on"]
+                            },
+                            {
+                                "name": "Letter from Komali's Father",
+                                "item_count": 1,
+                                "access_rules": ["farore"],
+                                "visibility_rules": ["mail_on"]
+                            },
+                            {
+                                "name": "Letter Advertising Bombs in Beedle's Shop",
+                                "item_count": 1,
+                                "access_rules": ["bombs"],
+                                "visibility_rules": ["mail_on"]
+                            },
+                            {
+                                "name": "Letter Advertising Rock Spire Shop Ship",
+                                "item_count": 1,
+                                "access_rules": ["wallet"],
+                                "visibility_rules": ["mail_on"]
+                            },
+                            {
+                                "name": "Letter from Orca",
+                                "item_count": 1,
+                                "access_rules": ["grapple,leaf,magic,windwaker,requiem,fw_big,boomerang,sword",
+                                "grapple,leaf,magic,windwaker,requiem,fw_big,boomerang,bow",
+                                "grapple,leaf,magic,windwaker,requiem,fw_big,boomerang,bombs",
+                                "grapple,leaf,magic,windwaker,requiem,fw_big,boomerang,hammer"],
+                                "visibility_rules": ["mail_on,dungeons_on"]
+                            },
+                            {
+                                "name": "Letter from Grandma",
+                                "item_count": 1,
+                                "access_rules": ["bottle"],
+                                "visibility_rules": ["mail_on"]
+                            },
+                            {
+                                "name": "Letter from Aryll",
+                                "item_count": 1,
+                                "access_rules": ["hammer,leaf","hammer,hookshot"],
+                                "visibility_rules": ["mail_on,dungeons_on"]
+                            },
+                            {
+                                "name": "Letter from Tingle",
+                                "item_count": 1,
+                                "access_rules": ["hammer,leaf,wallet","hammer,hookshot,wallet"],
+                                "visibility_rules": ["mail_on,dungeons_on"]
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "seachart",
+                                "x": 695,
+                                "y": 497
+                            }
+                        ]
+                    }                                          
+                ]
             }                                        
-        ]
-    }
 ]

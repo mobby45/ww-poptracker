@@ -15,6 +15,12 @@ PopTracker pack for The Legend of Zelda: The Wind Waker
 
 ## To-Do List
 
-1. Higher resolution sea chart and dungeon maps. I'm still waiting on Temple of the Gods and Forsaken Fortress 3D maps.
+1. Higher resolution maps. I'm still hoping for Temple of the Gods and Forsaken Fortress 3D maps to match other dungeons.
 2. More precise location icons on the Sea Chart map.
-3. Add more "out of logic" checks".
+3. Add more "out of logic" checks" where possible.
+4. Merge Treasure Salvage onto the main map.
+
+## Current Issues
+
+1. The new AP implementation seems to have broken Triforce Shard 2 autotracking.
+2. The new AP implementation might have broken Wind Temple - Chest In Middle of Hub Room autotracking. Testing has been inconsistent.

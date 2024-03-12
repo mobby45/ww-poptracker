@@ -133,7 +133,7 @@
             {
 				"sections": [
 					{
-                        "ref": "The Great Sea/Dragon Roost Cavern/Tingle Chest in Hub Room"
+                        "ref": "The Great Sea/Dragon Roost Cavern/Tingle Statue Chest"
                     }
                 ],
 				"map_locations": [
@@ -203,14 +203,14 @@
             {
 				"sections": [
 					{
-                        "ref": "The Great Sea/Dragon Roost Cavern/Tingle Statue Chest"
+                        "ref": "The Great Sea/Dragon Roost Cavern/Tingle Chest in Hub Room"
                     }
                 ],
 				"map_locations": [
 					{
 						"map": "drc",
-						"x": 521,
-						"y": 528
+						"x": 331,
+						"y": 405
 					}
 				]
 			},

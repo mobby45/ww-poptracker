@@ -1,12 +1,12 @@
 [
     {
         "name": "Triforce Salvaging",
-        "chest_unopened_img": "images/items/chest_closed.png",
-        "chest_opened_img": "images/items/chest_open.png",
+        "chest_unopened_img": "images/items/chest_salvage.png",
+        "chest_opened_img": "images/items/chest_salvage_gray.png",
         "visibility_rules": ["triforcesalvage_on"],
         "children": [
             {
-                "name": "Greatfish Isle - Sunken Treasure",
+                "name": "Greatfish Isle - Sunken Triforce 1",
                 "access_rules": [
                     "triforce1,grapple"                    
                 ],
@@ -25,7 +25,7 @@
                 ]
             },
 			{
-                "name": "Gale Isle - Sunken Treasure",
+                "name": "Gale Isle - Sunken Triforce 2",
                 "access_rules": [
                     "triforce2,grapple"                    
                 ],
@@ -44,7 +44,7 @@
                 ]
             },
 			{
-                "name": "Stonewatcher Island - Sunken Treasure",
+                "name": "Stone Watcher Island - Sunken Triforce 3",
                 "access_rules": [
                     "triforce3,grapple"                    
                 ],
@@ -63,7 +63,7 @@
                 ]
             },
 			{
-                "name": "Outset island - Sunken Treasure",
+                "name": "Outset island - Sunken Triforce 4",
                 "access_rules": [
                     "triforce4,grapple"                    
                 ],
@@ -82,7 +82,7 @@
                 ]
             },
 			{
-                "name": "Cliff Plateau Isles - Sunken Treasure",
+                "name": "Cliff Plateau Isles - Sunken Triforce 5",
                 "access_rules": [
                     "triforce5,grapple"                    
                 ],
@@ -101,7 +101,7 @@
                 ]
             },
 			{
-                "name": "Southern Triangle Isle - Sunken Treasure",
+                "name": "Southern Triangle Island - Sunken Triforce 6",
                 "access_rules": [
                     "triforce6,grapple"                    
                 ],
@@ -120,7 +120,7 @@
                 ]
             },
 			{
-                "name": "Seven-Star Isles - Sunken Treasure",
+                "name": "Seven-Star Isles - Sunken Triforce 7",
                 "access_rules": [
                     "triforce7,grapple"                    
                 ],
@@ -139,7 +139,7 @@
                 ]
             },
 			{
-                "name": "Two-Eye Reef - Sunken Treasure",
+                "name": "Two-Eye Reef - Sunken Triforce 8",
                 "access_rules": [
                     "triforce8,grapple"                    
                 ],
@@ -161,12 +161,12 @@
     },
     {
         "name": "Treasure Salvaging",
-        "chest_unopened_img": "images/items/chest_closed.png",
-        "chest_opened_img": "images/items/chest_open.png",
+        "chest_unopened_img": "images/items/chest_salvage.png",
+        "chest_opened_img": "images/items/chest_salvage_gray.png",
         "visibility_rules": ["treasuresalvage_on"],
         "children": [        
 			{
-                "name": "Private Oasis - Sunken Treasure",
+                "name": "Private Oasis - Sunken Treasure 1",
                 "access_rules": [
                     "treasure1,grapple"                    
                 ],
@@ -185,7 +185,7 @@
                 ]
             },
 			{
-                "name": "Rock Spire Isle - Sunken Treasure",
+                "name": "Rock Spire Isle - Sunken Treasure 2",
                 "access_rules": [
                     "treasure2,grapple"                    
                 ],
@@ -204,7 +204,7 @@
                 ]
             },
 			{
-                "name": "Eastern Fairy Isle - Sunken Treasure",
+                "name": "Eastern Fairy Island - Sunken Treasure 3",
                 "access_rules": [
                     "treasure3,grapple"                    
                 ],
@@ -223,7 +223,7 @@
                 ]
             },
 			{
-                "name": "Southern Fairy Island - Sunken Treasure",
+                "name": "Southern Fairy Island - Sunken Treasure 4",
                 "access_rules": [
                     "treasure4,grapple"                    
                 ],
@@ -242,7 +242,7 @@
                 ]
             },
 			{
-                "name": "Thorned Fairy Island - Sunken Treasure",
+                "name": "Thorned Fairy Island - Sunken Treasure 5",
                 "access_rules": [
                     "treasure5,grapple"                    
                 ],
@@ -261,7 +261,7 @@
                 ]
             },
 			{
-                "name": "Six-Eye Reef - Sunken Treasure",
+                "name": "Six-Eye Reef - Sunken Treasure 6",
                 "access_rules": [
                     "treasure6,grapple"                    
                 ],
@@ -280,7 +280,7 @@
                 ]
             },
 			{
-                "name": "Star Island - Sunken Treasure",
+                "name": "Star Island - Sunken Treasure 7",
                 "access_rules": [
                     "treasure7,grapple"                    
                 ],
@@ -299,7 +299,7 @@
                 ]
             },
 			{
-                "name": "Western Fairy Island - Sunken Treasure",
+                "name": "Western Fairy Island - Sunken Treasure 8",
                 "access_rules": [
                     "treasure8,grapple"                    
                 ],
@@ -318,7 +318,7 @@
                 ]
             },
 			{
-                "name": "Horseshoe Isle - Sunken Treasure",
+                "name": "Horseshoe Island - Sunken Treasure 9",
                 "access_rules": [
                     "treasure9,grapple"                    
                 ],
@@ -337,7 +337,7 @@
                 ]
             },
 			{
-                "name": "Tingle Island - Sunken Treasure",
+                "name": "Tingle Island - Sunken Treasure 10",
                 "access_rules": [
                     "treasure10,grapple"                    
                 ],
@@ -356,7 +356,7 @@
                 ]
             },
 			{
-                "name": "Crescent Moon Island - Sunken Treasure",
+                "name": "Crescent Moon Island - Sunken Treasure 11",
                 "access_rules": [
                     "treasure11,grapple"                    
                 ],
@@ -375,7 +375,7 @@
                 ]
             },
 			{
-                "name": "Five-Eye Reef - Sunken Treasure",
+                "name": "Five-Eye Reef - Sunken Treasure 12",
                 "access_rules": [
                     "treasure12,grapple"                    
                 ],
@@ -394,7 +394,7 @@
                 ]
             },
 			{
-                "name": "Overlook Island - Sunken Treasure",
+                "name": "Overlook Island - Sunken Treasure 13",
                 "access_rules": [
                     "treasure13,grapple"                    
                 ],
@@ -413,7 +413,7 @@
                 ]
             },
 			{
-                "name": "Tower of The Gods - Sunken Treasure",
+                "name": "Tower of The Gods Sector - Sunken Treasure 14",
                 "access_rules": [
                     "treasure14,grapple"                    
                 ],
@@ -432,7 +432,7 @@
                 ]
             },
 			{
-                "name": "Angular isles - Sunken Treasure",
+                "name": "Angular Isles - Sunken Treasure 15",
                 "access_rules": [
                     "treasure15,grapple"                    
                 ],
@@ -451,7 +451,7 @@
                 ]
             },
 			{
-                "name": "Shark Island - Sunken Treasure",
+                "name": "Shark Island - Sunken Treasure 16",
                 "access_rules": [
                     "treasure16,grapple"                    
                 ],
@@ -470,7 +470,7 @@
                 ]
             },
 			{
-                "name": "Ice Ring Isle - Sunken Treasure",
+                "name": "Ice Ring Isle - Sunken Treasure 17",
                 "access_rules": [
                     "treasure17,grapple"                    
                 ],
@@ -489,7 +489,7 @@
                 ]
             },
 			{
-                "name": "Windfall Island - Sunken Treasure",
+                "name": "Windfall Island - Sunken Treasure 18",
                 "access_rules": [
                     "treasure18,grapple"                    
                 ],
@@ -508,7 +508,7 @@
                 ]
             },
 			{
-                "name": "Flight Control Platform - Sunken Treasure",
+                "name": "Flight Control Platform - Sunken Treasure 19",
                 "access_rules": [
                     "treasure19,grapple"                    
                 ],
@@ -527,7 +527,7 @@
                 ]
             },
 			{
-                "name": "Bomb Island - Sunken Treasure",
+                "name": "Bomb Island - Sunken Treasure 20",
                 "access_rules": [
                     "treasure20,grapple"                    
                 ],
@@ -546,7 +546,7 @@
                 ]
             },
 			{
-                "name": "Cyclops Reef - Sunken Treasure",
+                "name": "Cyclops Reef - Sunken Treasure 21",
                 "access_rules": [
                     "treasure21,grapple"                    
                 ],
@@ -565,7 +565,7 @@
                 ]
             },
 			{
-                "name": "Spectacle Island - Sunken Treasure",
+                "name": "Spectacle Island - Sunken Treasure 22",
                 "access_rules": [
                     "treasure22,grapple"                    
                 ],
@@ -584,7 +584,7 @@
                 ]
             },
 			{
-                "name": "Diamond Steppe Island - Sunken Treasure",
+                "name": "Diamond Steppe Island - Sunken Treasure 23",
                 "access_rules": [
                     "treasure23,grapple"                    
                 ],
@@ -603,7 +603,7 @@
                 ]
             },
 			{
-                "name": "Northern Fairy Island - Sunken Treasure",
+                "name": "Northern Fairy Island - Sunken Treasure 24",
                 "access_rules": [
                     "treasure24,grapple"                    
                 ],
@@ -622,7 +622,7 @@
                 ]
             },
 			{
-                "name": "Forsaken Fortress - Sunken Treasure",
+                "name": "Forsaken Fortress Sector - Sunken Treasure 25",
                 "access_rules": [
                     "treasure25,grapple"                    
                 ],
@@ -641,7 +641,7 @@
                 ]
             },
 			{
-                "name": "Northern Triangle Isle - Sunken Treasure",
+                "name": "Northern Triangle Island - Sunken Treasure 26",
                 "access_rules": [
                     "treasure26,grapple"                    
                 ],
@@ -660,7 +660,7 @@
                 ]
             },
 			{
-                "name": "Star Belt Archipelago - Sunken Treasure",
+                "name": "Star Belt Archipelago - Sunken Treasure 27",
                 "access_rules": [
                     "treasure27,grapple"                    
                 ],
@@ -679,7 +679,7 @@
                 ]
             },
 			{
-                "name": "Needle Rock Isle - Sunken Treasure",
+                "name": "Needle Rock Isle - Sunken Treasure 28",
                 "access_rules": [
                     "treasure28,grapple"                    
                 ],
@@ -698,7 +698,7 @@
                 ]
             },
 			{
-                "name": "Mother & Child Isles - Sunken Treasure",
+                "name": "Mother and Child Isles - Sunken Treasure 29",
                 "access_rules": [
                     "treasure29,grapple"                    
                 ],
@@ -717,7 +717,7 @@
                 ]
             },
 			{
-                "name": "Pawprint Isle - Sunken Treasure",
+                "name": "Pawprint Isle - Sunken Treasure 30",
                 "access_rules": [
                     "treasure30,grapple"                    
                 ],
@@ -736,7 +736,7 @@
                 ]
             },
 			{
-                "name": "Forest Haven - Sunken Treasure",
+                "name": "Forest Haven - Sunken Treasure 31",
                 "access_rules": [
                     "treasure31,grapple"                    
                 ],
@@ -755,7 +755,7 @@
                 ]
             },
 			{
-                "name": "Boating Course - Sunken Treasure",
+                "name": "Boating Course - Sunken Treasure 32",
                 "access_rules": [
                     "treasure32,grapple"                    
                 ],
@@ -774,7 +774,7 @@
                 ]
             },
 			{
-                "name": "Five-Star Isles - Sunken Treasure",
+                "name": "Five-Star Isles - Sunken Treasure 33",
                 "access_rules": [
                     "treasure33,grapple"                    
                 ],
@@ -793,7 +793,7 @@
                 ]
             },
 			{
-                "name": "Eastern Triangle Isle - Sunken Treasure",
+                "name": "Eastern Triangle Island - Sunken Treasure 34",
                 "access_rules": [
                     "treasure34,grapple"                    
                 ],
@@ -812,7 +812,7 @@
                 ]
             },
 			{
-                "name": "Islet of Steel - Sunken Treasure",
+                "name": "Islet of Steel - Sunken Treasure 35",
                 "access_rules": [
                     "treasure35,grapple"                    
                 ],
@@ -831,7 +831,7 @@
                 ]
             },
 			{
-                "name": "Bird's Peak Rock - Sunken Treasure",
+                "name": "Bird's Peak Rock - Sunken Treasure 36",
                 "access_rules": [
                     "treasure36,grapple"                    
                 ],
@@ -850,7 +850,7 @@
                 ]
             },
 			{
-                "name": "Fire Mountain - Sunken Treasure",
+                "name": "Fire Mountain - Sunken Treasure 37",
                 "access_rules": [
                     "treasure37,grapple"                    
                 ],
@@ -869,7 +869,7 @@
                 ]
             },
 			{
-                "name": "Three-Eye Reef - Sunken Treasure",
+                "name": "Three-Eye Reef - Sunken Treasure 38",
                 "access_rules": [
                     "treasure38,grapple"                    
                 ],
@@ -888,7 +888,7 @@
                 ]
             },
 			{
-                "name": "Dragon Roost Mountain - Sunken Treasure",
+                "name": "Dragon Roost Island - Sunken Treasure 39",
                 "access_rules": [
                     "treasure39,grapple"                    
                 ],
@@ -907,7 +907,7 @@
                 ]
             },
 			{
-                "name": "Headstone Island - Sunken Treasure",
+                "name": "Headstone Island - Sunken Treasure 40",
                 "access_rules": [
                     "treasure40,grapple"                    
                 ],
@@ -926,7 +926,7 @@
                 ]
             },
 			{
-                "name": "Four-Eye Reef - Sunken Treasure",
+                "name": "Four-Eye Reef - Sunken Treasure 41",
                 "access_rules": [
                     "treasure41,grapple"                    
                 ],

@@ -7,17 +7,24 @@
         "initial_active_state": true
 	},
     {
+		"name": "Tingle Chests",
+		"type": "toggle",
+		"img": "images/items/item7.png",
+		"codes": "tinglechests,tinglechests_on",
+        "initial_active_state": true
+	},
+    {
+		"name": "Dungeon Secrets",
+		"type": "toggle",
+		"img": "images/items/pot.png",
+		"codes": "secretpot,secretpot_on",
+		"initial_active_state": true
+	},
+    {
 		"name": "Puzzle Secret Caves",
 		"type": "toggle",
 		"img": "images/items/item24.png",
 		"codes": "puzzlecaves,puzzlecaves_on",
-        "initial_active_state": true
-	},
-    {
-		"name": "Island Puzzles",
-		"type": "toggle",
-		"img": "images/items/item11.png",
-		"codes": "islandpuzzles,islandpuzzles_on",
         "initial_active_state": true
 	},
     {
@@ -42,20 +49,6 @@
         "initial_active_state": true
 	},
     {
-		"name": "Free Gifts",
-		"type": "toggle",
-		"img": "images/items/tingle.png",
-		"codes": "gifts,gifts_on",
-        "initial_active_state": true
-	},
-    {
-		"name": "Tingle Chests",
-		"type": "toggle",
-		"img": "images/items/item7.png",
-		"codes": "tinglechests,tinglechests_on",
-        "initial_active_state": true
-	},
-    {
 		"name": "Short Sidequests",
 		"type": "toggle",
 		"img": "images/items/item8.png",
@@ -65,7 +58,7 @@
     {
 		"name": "Long Sidequests",
 		"type": "toggle",
-		"img": "images/items/bottle.png",
+		"img": "images/items/item8_2.png",
 		"codes": "longsq,longsq_on",
 		"initial_active_state": true
 	},
@@ -91,23 +84,23 @@
 		"initial_active_state": true
 	},
     {
-		"name": "Expensive Purchases",
+		"name": "Free Gifts",
 		"type": "toggle",
-		"img": "images/items/beedle.png",
-		"codes": "expensive,expensive_on",
-		"initial_active_state": true
+		"img": "images/items/tingle.png",
+		"codes": "gifts,gifts_on",
+        "initial_active_state": true
 	},
     {
 		"name": "Mail",
 		"type": "toggle",
-		"img": "images/items/mailbox.png",
+		"img": "images/items/mail.png",
 		"codes": "mail,mail_on",
 		"initial_active_state": true
 	},
     {
 		"name": "Lookout Platforms and Rafts",
 		"type": "toggle",
-		"img": "images/items/item0.png",
+		"img": "images/items/lookout.png",
 		"codes": "lookouts,lookouts_on",
 		"initial_active_state": true
 	},
@@ -119,17 +112,17 @@
 		"initial_active_state": true
 	},
     {
+		"name": "Eye Reef Chests",
+		"type": "toggle",
+		"img": "images/items/reef.png",
+		"codes": "reefs,reefs_on",
+		"initial_active_state": true
+	},
+    {
 		"name": "Big Octos And Gunboats",
 		"type": "toggle",
 		"img": "images/items/octo.png",
 		"codes": "octos,octos_on",
-		"initial_active_state": true
-	},
-    {
-		"name": "Eye Reef Chests",
-		"type": "toggle",
-		"img": "images/items/warship.png",
-		"codes": "reefs,reefs_on",
 		"initial_active_state": true
 	},
     {
@@ -147,17 +140,24 @@
 		"initial_active_state": true
 	},
     {
-		"name": "Miscellaneous Checks",
+		"name": "Expensive Purchases",
 		"type": "toggle",
-		"img": "images/items/item23.png",
-		"codes": "misc,misc_on",
+		"img": "images/items/beedle.png",
+		"codes": "expensive,expensive_on",
 		"initial_active_state": true
 	},
     {
-		"name": "Dungeon Secrets",
+		"name": "Island Puzzles",
 		"type": "toggle",
-		"img": "images/items/pot.png",
-		"codes": "secretpot,secretpot_on",
+		"img": "images/items/item11.png",
+		"codes": "islandpuzzles,islandpuzzles_on",
+        "initial_active_state": true
+	},
+    {
+		"name": "Miscellaneous",
+		"type": "toggle",
+		"img": "images/items/item23.png",
+		"codes": "misc,misc_on",
 		"initial_active_state": true
 	}
 ]
