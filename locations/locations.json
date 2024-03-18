@@ -71,7 +71,7 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_spiky.png",
                         "chest_opened_img": "images/items/chest_spiky_gray.png",
-                        "access_rules": ["rock,weapon"],
+                        "access_rules": ["$can_remove_rocks,weapon"],
                         "visibility_rules": ["combat_on"]
                     }
                 ],
@@ -314,8 +314,8 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_spiky.png",
                         "chest_opened_img": "images/items/chest_spiky_gray.png",
-                        "access_rules": ["hookshot,windwaker,requiem,sword","hookshot,windwaker,requiem,hammer",
-                        "hookshot,windwaker,requiem,bombs,$can_lightarrow"],
+                        "access_rules": ["hookshot,$can_change_wind,sword","hookshot,$can_change_wind,hammer",
+                        "hookshot,$can_change_wind,bombs,$can_lightarrow"],
                         "visibility_rules": ["combat_on"]
                     }
                 ],
@@ -460,7 +460,7 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_metal.png",
                         "chest_opened_img": "images/items/chest_metal_gray.png",
-                        "access_rules": ["$can_magicarrow,$can_fly","$can_magicarrow,hookshot"],
+                        "access_rules": ["$can_change_wind,$can_magicarrow,$can_fly","$can_magicarrow,hookshot"],
                         "visibility_rules": ["shortsq_on"]
                     },
 		            {
@@ -652,13 +652,13 @@
                     {
                         "name": "Chuchu Cave - Behind Left Boulder",
                         "item_count": 1,
-                        "access_rules": ["rock"],
+                        "access_rules": ["$can_remove_rocks"],
                         "visibility_rules": ["puzzlecaves_on"]
                     },
                     {
                         "name": "Chuchu Cave - Behind Right Boulder",
                         "item_count": 1,
-                        "access_rules": ["rock"],
+                        "access_rules": ["$can_remove_rocks"],
                         "visibility_rules": ["puzzlecaves_on"]
                     },
                     {
@@ -712,9 +712,8 @@
                     {
                         "name": "Fly Across Platforms Around Island",
                         "item_count": 1,
-                        "access_rules": ["$can_fly,windwaker,requiem,sword","$can_fly,windwaker,requiem,hammer",
-                        "$can_fly,windwaker,requiem,boomerang","$can_fly,windwaker,requiem,bombs",
-                        "$can_fly,windwaker,requiem,magic_2"],
+                        "access_rules": ["$can_fly,$can_change_wind,$can_cut_grass",
+                        "$can_fly,$can_change_wind,magic_2"],
                         "visibility_rules": ["islandpuzzles_on"]
                     },
                     {
@@ -725,7 +724,7 @@
                     {
                         "name": "Secret Cave",
                         "item_count": 1,
-                        "access_rules": ["bombs","rock,sword","rock,hammer","rock,bow"],
+                        "access_rules": ["bombs","power,sword","power,hammer","power,bow"],
                         "visibility_rules": ["combat_on"]
                     }
                 ],
@@ -793,7 +792,7 @@
                         "access_rules": ["drc_small:4"]
                     },
                     {
-                        "name": "Tingle Statue Chest",
+                        "name": "Tingle Statue in Hub Room",
                         "item_count": 1,
                         "access_rules": ["drc_small:4,bombs"],
                         "visibility_rules": ["tinglechests_on"]
@@ -819,10 +818,10 @@
                     {
                         "name": "Under Rope Bridge",
                         "item_count": 1,
-                        "access_rules": ["drc_small:4,grapple","drc_small:4,$can_fly,windwaker,requiem"]
+                        "access_rules": ["drc_small:4,grapple","drc_small:4,$can_fly,$can_change_wind"]
                     },
                     {
-                        "name": "Tingle Chest in Hub Room",
+                        "name": "Tingle Statue Chest",
                         "item_count": 1,
                         "access_rules": ["grapple,bombs,drc_small:4","grapple,bombs,drc_small:1,$can_fly",
                         "grapple,bombs,drc_small:1,$can_magicarrow"],
@@ -953,13 +952,13 @@
                     {
                         "name": "Western Lookout Platform - Destroy the Cannons",
                         "item_count": 1,
-                        "access_rules": ["bombs,$can_fly","boomerang,$can_fly"],
+                        "access_rules": ["$can_destroy_cannons,$can_fly"],
                         "visibility_rules": ["lookouts_on"]
                     },
                     {
                         "name": "Eastern Lookout Platform - Destroy the Cannons",
                         "item_count": 1,
-                        "access_rules": ["bombs,$can_fly","boomerang,$can_fly"],
+                        "access_rules": ["$can_destroy_cannons,$can_fly"],
                         "visibility_rules": ["lookouts_on"]
                     },
                     {
@@ -990,13 +989,13 @@
                     {
                         "name": "Great Fairy",
                         "item_count": 1,
-                        "access_rules": ["rock"],
+                        "access_rules": ["$can_remove_rocks"],
                         "visibility_rules": ["fairies_on"]
                     },
                     {
                         "name": "Lookout Platform - Defeat the Cannons and Enemies",
                         "item_count": 1,
-                        "access_rules": ["bombs","boomerang"],
+                        "access_rules": ["$can_destroy_cannons"],
                         "visibility_rules": ["lookouts_on"]
                     }
                 ],
@@ -1027,7 +1026,7 @@
                     {
                         "name": "Lookout Platform - Destroy the Cannons",
                         "item_count": 1,
-                        "access_rules": ["bombs","boomerang"],
+                        "access_rules": ["$can_destroy_cannons"],
                         "visibility_rules": ["lookouts_on"]
                     },
 		            {
@@ -1143,7 +1142,7 @@
                     {
                         "name": "Lookout Platform - Destroy the Cannons",
                         "item_count": 1,
-                        "access_rules": ["bombs","boomerang"],
+                        "access_rules": ["$can_destroy_cannons"],
                         "visibility_rules": ["lookouts_on"]
                     },
                     {
@@ -1232,8 +1231,8 @@
                     {
                         "name": "Second Chest Guarded by Armos Knights",
                         "item_count": 1,
-                        "access_rules": ["bombs,windwaker,melody,bow,requiem,totg_small:1,grapple",
-                        "bombs,windwaker,melody,bow,requiem,totg_small:1,$can_fly"]
+                        "access_rules": ["bombs,$can_change_wind,melody,bow,totg_small:1,grapple",
+                        "bombs,$can_change_wind,melody,bow,totg_small:1,$can_fly"]
                     },
                     {
                         "name": "Floating Platforms Room",
@@ -1316,7 +1315,7 @@
                     {
                         "name": "Northeastern Lookout Platform - Destroy the Cannons",
                         "item_count": 1,
-                        "access_rules": ["bombs","boomerang"],
+                        "access_rules": ["$can_destroy_cannons"],
                         "visibility_rules": ["lookouts_on"]
                     },
                     {
@@ -1376,7 +1375,7 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_spiky.png",
                         "chest_opened_img": "images/items/chest_spiky_gray.png",
-                        "access_rules": ["bombs,windwaker,requiem"],
+                        "access_rules": ["bombs,$can_change_wind"],
                         "visibility_rules": ["misc_on"]
                     },
                     {
@@ -1402,8 +1401,8 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_spiky.png",
                         "chest_opened_img": "images/items/chest_spiky_gray.png",
-                        "access_rules": ["power,windwaker,requiem,sword","power,windwaker,requiem,$can_lightarrow",
-                        "power,windwaker,requiem,hammer"],
+                        "access_rules": ["power,$can_change_wind,sword","power,$can_change_wind,$can_lightarrow",
+                        "power,$can_change_wind,hammer"],
                         "visibility_rules": ["combat_on"]
                     },
                     {
@@ -1416,7 +1415,7 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_spiky.png",
                         "chest_opened_img": "images/items/chest_spiky_gray.png",
-                        "access_rules": ["bombs","boomerang"],
+                        "access_rules": ["$can_destroy_cannons"],
                         "visibility_rules": ["lookouts_on"]
                     }
                 ],
@@ -1450,7 +1449,7 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_spiky.png",
                         "chest_opened_img": "images/items/chest_spiky_gray.png",
-                        "access_rules": ["deed,delivery,grapple,hammer,windwaker,requiem"],
+                        "access_rules": ["deed,delivery,grapple,hammer,$can_change_wind"],
                         "visibility_rules": ["puzzlecaves_on"]
                     },
 		            {
@@ -1500,7 +1499,7 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_spiky.png",
                         "chest_opened_img": "images/items/chest_spiky_gray.png",
-                        "access_rules": ["rock,weapon"],
+                        "access_rules": ["$can_remove_rocks,weapon"],
                         "visibility_rules": ["puzzlecaves_on"]
                     },
                     {
@@ -1530,7 +1529,7 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_spiky.png",
                         "chest_opened_img": "images/items/chest_spiky_gray.png",
-                        "access_rules": ["bait,windwaker,requiem"],
+                        "access_rules": ["bait,$can_change_wind"],
                         "visibility_rules": ["puzzlecaves_on"]
                     }
                 ],
@@ -1584,7 +1583,7 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_metal.png",
                         "chest_opened_img": "images/items/chest_metal_gray.png",
-                        "access_rules": ["bombs,$can_fly","boomerang,$can_fly"],
+                        "access_rules": ["$can_destroy_cannons,$can_fly"],
 						"visibility_rules": ["reefs_on"]
                     },
                     {
@@ -1702,7 +1701,7 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_metal.png",
                         "chest_opened_img": "images/items/chest_metal_gray.png",
-                        "access_rules": ["$can_fly,windwaker,requiem"],
+                        "access_rules": ["$can_fly,$can_change_wind"],
                         "visibility_rules": ["islandpuzzles_on"]
                     }
                 ],
@@ -1849,6 +1848,7 @@
                     {
                         "name": "Cave",
                         "item_count": 1,
+                        "access_rules": ["sword","boomerang","hammer","bow","hookshot","bombs","leaf,grapple"],
                         "visibility_rules": ["puzzlecaves_on"]
                     },
                     {
@@ -1934,15 +1934,15 @@
                         "spoils,grapple,sword,power,windwaker,melody,shield_2,lyric,hammer,et_small:3,hookshot",
                         "spoils,grapple,sword,$can_magicarrow,boots",
                         "spoils,grapple,sword,hammer,boots",
-                        "spoils,grapple,sword,power,windwaker,requiem",
-                        "spoils,grapple,sword,hookshot,windwaker,requiem",
+                        "spoils,grapple,sword,power,$can_change_wind",
+                        "spoils,grapple,sword,hookshot,$can_change_wind",
                         "spoils,grapple,sword,triforce_8"],
                         "visibility_rules": ["spoilssq_on"]
                     },
                     {
                         "name": "Great Fairy",
                         "item_count": 1,
-                        "access_rules": ["$can_fly,rock"],
+                        "access_rules": ["$can_cut_trees,$can_change_wind,$can_fly,$can_remove_rocks"],
                         "visibility_rules": ["fairies_on"]
                     },
                     {
@@ -1962,21 +1962,21 @@
                     {
                         "name": "Savage Labyrinth Floor - 30",
                         "item_count": 1,
-                        "access_rules": ["windwaker,requiem,power,hookshot,boomerang,sword",
-                        "windwaker,requiem,power,hookshot,hammer",
-                        "windwaker,requiem,power,hookshot,$can_lightarrow,sword",
-                        "windwaker,requiem,power,hookshot,$can_lightarrow,grapple",
-                        "windwaker,requiem,power,sword,leaf",
-                        "windwaker,requiem,power,boomerang,leaf,hammer",
-                        "windwaker,requiem,power,boomerang,leaf,$can_lightarrow,grapple",
-                        "windwaker,requiem,power,hammer,leaf,"],
+                        "access_rules": ["$can_change_wind,power,hookshot,boomerang,sword",
+                        "$can_change_wind,power,hookshot,hammer",
+                        "$can_change_wind,power,hookshot,$can_lightarrow,sword",
+                        "$can_change_wind,power,hookshot,$can_lightarrow,grapple",
+                        "$can_change_wind,power,sword,leaf",
+                        "$can_change_wind,power,boomerang,leaf,hammer",
+                        "$can_change_wind,power,boomerang,leaf,$can_lightarrow,grapple",
+                        "$can_change_wind,power,hammer,leaf,"],
                         "visibility_rules": ["labyrinth_on"]
                     },
                     {
                         "name": "Savage Labyrinth Floor - 50",
                         "item_count": 1,
-                        "access_rules": ["leaf,power,windwaker,requiem,shield_2,hammer",
-                        "hookshot,power,windwaker,requiem,shield_2,hammer"],
+                        "access_rules": ["leaf,power,$can_change_wind,shield_2,hammer",
+                        "hookshot,power,$can_change_wind,shield_2,hammer"],
                         "visibility_rules": ["labyrinth_on"]
                     }
                 ],
@@ -2290,7 +2290,7 @@
                     {
                         "name": "Lookout Platform - Destroy the Cannons",
                         "item_count": 1,
-                        "access_rules": ["bombs","boomerang"],
+                        "access_rules": ["$can_destroy_cannons"],
                         "visibility_rules": ["lookouts_on"]
                     }
                 ],
@@ -2344,10 +2344,10 @@
                             {
                                 "name": "Letter from Orca",
                                 "item_count": 1,
-                                "access_rules": ["grapple,leaf,magic,windwaker,requiem,fw_big,boomerang,sword",
-                                "grapple,leaf,magic,windwaker,requiem,fw_big,boomerang,bow",
-                                "grapple,leaf,magic,windwaker,requiem,fw_big,boomerang,bombs",
-                                "grapple,leaf,magic,windwaker,requiem,fw_big,boomerang,hammer"],
+                                "access_rules": ["grapple,leaf,magic,$can_change_wind,fw_big,boomerang,sword",
+                                "grapple,leaf,magic,$can_change_wind,fw_big,boomerang,bow",
+                                "grapple,leaf,magic,$can_change_wind,fw_big,boomerang,bombs",
+                                "grapple,leaf,magic,$can_change_wind,fw_big,boomerang,hammer"],
                                 "visibility_rules": ["mail_on,dungeons_on"]
                             },
                             {

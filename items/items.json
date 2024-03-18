@@ -70,7 +70,7 @@
         "name": "Bombs",
         "type": "toggle",
         "img": "images/items/item13.png",
-        "codes": "bombs,weapon,rock"
+        "codes": "bombs,weapon"
     },
     {
         "name": "Delivery Bag",
@@ -94,7 +94,7 @@
         "name": "Power Bracelets",
         "type": "toggle",
         "img": "images/items/item22.png",
-        "codes": "power,rock"
+        "codes": "power"
     },
     {
         "name": "Hero's Charm",

@@ -25,3 +25,23 @@ end
 function can_lightarrow()
     return (has("bow_3") and has("magic"))
 end
+
+function can_change_wind()
+    return (has("windwaker") and has("requiem"))
+end
+
+function can_destroy_cannons()
+    return (has("boomerang") or has("bombs"))
+end
+
+function can_cut_grass()
+    return (has("hammer") or has("boomerang") or has("bombs") or has("sword"))
+end
+
+function can_cut_trees()
+    return (has("sword") or has("boomerang") or has("hammer"))
+end
+
+function can_remove_rocks()
+    return (has("power") or has("bombs"))
+end
