@@ -33,7 +33,7 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_metal.png",
                         "chest_opened_img": "images/items/chest_metal_gray.png",
-                        "access_rules": ["hammer"]
+                        "access_rules": ["hammer,[$can_fly]","hammer,[hookshot]"]
                     },
                     {
                         "name": "Chest Inside Lower Jail Cell",
@@ -1882,7 +1882,7 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_metal.png",
                         "chest_opened_img": "images/items/chest_metal_gray.png",
-                        "access_rules": ["leaf"],
+                        "access_rules": ["$can_change_wind,leaf,hookshot","$can_change_wind,$can_fly"],
                         "visibility_rules": ["islandpuzzles_on"]
                     },
                     {
@@ -1890,7 +1890,8 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_metal.png",
                         "chest_opened_img": "images/items/chest_metal_gray.png",
-                        "access_rules": ["$can_fly,sword","$can_fly,bow","$can_fly,bombs","$can_fly,hammer"],
+                        "access_rules": ["$can_change_wind,leaf,sword","$can_change_wind,leaf,bow"
+                        ,"$can_change_wind,leaf,bombs","$can_change_wind,leaf,hammer"],
                         "visibility_rules": ["combat_on"]
                     },
                     {
@@ -2076,7 +2077,7 @@
                     {
                         "name": "Behind Curtain In Warp Pot Room",
                         "item_count": 1,
-                        "access_rules": ["$can_magicarrow,grapple","$can_magicarrow,hookshot"],
+                        "access_rules": ["$can_magicarrow,boomerang","$can_magicarrow,hookshot"],
                         "visibility_rules": ["secretpot_on"]
                     },
                     {
@@ -2137,7 +2138,7 @@
                     {
                         "name": "Behind Curtain Next to Hammer Button",
                         "item_count": 1,
-                        "access_rules": ["shield_2,lyric,$can_magicarrow,hookshot","shield_2,lyric,$can_magicarrow,grapple"],
+                        "access_rules": ["shield_2,lyric,$can_magicarrow,hookshot","shield_2,lyric,$can_magicarrow,boomerang"],
                         "visibility_rules": ["secretpot_on"]
                     },
                     {
