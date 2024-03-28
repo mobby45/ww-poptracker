@@ -566,13 +566,13 @@
 		            {
                         "name": "Kamo - Full Moon Photo",
                         "item_count": 1,
-                        "access_rules": ["picto_2,windwaker,passing"],
+                        "access_rules": ["picto_2,$can_play_song_of_passing"],
                         "visibility_rules": ["longsq_on"]
                     },
 		            {
                         "name": "Linda and Anton",
                         "item_count": 1,
-                        "access_rules": ["picto_2,windwaker,passing"],
+                        "access_rules": ["picto_2,$can_play_song_of_passing"],
                         "visibility_rules": ["longsq_on"]
                     }
                 ],
@@ -1882,7 +1882,7 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_metal.png",
                         "chest_opened_img": "images/items/chest_metal_gray.png",
-                        "access_rules": ["$can_change_wind,leaf,hookshot","$can_change_wind,$can_fly"],
+                        "access_rules": ["leaf,hookshot","$can_change_wind,$can_fly"],
                         "visibility_rules": ["islandpuzzles_on"]
                     },
                     {
@@ -2309,13 +2309,13 @@
                             {
                                 "name": "Letter from Hoskit's Girlfriend",
                                 "item_count": 1,
-                                "access_rules": ["spoils,grapple"],
+                                "access_rules": ["spoils,grapple,$can_play_song_of_passing"],
                                 "visibility_rules": ["mail_on,spoils_on"]
                             },
                             {
                                 "name": "Letter from Baito's Mother",
                                 "item_count": 1,
-                                "access_rules": ["delivery,mom"],
+                                "access_rules": ["delivery,mom,$can_play_song_of_passing"],
                                 "visibility_rules": ["mail_on"]
                             },
                             {
@@ -2354,19 +2354,21 @@
                             {
                                 "name": "Letter from Grandma",
                                 "item_count": 1,
-                                "access_rules": ["bottle"],
+                                "access_rules": ["bottle,$can_play_song_of_passing"],
                                 "visibility_rules": ["mail_on"]
                             },
                             {
                                 "name": "Letter from Aryll",
                                 "item_count": 1,
-                                "access_rules": ["hammer,leaf","hammer,hookshot"],
+                                "access_rules": ["hammer,leaf,$can_play_song_of_passing",
+                                "hammer,hookshot,$can_play_song_of_passing"],
                                 "visibility_rules": ["mail_on,dungeons_on"]
                             },
                             {
                                 "name": "Letter from Tingle",
                                 "item_count": 1,
-                                "access_rules": ["hammer,leaf,wallet","hammer,hookshot,wallet"],
+                                "access_rules": ["hammer,leaf,wallet,$can_play_song_of_passing",
+                                "hammer,hookshot,wallet,$can_play_song_of_passing"],
                                 "visibility_rules": ["mail_on,dungeons_on"]
                             }
                         ],

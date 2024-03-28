@@ -30,6 +30,10 @@ function can_change_wind()
     return (has("windwaker") and has("requiem"))
 end
 
+function can_play_song_of_passing()
+    return (has("windwaker") and has("passing"))
+end
+
 function can_destroy_cannons()
     return (has("boomerang") or has("bombs"))
 end
