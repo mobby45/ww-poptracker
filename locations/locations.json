@@ -47,7 +47,7 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/heart2.png",
                         "chest_opened_img": "images/items/heart2_gray.png",
-                        "access_rules": ["hammer,leaf","hammer,hookshot"]
+                        "access_rules": ["hammer,$can_fly","hammer,hookshot"]
                     }
                 ],
                 "map_locations": [
@@ -2367,8 +2367,8 @@
                             {
                                 "name": "Letter from Tingle",
                                 "item_count": 1,
-                                "access_rules": ["hammer,leaf,wallet,$can_play_song_of_passing",
-                                "hammer,hookshot,wallet,$can_play_song_of_passing"],
+                                "access_rules": ["[bombs],hammer,$can_fly,wallet,$can_play_song_of_passing",
+                                "[bombs],hammer,hookshot,wallet,$can_play_song_of_passing"],
                                 "visibility_rules": ["mail_on,dungeons_on"]
                             }
                         ],
