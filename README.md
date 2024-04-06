@@ -24,3 +24,9 @@ PopTracker pack for The Legend of Zelda: The Wind Waker
 
 1. The new AP implementation seems to have broken Triforce Shard 2 autotracking.
 2. The new AP implementation might have broken Wind Temple - Chest In Middle of Hub Room autotracking. Testing has been inconsistent.
+
+## Credits
+
+3D map renders by VGCartography
+	https://www.deviantart.com/vgcartography
+	https://twitter.com/vgcartography

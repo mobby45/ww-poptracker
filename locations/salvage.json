@@ -4,12 +4,11 @@
         "chest_unopened_img": "images/items/chest_salvage.png",
         "chest_opened_img": "images/items/chest_salvage_gray.png",
         "visibility_rules": ["triforcesalvage_on"],
+        "access_rules": ["wallet,grapple"],
         "children": [
             {
                 "name": "Greatfish Isle - Sunken Triforce 1",
-                "access_rules": [
-                    "triforce1,grapple"                    
-                ],
+                "access_rules": ["triforce1"],
 				"sections": [
                     {
                         "name": "Salvage",
@@ -26,9 +25,7 @@
             },
 			{
                 "name": "Gale Isle - Sunken Triforce 2",
-                "access_rules": [
-                    "triforce2,grapple"                    
-                ],
+                "access_rules": ["triforce2"],
 				"sections": [
                     {
                         "name": "Salvage",
@@ -45,9 +42,7 @@
             },
 			{
                 "name": "Stone Watcher Island - Sunken Triforce 3",
-                "access_rules": [
-                    "triforce3,grapple"                    
-                ],
+                "access_rules": ["triforce3"],
 				"sections": [
                     {
                         "name": "Salvage",
@@ -64,9 +59,7 @@
             },
 			{
                 "name": "Outset island - Sunken Triforce 4",
-                "access_rules": [
-                    "triforce4,grapple"                    
-                ],
+                "access_rules": ["triforce4"],
 				"sections": [
                     {
                         "name": "Salvage",
@@ -83,9 +76,7 @@
             },
 			{
                 "name": "Cliff Plateau Isles - Sunken Triforce 5",
-                "access_rules": [
-                    "triforce5,grapple"                    
-                ],
+                "access_rules": ["triforce5"],
 				"sections": [
                     {
                         "name": "Salvage",
@@ -102,9 +93,7 @@
             },
 			{
                 "name": "Southern Triangle Island - Sunken Triforce 6",
-                "access_rules": [
-                    "triforce6,grapple"                    
-                ],
+                "access_rules": ["triforce6"],
 				"sections": [
                     {
                         "name": "Salvage",
@@ -121,9 +110,7 @@
             },
 			{
                 "name": "Seven-Star Isles - Sunken Triforce 7",
-                "access_rules": [
-                    "triforce7,grapple"                    
-                ],
+                "access_rules": ["triforce7"],
 				"sections": [
                     {
                         "name": "Salvage",
@@ -140,9 +127,7 @@
             },
 			{
                 "name": "Two-Eye Reef - Sunken Triforce 8",
-                "access_rules": [
-                    "triforce8,grapple"                    
-                ],
+                "access_rules": ["triforce8"],
 				"sections": [
                     {
                         "name": "Salvage",
