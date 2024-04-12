@@ -33,7 +33,7 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_metal.png",
                         "chest_opened_img": "images/items/chest_metal_gray.png",
-                        "access_rules": ["hammer"]
+                        "access_rules": ["hammer,[$can_fly]","hammer,[hookshot]"]
                     },
                     {
                         "name": "Chest Inside Lower Jail Cell",
@@ -47,7 +47,7 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/heart2.png",
                         "chest_opened_img": "images/items/heart2_gray.png",
-                        "access_rules": ["hammer,leaf","hammer,hookshot"]
+                        "access_rules": ["hammer,$can_fly","hammer,hookshot"]
                     }
                 ],
                 "map_locations": [
@@ -335,7 +335,7 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_metal.png",
                         "chest_opened_img": "images/items/chest_metal_gray.png",
-                        "access_rules": ["bombs,$can_fly"],
+                        "access_rules": ["bombs,$can_fly,$can_change_wind"],
 						"visibility_rules": ["reefs_on"]
                     }
                 ],
@@ -452,7 +452,7 @@
                     {
                         "name": "Kreeb - Light Up Lighthouse",
                         "item_count": 1,
-                        "access_rules": ["$can_magicarrow"],
+                        "access_rules": ["$can_magicarrow,$can_change_wind"],
                         "visibility_rules": ["shortsq_on"]
                     },
                     {
@@ -566,13 +566,13 @@
 		            {
                         "name": "Kamo - Full Moon Photo",
                         "item_count": 1,
-                        "access_rules": ["picto_2,windwaker,passing"],
+                        "access_rules": ["picto_2,$can_play_song_of_passing"],
                         "visibility_rules": ["longsq_on"]
                     },
 		            {
                         "name": "Linda and Anton",
                         "item_count": 1,
-                        "access_rules": ["picto_2,windwaker,passing"],
+                        "access_rules": ["picto_2,$can_play_song_of_passing"],
                         "visibility_rules": ["longsq_on"]
                     }
                 ],
@@ -952,13 +952,13 @@
                     {
                         "name": "Western Lookout Platform - Destroy the Cannons",
                         "item_count": 1,
-                        "access_rules": ["$can_destroy_cannons,$can_fly"],
+                        "access_rules": ["$can_destroy_cannons,$can_fly,$can_change_wind"],
                         "visibility_rules": ["lookouts_on"]
                     },
                     {
                         "name": "Eastern Lookout Platform - Destroy the Cannons",
                         "item_count": 1,
-                        "access_rules": ["$can_destroy_cannons,$can_fly"],
+                        "access_rules": ["$can_destroy_cannons,$can_fly,$can_change_wind"],
                         "visibility_rules": ["lookouts_on"]
                     },
                     {
@@ -1071,7 +1071,7 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_metal.png",
                         "chest_opened_img": "images/items/chest_metal_gray.png",
-                        "access_rules": ["bombs,$can_fly"],
+                        "access_rules": ["bombs,$can_fly,$can_change_wind"],
 						"visibility_rules": ["reefs_on"]
                     }
                 ],
@@ -1091,7 +1091,7 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_spiky.png",
                         "chest_opened_img": "images/items/chest_spiky_gray.png",
-                        "access_rules": ["$can_fly"],
+                        "access_rules": ["$can_fly,$can_change_wind"],
                         "visibility_rules": ["islandpuzzles_on"]
                     }
                 ],
@@ -1111,7 +1111,7 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_metal.png",
                         "chest_opened_img": "images/items/chest_metal_gray.png",
-                        "access_rules": ["bombs,$can_fly"],
+                        "access_rules": ["bombs,$can_fly,$can_change_wind"],
 						"visibility_rules": ["reefs_on"]
                     },
                     {
@@ -1136,7 +1136,7 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_metal.png",
                         "chest_opened_img": "images/items/chest_metal_gray.png",
-                        "access_rules": ["bombs,$can_fly"],
+                        "access_rules": ["bombs,$can_fly,$can_change_wind"],
 						"visibility_rules": ["reefs_on"]
                     },
                     {
@@ -1321,7 +1321,7 @@
                     {
                         "name": "Southwestern Lookout Platform - Defeat the Enemies",
                         "item_count": 1,
-                        "access_rules": ["$can_fly"],
+                        "access_rules": ["$can_fly,$can_change_wind"],
                         "visibility_rules": ["lookouts_on"]
                     }
                 ],
@@ -1583,7 +1583,7 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_metal.png",
                         "chest_opened_img": "images/items/chest_metal_gray.png",
-                        "access_rules": ["$can_destroy_cannons,$can_fly"],
+                        "access_rules": ["$can_destroy_cannons,$can_fly,$can_change_wind"],
 						"visibility_rules": ["reefs_on"]
                     },
                     {
@@ -1632,13 +1632,13 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_metal.png",
                         "chest_opened_img": "images/items/chest_metal_gray.png",
-                        "access_rules": ["bombs,$can_fly","boomerang,$can_fly"],
+                        "access_rules": ["bombs,$can_fly,$can_change_wind","boomerang,$can_fly,$can_change_wind"],
                         "visibility_rules": ["lookouts_on"]
                     },
                     {
                         "name": "Lookout Platform - Destroy the Southeast Cannons",
                         "item_count": 1,
-                        "access_rules": ["bombs,$can_fly","boomerang,$can_fly"],
+                        "access_rules": ["bombs,$can_fly,$can_change_wind","boomerang,$can_fly,$can_change_wind"],
                         "visibility_rules": ["lookouts_on"]
                     }
                 ],
@@ -1882,7 +1882,7 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_metal.png",
                         "chest_opened_img": "images/items/chest_metal_gray.png",
-                        "access_rules": ["leaf"],
+                        "access_rules": ["leaf,hookshot","$can_change_wind,$can_fly"],
                         "visibility_rules": ["islandpuzzles_on"]
                     },
                     {
@@ -1890,7 +1890,8 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_metal.png",
                         "chest_opened_img": "images/items/chest_metal_gray.png",
-                        "access_rules": ["$can_fly,sword","$can_fly,bow","$can_fly,bombs","$can_fly,hammer"],
+                        "access_rules": ["$can_change_wind,leaf,sword","$can_change_wind,leaf,bow"
+                        ,"$can_change_wind,leaf,bombs","$can_change_wind,leaf,hammer"],
                         "visibility_rules": ["combat_on"]
                     },
                     {
@@ -2195,7 +2196,7 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_metal.png",
                         "chest_opened_img": "images/items/chest_metal_gray.png",
-                        "access_rules": ["bombs,$can_fly"],
+                        "access_rules": ["bombs,$can_fly,$can_change_wind"],
 						"visibility_rules": ["reefs_on"]
                     },
                     {
@@ -2233,7 +2234,7 @@
                     {
                         "name": "Cave",
                         "item_count": 1,
-                        "access_rules": ["shield_2,$can_fly","shield_2,hookshot"],
+                        "access_rules": ["shield_2,$can_fly,$can_change_wind","shield_2,hookshot"],
                         "visibility_rules": ["puzzlecaves_on"]
                     }
                 ],
@@ -2308,13 +2309,13 @@
                             {
                                 "name": "Letter from Hoskit's Girlfriend",
                                 "item_count": 1,
-                                "access_rules": ["spoils,grapple"],
+                                "access_rules": ["spoils,grapple,$can_play_song_of_passing"],
                                 "visibility_rules": ["mail_on,spoils_on"]
                             },
                             {
                                 "name": "Letter from Baito's Mother",
                                 "item_count": 1,
-                                "access_rules": ["delivery,mom"],
+                                "access_rules": ["delivery,mom,$can_play_song_of_passing"],
                                 "visibility_rules": ["mail_on"]
                             },
                             {
@@ -2353,19 +2354,21 @@
                             {
                                 "name": "Letter from Grandma",
                                 "item_count": 1,
-                                "access_rules": ["bottle"],
+                                "access_rules": ["bottle,$can_play_song_of_passing"],
                                 "visibility_rules": ["mail_on"]
                             },
                             {
                                 "name": "Letter from Aryll",
                                 "item_count": 1,
-                                "access_rules": ["hammer,leaf","hammer,hookshot"],
+                                "access_rules": ["hammer,leaf,$can_play_song_of_passing",
+                                "hammer,hookshot,$can_play_song_of_passing"],
                                 "visibility_rules": ["mail_on,dungeons_on"]
                             },
                             {
                                 "name": "Letter from Tingle",
                                 "item_count": 1,
-                                "access_rules": ["hammer,leaf,wallet","hammer,hookshot,wallet"],
+                                "access_rules": ["[bombs],hammer,$can_fly,wallet,$can_play_song_of_passing",
+                                "[bombs],hammer,hookshot,wallet,$can_play_song_of_passing"],
                                 "visibility_rules": ["mail_on,dungeons_on"]
                             }
                         ],
