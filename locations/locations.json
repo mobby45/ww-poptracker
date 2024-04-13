@@ -452,7 +452,7 @@
                     {
                         "name": "Kreeb - Light Up Lighthouse",
                         "item_count": 1,
-                        "access_rules": ["$can_magicarrow"],
+                        "access_rules": ["$can_magicarrow,$can_change_wind"],
                         "visibility_rules": ["shortsq_on"]
                     },
                     {
@@ -701,7 +701,7 @@
                         "name": "Rito Aerie - Give Hoskit 20 Golden Feathers",
                         "item_count": 1,
                         "access_rules": ["grapple,spoils"],
-                        "visibility_rules": ["spoils_on"]
+                        "visibility_rules": ["spoilssq_on"]
                     },
                     {
                         "name": "Chest on Top of Boulder",
@@ -2310,7 +2310,7 @@
                                 "name": "Letter from Hoskit's Girlfriend",
                                 "item_count": 1,
                                 "access_rules": ["spoils,grapple,$can_play_song_of_passing"],
-                                "visibility_rules": ["mail_on,spoils_on"]
+                                "visibility_rules": ["mail_on,spoilssq_on"]
                             },
                             {
                                 "name": "Letter from Baito's Mother",
