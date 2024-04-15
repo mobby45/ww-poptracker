@@ -1882,7 +1882,7 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_metal.png",
                         "chest_opened_img": "images/items/chest_metal_gray.png",
-                        "access_rules": ["leaf,hookshot","$can_change_wind,$can_fly"],
+                        "access_rules": ["leaf,hookshot","$can_fly"],
                         "visibility_rules": ["islandpuzzles_on"]
                     },
                     {
@@ -1890,8 +1890,7 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_metal.png",
                         "chest_opened_img": "images/items/chest_metal_gray.png",
-                        "access_rules": ["$can_change_wind,leaf,sword","$can_change_wind,leaf,bow"
-                        ,"$can_change_wind,leaf,bombs","$can_change_wind,leaf,hammer"],
+                        "access_rules": ["leaf,sword","leaf,bow","leaf,bombs","leaf,hammer"],
                         "visibility_rules": ["combat_on"]
                     },
                     {
