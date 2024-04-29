@@ -2016,7 +2016,7 @@
                     {
                         "name": "Withered Trees",
                         "item_count": 1,
-                        "access_rules": ["grapple,bottle,$can_fly"],
+                        "access_rules": ["grapple,bottle,$can_fly,$can_play_ballad_of_gales"],
                         "visibility_rules": ["longsq_on"]
                     },
                     {

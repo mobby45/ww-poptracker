@@ -34,6 +34,10 @@ function can_play_song_of_passing()
     return (has("windwaker") and has("passing"))
 end
 
+function can_play_ballad_of_gales()
+    return (has("windwaker") and has("ballad"))
+end
+
 function can_destroy_cannons()
     return (has("boomerang") or has("bombs"))
 end
@@ -48,4 +52,8 @@ end
 
 function can_remove_rocks()
     return (has("power") or has("bombs"))
+end
+
+function can_defeat_seahats()
+    return (has("boomerang")) or (has("bow")) or (has("hookshot")) or (has("bombs"))
 end

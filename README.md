@@ -1,4 +1,4 @@
-# WindWakerTracker
+# Wind Waker Tracker
 
 PopTracker pack for The Legend of Zelda: The Wind Waker
 

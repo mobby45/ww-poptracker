@@ -93,7 +93,7 @@
             },
 			{
                 "name": "Southern Triangle Island - Sunken Triforce 6",
-                "access_rules": ["triforce6"],
+                "access_rules": ["triforce6,[$can_defeat_seahats]"],
 				"sections": [
                     {
                         "name": "Salvage",
@@ -110,7 +110,7 @@
             },
 			{
                 "name": "Seven-Star Isles - Sunken Triforce 7",
-                "access_rules": ["triforce7"],
+                "access_rules": ["triforce7,[bombs]"],
 				"sections": [
                     {
                         "name": "Salvage",
@@ -127,7 +127,7 @@
             },
 			{
                 "name": "Two-Eye Reef - Sunken Triforce 8",
-                "access_rules": ["triforce8"],
+                "access_rules": ["triforce8,[bombs]"],
 				"sections": [
                     {
                         "name": "Salvage",
@@ -248,7 +248,7 @@
 			{
                 "name": "Six-Eye Reef - Sunken Treasure 6",
                 "access_rules": [
-                    "treasure6,grapple"                    
+                    "treasure6,grapple,[bombs]"                    
                 ],
 				"sections": [
                     {
@@ -362,7 +362,7 @@
 			{
                 "name": "Five-Eye Reef - Sunken Treasure 12",
                 "access_rules": [
-                    "treasure12,grapple"                    
+                    "treasure12,grapple,[$can_destroy_cannons]"                    
                 ],
 				"sections": [
                     {
@@ -533,7 +533,7 @@
 			{
                 "name": "Cyclops Reef - Sunken Treasure 21",
                 "access_rules": [
-                    "treasure21,grapple"                    
+                    "treasure21,grapple,[bombs]"                    
                 ],
 				"sections": [
                     {
@@ -856,7 +856,7 @@
 			{
                 "name": "Three-Eye Reef - Sunken Treasure 38",
                 "access_rules": [
-                    "treasure38,grapple"                    
+                    "treasure38,grapple,[bombs]"                    
                 ],
 				"sections": [
                     {
@@ -913,7 +913,7 @@
 			{
                 "name": "Four-Eye Reef - Sunken Treasure 41",
                 "access_rules": [
-                    "treasure41,grapple"                    
+                    "treasure41,grapple,[bombs]"                    
                 ],
 				"sections": [
                     {
