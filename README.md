@@ -17,13 +17,12 @@ PopTracker pack for The Legend of Zelda: The Wind Waker
 
 1. Higher resolution maps. I'm still hoping for Temple of the Gods and Forsaken Fortress 3D maps to match other dungeons.
 2. More precise location icons on the Sea Chart map.
-3. Add more "out of logic" checks" where possible.
-4. Merge Treasure Salvage onto the main map.
+3. Add more "out of logic" checks" where possible (probably going to limit this to the more accessible methods, nothing too difficult).
 
-## Current Issues
+## Important Notes
 
-1. The new AP implementation seems to have broken Triforce Shard 2 autotracking.
-2. The new AP implementation might have broken Wind Temple - Chest In Middle of Hub Room autotracking. Testing has been inconsistent.
+1. The tracker does not and will not support randomized chart locations. The tracker will always display vanilla chart locations on the Salvaging map.
+2. The tracker does not currently support obscure logic settings in the YAML. Unlikely this will be added, at least anytime soon.
 
 ## Credits
 

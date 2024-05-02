@@ -153,7 +153,7 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_spiky.png",
                         "chest_opened_img": "images/items/chest_spiky_gray.png",
-                        "access_rules": ["$can_fly,bombs"],
+                        "access_rules": ["$can_fly,bombs,tunerlogic_off","$can_fly,bombs,tunerlogic_on,tuner"],
                         "visibility_rules": ["tinglechests_on"]
                     },
                     {
@@ -794,7 +794,7 @@
                     {
                         "name": "Tingle Statue in Hub Room",
                         "item_count": 1,
-                        "access_rules": ["drc_small:4,bombs"],
+                        "access_rules": ["drc_small:4,bombs,tunerlogic_off","drc_small:4,bombs,tunerlogic_on,tuner"],
                         "visibility_rules": ["tinglechests_on"]
                     },
                     {
@@ -823,8 +823,10 @@
                     {
                         "name": "Tingle Statue Chest",
                         "item_count": 1,
-                        "access_rules": ["grapple,bombs,drc_small:4","grapple,bombs,drc_small:1,$can_fly",
-                        "grapple,bombs,drc_small:1,$can_magicarrow"],
+                        "access_rules": ["grapple,bombs,drc_small:4,tunerlogic_off","grapple,bombs,drc_small:1,$can_fly,tunerlogic_off",
+                        "grapple,bombs,drc_small:1,$can_magicarrow,tunerlogic_off",
+                        "grapple,bombs,drc_small:4,tunerlogic_on,tuner","grapple,bombs,drc_small:1,$can_fly,tunerlogic_on,tuner",
+                        "grapple,bombs,drc_small:1,$can_magicarrow,tunerlogic_on,tuner"],
                         "visibility_rules": ["tinglechests_on"]
                     },
                     {
@@ -1199,7 +1201,7 @@
                     {
                         "name": "Tingle Statue Chest",
                         "item_count": 1,
-                        "access_rules": ["bombs,totg_small:1"],
+                        "access_rules": ["bombs,totg_small:1,tunerlogic_off","bombs,totg_small:1,tunerlogic_on,tuner"],
                         "visibility_rules": ["tinglechests_on"]
                     },
                     {
@@ -1803,7 +1805,7 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_spiky.png",
                         "chest_opened_img": "images/items/chest_spiky_gray.png",
-                        "access_rules": ["boomerang,bombs"],
+                        "access_rules": ["boomerang,bombs,tunerlogic_off","boomerang,bombs,tunerlogic_on,tuner"],
                         "visibility_rules": ["tinglechests_on"]
                     },
                     {
@@ -2119,7 +2121,7 @@
                         "item_count": 1,
                         "chest_unopened_img": "images/items/chest_spiky.png",
                         "chest_opened_img": "images/items/chest_spiky_gray.png",
-                        "access_rules": ["shield_2,bombs"],
+                        "access_rules": ["shield_2,bombs,tunerlogic_off","shield_2,bombs,tunerlogic_on,tuner"],
                         "visibility_rules": ["tinglechests_on"]
                     },
                     {
@@ -2366,8 +2368,10 @@
                             {
                                 "name": "Letter from Tingle",
                                 "item_count": 1,
-                                "access_rules": ["[bombs],hammer,$can_fly,wallet,$can_play_song_of_passing",
-                                "[bombs],hammer,hookshot,wallet,$can_play_song_of_passing"],
+                                "access_rules": ["[bombs],hammer,$can_fly,wallet,$can_play_song_of_passing,tunerlogic_off",
+                                "[bombs],hammer,hookshot,wallet,$can_play_song_of_passing,tunerlogic_off",
+                                "[bombs],hammer,$can_fly,wallet,$can_play_song_of_passing,tunerlogic_on,tuner",
+                                "[bombs],hammer,hookshot,wallet,$can_play_song_of_passing,tunerlogic_on,tuner"],
                                 "visibility_rules": ["mail_on,dungeons_on"]
                             }
                         ],

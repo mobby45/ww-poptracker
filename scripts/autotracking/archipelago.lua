@@ -64,6 +64,13 @@ function onClear(slot_data)
         end
     end
     
+    if slot_data['enable_tuner_logic'] then
+        local obj = Tracker:FindObjectForCode("tunerlogic")
+        if obj then
+            obj.CurrentStage = slot_data['enable_tuner_logic']
+        end
+    end
+    
     if slot_data['progression_short_sidequests'] then
         local obj = Tracker:FindObjectForCode("shortsq")
         if obj then

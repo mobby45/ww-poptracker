@@ -9,10 +9,27 @@
     {
 		"name": "Tingle Chests",
 		"type": "toggle",
-		"img": "images/items/item7.png",
+		"img": "images/items/item31.png",
 		"codes": "tinglechests,tinglechests_on",
         "initial_active_state": true
 	},
+    {
+        "name": "Enable Tuner Logic",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "images/items/item7_off.png",
+                "codes": "tunerlogic,tunerlogic_off"
+            },
+            {
+                "img": "images/items/item7.png",
+                "codes": "tunerlogic,tunerlogic_on",
+                "inherit_codes": false
+            }
+        ]
+    },
     {
 		"name": "Dungeon Secrets",
 		"type": "toggle",

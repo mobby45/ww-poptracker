@@ -10,7 +10,7 @@
                 "item_size": "48,48",
                 "rows": [
                     ["sail","windwaker","grapple","spoils","boomerang","leaf","sword","triforce"],
-                    ["picto","boots","armor","bait","bow","bombs","shield","din"],
+                    ["picto","boots","tuner","bait","bow","bombs","shield","din"],
                     ["bottle","statue","delivery","hookshot","hammer","magic","power","farore"],
                     ["requiem","ballad","melody","lyric","aria","passing","charm","nayru"],
                     ["ghost","deed","maggie","moblin","mom","bombbag","quiver","wallet"]
@@ -157,14 +157,14 @@
                     "item_margin": "4,2",
                     "item_size": "30,30",
                     "rows": [
-                            ["dungeons","tinglechests","secretpot"],
+                            ["dungeons","tinglechests","tunerlogic"],
                             ["puzzlecaves","combat","labyrinth"],
                             ["fairies","shortsq","longsq"],
                             ["spoilssq","minigames","sploosh"],
                             ["gifts","mail","lookouts"],
                             ["submarines","reefs","octos"],
                             ["triforcesalvage","treasuresalvage","expensive"],
-                            ["islandpuzzles","misc"]
+                            ["secretpot","islandpuzzles","misc"]
                         ]
                     }
                 ]
