@@ -170,7 +170,7 @@ function onClear(slot_data)
     end
     
     if slot_data['progression_dungeon_secrets'] then
-        local obj = Tracker:FindObjectForCode("dungeon_secrets")
+        local obj = Tracker:FindObjectForCode("secretpot")
         if obj then
             obj.Active = slot_data['progression_dungeon_secrets']
         end
