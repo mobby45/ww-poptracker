@@ -1968,16 +1968,16 @@
                         "$can_change_wind,power,hookshot,hammer",
                         "$can_change_wind,power,hookshot,$can_lightarrow,sword",
                         "$can_change_wind,power,hookshot,$can_lightarrow,grapple",
-                        "$can_change_wind,power,sword,leaf",
-                        "$can_change_wind,power,boomerang,leaf,hammer",
-                        "$can_change_wind,power,boomerang,leaf,$can_lightarrow,grapple",
-                        "$can_change_wind,power,hammer,leaf,"],
+                        "$can_change_wind,power,sword,$can_fly",
+                        "$can_change_wind,power,boomerang,$can_fly,hammer",
+                        "$can_change_wind,power,boomerang,$can_fly,$can_lightarrow,grapple",
+                        "$can_change_wind,power,hammer,$can_fly,"],
                         "visibility_rules": ["labyrinth_on"]
                     },
                     {
                         "name": "Savage Labyrinth Floor - 50",
                         "item_count": 1,
-                        "access_rules": ["leaf,power,$can_change_wind,shield_2,hammer",
+                        "access_rules": ["$can_fly,power,$can_change_wind,shield_2,hammer",
                         "hookshot,power,$can_change_wind,shield_2,hammer"],
                         "visibility_rules": ["labyrinth_on"]
                     }
