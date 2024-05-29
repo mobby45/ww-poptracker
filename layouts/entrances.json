@@ -126,7 +126,8 @@
           "h_alignment": "stretch",
           "v_alignment": "stretch",
           "maps": [
-            "seachart"
+            "seachart",
+            "entrances"
           ]
         }
       ]

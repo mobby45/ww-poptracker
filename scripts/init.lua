@@ -1,6 +1,7 @@
 -- Logic
 ScriptHost:LoadScript("scripts/utils.lua")
 ScriptHost:LoadScript("scripts/logic/logic.lua")
+print("Logic scripts loaded")
 
 -- Items
 Tracker:AddItems("items/internal.json")
@@ -10,6 +11,7 @@ Tracker:AddItems("items/entrance_names.json")
 
 -- Lua Items
 ScriptHost:LoadScript("scripts/items/exit_mappings.lua")
+print("Exit mapping lua items loaded")
 
 -- Maps
 Tracker:AddMaps("maps/maps.json")
@@ -37,3 +39,4 @@ Tracker:AddLayouts("layouts/broadcast.json")
 
 -- AutoTracking for Poptracker
 ScriptHost:LoadScript("scripts/autotracking.lua")
+print("Autotracking script loaded")

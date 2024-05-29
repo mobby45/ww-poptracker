@@ -46,5 +46,11 @@
         "location_size": 15,
         "location_border_thickness": 2,
         "img": "images/maps/wt.png"
+    },
+    {
+        "name": "entrances",
+        "location_size": 18,
+        "location_border_thickness": 2,
+        "img": "images/maps/sea_chart.png"
     }
 ]
