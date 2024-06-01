@@ -122,12 +122,26 @@
           ]
         },
         {
-          "type": "map",
-          "h_alignment": "stretch",
-          "v_alignment": "stretch",
-          "maps": [
-            "seachart",
-            "entrances"
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Locations",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "seachart"
+                ]
+              }
+            },
+            {
+              "title": "Entrances",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "entrances"
+                ]
+              }
+            }
           ]
         }
       ]
