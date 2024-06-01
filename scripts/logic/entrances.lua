@@ -174,6 +174,24 @@ function update_entrances()
         end
     end
     forceLogicUpdate()
+
+    -- Visibly mark impossible exits
+    for _, entrance in ipairs(ENTRANCES) do
+        local exit_name = entrance.exit
+        local lua_item = Tracker:FindObjectForCode(entrance.name)
+        -- It's possible we could be trying to update before all the items have been created in exit_mappings.lua.
+        if lua_item then
+            -- TODO: Also find the placeholder items and change their overlay colour too (will require replacing them
+            --       with `LuaItem` instances too)
+            if exit_name and impossible_exits[exit_name] then
+                -- TODO: Red overlay or something else that stands out more to indicate that the exit is impossible to
+                --       reach (or invalid due to being duplicated).
+                lua_item.IconMods = "@disabled"
+            else
+                lua_item.IconMods = "none"
+            end
+        end
+    end
 end
 
 update_entrances()
