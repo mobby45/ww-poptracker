@@ -1,17 +1,23 @@
+local ENTRANCE_RANDO_ENABLED = Tracker.ActiveVariantUID == "variant_entrance_rando"
+
 -- Logic
 ScriptHost:LoadScript("scripts/utils.lua")
 ScriptHost:LoadScript("scripts/logic/logic.lua")
 print("Logic scripts loaded")
 
 -- Items
-Tracker:AddItems("items/internal.json")
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/settings.json")
-Tracker:AddItems("items/entrance_names.json")
 
--- Lua Items
-ScriptHost:LoadScript("scripts/items/exit_mappings.lua")
-print("Exit mapping lua items loaded")
+if ENTRANCE_RANDO_ENABLED then
+    -- Variants have separate auto-save state and exported state includes the active variant, so there's no need to
+    -- create these items when entrance rando is not enabled.
+    Tracker:AddItems("items/internal.json")
+    Tracker:AddItems("items/entrance_names.json")
+    -- Lua Items
+    ScriptHost:LoadScript("scripts/items/exit_mappings.lua")
+    print("Exit mapping lua items loaded")
+end
 
 -- Maps
 Tracker:AddMaps("maps/maps.json")
