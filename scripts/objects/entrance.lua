@@ -1,12 +1,14 @@
 local Entrance = {}
 Entrance.__index = Entrance
 
-function Entrance.new(name, parent_exit, exit)
+function Entrance.new(name, parent_exit, vanilla_exit)
     local self = setmetatable({}, Entrance)
     -- The name of this entrance.
     self.name = name
     -- The exit that has been assigned to this entrance.
-    self.exit = exit
+    self.exit = vanilla_exit
+    -- The exit when entrance randomization is disabled.
+    self.vanilla_exit = vanilla_exit
     -- There are no entrances accessible from multiple different exits, so a single parent_exit is all that is needed.
     -- Set to `nil` when the entrance is "The Great Sea", indicating that the entrance's parent is always accessible.
     self.parent_exit = parent_exit or "The Great Sea"
