@@ -105,6 +105,7 @@ local function is_exit_possible(exit_name, checked_set)
     end
     if impossible_exits[exit_name] then
         -- This exit has already been found to be impossible.
+        -- This should not normally happen because left/right click to cycle through exits skips already assigned exits.
         return false
     end
 

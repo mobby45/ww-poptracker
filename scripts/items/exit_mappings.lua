@@ -80,24 +80,37 @@ function exit_mapping_load_func(lua_item, data)
     exit_mapping_update(lua_item)
 end
 
--- Cycle to the next exit
+-- Cycle to the next unassigned exit
 function exit_mapping_left_click(lua_item)
     local exit_idx = lua_item:Get("exit_idx")
-    exit_idx = exit_idx + 1
-    if exit_idx > NUM_EXITS then
+    local exit_name = nil
+    -- Iterate forwards until the next unassigned exit or we run out of exits
+    repeat
+        exit_idx = exit_idx + 1
+        exit_name = EXITS[exit_idx]
+    until(exit_name == nil or exit_to_entrance[exit_name] == nil)
+
+    if exit_name == nil then
+        -- If we ran out of exits, set to "Unknown"
         exit_idx = 0
     end
     lua_item:Set("exit_idx", exit_idx)
     exit_mapping_update(lua_item)
 end
 
--- Cycle to the previous exit
+-- Cycle to the previous unassigned exit
 function exit_mapping_right_click(lua_item)
     local exit_idx = lua_item:Get("exit_idx")
-    exit_idx = exit_idx - 1
-    if exit_idx < 0 then
-        exit_idx = NUM_EXITS
+    if exit_idx <= 0 then
+        exit_idx = NUM_EXITS + 1
     end
+    local exit_name = nil
+    -- Iterate backwards until the next unassigned exit or we run out of exits
+    repeat
+        exit_idx = exit_idx - 1
+        exit_name = EXITS[exit_idx]
+    until(exit_name == nil or exit_to_entrance[exit_name] == nil)
+
     lua_item:Set("exit_idx", exit_idx)
     exit_mapping_update(lua_item)
 end
