@@ -57,11 +57,11 @@ function exit_mapping_update(lua_item)
     if exit_name then
         lua_item.Icon = ImageReference:FromPackRelativePath("images/items/exits/" .. exit_name .. ".png")
         entrance.exit = exit_name
-        --lua_item.Name = exit_name
+        lua_item.Name = entrance.name ..  " -> " .. exit_name
     else
         lua_item.Icon = ImageReference:FromPackRelativePath("images/items/exits/Unknown.png")
         entrance.exit = nil
-        --lua_item.Name = "Unknown"
+        lua_item.Name = entrance.name ..  " -> Unknown"
     end
     update_entrances()
 end
