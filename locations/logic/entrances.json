@@ -1,11 +1,15 @@
 [
   {
     "name": "Entrance Logic",
+    "chest_unopened_img": "images/items/chest_wood.png",
+    "chest_opened_img": "images/items/chest_wood_gray.png",
     "children": [
       {
         "name": "Dungeon Entrance on Dragon Roost Island",
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -26,7 +30,9 @@
           ]
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -42,7 +48,9 @@
           "din, farore, nayru"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -58,7 +66,9 @@
           "power"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -74,7 +84,9 @@
           "boots, hammer"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -96,7 +108,9 @@
           ]
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -116,7 +130,9 @@
           ]
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -132,7 +148,9 @@
           "@Macros/can_reach_earth_temple_moblins_and_poes_room, et_small:3"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -148,7 +166,9 @@
           "@Macros/can_open_wind_temple_upper_giant_grate, wt_small:2"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -164,7 +184,9 @@
           "@Macros/can_access_hyrule"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -180,7 +202,9 @@
           "@Macros/can_reach_dragon_roost_cavern_boss_stairs, drc_big"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -203,7 +227,9 @@
           ]
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -223,7 +249,9 @@
           ]
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -243,7 +271,9 @@
           ]
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -259,7 +289,9 @@
           "@Macros/can_reach_earth_temple_tall_vine_room, et_big"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -282,7 +314,9 @@
           ]
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -299,7 +333,9 @@
           "power, hookshot"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -315,7 +351,9 @@
           "@Macros/can_move_boulders"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -331,7 +369,9 @@
           "@Macros/has_ice_arrows"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -347,7 +387,9 @@
           "@Macros/has_fire_arrows"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -363,7 +405,9 @@
           "delivery, deed, grapple"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -379,7 +423,9 @@
           "@Macros/has_fire_arrows"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -396,7 +442,9 @@
           "hookshot"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -413,7 +461,9 @@
           "hookshot"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -429,7 +479,9 @@
           "power"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -445,7 +497,9 @@
           "hookshot"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -461,7 +515,9 @@
           "bait, @Macros/can_buy_hyoi_pears"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -474,7 +530,9 @@
       {
         "name": "Secret Cave Entrance on Pawprint Isle",
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -490,7 +548,9 @@
           "hookshot"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -506,7 +566,9 @@
           "hookshot"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -522,7 +584,9 @@
           "@Macros/can_move_boulders"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -538,7 +602,9 @@
           "bombs"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -554,7 +620,9 @@
           "boots, hammer"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -567,7 +635,9 @@
       {
         "name": "Secret Cave Entrance on Cliff Plateau Isles",
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -583,7 +653,9 @@
           "@Macros/can_fan_with_deku_leaf"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -599,7 +671,9 @@
           "@Macros/can_move_boulders"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -615,7 +689,9 @@
           "@Exit Logic/can_access_ice_ring_isle_secret_cave, boots"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -635,7 +711,9 @@
           ]
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -651,7 +729,9 @@
           "@Macros/can_access_forest_of_fairies, @Macros/can_move_boulders"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -667,7 +747,9 @@
           "hammer"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -683,7 +765,9 @@
           "@Macros/can_move_boulders"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -699,7 +783,9 @@
           "hammer"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -716,7 +802,9 @@
           "@Macros/has_fire_arrows"
         ],
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
@@ -729,7 +817,9 @@
       {
         "name": "Fairy Fountain Entrance on Northern Fairy Island",
         "sections": [
-          {}
+          {
+            "name": "Can Enter"
+          }
         ],
         "map_locations": [
           {
