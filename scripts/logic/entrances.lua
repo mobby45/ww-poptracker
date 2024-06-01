@@ -143,8 +143,8 @@ function forceLogicUpdate()
     end
 end
 
-function update_entrances()
-    if PAUSE_ENTRANCE_UPDATES or not ENTRANCE_RANDO_ENABLED then
+function update_entrances(initializing)
+    if not initializing and (PAUSE_ENTRANCE_UPDATES or not ENTRANCE_RANDO_ENABLED) then
         return
     end
     -- Reset
@@ -166,6 +166,13 @@ function update_entrances()
             end
         end
     end
+
+    if initializing then
+        -- When initializing, there is no need to check for unreachable exits because any assigned exits won't have been
+        -- loaded from auto-saved state yet (and entrance randomization may not even be enabled).
+        return
+    end
+
     -- Check for unreachable exits
     for _, entrance in ipairs(ENTRANCES) do
         local exit_name = entrance.exit
@@ -195,15 +202,4 @@ function update_entrances()
     end
 end
 
-update_entrances()
-
--- Set the vanilla mappings when entrance randomization is not enabled.
-if not ENTRANCE_RANDO_ENABLED then
-    for _, entrance in ipairs(ENTRANCES) do
-        -- Logic will only consider the vanilla exits when entrance rando is not enabled.
-        local exit_name = entrance.vanilla_exit
-        local entrance_name = entrance.name
-        entrance_to_exit[entrance_name] = exit_name
-        exit_to_entrance[exit_name] = entrance_name
-    end
-end
+update_entrances(true)
