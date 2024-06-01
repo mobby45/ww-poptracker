@@ -67,15 +67,20 @@ function exit_mapping_update(lua_item)
 end
 
 function exit_mapping_save_func(lua_item)
-    print("Saving exit mapping data")
-    return lua_item.ItemState
+    --print("Saving exit mapping data")
+    return { exit_idx = lua_item.ItemState.exit_idx }
 end
 
 function exit_mapping_load_func(lua_item, data)
-    print("Reading exit mapping during load:")
-    for k, v in pairs(data) do
-        print("  " .. k .. ": " .. tostring(v))
-        lua_item:Set(k, v)
+    --print("Reading exit mapping during load")
+    if data == nil then
+        print("Error: Data to read for exit mapping " .. lua_item.Name .. " was nil")
+        return
+    end
+
+    local exit_idx = data.exit_idx
+    if exit_idx then
+        lua_item:Set("exit_idx", exit_idx)
     end
     exit_mapping_update(lua_item)
 end
