@@ -19,7 +19,7 @@
               "type": "itemgrid",
               "margin": "0,0,4,0",
               "item_margin": "0,0",
-              "item_size": "254,11",
+              "item_size": "238,10",
               "rows": [
                 ["Placeholder for Dungeon Entrance on Dragon Roost Island"],
                 ["Placeholder for Dungeon Entrance in Forest Haven Sector"],
@@ -71,7 +71,7 @@
               "type": "itemgrid",
               "margin": "0,0,0,0",
               "item_margin": "0,0",
-              "item_size": "254,11",
+              "item_size": "219,10",
               "rows": [
                 ["Dungeon Entrance on Dragon Roost Island"],
                 ["Dungeon Entrance in Forest Haven Sector"],
