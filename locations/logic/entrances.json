@@ -563,8 +563,8 @@
       },
       {
         "name": "Secret Cave Entrance on Bird's Peak Rock",
-        "chest_unopened_img": "images/entrances/entrance_hole.png",
-        "chest_opened_img": "images/entrances/entrance_hole_gray.png",
+        "chest_unopened_img": "images/entrances/entrance_bird's_peak.png",
+        "chest_opened_img": "images/entrances/entrance_bird's_peak_gray.png",
         "access_rules": [
           "bait, @Macros/can_buy_hyoi_pears"
         ],
@@ -680,8 +680,8 @@
       },
       {
         "name": "Secret Cave Entrance on Shark Island",
-        "chest_unopened_img": "images/entrances/entrance_hole.png",
-        "chest_opened_img": "images/entrances/entrance_hole_gray.png",
+        "chest_unopened_img": "images/entrances/entrance_fire_hole.png",
+        "chest_opened_img": "images/entrances/entrance_fire_hole_gray.png",
         "access_rules": [
           "boots, hammer"
         ],
