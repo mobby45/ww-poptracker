@@ -50,9 +50,7 @@
       {
         "name": "Hop Across Floating Boxes",
         "sections": [
-          {
-            "item_count": 1
-          }
+          {}
         ],
         "map_locations": [
           {
