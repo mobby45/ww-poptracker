@@ -1087,6 +1087,15 @@
           "hammer",
           "grapple"
         ]
+      },
+      {
+        "name": "can_defeat_seahats",
+        "access_rules": [
+          "boomerang",
+          "bow",
+          "hookshot",
+          "bombs"
+        ]
       }
     ]
   }

@@ -103,7 +103,7 @@
       {
         "name": "Southern Triangle Island - Sunken Triforce 6",
         "access_rules": [
-          "triforce6,[$can_defeat_seahats]"
+          "triforce6,[@Macros/can_defeat_seahats]"
         ],
         "sections": [
           {
@@ -365,7 +365,7 @@
       {
         "name": "Five-Eye Reef - Sunken Treasure 12",
         "access_rules": [
-          "treasure12,grapple,[$can_destroy_cannons]"
+          "treasure12,grapple,[@Macros/can_destroy_cannons]"
         ],
         "sections": [
           {
