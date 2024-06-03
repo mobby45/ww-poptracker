@@ -50,25 +50,8 @@ ENTRANCES = {
 }
 
 ENTRANCE_BY_NAME = {}
--- Exits mapped to entrances located in that exit
-ENTRANCE_ACCESSIBILITY = {}
 for _, entrance in ipairs(ENTRANCES) do
     ENTRANCE_BY_NAME[entrance.name] = entrance
-
-    local parent_exit = entrance.parent_exit
-    local entrances_list = ENTRANCE_ACCESSIBILITY[parent_exit]
-    if entrances_list == nil then
-        entrances_list = {}
-        ENTRANCE_ACCESSIBILITY[parent_exit] = entrances_list
-    end
-    table.insert(entrances_list, entrance)
-end
-
-ENTRANCE_ACCESSIBILITY_REVERSE = {}
-for exit, entrances in pairs(ENTRANCE_ACCESSIBILITY) do
-    for _, entrance in ipairs(entrances) do
-        ENTRANCE_ACCESSIBILITY_REVERSE[entrance] = exit
-    end
 end
 
 entrance_to_exit = {}
