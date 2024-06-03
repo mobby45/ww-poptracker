@@ -176,5 +176,80 @@
 		"img": "images/items/item23.png",
 		"codes": "misc,misc_on",
 		"initial_active_state": true
+	},
+	{
+		"name": "Logic Obscurity",
+		"type": "progressive",
+		"allow_disabled": false,
+		"loop": false,
+		"codes": "tww_obscure",
+		"stages": [
+			{
+				"name": "Logic Obscurity - None",
+				"codes": "tww_obscure_0"
+			},
+			{
+				"name": "Logic Obscurity - Normal",
+				"codes": "tww_obscure_1"
+			},
+			{
+				"name": "Logic Obscurity - Hard",
+				"codes": "tww_obscure_2"
+			},
+			{
+				"name": "Logic Obscurity - Very Hard",
+				"codes": "tww_obscure_3"
+			}
+		]
+	},
+	{
+		"name": "Logic Precision",
+		"type": "progressive",
+		"allow_disabled": false,
+		"loop": false,
+		"codes": "tww_precise",
+		"stages": [
+			{
+				"name": "Logic Precision - None",
+				"codes": "tww_precise_0"
+			},
+			{
+				"name": "Logic Precision - Normal",
+				"codes": "tww_precise_1"
+			},
+			{
+				"name": "Logic Precision - Hard",
+				"codes": "tww_precise_2"
+			},
+			{
+				"name": "Logic Precision - Very Hard",
+				"codes": "tww_precise_3"
+			}
+		]
+	},
+	{
+		"name": "Sword Mode",
+		"type": "progressive",
+		"allow_disabled": false,
+		"codes": "tww_sword_mode",
+		"stages": [
+			{
+				"name": "Sword Mode - Start with Sword",
+				"codes": "tww_outside_swordless_mode"
+			},
+			{
+				"name": "Sword Mode - No Starting Sword"
+			},
+			{
+				"name": "Sword Mode - Swordless",
+				"inherit_codes": false,
+				"codes": "tww_in_swordless_mode"
+			}
+		]
+	},
+	{
+		"name": "Skip Rematch Bosses",
+		"type": "toggle",
+		"codes": "tww_rematch_bosses_skipped"
 	}
 ]
