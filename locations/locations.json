@@ -2294,11 +2294,11 @@
             "access_rules": [
               [
                 "ghost",
-                "@Macros/can_play_ballad_of_gales",
+                "[@Macros/can_play_ballad_of_gales]",
                 "@Macros/can_defeat_wizzrobes",
                 "@Macros/can_defeat_poes",
-                "@Macros/can_defeat_redeads",
-                "@Macros/can_defeat_stalfos"
+                "[@Macros/can_defeat_redeads]",
+                "[@Macros/can_defeat_stalfos]"
               ]
             ],
             "visibility_rules": [
