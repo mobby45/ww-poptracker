@@ -2585,7 +2585,11 @@
           {
             "name": "Letter from Hoskit's Girlfriend",
             "access_rules": [
-              "spoils,grapple,$can_play_song_of_passing"
+              [
+                "spoils",
+                "@Macros/can_farm_golden_feathers",
+                "@Macros/can_play_song_of_passing"
+              ]
             ],
             "visibility_rules": [
               "mail_on,spoilssq_on"
@@ -2594,7 +2598,11 @@
           {
             "name": "Letter from Baito's Mother",
             "access_rules": [
-              "delivery,mom,$can_play_song_of_passing"
+              [
+                "delivery",
+                "mom",
+                "@Macros/can_play_song_of_passing"
+              ]
             ],
             "visibility_rules": [
               "mail_on"
@@ -2652,7 +2660,11 @@
           {
             "name": "Letter from Grandma",
             "access_rules": [
-              "bottle,$can_play_song_of_passing"
+              [
+                "bottle",
+                "@Macros/can_get_fairies",
+                "@Macros/can_play_song_of_passing"
+              ]
             ],
             "visibility_rules": [
               "mail_on"

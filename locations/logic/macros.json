@@ -1170,6 +1170,9 @@
         "access_rules": [
           "armor, magic"
         ]
+      },
+      {
+        "name": "can_get_fairies"
       }
     ]
   }
