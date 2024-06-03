@@ -1,16 +1,15 @@
 local Entrance = {}
 Entrance.__index = Entrance
 
-function Entrance.new(name, parent_exit, vanilla_exit)
+function Entrance.new(name, vanilla_exit, parent_exit)
     local self = setmetatable({}, Entrance)
     -- The name of this entrance.
     self.name = name
-    -- The exit that has been assigned to this entrance.
+    -- The exit that has been assigned to this entrance. Always starts off as vanilla and won't change if Entrance
+    -- Randomization is not enabled.
     self.exit = vanilla_exit
-    -- The exit when entrance randomization is disabled.
-    self.vanilla_exit = vanilla_exit
     -- There are no entrances accessible from multiple different exits, so a single parent_exit is all that is needed.
-    -- Set to `nil` when the entrance is "The Great Sea", indicating that the entrance's parent is always accessible.
+    -- Defaults to "The Great Sea" when not set, which is always accessible.
     self.parent_exit = parent_exit or "The Great Sea"
     -- The location which holds this entrance's logic, or `nil` if the entrance is always accessible.
     self.entrance_logic = "@Entrance Logic/" .. name
