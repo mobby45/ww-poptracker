@@ -38,7 +38,6 @@ function onClear(slot_data)
     setFromSlotData('progression_great_fairies', 'fairies')
     setFromSlotData('progression_free_gifts', 'gifts')
     setFromSlotData('progression_tingle_chests', 'tinglechests')
-    setFromSlotData('enable_tuner_logic', 'tunerlogic')
     setFromSlotData('progression_short_sidequests', 'shortsq')
     setFromSlotData('progression_long_sidequests', 'longsq')
     setFromSlotData('progression_spoils_trading', 'spoilssq')
@@ -54,7 +53,13 @@ function onClear(slot_data)
     setFromSlotData('progression_big_octos_gunboats', 'octos')
     setFromSlotData('progression_minigames', 'minigames')
     setFromSlotData('progression_dungeon_secrets', 'secretpot')
-    
+
+    setFromSlotData('enable_tuner_logic', 'tunerlogic')
+    setFromSlotData('logic_obscurity', 'tww_obscure')
+    setFromSlotData('logic_precision', 'tww_precise')
+    setFromSlotData('sword_mode', 'tww_sword_mode')
+    setFromSlotData('skip_rematch_bosses', 'tww_rematch_bosses_skipped')
+
     -- junk that was in here from the template
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("called onClear, slot_data:\n%s", dump_table(slot_data)))
