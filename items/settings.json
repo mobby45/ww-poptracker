@@ -272,5 +272,11 @@
 		"type": "toggle",
 		"img": "images/items/settings/skip_rematches.png",
 		"codes": "tww_rematch_bosses_skipped"
+	},
+	{
+		"name": "Swift Sail Changes Wind",
+		"type": "toggle",
+		"img": "images/items/item1.png",
+		"codes": "swift_sail"
 	}
 ]

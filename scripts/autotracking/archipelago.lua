@@ -59,6 +59,7 @@ function onClear(slot_data)
     setFromSlotData('logic_precision', 'tww_precise')
     setFromSlotData('sword_mode', 'tww_sword_mode')
     setFromSlotData('skip_rematch_bosses', 'tww_rematch_bosses_skipped')
+    setFromSlotData('swift_sail', 'swift_sail')
 
     -- junk that was in here from the template
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then

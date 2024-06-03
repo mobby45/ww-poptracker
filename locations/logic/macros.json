@@ -48,7 +48,7 @@
         "name": "can_fly_with_deku_leaf_outdoors",
         "access_rules": [
           "leaf, magic, @Macros/can_play_winds_requiem",
-          "leaf, magic, [@Macros/can_play_winds_requiem], sail"
+          "leaf, magic, [@Macros/can_play_winds_requiem], sail, swift_sail"
         ]
       },
       {

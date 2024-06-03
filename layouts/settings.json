@@ -29,6 +29,15 @@
                 "type": "layout",
                 "key": "logic_settings_grid"
               }
+            },
+            {
+              "type": "group",
+              "header": "Other",
+              "dock": "left",
+              "content": {
+                "type": "layout",
+                "key": "other_settings_grid"
+              }
             }
           ]
         }
