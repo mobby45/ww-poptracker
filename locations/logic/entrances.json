@@ -37,7 +37,7 @@
             "@Macros/can_fly_with_deku_leaf_indoors",
             "[tww_obscure_1]",
             "[tww_precise_1]",
-            "@Macros/can_fly_with_deku_leaf_outdoors",
+            "@Macros/_can_fly_with_deku_leaf_outdoors_no_swift_sail_sequence_break",// The wind direction to get into Forest Haven without grappling hook is different to the wind direction required to fly to the dungeon entrance
             "@Macros/_can_cut_grass_or_has_magic_meter_upgrade"
           ]
         ],

@@ -47,7 +47,8 @@
       {
         "name": "can_fly_with_deku_leaf_outdoors",
         "access_rules": [
-          "leaf, magic, @Macros/can_play_winds_requiem"
+          "leaf, magic, @Macros/can_play_winds_requiem",
+          "leaf, magic, [@Macros/can_play_winds_requiem], sail"
         ]
       },
       {
@@ -1150,7 +1151,7 @@
         "access_rules": [
           [
             "@Macros/can_fly_with_deku_leaf_indoors",
-            "@Macros/can_fly_with_deku_leaf_outdoors",
+            "@Macros/_can_fly_with_deku_leaf_outdoors_no_swift_sail_sequence_break",// Must be able to fly out and then back, requiring a change in wind direction half way
             "[tww_obscure_1]",
             "@Macros/_forest_haven_grapple_skip_magic_use"
           ]
@@ -1173,6 +1174,12 @@
       },
       {
         "name": "can_get_fairies"
+      },
+      {
+        "name": "_can_fly_with_deku_leaf_outdoors_no_swift_sail_sequence_break",
+        "access_rules": [
+          "leaf, magic, @Macros/can_play_winds_requiem"
+        ]
       }
     ]
   }

@@ -824,7 +824,7 @@
           {
             "name": "Fly Across Platforms Around Island",
             "access_rules": [
-              "@Macros/can_fly_with_deku_leaf_outdoors, @Macros/_can_cut_grass_or_has_magic_meter_upgrade"
+              "@Macros/_can_fly_with_deku_leaf_outdoors_no_swift_sail_sequence_break, @Macros/_can_cut_grass_or_has_magic_meter_upgrade"
             ],
             "visibility_rules": [
               "islandpuzzles_on"
