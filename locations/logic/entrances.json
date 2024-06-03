@@ -8,6 +8,10 @@
         "name": "Dungeon Entrance on Dragon Roost Island",
         "chest_unopened_img": "images/entrances/entrance_dungeon_drc.png",
         "chest_opened_img": "images/entrances/entrance_dungeon_drc_gray.png",
+        "access_rules": [
+          "",
+          "{$is_exit_assigned|Dungeon Entrance on Dragon Roost Island}"
+        ],
         "sections": [
           {
             "name": "Can Enter"
@@ -39,7 +43,8 @@
             "[tww_precise_1]",
             "@Macros/can_fly_with_deku_leaf_outdoors",
             "@Macros/_can_cut_grass_or_has_magic_meter_upgrade"
-          ]
+          ],
+          "{$is_exit_assigned|Dungeon Entrance in Forest Haven Sector}"
         ],
         "sections": [
           {
@@ -59,7 +64,8 @@
         "chest_unopened_img": "images/entrances/entrance_dungeon_totg.png",
         "chest_opened_img": "images/entrances/entrance_dungeon_totg_gray.png",
         "access_rules": [
-          "din, farore, nayru"
+          "din, farore, nayru",
+          "{$is_exit_assigned|Dungeon Entrance in Tower of the Gods Sector}"
         ],
         "sections": [
           {
@@ -79,7 +85,8 @@
         "chest_unopened_img": "images/entrances/entrance_headstone.png",
         "chest_opened_img": "images/entrances/entrance_headstone_gray.png",
         "access_rules": [
-          "power"
+          "power",
+          "{$is_exit_assigned|Dungeon Entrance on Headstone Island}"
         ],
         "sections": [
           {
@@ -99,7 +106,8 @@
         "chest_unopened_img": "images/entrances/entrance_dungeon_wt.png",
         "chest_opened_img": "images/entrances/entrance_dungeon_wt_gray.png",
         "access_rules": [
-          "boots, hammer"
+          "boots, hammer",
+          "{$is_exit_assigned|Dungeon Entrance on Gale Isle}"
         ],
         "sections": [
           {
@@ -125,7 +133,8 @@
             "@Macros/can_defeat_boko_babas",
             "grapple",
             "fw_small:1"
-          ]
+          ],
+          "{$is_exit_assigned|Miniboss Entrance in Forbidden Woods}"
         ],
         "sections": [
           {
@@ -149,7 +158,8 @@
             "@Macros/can_reach_tower_of_the_gods_second_floor",
             "@Macros/_grapple_or_can_fly_with_deku_leaf_indoors",
             "@Macros/_can_play_command_melody_or_bow"
-          ]
+          ],
+          "{$is_exit_assigned|Miniboss Entrance in Tower of the Gods}"
         ],
         "sections": [
           {
@@ -169,7 +179,8 @@
         "chest_unopened_img": "images/items/smallkey.png",
         "chest_opened_img": "images/items/smallkey_gray.png",
         "access_rules": [
-          "@Macros/can_reach_earth_temple_moblins_and_poes_room, et_small:3"
+          "@Macros/can_reach_earth_temple_moblins_and_poes_room, et_small:3",
+          "{$is_exit_assigned|Miniboss Entrance in Earth Temple}"
         ],
         "sections": [
           {
@@ -189,7 +200,8 @@
         "chest_unopened_img": "images/items/smallkey.png",
         "chest_opened_img": "images/items/smallkey_gray.png",
         "access_rules": [
-          "@Macros/can_open_wind_temple_upper_giant_grate, wt_small:2"
+          "@Macros/can_open_wind_temple_upper_giant_grate, wt_small:2",
+          "{$is_exit_assigned|Miniboss Entrance in Wind Temple}"
         ],
         "sections": [
           {
@@ -209,7 +221,8 @@
         "chest_unopened_img": "images/entrances/entrance_mastersword.png",
         "chest_opened_img": "images/entrances/entrance_mastersword_gray.png",
         "access_rules": [
-          "@Macros/can_access_hyrule"
+          "@Macros/can_access_hyrule",
+          "{$is_exit_assigned|Miniboss Entrance in Hyrule Castle}"
         ],
         "sections": [
           {
@@ -229,7 +242,8 @@
         "chest_unopened_img": "images/items/bigkey2.png",
         "chest_opened_img": "images/items/bigkey2_gray.png",
         "access_rules": [
-          "@Macros/can_reach_dragon_roost_cavern_boss_stairs, drc_big"
+          "@Macros/can_reach_dragon_roost_cavern_boss_stairs, drc_big",
+          "{$is_exit_assigned|Boss Entrance in Dragon Roost Cavern}"
         ],
         "sections": [
           {
@@ -256,7 +270,8 @@
             "@Macros/_can_defeat_door_flowers_or_grapple",
             "@Macros/can_defeat_mothulas",
             "fw_big"
-          ]
+          ],
+          "{$is_exit_assigned|Boss Entrance in Forbidden Woods}"
         ],
         "sections": [
           {
@@ -280,7 +295,8 @@
             "@Macros/can_reach_tower_of_the_gods_third_floor",
             "@Macros/can_defeat_armos",
             "totg_big"
-          ]
+          ],
+          "{$is_exit_assigned|Boss Entrance in Tower of the Gods}"
         ],
         "sections": [
           {
@@ -310,7 +326,8 @@
             "hammer",
             "[tww_obscure_2]",
             "[tww_precise_2]"
-          ]
+          ],
+          "{$is_exit_assigned|Boss Entrance in Forsaken Fortress}"
         ],
         "sections": [
           {
@@ -330,7 +347,8 @@
         "chest_unopened_img": "images/items/bigkey2.png",
         "chest_opened_img": "images/items/bigkey2_gray.png",
         "access_rules": [
-          "@Macros/can_reach_earth_temple_tall_vine_room, et_big"
+          "@Macros/can_reach_earth_temple_tall_vine_room, et_big",
+          "{$is_exit_assigned|Boss Entrance in Earth Temple}"
         ],
         "sections": [
           {
@@ -357,7 +375,8 @@
             "@Macros/can_play_command_melody",
             "@Macros/can_play_wind_gods_aria",
             "wt_big"
-          ]
+          ],
+          "{$is_exit_assigned|Boss Entrance in Wind Temple}"
         ],
         "sections": [
           {
@@ -378,7 +397,8 @@
         "chest_opened_img": "images/entrances/entrance_headstone_gray.png",
         "access_rules": [
           "power, @Macros/can_reach_outset_island_upper_level, @Macros/can_fly_with_deku_leaf_outdoors",
-          "power, hookshot"
+          "power, hookshot",
+          "{$is_exit_assigned|Secret Cave Entrance on Outset Island}"
         ],
         "sections": [
           {
@@ -398,7 +418,8 @@
         "chest_unopened_img": "images/entrances/entrance_rock.png",
         "chest_opened_img": "images/entrances/entrance_rock_gray.png",
         "access_rules": [
-          "@Macros/can_move_boulders"
+          "@Macros/can_move_boulders",
+          "{$is_exit_assigned|Secret Cave Entrance on Dragon Roost Island}"
         ],
         "sections": [
           {
@@ -418,7 +439,8 @@
         "chest_unopened_img": "images/entrances/entrance_fire_mountain.png",
         "chest_opened_img": "images/entrances/entrance_fire_mountain_gray.png",
         "access_rules": [
-          "@Macros/has_ice_arrows"
+          "@Macros/has_ice_arrows",
+          "{$is_exit_assigned|Secret Cave Entrance on Fire Mountain}"
         ],
         "sections": [
           {
@@ -438,7 +460,8 @@
         "chest_unopened_img": "images/entrances/entrance_ice_ring_isle.png",
         "chest_opened_img": "images/entrances/entrance_ice_ring_isle_gray.png",
         "access_rules": [
-          "@Macros/has_fire_arrows"
+          "@Macros/has_fire_arrows",
+          "{$is_exit_assigned|Secret Cave Entrance on Ice Ring Isle}"
         ],
         "sections": [
           {
@@ -458,7 +481,8 @@
         "chest_unopened_img": "images/entrances/entrance_cabana.png",
         "chest_opened_img": "images/entrances/entrance_cabana_gray.png",
         "access_rules": [
-          "delivery, deed, grapple"
+          "delivery, deed, grapple",
+          "{$is_exit_assigned|Secret Cave Entrance on Private Oasis}"
         ],
         "sections": [
           {
@@ -478,7 +502,8 @@
         "chest_unopened_img": "images/entrances/entrance_needle_rock_isle.png",
         "chest_opened_img": "images/entrances/entrance_needle_rock_isle_gray.png",
         "access_rules": [
-          "@Macros/has_fire_arrows"
+          "@Macros/has_fire_arrows",
+          "{$is_exit_assigned|Secret Cave Entrance on Needle Rock Isle}"
         ],
         "sections": [
           {
@@ -499,7 +524,8 @@
         "chest_opened_img": "images/entrances/entrance_hole_gray.png",
         "access_rules": [
           "@Macros/can_fly_with_deku_leaf_outdoors",
-          "hookshot"
+          "hookshot",
+          "{$is_exit_assigned|Secret Cave Entrance on Angular Isles}"
         ],
         "sections": [
           {
@@ -520,7 +546,8 @@
         "chest_opened_img": "images/entrances/entrance_hole_gray.png",
         "access_rules": [
           "@Macros/can_fly_with_deku_leaf_outdoors",
-          "hookshot"
+          "hookshot",
+          "{$is_exit_assigned|Secret Cave Entrance on Boating Course}"
         ],
         "sections": [
           {
@@ -540,7 +567,8 @@
         "chest_unopened_img": "images/entrances/entrance_headstone.png",
         "chest_opened_img": "images/entrances/entrance_headstone_gray.png",
         "access_rules": [
-          "power"
+          "power",
+          "{$is_exit_assigned|Secret Cave Entrance on Stone Watcher Island}"
         ],
         "sections": [
           {
@@ -560,7 +588,8 @@
         "chest_unopened_img": "images/entrances/entrance_hole.png",
         "chest_opened_img": "images/entrances/entrance_hole_gray.png",
         "access_rules": [
-          "hookshot"
+          "hookshot",
+          "{$is_exit_assigned|Secret Cave Entrance on Overlook Island}"
         ],
         "sections": [
           {
@@ -580,7 +609,8 @@
         "chest_unopened_img": "images/entrances/entrance_bird's_peak.png",
         "chest_opened_img": "images/entrances/entrance_bird's_peak_gray.png",
         "access_rules": [
-          "bait, @Macros/can_buy_hyoi_pears"
+          "bait, @Macros/can_buy_hyoi_pears",
+          "{$is_exit_assigned|Secret Cave Entrance on Bird's Peak Rock}"
         ],
         "sections": [
           {
@@ -599,6 +629,10 @@
         "name": "Secret Cave Entrance on Pawprint Isle",
         "chest_unopened_img": "images/entrances/entrance_pawprint_isle_chuchu.png",
         "chest_opened_img": "images/entrances/entrance_pawprint_isle_chuchu_gray.png",
+        "access_rules": [
+          "",
+          "{$is_exit_assigned|Secret Cave Entrance on Pawprint Isle}"
+        ],
         "sections": [
           {
             "name": "Can Enter"
@@ -617,7 +651,8 @@
         "chest_unopened_img": "images/entrances/entrance_hole.png",
         "chest_opened_img": "images/entrances/entrance_hole_gray.png",
         "access_rules": [
-          "hookshot"
+          "hookshot",
+          "{$is_exit_assigned|Secret Cave Entrance on Pawprint Isle Side Isle}"
         ],
         "sections": [
           {
@@ -637,7 +672,8 @@
         "chest_unopened_img": "images/entrances/entrance_hole.png",
         "chest_opened_img": "images/entrances/entrance_hole_gray.png",
         "access_rules": [
-          "hookshot"
+          "hookshot",
+          "{$is_exit_assigned|Secret Cave Entrance on Diamond Steppe Island}"
         ],
         "sections": [
           {
@@ -657,7 +693,8 @@
         "chest_unopened_img": "images/entrances/entrance_rock.png",
         "chest_opened_img": "images/entrances/entrance_rock_gray.png",
         "access_rules": [
-          "@Macros/can_move_boulders"
+          "@Macros/can_move_boulders",
+          "{$is_exit_assigned|Secret Cave Entrance on Bomb Island}"
         ],
         "sections": [
           {
@@ -677,7 +714,8 @@
         "chest_unopened_img": "images/entrances/entrance_rock.png",
         "chest_opened_img": "images/entrances/entrance_rock_gray.png",
         "access_rules": [
-          "bombs"
+          "bombs",
+          "{$is_exit_assigned|Secret Cave Entrance on Rock Spire Isle}"
         ],
         "sections": [
           {
@@ -697,7 +735,8 @@
         "chest_unopened_img": "images/entrances/entrance_fire_hole.png",
         "chest_opened_img": "images/entrances/entrance_fire_hole_gray.png",
         "access_rules": [
-          "boots, hammer"
+          "boots, hammer",
+          "{$is_exit_assigned|Secret Cave Entrance on Shark Island}"
         ],
         "sections": [
           {
@@ -716,6 +755,10 @@
         "name": "Secret Cave Entrance on Cliff Plateau Isles",
         "chest_unopened_img": "images/entrances/entrance_hole.png",
         "chest_opened_img": "images/entrances/entrance_hole_gray.png",
+        "access_rules": [
+          "",
+          "{$is_exit_assigned|Secret Cave Entrance on Cliff Plateau Isles}"
+        ],
         "sections": [
           {
             "name": "Can Enter"
@@ -734,7 +777,8 @@
         "chest_unopened_img": "images/entrances/entrance_hole.png",
         "chest_opened_img": "images/entrances/entrance_hole_gray.png",
         "access_rules": [
-          "@Macros/can_fan_with_deku_leaf"
+          "@Macros/can_fan_with_deku_leaf",
+          "{$is_exit_assigned|Secret Cave Entrance on Horseshoe Island}"
         ],
         "sections": [
           {
@@ -754,7 +798,8 @@
         "chest_unopened_img": "images/entrances/entrance_rock.png",
         "chest_opened_img": "images/entrances/entrance_rock_gray.png",
         "access_rules": [
-          "@Macros/can_move_boulders"
+          "@Macros/can_move_boulders",
+          "{$is_exit_assigned|Secret Cave Entrance on Star Island}"
         ],
         "sections": [
           {
@@ -774,7 +819,8 @@
         "chest_unopened_img": "images/entrances/entrance_ice_ring_inner.png",
         "chest_opened_img": "images/entrances/entrance_hole_gray.png",
         "access_rules": [
-          "@Exit Logic/can_access_ice_ring_isle_secret_cave, boots"
+          "@Exit Logic/can_access_ice_ring_isle_secret_cave, boots",
+          "{$is_exit_assigned|Inner Entrance in Ice Ring Isle Secret Cave}"
         ],
         "sections": [
           {
@@ -798,7 +844,8 @@
             "@Exit Logic/can_access_cliff_plateau_isles_secret_cave",
             "@Macros/can_defeat_boko_babas",
             "@Macros/can_fly_with_deku_leaf_indoors"
-          ]
+          ],
+          "{$is_exit_assigned|Inner Entrance in Cliff Plateau Isles Secret Cave}"
         ],
         "sections": [
           {
@@ -818,7 +865,8 @@
         "chest_unopened_img": "images/entrances/entrance_rock.png",
         "chest_opened_img": "images/entrances/entrance_rock_gray.png",
         "access_rules": [
-          "@Macros/can_access_forest_of_fairies, @Macros/can_move_boulders"
+          "@Macros/can_access_forest_of_fairies, @Macros/can_move_boulders",
+          "{$is_exit_assigned|Fairy Fountain Entrance on Outset Island}"
         ],
         "sections": [
           {
@@ -838,7 +886,8 @@
         "chest_unopened_img": "images/entrances/entrance_hammer.png",
         "chest_opened_img": "images/entrances/entrance_hammer_gray.png",
         "access_rules": [
-          "hammer"
+          "hammer",
+          "{$is_exit_assigned|Fairy Fountain Entrance on Thorned Fairy Island}"
         ],
         "sections": [
           {
@@ -858,7 +907,8 @@
         "chest_unopened_img": "images/entrances/entrance_rock.png",
         "chest_opened_img": "images/entrances/entrance_rock_gray.png",
         "access_rules": [
-          "@Macros/can_move_boulders"
+          "@Macros/can_move_boulders",
+          "{$is_exit_assigned|Fairy Fountain Entrance on Eastern Fairy Island}"
         ],
         "sections": [
           {
@@ -878,7 +928,8 @@
         "chest_unopened_img": "images/entrances/entrance_hammer.png",
         "chest_opened_img": "images/entrances/entrance_hammer_gray.png",
         "access_rules": [
-          "hammer"
+          "hammer",
+          "{$is_exit_assigned|Fairy Fountain Entrance on Western Fairy Island}"
         ],
         "sections": [
           {
@@ -899,7 +950,8 @@
         "chest_opened_img": "images/entrances/entrance_fairy_wood_gray.png",
         "access_rules": [
           "bombs",
-          "@Macros/has_fire_arrows"
+          "@Macros/has_fire_arrows",
+          "{$is_exit_assigned|Fairy Fountain Entrance on Southern Fairy Island}"
         ],
         "sections": [
           {
@@ -918,6 +970,10 @@
         "name": "Fairy Fountain Entrance on Northern Fairy Island",
         "chest_unopened_img": "images/entrances/entrance_fairy_fountain.png",
         "chest_opened_img": "images/entrances/entrance_fairy_fountain_gray.png",
+        "access_rules": [
+          "",
+          "{$is_exit_assigned|Fairy Fountain Entrance on Northern Fairy Island}"
+        ],
         "sections": [
           {
             "name": "Can Enter"
