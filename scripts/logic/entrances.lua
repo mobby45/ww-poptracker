@@ -147,7 +147,6 @@ function update_entrances(initializing)
             impossible_exits[exit_name] = true
         end
     end
-    forceLogicUpdate()
 
     -- Visibly mark impossible exits
     for _, entrance in ipairs(ENTRANCES) do
@@ -166,6 +165,10 @@ function update_entrances(initializing)
             end
         end
     end
+
+    -- Force logic to update because the result of lua functions that check exit accessibility may now give different
+    -- results.
+    forceLogicUpdate()
 end
 
 -- Update the global lookup tables with the vanilla exits.
