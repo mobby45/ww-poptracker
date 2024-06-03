@@ -31,6 +31,14 @@
             "grapple",
             "@Macros/can_fly_with_deku_leaf_outdoors",
             "@Macros/_can_cut_grass_or_has_magic_meter_upgrade"
+          ],
+          [
+            "@Macros/can_access_forest_haven",
+            "@Macros/can_fly_with_deku_leaf_indoors",
+            "[tww_obscure_1]",
+            "[tww_precise_1]",
+            "@Macros/can_fly_with_deku_leaf_outdoors",
+            "@Macros/_can_cut_grass_or_has_magic_meter_upgrade"
           ]
         ],
         "sections": [
@@ -296,6 +304,12 @@
             "@Macros/can_get_inside_forsaken_fortress",
             "hammer",
             "@Macros/_can_fly_with_deku_leaf_indoors_or_hookshot"
+          ],
+          [
+            "@Macros/can_get_inside_forsaken_fortress",
+            "hammer",
+            "[tww_obscure_2]",
+            "[tww_precise_2]"
           ]
         ],
         "sections": [
