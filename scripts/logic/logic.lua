@@ -26,9 +26,3 @@ function exit_accessibility(exit_name)
     -- Return the entrance's accessibility.
     return entrance:getAccessibility()
 end
-
-function is_exit_assigned(entrance_name)
-    -- This is used to mark entrances which have been assigned an exit, but are inaccessible, as Blue instead of Red.
-    -- This is a common state for inaccessible entrances that were not randomized.
-    return entrance_to_exit[entrance_name] ~= nil
-end
