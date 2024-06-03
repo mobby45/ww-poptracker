@@ -1154,7 +1154,7 @@
           {
             "name": "Lookout Platform - Destroy the Cannons",
             "access_rules": [
-              "$can_destroy_cannons"
+              "@Macros/can_destroy_cannons"
             ],
             "visibility_rules": [
               "lookouts_on"
@@ -1165,9 +1165,7 @@
             "chest_unopened_img": "images/items/chest_salvage.png",
             "chest_opened_img": "images/items/chest_salvage_gray.png",
             "access_rules": [
-              "grapple,bow",
-              "grapple,bombs",
-              "grapple,boomerang"
+              "@Macros/can_defeat_big_octos, grapple"
             ],
             "visibility_rules": [
               "octos_on"

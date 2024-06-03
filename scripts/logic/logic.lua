@@ -1,9 +1,5 @@
 require("scripts/logic/entrances")
 
-function can_destroy_cannons()
-    return (has("boomerang") or has("bombs"))
-end
-
 function can_access_exit(exit_name)
     if impossible_exits[exit_name] then
         -- Exit is part of an inaccessible loop
