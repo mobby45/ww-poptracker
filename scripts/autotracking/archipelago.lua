@@ -8,173 +8,52 @@ GLOBAL_ITEMS = {}
 
 function onClear(slot_data)
     -- autotracking settings from YAML
-    if slot_data['progression_dungeons'] then
-        local obj = Tracker:FindObjectForCode("dungeons")
-        if obj then
-            obj.Active = slot_data['progression_dungeons']
+    local function setFromSlotData(slot_data_key, item_code)
+        local v = slot_data[slot_data_key]
+        if not v then
+            print(string.format("Could not find key '%s' in slot data", slot_data_key))
+            return
+        end
+
+        local obj = Tracker:FindObjectForCode(item_code)
+        if not obj then
+            print(string.format("Could not find item for code '%s'", item_code))
+            return
+        end
+
+        if obj.Type == 'toggle' then
+            obj.Active = v ~= 0
+        elseif obj.Type == 'progressive' then
+            obj.CurrentStage = v
+        else
+            print(string.format("Unsupported item type '%s' for item '%s'", tostring(obj.Type), item_code))
         end
     end
 
-    if slot_data['progression_puzzle_secret_caves'] then
-        local obj = Tracker:FindObjectForCode("puzzlecaves")
-        if obj then
-            obj.Active = slot_data['progression_puzzle_secret_caves']
-        end
-    end
-
-    if slot_data['progression_island_puzzles'] then
-        local obj = Tracker:FindObjectForCode("islandpuzzles")
-        if obj then
-            obj.Active = slot_data['progression_island_puzzles']
-        end
-    end
-    
-    if slot_data['progression_combat_secret_caves'] then
-        local obj = Tracker:FindObjectForCode("combat")
-        if obj then
-            obj.Active = slot_data['progression_combat_secret_caves']
-        end
-    end
-
-    if slot_data['progression_savage_labyrinth'] then
-        local obj = Tracker:FindObjectForCode("labyrinth")
-        if obj then
-            obj.Active = slot_data['progression_savage_labyrinth']
-        end
-    end
-    
-    if slot_data['progression_great_fairies'] then
-        local obj = Tracker:FindObjectForCode("fairies")
-        if obj then
-            obj.Active = slot_data['progression_great_fairies']
-        end
-    end
-    
-    if slot_data['progression_free_gifts'] then
-        local obj = Tracker:FindObjectForCode("gifts")
-        if obj then
-            obj.Active = slot_data['progression_free_gifts']
-        end
-    end
-    
-    if slot_data['progression_tingle_chests'] then
-        local obj = Tracker:FindObjectForCode("tinglechests")
-        if obj then
-            obj.Active = slot_data['progression_tingle_chests']
-        end
-    end
-    
-    if slot_data['enable_tuner_logic'] then
-        local obj = Tracker:FindObjectForCode("tunerlogic")
-        if obj then
-            obj.CurrentStage = slot_data['enable_tuner_logic']
-        end
-    end
-    
-    if slot_data['progression_short_sidequests'] then
-        local obj = Tracker:FindObjectForCode("shortsq")
-        if obj then
-            obj.Active = slot_data['progression_short_sidequests']
-        end
-    end
-    
-    if slot_data['progression_long_sidequests'] then
-        local obj = Tracker:FindObjectForCode("longsq")
-        if obj then
-            obj.Active = slot_data['progression_long_sidequests']
-        end
-    end
-    
-    if slot_data['progression_spoils_trading'] then
-        local obj = Tracker:FindObjectForCode("spoilssq")
-        if obj then
-            obj.Active = slot_data['progression_spoils_trading']
-        end
-    end
-    
-    if slot_data['progression_expensive_purchases'] then
-        local obj = Tracker:FindObjectForCode("expensive")
-        if obj then
-            obj.Active = slot_data['progression_expensive_purchases']
-        end
-    end
-    
-    if slot_data['progression_misc'] then
-        local obj = Tracker:FindObjectForCode("misc")
-        if obj then
-            obj.Active = slot_data['progression_misc']
-        end
-    end
-    
-    if slot_data['progression_battlesquid'] then
-        local obj = Tracker:FindObjectForCode("sploosh")
-        if obj then
-            obj.Active = slot_data['progression_battlesquid']
-        end
-    end
-    
-    if slot_data['progression_platforms_rafts'] then
-        local obj = Tracker:FindObjectForCode("lookouts")
-        if obj then
-            obj.Active = slot_data['progression_platforms_rafts']
-        end
-    end
-    
-    if slot_data['progression_submarines'] then
-        local obj = Tracker:FindObjectForCode("submarines")
-        if obj then
-            obj.Active = slot_data['progression_submarines']
-        end
-    end
-    
-    if slot_data['progression_triforce_charts'] then
-        local obj = Tracker:FindObjectForCode("triforcesalvage")
-        if obj then
-            obj.Active = slot_data['progression_triforce_charts']
-        end
-    end
-    
-    if slot_data['progression_treasure_charts'] then
-        local obj = Tracker:FindObjectForCode("treasuresalvage")
-        if obj then
-            obj.Active = slot_data['progression_treasure_charts']
-        end
-    end
-    
-    if slot_data['progression_eye_reef_chests'] then
-        local obj = Tracker:FindObjectForCode("reefs")
-        if obj then
-            obj.Active = slot_data['progression_eye_reef_chests']
-        end
-    end
-    
-    if slot_data['progression_mail'] then
-        local obj = Tracker:FindObjectForCode("mail")
-        if obj then
-            obj.Active = slot_data['progression_mail']
-        end
-    end
-    
-    if slot_data['progression_big_octos_gunboats'] then
-        local obj = Tracker:FindObjectForCode("octos")
-        if obj then
-            obj.Active = slot_data['progression_big_octos_gunboats']
-        end
-    end
-    
-    if slot_data['progression_minigames'] then
-        local obj = Tracker:FindObjectForCode("minigames")
-        if obj then
-            obj.Active = slot_data['progression_minigames']
-        end
-    end
-    
-    if slot_data['progression_dungeon_secrets'] then
-        local obj = Tracker:FindObjectForCode("secretpot")
-        if obj then
-            obj.Active = slot_data['progression_dungeon_secrets']
-        end
-    end
+    setFromSlotData('progression_dungeons', 'dungeons')
+    setFromSlotData('progression_puzzle_secret_caves', 'puzzlecaves')
+    setFromSlotData('progression_island_puzzles', 'islandpuzzles')
+    setFromSlotData('progression_combat_secret_caves', 'combat')
+    setFromSlotData('progression_savage_labyrinth', 'labyrinth')
+    setFromSlotData('progression_great_fairies', 'fairies')
+    setFromSlotData('progression_free_gifts', 'gifts')
+    setFromSlotData('progression_tingle_chests', 'tinglechests')
+    setFromSlotData('enable_tuner_logic', 'tunerlogic')
+    setFromSlotData('progression_short_sidequests', 'shortsq')
+    setFromSlotData('progression_long_sidequests', 'longsq')
+    setFromSlotData('progression_spoils_trading', 'spoilssq')
+    setFromSlotData('progression_expensive_purchases', 'expensive')
+    setFromSlotData('progression_misc', 'misc')
+    setFromSlotData('progression_battlesquid', 'sploosh')
+    setFromSlotData('progression_platforms_rafts', 'lookouts')
+    setFromSlotData('progression_submarines', 'submarines')
+    setFromSlotData('progression_triforce_charts', 'triforcesalvage')
+    setFromSlotData('progression_treasure_charts', 'treasuresalvage')
+    setFromSlotData('progression_eye_reef_chests', 'reefs')
+    setFromSlotData('progression_mail', 'mail')
+    setFromSlotData('progression_big_octos_gunboats', 'octos')
+    setFromSlotData('progression_minigames', 'minigames')
+    setFromSlotData('progression_dungeon_secrets', 'secretpot')
     
     -- junk that was in here from the template
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
