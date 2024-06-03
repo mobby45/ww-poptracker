@@ -49,6 +49,7 @@ EXITS = {
 
 NUM_EXITS = #EXITS
 
+-- Update an exit mapping's name, image and exit name after its "exit_idx" has been changed
 function exit_mapping_update(lua_item)
     local entrance_idx = lua_item:Get("entrance_idx")
     local entrance = ENTRANCES[entrance_idx]
@@ -68,13 +69,16 @@ end
 
 function exit_mapping_save_func(lua_item)
     --print("Saving exit mapping data")
+    -- "entrance_idx" is not saved/loaded.
     return { exit_idx = lua_item.ItemState.exit_idx }
 end
 
 function exit_mapping_load_func(lua_item, data)
     --print("Reading exit mapping during load")
+    -- "entrance_idx" is not saved/loaded.
     if data == nil then
         print("Error: Data to read for exit mapping " .. lua_item.Name .. " was nil")
+        -- The entrance's default exit_idx will be used.
         return
     end
 
@@ -149,8 +153,6 @@ function create_lua_item(idx, entrance)
 
     local entrance_name = entrance.name
     item.Name = entrance_name
---
---     item.Icon = ImageReference:FromPackRelativePath("images/items/exits/" .. entrance.exit .. ".png")
 
     item.CanProvideCodeFunc = function(self, code) return code == entrance_name end
     item.ProvidesCodeFunc = function(self, code) return code == entrance_name end

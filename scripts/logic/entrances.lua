@@ -54,33 +54,14 @@ for _, entrance in ipairs(ENTRANCES) do
     ENTRANCE_BY_NAME[entrance.name] = entrance
 end
 
+-- Quick lookup tables for the other member of an entrance <-> exit pair given one of the two.
 entrance_to_exit = {}
 exit_to_entrance = {}
--- Entrances may form loops that make access to some areas impossible. All of these entrances will then be considered
--- impossible.
-impossible_entrances = {}
+-- Entrances may by set by the user such that they form loops that make access to some areas impossible. All of the
+-- exits in the loop will be considered impossible.
+-- While it should not happen through normal usage, an exit is also considered impossible if it is assigned to more than
+-- one entrance.
 impossible_exits = {}
-
--- local function is_possible(entrance_name, checked_set)
---     if not checked_set then
---         checked_set = {}
---     end
---     if checked_set[entrance_name] then
---         -- Already checked this entrance, so we've got a loop.
---         return false
---     end
---     checked_set[entrance_name] = true
---
---     local entrance = ENTRANCE_BY_NAME[entrance_name]
---     local parent_exit = entrance.parent_exit
---     if parent_exit == "The Great Sea" then
---         -- The Great Sea is always accessible
---         return true
---     end
---     -- Check if the parent_exit's entrance is possible to access.
---     local parent_entrance = exit_to_entrance[parent_exit]
---     return is_possible(parent_entrance, checked_set)
--- end
 
 local function is_exit_possible(exit_name, checked_set)
     if exit_name == "The Great Sea" then
@@ -93,6 +74,7 @@ local function is_exit_possible(exit_name, checked_set)
         return false
     end
 
+    -- Prevent infinite loops by keeping a set of the exit names checked so far.
     if not checked_set then
         checked_set = {}
     end
@@ -119,9 +101,10 @@ PAUSE_ENTRANCE_UPDATES = false
 
 function forceLogicUpdate()
     local update = Tracker:FindObjectForCode("update")
-    -- If we call this too early, the item doesn't seem to exist yet
+    -- If this function is called too early, the item won't exist yet. The item also won'#t exist when entrance
+    -- randomization is not enabled.
     if update then
-        print("Forced update!")
+        --print("Forced update!")
         update.Active = not update.Active
     end
 end
@@ -130,7 +113,7 @@ function update_entrances(initializing)
     if not initializing and (PAUSE_ENTRANCE_UPDATES or not ENTRANCE_RANDO_ENABLED) then
         return
     end
-    -- Reset
+    -- Reset the global lookup tables.
     entrance_to_exit = {}
     exit_to_entrance = {}
     impossible_exits = {}
@@ -138,12 +121,13 @@ function update_entrances(initializing)
     for _, entrance in ipairs(ENTRANCES) do
         local exit = entrance.exit
         entrance_to_exit[entrance.name] = exit
-        -- exit may be `nil` if it has not been set
+        -- `exit` is `nil` when the exit is set to "Unknown" by the user.
         if exit then
+            -- An exit can only be mapped to a single entrance. If not, the exit is considered impossible.
             local current_mapped_entrance = exit_to_entrance[exit]
             if current_mapped_entrance then
                 impossible_exits[exit] = true
-                print("Exit '" .. exit .. "' trying to be mapped from " .. entrance.name .. ", but is already mapped from '" .. current_mapped_entrance .. "'. Marking the exit as impossible.")
+                --print("Exit '" .. exit .. "' trying to be mapped from " .. entrance.name .. ", but is already mapped from '" .. current_mapped_entrance .. "'. Marking the exit as impossible.")
             else
                 exit_to_entrance[exit] = entrance.name
             end
@@ -151,8 +135,7 @@ function update_entrances(initializing)
     end
 
     if initializing then
-        -- When initializing, there is no need to check for unreachable exits because any assigned exits won't have been
-        -- loaded from auto-saved state yet (and entrance randomization may not even be enabled).
+        -- When initializing with the vanilla exits, there is no need to check for unreachable exits.
         return
     end
 
@@ -160,7 +143,7 @@ function update_entrances(initializing)
     for _, entrance in ipairs(ENTRANCES) do
         local exit_name = entrance.exit
         if exit_name and not is_exit_possible(exit_name) then
-            print("Exit '" .. exit_name .. "' is impossible to reach")
+            --print("Exit '" .. exit_name .. "' is impossible to reach")
             impossible_exits[exit_name] = true
         end
     end
@@ -185,4 +168,5 @@ function update_entrances(initializing)
     end
 end
 
+-- Update the global lookup tables with the vanilla exits.
 update_entrances(true)
