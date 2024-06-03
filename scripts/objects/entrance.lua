@@ -16,13 +16,12 @@ function Entrance.new(name, vanilla_exit, parent_exit)
     return self
 end
 
-function Entrance:canAccess()
+function Entrance:getAccessibility()
     if not self.entrance_logic then
-        return true
+        return AccessibilityLevel.Normal
     end
     local location = Tracker:FindObjectForCode(self.entrance_logic)
-    local accessibility = location.AccessibilityLevel
-    return accessibility == AccessibilityLevel.Normal
+    return location.AccessibilityLevel
 end
 
 return Entrance
