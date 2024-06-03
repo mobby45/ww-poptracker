@@ -129,8 +129,7 @@
                 "@Macros/can_fan_with_deku_leaf",
                 "@Macros/can_play_wind_gods_aria",
                 "@Macros/can_defeat_darknuts"
-              ],
-              "$can_fly,aria"
+              ]
             ]
           }
         ],
