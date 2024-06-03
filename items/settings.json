@@ -186,18 +186,26 @@
 		"stages": [
 			{
 				"name": "Logic Obscurity - None",
+				"img": "images/items/settings/logic_none.png",
+				"img_mods": "overlay|images/items/settings/logic_obscure.png",
 				"codes": "tww_obscure_0"
 			},
 			{
 				"name": "Logic Obscurity - Normal",
+				"img": "images/items/settings/logic_normal.png",
+				"img_mods": "overlay|images/items/settings/logic_obscure.png",
 				"codes": "tww_obscure_1"
 			},
 			{
 				"name": "Logic Obscurity - Hard",
+				"img": "images/items/settings/logic_hard.png",
+				"img_mods": "overlay|images/items/settings/logic_obscure.png",
 				"codes": "tww_obscure_2"
 			},
 			{
 				"name": "Logic Obscurity - Very Hard",
+				"img": "images/items/settings/logic_very_hard.png",
+				"img_mods": "overlay|images/items/settings/logic_obscure.png",
 				"codes": "tww_obscure_3"
 			}
 		]
@@ -211,18 +219,26 @@
 		"stages": [
 			{
 				"name": "Logic Precision - None",
+				"img": "images/items/settings/logic_none.png",
+				"img_mods": "overlay|images/items/settings/logic_precise.png",
 				"codes": "tww_precise_0"
 			},
 			{
 				"name": "Logic Precision - Normal",
+				"img": "images/items/settings/logic_normal.png",
+				"img_mods": "overlay|images/items/settings/logic_precise.png",
 				"codes": "tww_precise_1"
 			},
 			{
 				"name": "Logic Precision - Hard",
+				"img": "images/items/settings/logic_hard.png",
+				"img_mods": "overlay|images/items/settings/logic_precise.png",
 				"codes": "tww_precise_2"
 			},
 			{
 				"name": "Logic Precision - Very Hard",
+				"img": "images/items/settings/logic_very_hard.png",
+				"img_mods": "overlay|images/items/settings/logic_precise.png",
 				"codes": "tww_precise_3"
 			}
 		]
@@ -235,13 +251,17 @@
 		"stages": [
 			{
 				"name": "Sword Mode - Start with Sword",
-				"codes": "tww_outside_swordless_mode"
+				"codes": "tww_outside_swordless_mode",
+				"img": "images/items/item21.png"
 			},
 			{
-				"name": "Sword Mode - No Starting Sword"
+				"name": "Sword Mode - No Starting Sword",
+				"img": "images/items/item21.png",
+				"img_mods": "@disabled"
 			},
 			{
 				"name": "Sword Mode - Swordless",
+				"img": "images/items/item20.png",
 				"inherit_codes": false,
 				"codes": "tww_in_swordless_mode"
 			}
@@ -250,6 +270,7 @@
 	{
 		"name": "Skip Rematch Bosses",
 		"type": "toggle",
+		"img": "images/items/settings/skip_rematches.png",
 		"codes": "tww_rematch_bosses_skipped"
 	}
 ]

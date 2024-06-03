@@ -38,15 +38,6 @@
                                 "type": "layout",
                                 "key": "chart_grid"
                             }
-                        },
-                        {
-                            "type": "group",
-                            "header": "Settings",
-                            "dock": "left",
-                            "content": {
-                                "type": "layout",
-                                "key": "setting_grid"
-                            }
                         }
                     ]
                 },
