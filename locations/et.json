@@ -330,7 +330,7 @@
                 "power",
                 "@Macros/can_play_command_melody",
                 "@Macros/can_aim_mirror_shield",
-                "@Macros/can_defeat_blue_bubbles",
+                "@Macros/_can_defeat_et_big_key_chest_blue_bubbles",
                 "@Macros/can_defeat_darknuts"
               ]
             ]

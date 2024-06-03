@@ -206,6 +206,13 @@
                 "grapple",
                 "fw_small:1",
                 "@Macros/can_defeat_peahats"
+              ],
+              [
+                "@Macros/can_fly_with_deku_leaf_indoors",
+                "@Macros/can_defeat_boko_babas",
+                "grapple",
+                "fw_small:1",
+                "[tww_precise_2]"
               ]
             ]
           }
@@ -230,6 +237,14 @@
                 "fw_small:1",
                 "@Macros/can_defeat_door_flowers",
                 "@Macros/can_destroy_seeds_hanging_by_vines"
+              ],
+              [
+                "@Macros/can_fly_with_deku_leaf_indoors",
+                "@Macros/can_defeat_boko_babas",
+                "grapple",
+                "fw_small:1",
+                "@Macros/can_defeat_door_flowers",
+                "[tww_precise_1]"
               ]
             ]
           }

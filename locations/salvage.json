@@ -103,7 +103,8 @@
       {
         "name": "Southern Triangle Island - Sunken Triforce 6",
         "access_rules": [
-          "triforce6,[@Macros/can_defeat_seahats]"
+          "triforce6, @Macros/can_defeat_seahats",
+          "triforce6, [tww_precise_1]"
         ],
         "sections": [
           {
@@ -121,7 +122,8 @@
       {
         "name": "Seven-Star Isles - Sunken Triforce 7",
         "access_rules": [
-          "triforce7,[bombs]"
+          "triforce7, bombs",
+          "triforce7, [tww_precise_1]"
         ],
         "sections": [
           {
@@ -139,7 +141,9 @@
       {
         "name": "Two-Eye Reef - Sunken Triforce 8",
         "access_rules": [
-          "triforce8,[bombs]"
+          "triforce8, bombs",
+          "treasure8, [tww_precise_1]",
+          "treasure8, @Macros/can_use_magic_armor, [tww_obscure_1]"
         ],
         "sections": [
           {
@@ -260,7 +264,9 @@
       {
         "name": "Six-Eye Reef - Sunken Treasure 6",
         "access_rules": [
-          "treasure6,[bombs]"
+          "treasure6, bombs",
+          "treasure6, [tww_precise_1]",
+          "treasure6, @Macros/can_use_magic_armor, [tww_obscure_1]"
         ],
         "sections": [
           {
@@ -530,7 +536,9 @@
       {
         "name": "Cyclops Reef - Sunken Treasure 21",
         "access_rules": [
-          "treasure21,[bombs]"
+          "treasure21, bombs",
+          "treasure21, [tww_precise_1]",
+          "treasure21, @Macros/can_use_magic_armor, [tww_obscure_1]"
         ],
         "sections": [
           {
@@ -836,7 +844,9 @@
       {
         "name": "Three-Eye Reef - Sunken Treasure 38",
         "access_rules": [
-          "treasure38,[bombs]"
+          "treasure38, bombs",
+          "treasure38, [tww_precise_1]",
+          "treasure38, @Macros/can_use_magic_armor, [tww_obscure_1]"
         ],
         "sections": [
           {
@@ -890,7 +900,9 @@
       {
         "name": "Four-Eye Reef - Sunken Treasure 41",
         "access_rules": [
-          "treasure41,[bombs]"
+          "treasure41, bombs",
+          "treasure41, [tww_precise_1]",
+          "treasure41, @Macros/can_use_magic_armor, [tww_obscure_1]"
         ],
         "sections": [
           {

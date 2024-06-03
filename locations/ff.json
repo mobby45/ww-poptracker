@@ -72,6 +72,10 @@
               [
                 "@Macros/can_get_inside_forsaken_fortress",
                 "@Macros/_can_fly_with_deku_leaf_indoors_or_hookshot"
+              ],
+              [
+                "@Macros/can_get_inside_forsaken_fortress",
+                "[tww_obscure_1]"
               ]
             ]
           }

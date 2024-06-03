@@ -86,7 +86,8 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "drc_small:2, @Macros/_grapple_or_can_fly_with_deku_leaf_indoors"
+              "drc_small:2, @Macros/_grapple_or_can_fly_with_deku_leaf_indoors",
+              "drc_small:2, hookshot, [tww_obscure_1]"
             ]
           }
         ],

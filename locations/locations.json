@@ -1905,7 +1905,14 @@
           {
             "name": "On Tree Branch",
             "access_rules": [
-              "@Macros/can_access_forest_haven, grapple"
+              [
+                "@Macros/can_access_forest_haven",
+                "grapple"
+              ],
+              [
+                "@Macros/can_access_forest_haven",
+                "@Macros/_forest_haven_grapple_skip"
+              ]
             ],
             "visibility_rules": [
               "islandpuzzles_on"
@@ -1919,6 +1926,12 @@
               [
                 "@Macros/can_access_forest_haven",
                 "grapple",
+                "@Macros/can_fly_with_deku_leaf_outdoors",
+                "@Macros/_can_cut_grass_or_has_magic_meter_upgrade"
+              ],
+              [
+                "@Macros/can_access_forest_haven",
+                "@Macros/_forest_haven_grapple_skip",
                 "@Macros/can_fly_with_deku_leaf_outdoors",
                 "@Macros/_can_cut_grass_or_has_magic_meter_upgrade"
               ]
@@ -2026,7 +2039,8 @@
           {
             "name": "Cave",
             "access_rules": [
-              "@Exit Logic/can_access_cliff_plateau_isles_secret_cave, @Macros/can_defeat_boko_babas"
+              "@Exit Logic/can_access_cliff_plateau_isles_secret_cave, @Macros/can_defeat_boko_babas",
+              "@Exit Logic/can_access_cliff_plateau_isles_secret_cave, grapple, [tww_obscure_1], [tww_precise_1]"
             ],
             "visibility_rules": [
               "puzzlecaves_on"
@@ -2509,6 +2523,11 @@
                 "@Exit Logic/can_access_boating_course_secret_cave",
                 "@Macros/can_hit_diamond_switches_at_range",
                 "@Macros/can_defeat_miniblins_easily"
+              ],
+              [
+                "@Exit Logic/can_access_boating_course_secret_cave",
+                "@Macros/can_hit_diamond_switches_at_range",
+                "[tww_precise_2]"
               ]
             ],
             "visibility_rules": [

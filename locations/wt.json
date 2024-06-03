@@ -159,6 +159,13 @@
                 "hookshot",
                 "@Macros/can_defeat_blue_bubbles",
                 "@Macros/can_fly_with_deku_leaf_indoors"
+              ],
+              [
+                "@Macros/can_reach_wind_temple_kidnapping_room",
+                "hookshot",
+                "@Macros/can_fly_with_deku_leaf_indoors",
+                "[tww_obscure_1]",
+                "[tww_precise_2]"
               ]
             ]
           }

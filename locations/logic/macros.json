@@ -1137,6 +1137,39 @@
           "hookshot",
           "bombs"
         ]
+      },
+      {
+        "name": "_forest_haven_grapple_skip_magic_use",
+        "access_rules": [
+          "@Macros/can_cut_grass, [tww_precise_1]",
+          "magic_2, [tww_precise_2]"
+        ]
+      },
+      {
+        "name": "_forest_haven_grapple_skip",
+        "access_rules": [
+          [
+            "@Macros/can_fly_with_deku_leaf_indoors",
+            "@Macros/can_fly_with_deku_leaf_outdoors",
+            "[tww_obscure_1]",
+            "@Macros/_forest_haven_grapple_skip_magic_use"
+          ]
+        ]
+      },
+      {
+        "name": "_can_defeat_et_big_key_chest_blue_bubbles",
+        "access_rules": [
+          "@Macros/can_defeat_blue_bubbles",
+          "bow, [tww_obscure_1]",
+          "sword, [tww_obscure_1], [tww_precise_1]",
+          "hammer, [tww_obscure_1], [tww_precise_1]"
+        ]
+      },
+      {
+        "name": "can_use_magic_armor",
+        "access_rules": [
+          "armor, magic"
+        ]
       }
     ]
   }
