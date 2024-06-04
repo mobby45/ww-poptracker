@@ -474,7 +474,8 @@
           {
             "name": "Kreeb - Light Up Lighthouse",
             "access_rules": [
-              "@Macros/can_play_winds_requiem, @Macros/has_fire_arrows"
+              "@Macros/can_play_winds_requiem, @Macros/has_fire_arrows",
+              "[@Macros/can_play_winds_requiem], @Macros/has_fire_arrows, sail, swift_sail"
             ],
             "visibility_rules": [
               "shortsq_on"
@@ -489,6 +490,13 @@
                 "@Macros/can_play_winds_requiem",
                 "@Macros/has_fire_arrows",
                 "@Macros/_can_fly_with_deku_leaf_outdoors_or_hookshot"
+              ],
+              [
+                "[@Macros/can_play_winds_requiem]",
+                "@Macros/has_fire_arrows",
+                "@Macros/_can_fly_with_deku_leaf_outdoors_or_hookshot",
+                "sail",
+                "swift_sail"
               ]
             ],
             "visibility_rules": [
