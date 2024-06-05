@@ -22,7 +22,7 @@
         "name": "Grappling Hook",
         "type": "toggle",
         "img": "images/items/item3.png",
-        "codes": "grapple,weapon"
+        "codes": "grapple"
     },
     {
         "name": "Spoils Bag",
@@ -34,7 +34,7 @@
         "name": "Boomerang",
         "type": "toggle",
         "img": "images/items/item5.png",
-        "codes": "boomerang,weapon"
+        "codes": "boomerang"
     },
     {
         "name": "Deku Leaf",
@@ -70,7 +70,7 @@
         "name": "Bombs",
         "type": "toggle",
         "img": "images/items/item13.png",
-        "codes": "bombs,weapon"
+        "codes": "bombs"
     },
     {
         "name": "Delivery Bag",
@@ -82,13 +82,13 @@
         "name": "Hookshot",
         "type": "toggle",
         "img": "images/items/item19.png",
-        "codes": "hookshot,weapon"
+        "codes": "hookshot"
     },
     {
         "name": "Skull Hammer",
         "type": "toggle",
         "img": "images/items/item20.png",
-        "codes": "hammer,weapon"
+        "codes": "hammer"
     },
     {
         "name": "Power Bracelets",
@@ -267,22 +267,22 @@
         "stages": [
             {
                 "img": "images/items/item21.png",
-                "codes": "sword,weapon",
+                "codes": "sword",
                 "inherit_codes": true
             },
             {
                 "img": "images/items/item21_2.png",
-                "codes": "mastersword,weapon",
+                "codes": "mastersword",
                 "inherit_codes": true
             },
             {
                 "img": "images/items/item21_3.png",
-                "codes": "mastersword_half,weapon",
+                "codes": "mastersword_half",
                 "inherit_codes": true
             },
             {
                 "img": "images/items/item21_4.png",
-                "codes": "mastersword_full,weapon",
+                "codes": "mastersword_full",
                 "inherit_codes": true
             }
         ]
@@ -331,17 +331,17 @@
         "stages": [
             {
                 "img": "images/items/item12.png",
-                "codes": "bow,weapon",
+                "codes": "bow",
                 "inherit_codes": true
             },
             {
                 "img": "images/items/item12_2.png",
-                "codes": "bow_2,weapon",
+                "codes": "bow_2",
                 "inherit_codes": true
             },
             {
                 "img": "images/items/item12_3.png",
-                "codes": "bow_3,weapon",
+                "codes": "bow_3",
                 "inherit_codes": true
             }
         ]
