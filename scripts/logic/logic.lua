@@ -2,8 +2,8 @@ require("scripts/logic/entrances")
 
 function exit_accessibility(exit_name)
     if impossible_exits[exit_name] then
-        -- Exit is part of an inaccessible loop
---         print("Cannot access exit " .. exit_name .. " because it is part of a loop")
+        -- Exit is part of an inaccessible loop or is assigned to multiple entrances.
+--         print("Cannot access exit " .. exit_name .. " because it is impossible")
         return AccessibilityLevel.None
     end
 
@@ -15,14 +15,13 @@ function exit_accessibility(exit_name)
     end
 
     -- Find the entrance in this entrance <-> exit pair.
-    local entrance_name = exit_to_entrance[exit_name]
-    if not entrance_name then
+    local entrance = exit_to_entrance[exit_name]
+    if not entrance then
         -- Exit is currently unmapped and considered unreachable
 --         print("Cannot access exit " .. exit_name .. " because it is unmapped")
         return AccessibilityLevel.None
+    else
+        -- Return the entrance's accessibility.
+        return entrance:getAccessibility()
     end
-
-    local entrance = ENTRANCE_BY_NAME[entrance_name]
-    -- Return the entrance's accessibility.
-    return entrance:getAccessibility()
 end

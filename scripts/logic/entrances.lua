@@ -54,7 +54,7 @@ for _, entrance in ipairs(ENTRANCES) do
     ENTRANCE_BY_NAME[entrance.name] = entrance
 end
 
--- Quick lookup tables for the other member of an entrance <-> exit pair given one of the two.
+-- Quick lookup tables for exits.
 exit_to_entrance = {}
 -- Entrances may by set by the user such that they form loops that make access to some areas impossible. All of the
 -- exits in the loop will be considered impossible.
@@ -83,14 +83,12 @@ local function is_exit_possible(exit_name, checked_set)
     end
     checked_set[exit_name] = true
 
-    -- Get the name of the entrance that leads to this exit
-    local entrance_name = exit_to_entrance[exit_name]
-    if not entrance_name then
+    -- Get the entrance object that leads to this exit
+    local entrance = exit_to_entrance[exit_name]
+    if not entrance then
         -- No entrance is currently mapped to this exit, so the exit is considered unreachable.
         return false
     end
-    -- Get the entrance object by its name
-    local entrance = ENTRANCE_BY_NAME[entrance_name]
     -- Check if the parent exit that leads to this entrance is possible
     local parent_exit = entrance.parent_exit
     return is_exit_possible(parent_exit, checked_set)
@@ -124,9 +122,9 @@ function update_entrances(initializing)
             local current_mapped_entrance = exit_to_entrance[exit]
             if current_mapped_entrance then
                 impossible_exits[exit] = true
-                --print("Exit '" .. exit .. "' trying to be mapped from " .. entrance.name .. ", but is already mapped from '" .. current_mapped_entrance .. "'. Marking the exit as impossible.")
+                --print("Exit '" .. exit .. "' trying to be mapped from " .. entrance.name .. ", but is already mapped from '" .. current_mapped_entrance.name .. "'. Marking the exit as impossible.")
             else
-                exit_to_entrance[exit] = entrance.name
+                exit_to_entrance[exit] = entrance
             end
         end
     end
