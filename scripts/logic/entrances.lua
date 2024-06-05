@@ -55,7 +55,6 @@ for _, entrance in ipairs(ENTRANCES) do
 end
 
 -- Quick lookup tables for the other member of an entrance <-> exit pair given one of the two.
-entrance_to_exit = {}
 exit_to_entrance = {}
 -- Entrances may by set by the user such that they form loops that make access to some areas impossible. All of the
 -- exits in the loop will be considered impossible.
@@ -114,13 +113,11 @@ function update_entrances(initializing)
         return
     end
     -- Reset the global lookup tables.
-    entrance_to_exit = {}
     exit_to_entrance = {}
     impossible_exits = {}
     -- Create mappings for entrance -> exit pairs
     for _, entrance in ipairs(ENTRANCES) do
         local exit = entrance.exit
-        entrance_to_exit[entrance.name] = exit
         -- `exit` is `nil` when the exit is set to "Unknown" by the user.
         if exit then
             -- An exit can only be mapped to a single entrance. If not, the exit is considered impossible.
