@@ -1180,6 +1180,12 @@
         "access_rules": [
           "leaf, magic, @Macros/can_play_winds_requiem"
         ]
+      },
+      {
+        "name": "_swift_sail_sequence_break",
+        "access_rules": [
+          "sequence_break_swift_sail, sail, swift_sail"
+        ]
       }
     ]
   }
