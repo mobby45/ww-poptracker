@@ -29,7 +29,8 @@
       {
         "name": "can_play_song_of_passing",
         "access_rules": [
-          "windwaker, passing"
+          "windwaker, passing",
+          "sequence_break_passing, [windwaker], [passing]"// All logically required use of the Song of Passing can be skipped by waiting.
         ]
       },
       {

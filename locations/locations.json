@@ -634,7 +634,7 @@
           {
             "name": "Kamo - Full Moon Photo",
             "access_rules": [
-              "picto_2, [@Macros/can_play_song_of_passing]"
+              "picto_2, @Macros/can_play_song_of_passing"
             ],
             "visibility_rules": [
               "longsq_on"
@@ -643,7 +643,7 @@
           {
             "name": "Linda and Anton",
             "access_rules": [
-              "picto_2, [@Macros/can_play_song_of_passing]"
+              "picto_2, @Macros/can_play_song_of_passing"
             ],
             "visibility_rules": [
               "longsq_on"
@@ -2593,7 +2593,7 @@
               [
                 "spoils",
                 "@Macros/can_farm_golden_feathers",
-                "[@Macros/can_play_song_of_passing]"
+                "@Macros/can_play_song_of_passing"
               ]
             ],
             "visibility_rules": [
@@ -2606,7 +2606,7 @@
               [
                 "delivery",
                 "mom",
-                "[@Macros/can_play_song_of_passing]"
+                "@Macros/can_play_song_of_passing"
               ]
             ],
             "visibility_rules": [
@@ -2668,7 +2668,7 @@
               [
                 "bottle",
                 "@Macros/can_get_fairies",
-                "[@Macros/can_play_song_of_passing]"
+                "@Macros/can_play_song_of_passing"
               ]
             ],
             "visibility_rules": [
@@ -2680,7 +2680,7 @@
             "access_rules": [
               [
                 "@Helmaroc King Boss Arena/Helmaroc King Heart Container/",
-                "[@Macros/can_play_song_of_passing]"
+                "@Macros/can_play_song_of_passing"
               ]
             ],
             "visibility_rules": [
@@ -2694,7 +2694,7 @@
                 "@Macros/rescued_tingle",
                 "wallet",
                 "@Helmaroc King Boss Arena/Helmaroc King Heart Container/",
-                "[@Macros/can_play_song_of_passing]"
+                "@Macros/can_play_song_of_passing"
               ]
             ],
             "visibility_rules": [
