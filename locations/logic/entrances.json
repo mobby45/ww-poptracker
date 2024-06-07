@@ -478,7 +478,8 @@
         "chest_unopened_img": "images/entrances/entrance_needle_rock_isle.png",
         "chest_opened_img": "images/entrances/entrance_needle_rock_isle_gray.png",
         "access_rules": [
-          "@Macros/has_fire_arrows"
+          "@Macros/has_fire_arrows",
+          "sequence_break_other, [@Macros/has_fire_arrows], sword"// Spin attacks and quick spins slowly reduce the size of the ice
         ],
         "sections": [
           {
