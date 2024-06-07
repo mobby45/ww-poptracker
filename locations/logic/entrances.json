@@ -581,7 +581,8 @@
         "chest_unopened_img": "images/entrances/entrance_bird's_peak.png",
         "chest_opened_img": "images/entrances/entrance_bird's_peak_gray.png",
         "access_rules": [
-          "bait, @Macros/can_buy_hyoi_pears"
+          "bait, @Macros/can_buy_hyoi_pears",
+          "sequence_break_other, [bait], [@Macros/can_buy_hyoi_pears], grapple"// The bars blocking the entrance can be clipped through by swinging and jumping with the grappling hook
         ],
         "sections": [
           {
