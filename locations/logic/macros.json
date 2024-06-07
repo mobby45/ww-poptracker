@@ -801,7 +801,8 @@
       {
         "name": "can_farm_knights_crests",
         "access_rules": [
-          "spoils, grapple, @Macros/_can_farm_knights_crests"
+          "spoils, grapple, @Macros/_can_farm_knights_crests",
+          "sequence_break_spoils_grapple, [grapple], spoils, @Macros/_can_farm_knights_crests, @Macros/can_defeat_darknuts"
         ]
       },
       {
@@ -967,25 +968,40 @@
       {
         "name": "can_farm_green_chu_jelly",
         "access_rules": [
-          "grapple, spoils"
+          "grapple, spoils",
+          "sequence_break_spoils_grapple, [grapple], spoils, @Macros/can_defeat_green_chuchus"
+        ]
+      },
+      {
+        "name": "can_defeat_bokoblins",
+        "access_rules": [
+          "sword",
+          "bow",
+          "bombs",
+          "hammer"
         ]
       },
       {
         "name": "can_farm_joy_pendants",
         "access_rules": [
-          "grapple, spoils"
+          "grapple, spoils",
+          "sequence_break_spoils_grapple, [grapple], spoils, @Macros/can_defeat_bokoblins"
         ]
       },
       {
         "name": "can_farm_skull_necklaces",
         "access_rules": [
-          "grapple, spoils"
+          "grapple, spoils",
+          "sequence_break_spoils_grapple, [grapple], spoils, @Macros/can_defeat_moblins"
         ]
       },
       {
         "name": "can_farm_golden_feathers",
         "access_rules": [
-          "grapple, spoils"
+          "grapple, spoils",
+          "sequence_break_spoils_grapple, [grapple], spoils, @Macros/can_defeat_kargarocs",
+          "sequence_break_spoils_grapple, [grapple], spoils, @Macros/can_defeat_peahats, @Forbidden Woods/Hole in Tree/",
+          "sequence_break_spoils_grapple, [grapple], spoils, @Macros/can_defeat_peahats, @Entrance Logic/Dungeon Entrance in Forest Haven Sector"
         ]
       },
       {
