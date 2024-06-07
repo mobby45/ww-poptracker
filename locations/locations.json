@@ -2306,6 +2306,15 @@
                 "@Macros/_can_play_ballad_of_gales_or_sequence_break",
                 "@Macros/can_defeat_wizzrobes",
                 "@Macros/can_defeat_poes",
+                "@Macros/can_defeat_redeads",
+                "@Macros/can_defeat_stalfos"
+              ],
+              [// Defeat the wizzrobe before they spawn any redeads or stalfos
+                "sequence_break_other",
+                "ghost",
+                "@Macros/_can_play_ballad_of_gales_or_sequence_break",
+                "@Macros/can_defeat_wizzrobes",
+                "@Macros/can_defeat_poes",
                 "[@Macros/can_defeat_redeads]",
                 "[@Macros/can_defeat_stalfos]"
               ]
