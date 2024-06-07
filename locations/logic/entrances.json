@@ -699,7 +699,8 @@
         "chest_unopened_img": "images/entrances/entrance_fire_hole.png",
         "chest_opened_img": "images/entrances/entrance_fire_hole_gray.png",
         "access_rules": [
-          "boots, hammer"
+          "boots, hammer",
+          "sequence_break_other, [boots], [hammer], bombs"// The knockback from a bomb explosion can launch Link into the entrance from the elevated section
         ],
         "sections": [
           {
