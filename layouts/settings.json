@@ -38,6 +38,15 @@
                 "type": "layout",
                 "key": "other_settings_grid"
               }
+            },
+            {
+              "type": "group",
+              "header": "Sequence Breaks",
+              "dock": "left",
+              "content": {
+                "type": "layout",
+                "key": "sequence_break_settings_grid"
+              }
             }
           ]
         }

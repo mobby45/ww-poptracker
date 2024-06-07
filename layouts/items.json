@@ -188,5 +188,18 @@
     "rows": [
       ["swift_sail"]
     ]
+  },
+  "sequence_break_settings_grid": {
+    "type": "itemgrid",
+    "h_alignment": "center",
+    "item_margin": "5,3",
+    "item_size": "48,48",
+    "rows": [
+      ["sequence_break_swift_sail"],
+      ["sequence_break_ballad"],
+      ["sequence_break_passing"],
+      ["sequence_break_spoils_grapple"],
+      ["sequence_break_other"]
+    ]
   }
 }

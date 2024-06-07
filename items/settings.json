@@ -278,5 +278,35 @@
 		"type": "toggle",
 		"img": "images/items/item1.png",
 		"codes": "swift_sail"
+	},
+	{
+		"name": "Show Swift Sail Sequence Breaks",
+		"type": "toggle",
+		"img": "images/items/item1.png",
+		"codes": "sequence_break_swift_sail"
+	},
+	{
+		"name": "Show Ballad of Gales Sequence Breaks",
+		"type": "toggle",
+		"img": "images/items/song1.png",
+		"codes": "sequence_break_ballad"
+	},
+	{
+		"name": "Show Song of Passing Sequence Breaks",
+		"type": "toggle",
+		"img": "images/items/song5.png",
+		"codes": "sequence_break_passing"
+	},
+	{
+		"name": "Show Spoils without Grappling Hook Sequence Breaks",
+		"type": "toggle",
+		"img": "images/items/item3.png",
+		"codes": "sequence_break_spoils_grapple"
+	},
+	{
+		"name:": "Show Other Sequence Breaks",
+		"type": "toggle",
+		"img": "images/items/item13.png",
+		"codes": "sequence_break_other"
 	}
 ]
