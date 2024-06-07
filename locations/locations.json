@@ -2288,7 +2288,7 @@
               [
                 "@Macros/can_access_forest_haven",
                 "bottle",
-                "@can_play_ballad_of_gales",
+                "@_can_play_ballad_of_gales_or_sequence_break",
                 "@The Great Sea/Cliff Plateau Isles/Highest Isle"
               ]
             ],
@@ -2303,7 +2303,7 @@
             "access_rules": [
               [
                 "ghost",
-                "[@Macros/can_play_ballad_of_gales]",
+                "@Macros/_can_play_ballad_of_gales_or_sequence_break",
                 "@Macros/can_defeat_wizzrobes",
                 "@Macros/can_defeat_poes",
                 "[@Macros/can_defeat_redeads]",

@@ -40,6 +40,13 @@
         ]
       },
       {
+        "name": "_can_play_ballad_of_gales_or_sequence_break",
+        "access_rules": [
+          "@Macros/can_play_ballad_of_gales",
+          "sequence_break_ballad"
+        ]
+      },
+      {
         "name": "can_fly_with_deku_leaf_indoors",
         "access_rules": [
           "leaf, magic"
