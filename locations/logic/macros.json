@@ -56,7 +56,7 @@
         "name": "can_fly_with_deku_leaf_outdoors",
         "access_rules": [
           "leaf, magic, @Macros/can_play_winds_requiem",
-          "leaf, magic, [@Macros/can_play_winds_requiem], sail, swift_sail"
+          "@Macros/_swift_sail_sequence_break, leaf, magic, [@Macros/can_play_winds_requiem]"// Most flying with the deku leaf outdoors can be done by using the swift sail to set the wind in advance
         ]
       },
       {
