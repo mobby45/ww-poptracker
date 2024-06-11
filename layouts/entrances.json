@@ -50,26 +50,26 @@
                 "item_margin": "0,0",
                 "item_size": "440,10",
                 "rows": [
-                  ["Secret Cave Entrance on Outset Island"],
+                  ["Secret Cave Entrance on Angular Isles"],
+                  ["Secret Cave Entrance on Bird's Peak Rock"],
+                  ["Secret Cave Entrance on Boating Course"],
+                  ["Secret Cave Entrance on Bomb Island"],
+                  ["Secret Cave Entrance on Cliff Plateau Isles"],
+                  ["Secret Cave Entrance on Diamond Steppe Island"],
                   ["Secret Cave Entrance on Dragon Roost Island"],
                   ["Secret Cave Entrance on Fire Mountain"],
+                  ["Secret Cave Entrance on Horseshoe Island"],
                   ["Secret Cave Entrance on Ice Ring Isle"],
-                  ["Secret Cave Entrance on Private Oasis"],
                   ["Secret Cave Entrance on Needle Rock Isle"],
-                  ["Secret Cave Entrance on Angular Isles"],
-                  ["Secret Cave Entrance on Boating Course"],
-                  ["Secret Cave Entrance on Stone Watcher Island"],
+                  ["Secret Cave Entrance on Outset Island"],
                   ["Secret Cave Entrance on Overlook Island"],
-                  ["Secret Cave Entrance on Bird's Peak Rock"],
                   ["Secret Cave Entrance on Pawprint Isle"],
                   ["Secret Cave Entrance on Pawprint Isle Side Isle"],
-                  ["Secret Cave Entrance on Diamond Steppe Island"],
-                  ["Secret Cave Entrance on Bomb Island"],
-                  ["Secret Cave Entrance on Rock Spire Isle"],
+                  ["Secret Cave Entrance on Private Oasis"],
                   ["Secret Cave Entrance on Shark Island"],
-                  ["Secret Cave Entrance on Cliff Plateau Isles"],
-                  ["Secret Cave Entrance on Horseshoe Island"],
-                  ["Secret Cave Entrance on Star Island"]
+                  ["Secret Cave Entrance on Star Island"],
+                  ["Secret Cave Entrance on Stone Watcher Island"],
+                  ["Secret Cave Entrance on Rock Spire Isle"]
                 ]
               }
             },
@@ -81,15 +81,15 @@
                 "item_margin": "0,0",
                 "item_size": "440,10",
                 "rows": [
-                  ["Inner Entrance in Ice Ring Isle Secret Cave"],
                   ["Inner Entrance in Cliff Plateau Isles Secret Cave"],
+                  ["Inner Entrance in Ice Ring Isle Secret Cave"],
                   [],
-                  ["Fairy Fountain Entrance on Outset Island"],
-                  ["Fairy Fountain Entrance on Thorned Fairy Island"],
+                  ["Fairy Fountain Entrance on Northern Fairy Island"],
                   ["Fairy Fountain Entrance on Eastern Fairy Island"],
-                  ["Fairy Fountain Entrance on Western Fairy Island"],
                   ["Fairy Fountain Entrance on Southern Fairy Island"],
-                  ["Fairy Fountain Entrance on Northern Fairy Island"]
+                  ["Fairy Fountain Entrance on Western Fairy Island"],
+                  ["Fairy Fountain Entrance on Outset Island"],
+                  ["Fairy Fountain Entrance on Thorned Fairy Island"]
                 ]
               }
             }
