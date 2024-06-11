@@ -53,16 +53,21 @@ NUM_EXITS = #EXITS
 function exit_mapping_update(lua_item)
     local entrance_idx = lua_item:Get("entrance_idx")
     local entrance = ENTRANCES[entrance_idx]
+    local entrance_name = entrance.name
     local exit_idx = lua_item:Get("exit_idx")
     local exit_name = EXITS[exit_idx]
     if exit_name then
-        lua_item.Icon = ImageReference:FromPackRelativePath("images/items/exits/" .. exit_name .. ".png")
+        -- We use .IconMods to mark impossible to reach exits with @disabled, so pre-add the icon mods in the
+        -- ImageReference for .Icon instead.
+        lua_item.Icon = ImageReference:FromPackRelativePath("images/items/entrances/" .. entrance_name .. ".png:overlay|images/items/exits/" .. exit_name .. ".png")
         entrance.exit = exit_name
-        lua_item.Name = entrance.name ..  " -> " .. exit_name
+        lua_item.Name = entrance_name ..  " -> " .. exit_name
     else
-        lua_item.Icon = ImageReference:FromPackRelativePath("images/items/exits/Unknown.png")
+        -- We use .IconMods to mark impossible to reach exits with @disabled, so pre-add the icon mods in the
+        -- ImageReference for .Icon instead.
+        lua_item.Icon = ImageReference:FromPackRelativePath("images/items/entrances/" .. entrance_name .. ".png:overlay|images/items/exits/Unknown.png")
         entrance.exit = nil
-        lua_item.Name = entrance.name ..  " -> Unknown"
+        lua_item.Name = entrance_name ..  " -> Unknown"
     end
     update_entrances()
 end
@@ -153,6 +158,7 @@ function create_lua_item(idx, entrance)
 
     local entrance_name = entrance.name
     item.Name = entrance_name
+    item.Icon = ImageReference:FromPackRelativePath("images/items/entrances/" .. entrance_name .. ".png")
 
     item.CanProvideCodeFunc = function(self, code) return code == entrance_name end
     item.ProvidesCodeFunc = function(self, code) return code == entrance_name end
@@ -160,6 +166,10 @@ function create_lua_item(idx, entrance)
     item.OnRightClickFunc = exit_mapping_right_click
     item.OnMiddleClickFunc = exit_mapping_middle_click
     exit_mapping_update(item)
+
+    -- TODO: Also create the placeholder items here?
+    -- TODO: If an exit has been assigned to an exit mapping, can we make the exit location appear as checkable?
+    --       This way, we can tell apart locations we can/cannot access and which of those have been assigned
 end
 
 PAUSE_ENTRANCE_UPDATES = true

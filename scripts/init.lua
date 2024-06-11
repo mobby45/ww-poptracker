@@ -13,7 +13,6 @@ if ENTRANCE_RANDO_ENABLED then
     -- Variants have separate auto-save state and exported state includes the active variant, so there's no need to
     -- create these items when entrance rando is not enabled.
     Tracker:AddItems("items/internal.json")
-    Tracker:AddItems("items/entrance_names.json")
     -- Lua Items
     ScriptHost:LoadScript("scripts/items/exit_mappings.lua")
     print("Exit mapping lua items loaded")
