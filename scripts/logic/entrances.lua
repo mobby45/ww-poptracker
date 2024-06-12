@@ -163,19 +163,6 @@ function update_entrances(initializing)
         end
     end
 
-    -- Visibly mark assigned exits
-    for _, exit_name in ipairs(EXIT_NAMES) do
-        local lua_item = Tracker:FindObjectForCode(exit_name)
-        if lua_item then
-            if exit_to_entrance[exit_name] then
-                -- Exit is assigned, grey it out.
-                lua_item.IconMods = "@disabled"
-            else
-                lua_item.IconMods = "none"
-            end
-        end
-    end
-
     -- Force logic to update because the result of lua functions that check exit accessibility may now give different
     -- results.
     forceLogicUpdate()

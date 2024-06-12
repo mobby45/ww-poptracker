@@ -16,12 +16,14 @@
                 "item_h_alignment": "center",
                 "tabs": [
                   {
-                    "title": "Dungeon Entrances",
+                    "title": "Dungeons",
                     "content": {
                       "type": "itemgrid",
                       "margin": "0,0,0,0",
                       "item_margin": "0,0",
-                      "item_size": "440,10",
+                      "item_size": "440,13",
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
                       "rows": [
                         ["Dungeon Entrance on Dragon Roost Island"],
                         ["Boss Entrance in Dragon Roost Cavern"],
@@ -49,12 +51,14 @@
                     }
                   },
                   {
-                    "title": "Secret Cave Entrances",
+                    "title": "Secret Caves",
                     "content": {
                       "type": "itemgrid",
                       "margin": "0,0,0,0",
                       "item_margin": "0,0",
-                      "item_size": "440,10",
+                      "item_size": "440,14",
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
                       "rows": [//todo: Split into puzzle and combat caves
                         ["Secret Cave Entrance on Angular Isles"],
                         ["Secret Cave Entrance on Bird's Peak Rock"],
@@ -72,20 +76,22 @@
                         ["Secret Cave Entrance on Pawprint Isle"],
                         ["Secret Cave Entrance on Pawprint Isle Side Isle"],
                         ["Secret Cave Entrance on Private Oasis"],
+                        ["Secret Cave Entrance on Rock Spire Isle"],
                         ["Secret Cave Entrance on Shark Island"],
                         ["Secret Cave Entrance on Star Island"],
-                        ["Secret Cave Entrance on Stone Watcher Island"],
-                        ["Secret Cave Entrance on Rock Spire Isle"]
+                        ["Secret Cave Entrance on Stone Watcher Island"]
                       ]
                     }
                   },
                   {
-                    "title": "Inner and Fairy Fountain Entrances",
+                    "title": "Inner Entrances and Fairy Fountains",
                     "content": {
                       "type": "itemgrid",
                       "margin": "0,0,0,0",
                       "item_margin": "0,0",
-                      "item_size": "440,10",
+                      "item_size": "440,15",
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
                       "rows": [
                         ["Inner Entrance in Cliff Plateau Isles Secret Cave"],
                         ["Inner Entrance in Ice Ring Isle Secret Cave"],
@@ -103,17 +109,19 @@
               }
             },
             {
-              "title": "Exits",
+              "title": "Select Exit",
               "content": {
                 "type": "tabbed",
                 "tabs": [
                   {
-                    "title": "Dungeon Exits",
+                    "title": "Dungeons",
                     "content": {
                       "type": "itemgrid",
                       "margin": "0,0,0,0",
-                      "item_margin": "120,0",// To be the same width as Assignment
-                      "item_size": "199,10",
+                      "item_margin": "120,0",// item alignment doesn't work, for some reason, if this is "0,0"
+                      "item_size": "199,13",
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
                       "rows": [
                         ["Dragon Roost Cavern"],
                         ["Gohma Boss Arena"],
@@ -141,17 +149,18 @@
                     }
                   },
                   {
-                    "title": "Secret Cave Exits",
+                    "title": "Secret Caves",
                     "content": {
                       "type": "itemgrid",
-                      "item_margin": "120,0",// To be the same width as Assignment
-                      "item_size": "199,10",
+                      "item_margin": "120,0",
+                      "item_size": "199,14",
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
                       "rows": [//todo: Split into puzzle and combat caves
                         ["Angular Isles Secret Cave"],
                         ["Bird's Peak Rock Secret Cave"],
                         ["Boating Course Secret Cave"],
                         ["Bomb Island Secret Cave"],
-                        ["Cabana Labyrinth"],
                         ["Cliff Plateau Isles Secret Cave"],
                         ["Diamond Steppe Island Warp Maze Cave"],
                         ["Dragon Roost Island Secret Cave"],
@@ -159,22 +168,26 @@
                         ["Horseshoe Island Secret Cave"],
                         ["Ice Ring Isle Secret Cave"],
                         ["Needle Rock Isle Secret Cave"],
+                        ["Savage Labyrinth"],// Outset Island Secret Cave
                         ["Overlook Island Secret Cave"],
                         ["Pawprint Isle Chuchu Cave"],
                         ["Pawprint Isle Wizzrobe Cave"],
+                        ["Cabana Labyrinth"],// Private Oasis,
                         ["Rock Spire Isle Secret Cave"],
-                        ["Savage Labyrinth"],
+                        ["Shark Island Secret Cave"],
                         ["Star Island Secret Cave"],
                         ["Stone Watcher Island Secret Cave"]
                       ]
                     }
                   },
                   {
-                    "title": "Inner and Fairy Fountain Exits",
+                    "title": "Inner Exits and Fairy Fountains",
                     "content": {
                       "type": "itemgrid",
-                      "item_margin": "120,0",// To be the same width as Assignment
-                      "item_size": "199,10",
+                      "item_margin": "120,0",
+                      "item_size": "199,15",
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
                       "rows": [
                         ["Cliff Plateau Isles Inner Cave"],
                         ["Ice Ring Isle Inner Cave"],
