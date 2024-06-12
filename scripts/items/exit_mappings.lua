@@ -49,6 +49,74 @@ EXITS = {
 
 NUM_EXITS = #EXITS
 
+_selected_exit_mapping = nil
+function set_selected_exit_mapping(new)
+    local old = _selected_exit_mapping
+    if old == new then
+        -- Nothing to do.
+        return
+    end
+    _selected_exit_mapping = new
+
+    -- Update the names of the exits.
+    -- TODO: Do not change the name of already assigned exits and include the entrance name in assigned exits.
+    if new then
+        -- Update the names of the exits to include the name of the selected entrance.
+        local entrance = ENTRANCES[new:Get("entrance_idx")]
+        local entrance_name = entrance.name
+        for _, exit_lua_item in ipairs(exit_lua_items) do
+            exit_lua_item.Name = "Assign " .. entrance_name .. " -> " .. exit_lua_item:Get("exit_name")
+        end
+        update_exit_mapping_icon(new)
+    else
+        -- Update the names of the exits to only be the exit name.
+        for _, exit_lua_item in ipairs(exit_lua_items) do
+            exit_lua_item.Name = exit_lua_item:Get("exit_name")
+        end
+    end
+
+    if old then
+        update_exit_mapping_icon(old)
+    end
+end
+
+function get_selected_exit_mapping()
+    return _selected_exit_mapping
+end
+
+function update_exit_mapping_icon(lua_item, entrance_name, exit_name)
+    if not entrance_name then
+        local entrance_idx = lua_item:Get("entrance_idx")
+        local entrance = ENTRANCES[entrance_idx]
+        entrance_name = entrance.name
+    end
+
+    if not exit_name then
+        local exit_idx = lua_item:Get("exit_idx")
+        exit_name = EXITS[exit_idx]
+    end
+
+    local entrance_icon = "images/items/entrances/" .. entrance_name .. ".png"
+
+    local exit_overlay = "overlay|images/items/entrances/exits/"
+    if exit_name then
+        exit_overlay = exit_overlay .. exit_name .. ".png"
+    else
+        exit_overlay = exit_overlay .. "Unknown.png"
+    end
+
+    local full_icon_path = entrance_icon .. ":" .. exit_overlay
+
+    if get_selected_exit_mapping() == lua_item then
+        -- Apply an outline to the selected exit mapping
+        full_icon_path = full_icon_path .. ",overlay|images/items/entrances/active_overlay.png"
+    end
+    -- We use .IconMods to mark impossible to reach exits with @disabled, so pre-add the icon mods in the
+    -- ImageReference for .Icon instead.
+    print("updating .Icon to: " .. full_icon_path)
+    lua_item.Icon = ImageReference:FromPackRelativePath(full_icon_path)
+end
+
 -- Update an exit mapping's name, image and exit name after its "exit_idx" has been changed
 function exit_mapping_update(lua_item)
     local entrance_idx = lua_item:Get("entrance_idx")
@@ -57,18 +125,13 @@ function exit_mapping_update(lua_item)
     local exit_idx = lua_item:Get("exit_idx")
     local exit_name = EXITS[exit_idx]
     if exit_name then
-        -- We use .IconMods to mark impossible to reach exits with @disabled, so pre-add the icon mods in the
-        -- ImageReference for .Icon instead.
-        lua_item.Icon = ImageReference:FromPackRelativePath("images/items/entrances/" .. entrance_name .. ".png:overlay|images/items/exits/" .. exit_name .. ".png")
         entrance.exit = exit_name
         lua_item.Name = entrance_name ..  " -> " .. exit_name
     else
-        -- We use .IconMods to mark impossible to reach exits with @disabled, so pre-add the icon mods in the
-        -- ImageReference for .Icon instead.
-        lua_item.Icon = ImageReference:FromPackRelativePath("images/items/entrances/" .. entrance_name .. ".png:overlay|images/items/exits/Unknown.png")
         entrance.exit = nil
         lua_item.Name = entrance_name ..  " -> Unknown"
     end
+    update_exit_mapping_icon(lua_item, entrance_name, exit_name)
     update_entrances()
 end
 
@@ -94,39 +157,25 @@ function exit_mapping_load_func(lua_item, data)
     exit_mapping_update(lua_item)
 end
 
--- Cycle to the next unassigned exit
+-- Select the exit mapping
 function exit_mapping_left_click(lua_item)
-    local exit_idx = lua_item:Get("exit_idx")
-    local exit_name = nil
-    -- Iterate forwards until the next unassigned exit or we run out of exits
-    repeat
-        exit_idx = exit_idx + 1
-        exit_name = EXITS[exit_idx]
-    until(exit_name == nil or exit_to_entrance[exit_name] == nil)
-
-    if exit_name == nil then
-        -- If we ran out of exits, set to "Unknown"
-        exit_idx = 0
+    if lua_item:Get("exit_idx") ~= 0 then
+        -- The exit mapping is already assigned. The user should right/middle click to clear the mapping.
+        return
     end
-    lua_item:Set("exit_idx", exit_idx)
-    exit_mapping_update(lua_item)
+
+    set_selected_exit_mapping(lua_item)
+    -- Swap to exits tab so the user can pick the exit to assign.
+    Tracker:UiHint("ActivateTab", "Exits")
 end
 
--- Cycle to the previous unassigned exit
+-- Deselect the exit mapping if it's selected, or reset the exit mapping to Unknown
 function exit_mapping_right_click(lua_item)
-    local exit_idx = lua_item:Get("exit_idx")
-    if exit_idx <= 0 then
-        exit_idx = NUM_EXITS + 1
+    if lua_item == get_selected_exit_mapping() then
+        set_selected_exit_mapping(nil)
+    else
+        exit_mapping_middle_click(lua_item)
     end
-    local exit_name = nil
-    -- Iterate backwards until the next unassigned exit or we run out of exits
-    repeat
-        exit_idx = exit_idx - 1
-        exit_name = EXITS[exit_idx]
-    until(exit_name == nil or exit_to_entrance[exit_name] == nil)
-
-    lua_item:Set("exit_idx", exit_idx)
-    exit_mapping_update(lua_item)
 end
 
 -- Reset back to "Unknown" exit
@@ -140,41 +189,87 @@ function exit_mapping_middle_click(lua_item)
     exit_mapping_update(lua_item)
 end
 
-function create_lua_item(idx, entrance)
-    local item = ScriptHost:CreateLuaItem()
+function create_mapping_lua_item(idx, entrance)
+    local mapping_item = ScriptHost:CreateLuaItem()
 
-    if not item.ItemSate then
-        item.ItemState = {}
+    if not mapping_item.ItemSate then
+        mapping_item.ItemState = {}
     end
 
-    item.LoadFunc = exit_mapping_load_func
-    item.SaveFunc = exit_mapping_save_func
+    mapping_item.LoadFunc = exit_mapping_load_func
+    mapping_item.SaveFunc = exit_mapping_save_func
 
-    item:Set("entrance_idx", idx)
+    mapping_item:Set("entrance_idx", idx)
 
-    if not item:Get("exit_idx") then
-        item:Set("exit_idx", idx)
+    if not mapping_item:Get("exit_idx") then
+        mapping_item:Set("exit_idx", idx)
     end
 
     local entrance_name = entrance.name
-    item.Name = entrance_name
-    item.Icon = ImageReference:FromPackRelativePath("images/items/entrances/" .. entrance_name .. ".png")
+    mapping_item.Name = entrance_name
+    --mapping_item.Icon = ImageReference:FromPackRelativePath("images/items/entrances/" .. entrance_name .. ".png")
 
-    item.CanProvideCodeFunc = function(self, code) return code == entrance_name end
-    item.ProvidesCodeFunc = function(self, code) return code == entrance_name end
-    item.OnLeftClickFunc = exit_mapping_left_click
-    item.OnRightClickFunc = exit_mapping_right_click
-    item.OnMiddleClickFunc = exit_mapping_middle_click
-    exit_mapping_update(item)
+    local codeFunc = function(self, code)
+        return code == entrance_name
+    end
+    mapping_item.CanProvideCodeFunc = codeFunc
+    mapping_item.ProvidesCodeFunc = codeFunc
+    mapping_item.OnLeftClickFunc = exit_mapping_left_click
+    mapping_item.OnRightClickFunc = exit_mapping_right_click
+    mapping_item.OnMiddleClickFunc = exit_mapping_middle_click
+    exit_mapping_update(mapping_item)
 
     -- TODO: Also create the placeholder items here?
     -- TODO: If an exit has been assigned to an exit mapping, can we make the exit location appear as checkable?
     --       This way, we can tell apart locations we can/cannot access and which of those have been assigned
 end
 
+exit_lua_items = {}
+
+function create_exit_lua_item(idx, entrance)
+    local exit_item = ScriptHost:CreateLuaItem()
+
+    if not exit_item.ItemSate then
+        exit_item.ItemState = {}
+    end
+
+    local exit_name = entrance.exit
+
+    exit_item:Set("exit_name", exit_name)
+
+    exit_item.Name = exit_name
+    exit_item.Icon = ImageReference:FromPackRelativePath("images/items/exits/" .. exit_name .. ".png")
+
+    codeFunc = function(self, code) return code == exit_name end
+    exit_item.CanProvideCodeFunc = codeFunc
+    exit_item.ProvidesCodeFunc = codeFunc
+    exit_item.OnLeftClickFunc = function(self)
+        local selected = get_selected_exit_mapping()
+        if selected then
+            local already_assigned_entrance = exit_to_entrance[exit_name]
+            if already_assigned_entrance then
+                -- Can't pick an exit that has already been assigned.
+                return
+            end
+
+            --selected_exit_mapping = nil
+            selected:Set("exit_idx", idx)
+
+            set_selected_exit_mapping(nil)
+            exit_mapping_update(selected)
+            Tracker:UiHint("ActivateTab", "Assignment")
+        end
+    end
+
+    exit_item:Set("exit_idx", idx)
+
+    table.insert(exit_lua_items, exit_item)
+end
+
 PAUSE_ENTRANCE_UPDATES = true
 for idx, entrance in ipairs(ENTRANCES) do
-   create_lua_item(idx, entrance)
+   create_mapping_lua_item(idx, entrance)
+   create_exit_lua_item(idx, entrance)
 end
 PAUSE_ENTRANCE_UPDATES = false
 update_entrances()

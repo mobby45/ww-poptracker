@@ -49,9 +49,11 @@ ENTRANCES = {
     Entrance.new("Fairy Fountain Entrance on Northern Fairy Island", "Northern Fairy Fountain"),
 }
 
+EXIT_NAMES = {}
 ENTRANCE_BY_NAME = {}
 for _, entrance in ipairs(ENTRANCES) do
     ENTRANCE_BY_NAME[entrance.name] = entrance
+    table.insert(EXIT_NAMES, entrance.exit)
 end
 
 -- Quick lookup tables for exits.
@@ -154,6 +156,19 @@ function update_entrances(initializing)
             if exit_name and impossible_exits[exit_name] then
                 -- TODO: Red overlay or something else that stands out more to indicate that the exit is impossible to
                 --       reach (or invalid due to being duplicated).
+                lua_item.IconMods = "@disabled"
+            else
+                lua_item.IconMods = "none"
+            end
+        end
+    end
+
+    -- Visibly mark assigned exits
+    for _, exit_name in ipairs(EXIT_NAMES) do
+        local lua_item = Tracker:FindObjectForCode(exit_name)
+        if lua_item then
+            if exit_to_entrance[exit_name] then
+                -- Exit is assigned, grey it out.
                 lua_item.IconMods = "@disabled"
             else
                 lua_item.IconMods = "none"

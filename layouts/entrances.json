@@ -1,95 +1,193 @@
 {
   "entrances_layout": {
     "type": "container",
-    "background": "#000000",
-    "h_alignment": "stretch",
-    "v_alignment": "stretch",
     "content": {
       "type": "array",
       "orientation": "horizontal",
-      "h_alignment": "stretch",
-      "v_alignment": "stretch",
       "content": [
         {
           "type": "tabbed",
           "tabs": [
             {
-              "title": "Dungeon Entrances",
+              "title": "Assignment",
               "content": {
-                "type": "itemgrid",
-                "margin": "0,0,0,0",
-                "item_margin": "0,0",
-                "item_size": "440,10",
-                "rows": [
-                  ["Dungeon Entrance on Dragon Roost Island"],
-                  ["Dungeon Entrance in Forest Haven Sector"],
-                  ["Dungeon Entrance in Tower of the Gods Sector"],
-                  ["Dungeon Entrance on Headstone Island"],
-                  ["Dungeon Entrance on Gale Isle"],
-                  [],
-                  ["Miniboss Entrance in Forbidden Woods"],
-                  ["Miniboss Entrance in Tower of the Gods"],
-                  ["Miniboss Entrance in Earth Temple"],
-                  ["Miniboss Entrance in Wind Temple"],
-                  ["Miniboss Entrance in Hyrule Castle"],
-                  [],
-                  ["Boss Entrance in Dragon Roost Cavern"],
-                  ["Boss Entrance in Forbidden Woods"],
-                  ["Boss Entrance in Tower of the Gods"],
-                  ["Boss Entrance in Forsaken Fortress"],
-                  ["Boss Entrance in Earth Temple"],
-                  ["Boss Entrance in Wind Temple"]
+                "type": "tabbed",
+                "h_alignment": "center",
+                "item_h_alignment": "center",
+                "tabs": [
+                  {
+                    "title": "Dungeon Entrances",
+                    "content": {
+                      "type": "itemgrid",
+                      "margin": "0,0,0,0",
+                      "item_margin": "0,0",
+                      "item_size": "440,10",
+                      "rows": [
+                        ["Dungeon Entrance on Dragon Roost Island"],
+                        ["Boss Entrance in Dragon Roost Cavern"],
+                        [],
+                        ["Dungeon Entrance in Forest Haven Sector"],
+                        ["Miniboss Entrance in Forbidden Woods"],
+                        ["Boss Entrance in Forbidden Woods"],
+                        [],
+                        ["Dungeon Entrance in Tower of the Gods Sector"],
+                        ["Miniboss Entrance in Tower of the Gods"],
+                        ["Boss Entrance in Tower of the Gods"],
+                        [],
+                        ["Dungeon Entrance on Headstone Island"],
+                        ["Miniboss Entrance in Earth Temple"],
+                        ["Boss Entrance in Earth Temple"],
+                        [],
+                        ["Dungeon Entrance on Gale Isle"],
+                        ["Miniboss Entrance in Wind Temple"],
+                        ["Boss Entrance in Wind Temple"],
+                        [],
+                        ["Boss Entrance in Forsaken Fortress"],
+                        [],
+                        ["Miniboss Entrance in Hyrule Castle"]
+                      ]
+                    }
+                  },
+                  {
+                    "title": "Secret Cave Entrances",
+                    "content": {
+                      "type": "itemgrid",
+                      "margin": "0,0,0,0",
+                      "item_margin": "0,0",
+                      "item_size": "440,10",
+                      "rows": [//todo: Split into puzzle and combat caves
+                        ["Secret Cave Entrance on Angular Isles"],
+                        ["Secret Cave Entrance on Bird's Peak Rock"],
+                        ["Secret Cave Entrance on Boating Course"],
+                        ["Secret Cave Entrance on Bomb Island"],
+                        ["Secret Cave Entrance on Cliff Plateau Isles"],
+                        ["Secret Cave Entrance on Diamond Steppe Island"],
+                        ["Secret Cave Entrance on Dragon Roost Island"],
+                        ["Secret Cave Entrance on Fire Mountain"],
+                        ["Secret Cave Entrance on Horseshoe Island"],
+                        ["Secret Cave Entrance on Ice Ring Isle"],
+                        ["Secret Cave Entrance on Needle Rock Isle"],
+                        ["Secret Cave Entrance on Outset Island"],
+                        ["Secret Cave Entrance on Overlook Island"],
+                        ["Secret Cave Entrance on Pawprint Isle"],
+                        ["Secret Cave Entrance on Pawprint Isle Side Isle"],
+                        ["Secret Cave Entrance on Private Oasis"],
+                        ["Secret Cave Entrance on Shark Island"],
+                        ["Secret Cave Entrance on Star Island"],
+                        ["Secret Cave Entrance on Stone Watcher Island"],
+                        ["Secret Cave Entrance on Rock Spire Isle"]
+                      ]
+                    }
+                  },
+                  {
+                    "title": "Inner and Fairy Fountain Entrances",
+                    "content": {
+                      "type": "itemgrid",
+                      "margin": "0,0,0,0",
+                      "item_margin": "0,0",
+                      "item_size": "440,10",
+                      "rows": [
+                        ["Inner Entrance in Cliff Plateau Isles Secret Cave"],
+                        ["Inner Entrance in Ice Ring Isle Secret Cave"],
+                        [],
+                        ["Fairy Fountain Entrance on Northern Fairy Island"],
+                        ["Fairy Fountain Entrance on Eastern Fairy Island"],
+                        ["Fairy Fountain Entrance on Southern Fairy Island"],
+                        ["Fairy Fountain Entrance on Western Fairy Island"],
+                        ["Fairy Fountain Entrance on Outset Island"],
+                        ["Fairy Fountain Entrance on Thorned Fairy Island"]
+                      ]
+                    }
+                  }
                 ]
               }
             },
             {
-              "title": "Secret Cave Entrances",
+              "title": "Exits",
               "content": {
-                "type": "itemgrid",
-                "margin": "0,0,0,0",
-                "item_margin": "0,0",
-                "item_size": "440,10",
-                "rows": [
-                  ["Secret Cave Entrance on Angular Isles"],
-                  ["Secret Cave Entrance on Bird's Peak Rock"],
-                  ["Secret Cave Entrance on Boating Course"],
-                  ["Secret Cave Entrance on Bomb Island"],
-                  ["Secret Cave Entrance on Cliff Plateau Isles"],
-                  ["Secret Cave Entrance on Diamond Steppe Island"],
-                  ["Secret Cave Entrance on Dragon Roost Island"],
-                  ["Secret Cave Entrance on Fire Mountain"],
-                  ["Secret Cave Entrance on Horseshoe Island"],
-                  ["Secret Cave Entrance on Ice Ring Isle"],
-                  ["Secret Cave Entrance on Needle Rock Isle"],
-                  ["Secret Cave Entrance on Outset Island"],
-                  ["Secret Cave Entrance on Overlook Island"],
-                  ["Secret Cave Entrance on Pawprint Isle"],
-                  ["Secret Cave Entrance on Pawprint Isle Side Isle"],
-                  ["Secret Cave Entrance on Private Oasis"],
-                  ["Secret Cave Entrance on Shark Island"],
-                  ["Secret Cave Entrance on Star Island"],
-                  ["Secret Cave Entrance on Stone Watcher Island"],
-                  ["Secret Cave Entrance on Rock Spire Isle"]
-                ]
-              }
-            },
-            {
-              "title": "Inner and Fairy Fountain Entrances",
-              "content": {
-                "type": "itemgrid",
-                "margin": "0,0,0,0",
-                "item_margin": "0,0",
-                "item_size": "440,10",
-                "rows": [
-                  ["Inner Entrance in Cliff Plateau Isles Secret Cave"],
-                  ["Inner Entrance in Ice Ring Isle Secret Cave"],
-                  [],
-                  ["Fairy Fountain Entrance on Northern Fairy Island"],
-                  ["Fairy Fountain Entrance on Eastern Fairy Island"],
-                  ["Fairy Fountain Entrance on Southern Fairy Island"],
-                  ["Fairy Fountain Entrance on Western Fairy Island"],
-                  ["Fairy Fountain Entrance on Outset Island"],
-                  ["Fairy Fountain Entrance on Thorned Fairy Island"]
+                "type": "tabbed",
+                "tabs": [
+                  {
+                    "title": "Dungeon Exits",
+                    "content": {
+                      "type": "itemgrid",
+                      "margin": "0,0,0,0",
+                      "item_margin": "120,0",// To be the same width as Assignment
+                      "item_size": "199,10",
+                      "rows": [
+                        ["Dragon Roost Cavern"],
+                        ["Gohma Boss Arena"],
+                        [],
+                        ["Forbidden Woods"],
+                        ["Forbidden Woods Miniboss Arena"],
+                        ["Kalle Demos Boss Arena"],
+                        [],
+                        ["Tower of the Gods"],
+                        ["Tower of the Gods Miniboss Arena"],
+                        ["Gohdan Boss Arena"],
+                        [],
+                        ["Earth Temple"],
+                        ["Earth Temple Miniboss Arena"],
+                        ["Jalhalla Boss Arena"],
+                        [],
+                        ["Wind Temple"],
+                        ["Wind Temple Miniboss Arena"],
+                        ["Molgera Boss Arena"],
+                        [],
+                        ["Helmaroc King Boss Arena"],
+                        [],
+                        ["Master Sword Chamber"]
+                      ]
+                    }
+                  },
+                  {
+                    "title": "Secret Cave Exits",
+                    "content": {
+                      "type": "itemgrid",
+                      "item_margin": "120,0",// To be the same width as Assignment
+                      "item_size": "199,10",
+                      "rows": [//todo: Split into puzzle and combat caves
+                        ["Angular Isles Secret Cave"],
+                        ["Bird's Peak Rock Secret Cave"],
+                        ["Boating Course Secret Cave"],
+                        ["Bomb Island Secret Cave"],
+                        ["Cabana Labyrinth"],
+                        ["Cliff Plateau Isles Secret Cave"],
+                        ["Diamond Steppe Island Warp Maze Cave"],
+                        ["Dragon Roost Island Secret Cave"],
+                        ["Fire Mountain Secret Cave"],
+                        ["Horseshoe Island Secret Cave"],
+                        ["Ice Ring Isle Secret Cave"],
+                        ["Needle Rock Isle Secret Cave"],
+                        ["Overlook Island Secret Cave"],
+                        ["Pawprint Isle Chuchu Cave"],
+                        ["Pawprint Isle Wizzrobe Cave"],
+                        ["Rock Spire Isle Secret Cave"],
+                        ["Savage Labyrinth"],
+                        ["Star Island Secret Cave"],
+                        ["Stone Watcher Island Secret Cave"]
+                      ]
+                    }
+                  },
+                  {
+                    "title": "Inner and Fairy Fountain Exits",
+                    "content": {
+                      "type": "itemgrid",
+                      "item_margin": "120,0",// To be the same width as Assignment
+                      "item_size": "199,10",
+                      "rows": [
+                        ["Cliff Plateau Isles Inner Cave"],
+                        ["Ice Ring Isle Inner Cave"],
+                        [],
+                        ["Northern Fairy Fountain"],
+                        ["Eastern Fairy Fountain"],
+                        ["Southern Fairy Fountain"],
+                        ["Western Fairy Fountain"],
+                        ["Outset Fairy Fountain"],
+                        ["Thorned Fairy Fountain"]
+                      ]
+                    }
+                  }
                 ]
               }
             }
@@ -97,6 +195,7 @@
         },
         {
           "type": "tabbed",
+          "h_alignment": "center",
           "tabs": [
             {
               "title": "Locations",
