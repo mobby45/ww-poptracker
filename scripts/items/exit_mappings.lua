@@ -49,26 +49,44 @@ EXITS = {
 
 NUM_EXITS = #EXITS
 
-_selected_exit_mapping = nil
-function set_selected_exit_mapping(new)
-    local old = _selected_exit_mapping
-    if old == new then
+_selected_exit_mapping_idx = nil
+function set_selected_exit_mapping(new_mapping)
+    local new_idx = nil
+    if new_mapping then
+        new_idx = new_mapping:Get("entrance_idx")
+    end
+
+    local old_idx = _selected_exit_mapping_idx
+    if old_idx == new_idx then
         -- Nothing to do.
         return
     end
-    _selected_exit_mapping = new
+    _selected_exit_mapping_idx = new_idx
 
-    if new then
-        update_exit_mapping_icon(new)
+    if new_idx then
+        update_exit_mapping_icon(new_mapping)
     end
 
-    if old then
-        update_exit_mapping_icon(old)
+    if old_idx then
+        local old_entrance = ENTRANCES[old_idx]
+        if old_entrance then
+            local old_mapping = Tracker:FindObjectForCode(old_entrance.name)
+            update_exit_mapping_icon(old_mapping)
+        end
     end
 end
 
+function is_selected_exit_mapping(mapping)
+    return _selected_exit_mapping_idx and mapping and mapping:Get("entrance_idx") == _selected_exit_mapping_idx
+end
+
 function get_selected_exit_mapping()
-    return _selected_exit_mapping
+    if _selected_exit_mapping_idx then
+        local entrance = ENTRANCES[_selected_exit_mapping_idx]
+        return Tracker:FindObjectForCode(entrance.name)
+    else
+        return nil
+    end
 end
 
 function update_exit_mapping_icon(self, entrance_name, exit_name)
@@ -94,7 +112,8 @@ function update_exit_mapping_icon(self, entrance_name, exit_name)
 
     local full_icon_path = entrance_icon .. ":" .. exit_overlay
 
-    if get_selected_exit_mapping() == self then
+    if is_selected_exit_mapping(self) then
+        -- TODO: Instead of the colour overlay, use a different image to "Unknown.png" that says "Select Exit or Cancel"
         -- Apply an outline to the selected exit mapping
         full_icon_path = full_icon_path .. ",overlay|images/items/entrances/active_overlay.png"
     end
@@ -197,9 +216,14 @@ function create_mapping_lua_item(idx, entrance)
             exit_mapping_update(self, old_idx)
             return
         else
-            set_selected_exit_mapping(self)
-            -- Swap to exits tab so the user can pick the exit to assign.
-            Tracker:UiHint("ActivateTab", "Select Exit")
+            if is_selected_exit_mapping(self) then
+                -- Cancel the selection of this entrance. There is no real need to do this.
+                set_selected_exit_mapping(nil)
+            else
+                set_selected_exit_mapping(self)
+                -- Swap to exits tab so the user can pick the exit to assign.
+                Tracker:UiHint("ActivateTab", "Select Exit")
+            end
         end
     end
     exit_mapping_update(mapping_item, nil)
