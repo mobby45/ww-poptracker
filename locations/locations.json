@@ -2089,90 +2089,6 @@
         ]
       },
       {
-        "name": "Earth Temple",
-        "sections": [
-          {
-            "name": "Transparent Chest In Warp Pot Room",
-            "ref": "Earth Temple/Transparent Chest In Warp Pot Room/"
-          },
-          {
-            "name": "Behind Curtain In Warp Pot Room",
-            "ref": "Earth Temple/Behind Curtain In Warp Pot Room/"
-          },
-          {
-            "name": "Chest Behind Destructible Walls",
-            "ref": "Earth Temple/Chest Behind Destructible Walls/"
-          },
-          {
-            "name": "Transparent Chest in First Crypt",
-            "ref": "Earth Temple/Transparent Chest in First Crypt/"
-          },
-          {
-            "name": "Chest In Three Blocks Room",
-            "ref": "Earth Temple/Chest In Three Blocks Room/"
-          },
-          {
-            "name": "Chest Behind Statues",
-            "ref": "Earth Temple/Chest Behind Statues/"
-          },
-          {
-            "name": "Casket in Second Crypt",
-            "ref": "Earth Temple/Casket in Second Crypt/"
-          },
-          {
-            "name": "Stalfos Miniboss Room",
-            "ref": "Earth Temple Miniboss Arena/Stalfos Miniboss Room/"
-          },
-          {
-            "name": "Tingle Statue Chest",
-            "ref": "Earth Temple/Tingle Statue Chest/"
-          },
-          {
-            "name": "End of Foggy Room With Floormasters",
-            "ref": "Earth Temple/End of Foggy Room With Floormasters/"
-          },
-          {
-            "name": "Kill All Floormasters in Foggy Room",
-            "ref": "Earth Temple/Kill All Floormasters in Foggy Room/"
-          },
-          {
-            "name": "Behind Curtain Next to Hammer Button",
-            "ref": "Earth Temple/Behind Curtain Next to Hammer Button/"
-          },
-          {
-            "name": "Chest in Third Crypt",
-            "ref": "Earth Temple/Chest in Third Crypt/"
-          },
-          {
-            "name": "Many Mirrors Room Left Chest",
-            "ref": "Earth Temple/Many Mirrors Room Left Chest/"
-          },
-          {
-            "name": "Many Mirrors Room Right Chest",
-            "ref": "Earth Temple/Many Mirrors Room Right Chest/"
-          },
-          {
-            "name": "Stalfos Crypt Room",
-            "ref": "Earth Temple/Stalfos Crypt Room/"
-          },
-          {
-            "name": "Big Key Chest",
-            "ref": "Earth Temple/Big Key Chest/"
-          },
-          {
-            "name": "Jalhalla Heart Container",
-            "ref": "Jalhalla Boss Arena/Jalhalla Heart Container/"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "seachart",
-            "x": 695,
-            "y": 327
-          }
-        ]
-      },
-      {
         "name": "Two-Eye Reef",
         "sections": [
           {
@@ -2354,7 +2270,7 @@
               [
                 "delivery",
                 "mom",
-                "@Jalhalla Boss Arena/Jalhalla Heart Container/"
+                "@Earth Temple/Jalhalla Heart Container"
               ]
             ],
             "visibility_rules": [
