@@ -790,7 +790,7 @@
           "@The Great Sea/Ice Ring Isle/Inner Cave - Chest",
           "@The Great Sea/Outset Island/Savage Labyrinth Floor - 30",
           "@Earth Temple/Big Key Chest/, @Macros/can_defeat_darknuts_easily",
-          "@Wind Temple/Big Key Chest/, @Macros/can_defeat_darknuts_easily",
+          "@Wind Temple/Big Key Chest, @Macros/can_defeat_darknuts_easily",
           "@The Great Sea/Shark Island/Cave",
           "@The Great Sea/Stone Watcher Island/Cave, @Macros/can_defeat_darknuts_easily",// This includes can_play_winds_requiem logic, but this logic is not actually required,
           "sequence_break_other, @Macros/_can_reach_stone_watcher_cave_darknuts, [@The Great Sea/Stone Watcher Island/Cave], @Macros/can_defeat_darknuts_easily",
