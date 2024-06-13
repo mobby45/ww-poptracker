@@ -304,7 +304,7 @@
 		"codes": "sequence_break_spoils_grapple"
 	},
 	{
-		"name:": "Show Other Sequence Breaks",
+		"name": "Show Other Sequence Breaks",
 		"type": "toggle",
 		"img": "images/items/item13.png",
 		"codes": "sequence_break_other"
