@@ -1835,7 +1835,7 @@
             ]
           },
           {
-            "name": "Savage Labyrinth Floor - 30",
+            "name": "Savage Labyrinth - Floor 30",
             "access_rules": [
               [
                 "@Exit Logic/can_access_savage_labyrinth",
@@ -1863,10 +1863,10 @@
             ]
           },
           {
-            "name": "Savage Labyrinth Floor - 50",
+            "name": "Savage Labyrinth - Floor 50",
             "access_rules": [
               [
-                "@The Great Sea/Outset Island/Savage Labyrinth Floor - 30",
+                "@The Great Sea/Outset Island/Savage Labyrinth - Floor 30",
                 "@Macros/can_aim_mirror_shield",
                 "@Macros/can_defeat_redeads",
                 "@Macros/can_defeat_blue_bubbles",
