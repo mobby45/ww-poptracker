@@ -3,6 +3,144 @@
     "name": "Tower of the Gods",
     "chest_unopened_img": "images/items/chest_wood.png",
     "chest_opened_img": "images/items/chest_wood_gray.png",
+    "visibility_rules": [
+      "dungeons_on"
+    ],
+    "map_locations": [
+      {
+        "map": "seachart",
+        "x": 695,
+        "y": 242
+      }
+    ],
+    "sections": [
+      {
+        "name": "Chest Behind Bombable Walls",
+        "access_rules": [
+          "@Exit Logic/can_access_tower_of_the_gods, bombs"
+        ]
+      },
+      {
+        "name": "Pot Behind Bombable Walls",
+        "access_rules": [
+          "@Exit Logic/can_access_tower_of_the_gods, bombs"
+        ],
+        "visibility_rules": [
+          "secretpot_on"
+        ]
+      },
+      {
+        "name": "Hop Across Floating Boxes",
+        "access_rules": [
+          "@Exit Logic/can_access_tower_of_the_gods"
+        ]
+      },
+      {
+        "name": "Light Two Torches",
+        "access_rules": [
+          "@Exit Logic/can_access_tower_of_the_gods, bombs"
+        ]
+      },
+      {
+        "name": "Skulls Room Chest",
+        "access_rules": [
+          "@Exit Logic/can_access_tower_of_the_gods, bombs"
+        ]
+      },
+      {
+        "name": "Shoot Eye Above Skulls Room Chest",
+        "access_rules": [
+          "@Exit Logic/can_access_tower_of_the_gods, bombs, bow"
+        ]
+      },
+      {
+        "name": "Tingle Statue Chest",
+        "access_rules": [
+          "@Macros/can_reach_tower_of_the_gods_second_floor, @Macros/has_tingle_bombs"
+        ],
+        "visibility_rules": [
+          "tinglechests_on"
+        ]
+      },
+      {
+        "name": "First Chest Guarded by Armos Knights",
+        "access_rules": [
+          "@Macros/can_reach_tower_of_the_gods_second_floor, bow"
+        ]
+      },
+      {
+        "name": "Stone Tablet",
+        "access_rules": [
+          [
+            "@Macros/can_reach_tower_of_the_gods_second_floor",
+            "@Macros/_can_bring_any_servant_of_the_tower",
+            "windwaker"
+          ]
+        ]
+      },
+      {
+        "name": "Second Chest Guarded by Armos Knights",
+        "access_rules": [
+          [
+            "@Macros/can_reach_tower_of_the_gods_second_floor",
+            "bombs",
+            "@Macros/can_play_winds_requiem"
+          ]
+        ]
+      },
+      {
+        "name": "Darknut Miniboss Room",
+        "chest_unopened_img": "images/items/chest_spiky.png",
+        "chest_opened_img": "images/items/chest_spiky_gray.png",
+        "access_rules": [
+          "@Exit Logic/can_access_tower_of_the_gods_miniboss_arena, @Macros/can_defeat_darknuts"
+        ]
+      },
+      {
+        "name": "Floating Platforms Room",
+        "access_rules": [
+          "@Macros/can_reach_tower_of_the_gods_second_floor, bow",
+          "@Macros/can_reach_tower_of_the_gods_second_floor, @Macros/can_fly_with_deku_leaf_indoors, [tww_precise_1]",
+          "@Macros/can_reach_tower_of_the_gods_second_floor, hookshot, [tww_obscure_1]"
+        ]
+      },
+      {
+        "name": "Top of Floating Platforms Room",
+        "access_rules": [
+          "@Macros/can_reach_tower_of_the_gods_second_floor, bow"
+        ]
+      },
+      {
+        "name": "Eastern Pot in Big Key Chest Room",
+        "access_rules": [
+          "@Macros/can_reach_tower_of_the_gods_third_floor"
+        ],
+        "visibility_rules": [
+          "secretpot_on"
+        ]
+      },
+      {
+        "name": "Big Key Chest",
+        "chest_unopened_img": "images/items/chest_bigkey.png",
+        "chest_opened_img": "images/items/chest_bigkey_gray.png",
+        "access_rules": [
+          "@Macros/can_reach_tower_of_the_gods_third_floor"
+        ]
+      },
+      {
+        "name": "Gohdan Heart Container",
+        "chest_unopened_img": "images/items/heart2.png",
+        "chest_opened_img": "images/items/heart2_gray.png",
+        "access_rules": [
+          "@Exit Logic/can_access_gohdan_boss_arena, @Macros/can_defeat_gohdan"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Tower of the Gods Dungeon",
+    "chest_unopened_img": "images/items/chest_wood.png",
+    "chest_opened_img": "images/items/chest_wood_gray.png",
     "access_rules": [
       "@Exit Logic/can_access_tower_of_the_gods"
     ],
@@ -12,316 +150,305 @@
     "children": [
       {
         "name": "Chest Behind Bombable Walls",
-        "sections": [
+        "children": [
           {
-            "access_rules": [
-              "bombs"
+            "sections": [
+              {
+                "ref": "Tower of the Gods/Chest Behind Bombable Walls"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "totg",
+                "x": 138,
+                "y": 153
+              }
             ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "totg",
-            "x": 138,
-            "y": 153
           }
         ]
       },
       {
         "name": "Pot Behind Bombable Walls",
-        "sections": [
+        "children": [
           {
-            "access_rules": [
-              "bombs"
+            "sections": [
+              {
+                "ref": "Tower of the Gods/Pot Behind Bombable Walls"
+              }
             ],
-            "visibility_rules": [
-              "secretpot_on"
+            "map_locations": [
+              {
+                "map": "totg",
+                "x": 143,
+                "y": 138
+              }
             ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "totg",
-            "x": 143,
-            "y": 138
           }
         ]
       },
       {
         "name": "Hop Across Floating Boxes",
-        "sections": [
-          {}
-        ],
-        "map_locations": [
+        "children": [
           {
-            "map": "totg",
-            "x": 155,
-            "y": 176
+            "sections": [
+              {
+                "ref": "Tower of the Gods/Hop Across Floating Boxes"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "totg",
+                "x": 155,
+                "y": 176
+              }
+            ]
           }
         ]
       },
       {
         "name": "Light Two Torches",
-        "sections": [
+        "children": [
           {
-            "access_rules": [
-              "bombs"
+            "sections": [
+              {
+                "ref": "Tower of the Gods/Light Two Torches"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "totg",
+                "x": 49,
+                "y": 124
+              }
             ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "totg",
-            "x": 49,
-            "y": 124
           }
         ]
       },
       {
         "name": "Skulls Room Chest",
-        "sections": [
+        "children": [
           {
-            "access_rules": [
-              "bombs"
+            "sections": [
+              {
+                "ref": "Tower of the Gods/Skulls Room Chest"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "totg",
+                "x": 39,
+                "y": 108
+              }
             ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "totg",
-            "x": 39,
-            "y": 108
           }
         ]
       },
       {
         "name": "Shoot Eye Above Skulls Room Chest",
-        "sections": [
+        "children": [
           {
-            "access_rules": [
-              "bombs, bow"
+            "sections": [
+              {
+                "ref": "Tower of the Gods/Shoot Eye Above Skulls Room Chest"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "totg",
+                "x": 27,
+                "y": 108
+              }
             ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "totg",
-            "x": 27,
-            "y": 108
           }
         ]
       },
       {
         "name": "Tingle Statue Chest",
-        "sections": [
+        "children": [
           {
-            "access_rules": [
-              "@Macros/can_reach_tower_of_the_gods_second_floor, @Macros/has_tingle_bombs"
+            "sections": [
+              {
+                "ref": "Tower of the Gods/Tingle Statue Chest"
+              }
             ],
-            "visibility_rules": [
-              "tinglechests_on"
+            "map_locations": [
+              {
+                "map": "totg",
+                "x": 265,
+                "y": 179
+              }
             ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "totg",
-            "x": 265,
-            "y": 179
           }
         ]
       },
       {
         "name": "First Chest Guarded by Armos Knights",
-        "sections": [
+        "children": [
           {
-            "access_rules": [
-              "@Macros/can_reach_tower_of_the_gods_second_floor, bow"
+            "sections": [
+              {
+                "ref": "Tower of the Gods/First Chest Guarded by Armos Knights"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "totg",
+                "x": 301,
+                "y": 179
+              }
             ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "totg",
-            "x": 301,
-            "y": 179
           }
         ]
       },
       {
         "name": "Stone Tablet",
-        "sections": [
+        "children": [
           {
-            "access_rules": [
-              [
-                "@Macros/can_reach_tower_of_the_gods_second_floor",
-                "@Macros/_can_bring_any_servant_of_the_tower",
-                "windwaker"
-              ]
+            "sections": [
+              {
+                "ref": "Tower of the Gods/Stone Tablet"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "totg",
+                "x": 265,
+                "y": 146
+              }
             ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "totg",
-            "x": 265,
-            "y": 146
           }
         ]
       },
       {
         "name": "Second Chest Guarded by Armos Knights",
-        "sections": [
+        "children": [
           {
-            "access_rules": [
-              [
-                "@Macros/can_reach_tower_of_the_gods_second_floor",
-                "bombs",
-                "@Macros/can_play_winds_requiem"
-              ]
+            "sections": [
+              {
+                "ref": "Tower of the Gods/Second Chest Guarded by Armos Knights"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "totg",
+                "x": 233,
+                "y": 105
+              }
             ]
           }
-        ],
-        "map_locations": [
+        ]
+      },
+      {
+        "name": "Darknut Miniboss Room",
+        "children": [
           {
-            "map": "totg",
-            "x": 233,
-            "y": 105
+            "sections": [
+              {
+                "ref": "Tower of the Gods/Darknut Miniboss Room"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "totg",
+                "x": 228,
+                "y": 178
+              }
+            ]
           }
         ]
       },
       {
         "name": "Floating Platforms Room",
-        "sections": [
+        "children": [
           {
-            "access_rules": [
-              "@Macros/can_reach_tower_of_the_gods_second_floor, bow",
-              "@Macros/can_reach_tower_of_the_gods_second_floor, @Macros/can_fly_with_deku_leaf_indoors, [tww_precise_1]",
-              "@Macros/can_reach_tower_of_the_gods_second_floor, hookshot, [tww_obscure_1]"
+            "sections": [
+              {
+                "ref": "Tower of the Gods/Floating Platforms Room"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "totg",
+                "x": 303,
+                "y": 118
+              }
             ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "totg",
-            "x": 303,
-            "y": 118
           }
         ]
       },
       {
         "name": "Top of Floating Platforms Room",
-        "sections": [
+        "children": [
           {
-            "access_rules": [
-              "@Macros/can_reach_tower_of_the_gods_second_floor, bow"
+            "sections": [
+              {
+                "ref": "Tower of the Gods/Top of Floating Platforms Room"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "totg",
+                "x": 303,
+                "y": 93
+              }
             ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "totg",
-            "x": 303,
-            "y": 93
           }
         ]
       },
       {
         "name": "Eastern Pot in Big Key Chest Room",
-        "sections": [
+        "children": [
           {
-            "access_rules": [
-              "@Macros/can_reach_tower_of_the_gods_third_floor"
+            "sections": [
+              {
+                "ref": "Tower of the Gods/Eastern Pot in Big Key Chest Room"
+              }
             ],
-            "visibility_rules": [
-              "secretpot_on"
+            "map_locations": [
+              {
+                "map": "totg",
+                "x": 165,
+                "y": 227
+              }
             ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "totg",
-            "x": 165,
-            "y": 227
           }
         ]
       },
       {
         "name": "Big Key Chest",
-        "sections": [
+        "children": [
           {
-            "chest_unopened_img": "images/items/chest_bigkey.png",
-            "chest_opened_img": "images/items/chest_bigkey_gray.png",
-            "access_rules": [
-              "@Macros/can_reach_tower_of_the_gods_third_floor"
+            "sections": [
+              {
+                "ref": "Tower of the Gods/Big Key Chest"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "totg",
+                "x": 151,
+                "y": 250
+              }
             ]
           }
-        ],
-        "map_locations": [
-          {
-            "map": "totg",
-            "x": 151,
-            "y": 250
-          }
         ]
-      }
-    ]
-  },
-  {
-    "name": "Tower of the Gods Miniboss Arena",
-    "access_rules": [
-      "@Exit Logic/can_access_tower_of_the_gods_miniboss_arena"
-    ],
-    "visibility_rules": [
-      "dungeons_on"
-    ],
-    "children": [
-      {
-        "name": "Darknut Miniboss Room",
-        "sections": [
-          {
-            "chest_unopened_img": "images/items/chest_spiky.png",
-            "chest_opened_img": "images/items/chest_spiky_gray.png",
-            "access_rules": [
-              "@Macros/can_defeat_darknuts"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "totg",
-            "x": 228,
-            "y": 178
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Gohdan Boss Arena",
-    "access_rules": [
-      "@Exit Logic/can_access_gohdan_boss_arena"
-    ],
-    "visibility_rules": [
-      "dungeons_on"
-    ],
-    "children": [
+      },
       {
         "name": "Gohdan Heart Container",
-        "sections": [
+        "children": [
           {
-            "chest_unopened_img": "images/items/heart2.png",
-            "chest_opened_img": "images/items/heart2_gray.png",
-            "access_rules": [
-              "@Macros/can_defeat_gohdan"
+            "sections": [
+              {
+                "ref": "Tower of the Gods/Gohdan Heart Container"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "totg",
+                "x": 260,
+                "y": 335
+              }
             ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "totg",
-            "x": 260,
-            "y": 335
           }
         ]
       }
