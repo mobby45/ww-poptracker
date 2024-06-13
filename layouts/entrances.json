@@ -211,20 +211,20 @@
           "h_alignment": "center",
           "tabs": [
             {
-              "title": "Locations",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "seachart"
-                ]
-              }
-            },
-            {
               "title": "Entrances",
               "content": {
                 "type": "map",
                 "maps": [
                   "entrances"
+                ]
+              }
+            },
+            {
+              "title": "The Great Sea",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "seachart"
                 ]
               }
             }
