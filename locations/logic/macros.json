@@ -1000,7 +1000,7 @@
         "access_rules": [
           "grapple, spoils",
           "sequence_break_spoils_grapple, [grapple], spoils, @Macros/can_defeat_kargarocs",
-          "sequence_break_spoils_grapple, [grapple], spoils, @Macros/can_defeat_peahats, @Forbidden Woods/Hole in Tree/",
+          "sequence_break_spoils_grapple, [grapple], spoils, @Macros/can_defeat_peahats, @Forbidden Woods/Hole in Tree",
           "sequence_break_spoils_grapple, [grapple], spoils, @Macros/can_defeat_peahats, @Entrance Logic/Dungeon Entrance in Forest Haven Sector"
         ]
       },

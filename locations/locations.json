@@ -1681,90 +1681,6 @@
         ]
       },
       {
-        "name": "Forbidden Woods",
-        "sections": [
-          {
-            "name": "First Room",
-            "ref": "Forbidden Woods/First Room/"
-          },
-          {
-            "name": "Inside Hollow Tree's Mouth",
-            "ref": "Forbidden Woods/Inside Hollow Tree's Mouth/"
-          },
-          {
-            "name": "Climb to Top Using Boko Baba Bulbs",
-            "ref": "Forbidden Woods/Climb to Top Using Boko Baba Bulbs/"
-          },
-          {
-            "name": "Pot High Above Hollow Tree",
-            "ref": "Forbidden Woods/Pot High Above Hollow Tree/"
-          },
-          {
-            "name": "Hole in Tree",
-            "ref": "Forbidden Woods/Hole in Tree/"
-          },
-          {
-            "name": "Morth Pit",
-            "ref": "Forbidden Woods/Morth Pit/"
-          },
-          {
-            "name": "Vine Maze Left Chest",
-            "ref": "Forbidden Woods/Vine Maze Left Chest/"
-          },
-          {
-            "name": "Vine Maze Right Chest",
-            "ref": "Forbidden Woods/Vine Maze Right Chest/"
-          },
-          {
-            "name": "Highest Pot in Vine Maze",
-            "ref": "Forbidden Woods/Highest Pot in Vine Maze/"
-          },
-          {
-            "name": "Tall Room Before Miniboss",
-            "ref": "Forbidden Woods/Tall Room Before Miniboss/"
-          },
-          {
-            "name": "Mothula Miniboss Room",
-            "ref": "Forbidden Woods Miniboss Arena/Mothula Miniboss Room/"
-          },
-          {
-            "name": "Past Seeds Hanging by Vines",
-            "ref": "Forbidden Woods/Past Seeds Hanging by Vines/"
-          },
-          {
-            "name": "Chest Across Red Hanging Flower",
-            "ref": "Forbidden Woods/Chest Across Red Hanging Flower/"
-          },
-          {
-            "name": "Tingle Statue Chest",
-            "ref": "Forbidden Woods/Tingle Statue Chest/"
-          },
-          {
-            "name": "Chest in Locked Tree Trunk",
-            "ref": "Forbidden Woods/Chest in Locked Tree Trunk/"
-          },
-          {
-            "name": "Big Key Chest",
-            "ref": "Forbidden Woods/Big Key Chest/"
-          },
-          {
-            "name": "Double Mothula Room",
-            "ref": "Forbidden Woods/Double Mothula Room/"
-          },
-          {
-            "name": "Kalle Demos Heart Container",
-            "ref": "Kalle Demos Boss Arena/Kalle Demos Heart Container/"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "seachart",
-            "x": 695,
-            "y": 157
-          }
-        ]
-      },
-      {
         "name": "Cliff Plateau Isles",
         "sections": [
           {
@@ -2307,7 +2223,7 @@
           {
             "name": "Letter from Orca",
             "access_rules": [
-              "@Kalle Demos Boss Arena/Kalle Demos Heart Container/"
+              "@Forbidden Woods/Kalle Demos Heart Container"
             ],
             "visibility_rules": [
               "mail_on,dungeons_on"
