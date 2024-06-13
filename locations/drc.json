@@ -3,393 +3,570 @@
     "name": "Dragon Roost Cavern",
     "chest_unopened_img": "images/items/chest_wood.png",
     "chest_opened_img": "images/items/chest_wood_gray.png",
-    "access_rules": [
-      "@Exit Logic/can_access_dragon_roost_cavern"
-    ],
     "visibility_rules": [
       "dungeons_on"
     ],
-    "children": [
+    "map_locations": [
+      {
+        "map": "seachart",
+        "x": 695,
+        "y": 70
+      }
+    ],
+    "sections": [
       {
         "name": "First Room",
-        "sections": [
-          {}
-        ],
-        "map_locations": [
-          {
-            "map": "drc",
-            "x": 238,
-            "y": 480
-          }
+        "access_rules": [
+          "@Exit Logic/can_access_dragon_roost_cavern"
         ]
       },
       {
         "name": "Alcove With Water Jugs",
-        "sections": [
-          {
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "drc_small:1"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "drc",
-            "x": 425,
-            "y": 527
-          }
+        "chest_unopened_img": "images/items/chest_metal.png",
+        "chest_opened_img": "images/items/chest_metal_gray.png",
+        "access_rules": [
+          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:1"
         ]
       },
       {
         "name": "Water Jug on Upper Shelf",
-        "sections": [
-          {
-            "access_rules": [
-              "drc_small:1"
-            ],
-            "visibility_rules": [
-              "secretpot_on"
-            ]
-          }
+        "access_rules": [
+          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:1"
         ],
-        "map_locations": [
-          {
-            "map": "drc",
-            "x": 384,
-            "y": 515
-          }
+        "visibility_rules": [
+          "secretpot_on"
         ]
       },
       {
         "name": "Boarded Up Chest",
-        "sections": [
-          {
-            "access_rules": [
-              "drc_small:1"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "drc",
-            "x": 291,
-            "y": 516
-          }
+        "access_rules": [
+          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:1"
         ]
       },
       {
         "name": "Chest Across Lava Pit",
-        "sections": [
-          {
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "drc_small:2, @Macros/_grapple_or_can_fly_with_deku_leaf_indoors",
-              "drc_small:2, hookshot, [tww_obscure_1]"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "drc",
-            "x": 301,
-            "y": 395
-          }
+        "chest_unopened_img": "images/items/chest_metal.png",
+        "chest_opened_img": "images/items/chest_metal_gray.png",
+        "access_rules": [
+          [
+            "@Exit Logic/can_access_dragon_roost_cavern",
+            "drc_small:2",
+            "@Macros/_grapple_or_can_fly_with_deku_leaf_indoors"
+          ],
+          [
+            "@Exit Logic/can_access_dragon_roost_cavern",
+            "drc_small:2",
+            "hookshot",
+            "[tww_obscure_1]"
+          ]
         ]
       },
       {
         "name": "Rat Room",
-        "sections": [
-          {
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "drc_small:2"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "drc",
-            "x": 163,
-            "y": 118
-          }
+        "chest_unopened_img": "images/items/chest_metal.png",
+        "chest_opened_img": "images/items/chest_metal_gray.png",
+        "access_rules": [
+          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:2"
         ]
       },
       {
         "name": "Rat Room Boarded Up Chest",
-        "sections": [
-          {
-            "access_rules": [
-              "drc_small:2"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "drc",
-            "x": 198,
-            "y": 110
-          }
+        "access_rules": [
+          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:2"
         ]
       },
       {
         "name": "Bird's Nest",
-        "sections": [
-          {
-            "access_rules": [
-              "drc_small:3"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "drc",
-            "x": 60,
-            "y": 119
-          }
+        "access_rules": [
+          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:3"
         ]
       },
       {
         "name": "Dark Room",
-        "sections": [
-          {
-            "access_rules": [
-              "drc_small:4"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "drc",
-            "x": 496,
-            "y": 345
-          }
-        ]
-      },
-      {
-        "name": "Tingle Statue Chest",
-        "sections": [
-          {
-            "access_rules": [
-              [
-                "@Macros/can_reach_dragon_roost_cavern_gaping_maw",
-                "grapple",
-                "@Macros/has_tingle_bombs"
-              ]
-            ],
-            "visibility_rules": [
-              "tinglechests_on"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "drc",
-            "x": 468,
-            "y": 361
-          }
-        ]
-      },
-      {
-        "name": "Pot on Upper Shelf in Pot Room",
-        "sections": [
-          {
-            "access_rules": [
-              "drc_small:4"
-            ],
-            "visibility_rules": [
-              "secretpot_on"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "drc",
-            "x": 169,
-            "y": 440
-          }
-        ]
-      },
-      {
-        "name": "Pot Room Chest",
-        "sections": [
-          {
-            "access_rules": [
-              "drc_small:4"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "drc",
-            "x": 155,
-            "y": 414
-          }
-        ]
-      },
-      {
-        "name": "Miniboss",
-        "sections": [
-          {
-            "chest_unopened_img": "images/items/chest_spiky.png",
-            "chest_opened_img": "images/items/chest_spiky_gray.png",
-            "access_rules": [
-              "drc_small:4"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "drc",
-            "x": 455,
-            "y": 129
-          }
-        ]
-      },
-      {
-        "name": "Under Rope Bridge",
-        "sections": [
-          {
-            "access_rules": [
-              "drc_small:4, @Macros/_grapple_or_can_fly_with_deku_leaf_indoors"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "drc",
-            "x": 514,
-            "y": 559
-          }
+        "access_rules": [
+          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:4"
         ]
       },
       {
         "name": "Tingle Statue in Hub Room",
-        "sections": [
-          {
-            "access_rules": [
-              "drc_small:4, @Macros/has_tingle_bombs"
-            ],
-            "visibility_rules": [
-              "tinglechests_on"
-            ]
-          }
+        "access_rules": [
+          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:4, @Macros/has_tingle_bombs"
         ],
-        "map_locations": [
-          {
-            "map": "drc",
-            "x": 331,
-            "y": 405
-          }
+        "visibility_rules": [
+          "tinglechests_on"
+        ]
+      },
+      {
+        "name": "Pot on Upper Shelf in Pot Room",
+        "access_rules": [
+          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:4"
+        ],
+        "visibility_rules": [
+          "secretpot_on"
+        ]
+      },
+      {
+        "name": "Pot Room Chest",
+        "access_rules": [
+          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:4"
+        ]
+      },
+      {
+        "name": "Miniboss",
+        "chest_unopened_img": "images/items/chest_spiky.png",
+        "chest_opened_img": "images/items/chest_spiky_gray.png",
+        "access_rules": [
+          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:4"
+        ]
+      },
+      {
+        "name": "Under Rope Bridge",
+        "access_rules": [
+          [
+            "@Exit Logic/can_access_dragon_roost_cavern",
+            "drc_small:4",
+            "@Macros/_grapple_or_can_fly_with_deku_leaf_indoors"
+          ]
+        ]
+      },
+      {
+        "name": "Tingle Statue Chest",
+        "access_rules": [
+          [
+            "@Macros/can_reach_dragon_roost_cavern_gaping_maw",
+            "grapple",
+            "@Macros/has_tingle_bombs"
+          ]
+        ],
+        "visibility_rules": [
+          "tinglechests_on"
         ]
       },
       {
         "name": "Big Key Chest",
-        "sections": [
-          {
-            "chest_unopened_img": "images/items/chest_bigkey.png",
-            "chest_opened_img": "images/items/chest_bigkey_gray.png",
-            "access_rules": [
-              [
-                "@Macros/can_reach_dragon_roost_cavern_gaping_maw",
-                "grapple",
-                "@Macros/can_stun_magtails"
-              ]
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "drc",
-            "x": 543,
-            "y": 493
-          }
+        "chest_unopened_img": "images/items/chest_bigkey.png",
+        "chest_opened_img": "images/items/chest_bigkey_gray.png",
+        "access_rules": [
+          [
+            "@Macros/can_reach_dragon_roost_cavern_gaping_maw",
+            "grapple",
+            "@Macros/can_stun_magtails"
+          ]
         ]
       },
       {
         "name": "Boss Stairs Left Chest",
-        "sections": [
-          {
-            "access_rules": [
-              "@Macros/can_reach_dragon_roost_cavern_boss_stairs"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "drc",
-            "x": 103,
-            "y": 390
-          }
+        "access_rules": [
+          "@Macros/can_reach_dragon_roost_cavern_boss_stairs"
         ]
       },
       {
         "name": "Boss Stairs Right Chest",
-        "sections": [
-          {
-            "access_rules": [
-              "@Macros/can_reach_dragon_roost_cavern_boss_stairs"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "drc",
-            "x": 123,
-            "y": 403
-          }
+        "access_rules": [
+          "@Macros/can_reach_dragon_roost_cavern_boss_stairs"
         ]
       },
       {
         "name": "Boss Stairs Right Pot",
-        "sections": [
-          {
-            "access_rules": [
-              "@Macros/can_reach_dragon_roost_cavern_boss_stairs"
-            ],
-            "visibility_rules": [
-              "secretpot_on"
-            ]
-          }
+        "access_rules": [
+          "@Macros/can_reach_dragon_roost_cavern_boss_stairs"
         ],
-        "map_locations": [
-          {
-            "map": "drc",
-            "x": 139,
-            "y": 384
-          }
+        "visibility_rules": [
+          "secretpot_on"
+        ]
+      },
+      {
+        "name": "Gohma Heart Container",
+        "chest_unopened_img": "images/items/heart2.png",
+        "chest_opened_img": "images/items/heart2_gray.png",
+        "access_rules": [
+          "@Exit Logic/can_access_gohma_boss_arena, @Macros/can_defeat_gohma"
         ]
       }
     ]
   },
   {
-    "name": "Gohma Boss Arena",
-    "access_rules": [
-      "@Exit Logic/can_access_gohma_boss_arena"
-    ],
-    "visibility_rules": [
-      "dungeons_on"
-    ],
+    "name": "Dragon Roost Cavern Dungeon",
+    "chest_unopened_img": "images/items/chest_wood.png",
+    "chest_opened_img": "images/items/chest_wood_gray.png",
     "children": [
       {
-        "name": "Gohma Heart Container",
-        "sections": [
+        "name": "First Room",
+        "children": [
           {
-            "chest_unopened_img": "images/items/heart2.png",
-            "chest_opened_img": "images/items/heart2_gray.png",
-            "access_rules": [
-              "@Macros/can_defeat_gohma"
+            "sections": [
+              {
+                "ref": "Dragon Roost Cavern/First Room"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "drc",
+                "x": 238,
+                "y": 480
+              }
             ]
           }
-        ],
-        "map_locations": [
+        ]
+      },
+      {
+        "name": "Alcove With Water Jugs",
+        "children": [
           {
-            "map": "drc",
-            "x": 191,
-            "y": 333
+            "sections": [
+              {
+                "ref": "Dragon Roost Cavern/Alcove With Water Jugs"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "drc",
+                "x": 425,
+                "y": 527
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Water Jug on Upper Shelf",
+        "children": [
+          {
+            "sections": [
+              {
+                "ref": "Dragon Roost Cavern/Water Jug on Upper Shelf"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "drc",
+                "x": 384,
+                "y": 515
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Boarded Up Chest",
+        "children": [
+          {
+            "sections": [
+              {
+                "ref": "Dragon Roost Cavern/Boarded Up Chest"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "drc",
+                "x": 291,
+                "y": 516
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chest Across Lava Pit",
+        "children": [
+          {
+            "sections": [
+              {
+                "ref": "Dragon Roost Cavern/Chest Across Lava Pit"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "drc",
+                "x": 301,
+                "y": 395
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rat Room",
+        "children": [
+          {
+            "sections": [
+              {
+                "ref": "Dragon Roost Cavern/Rat Room"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "drc",
+                "x": 163,
+                "y": 118
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rat Room Boarded Up Chest",
+        "children": [
+          {
+            "sections": [
+              {
+                "ref": "Dragon Roost Cavern/Rat Room Boarded Up Chest"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "drc",
+                "x": 198,
+                "y": 110
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bird's Nest",
+        "children": [
+          {
+            "sections": [
+              {
+                "ref": "Dragon Roost Cavern/Bird's Nest"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "drc",
+                "x": 60,
+                "y": 119
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dark Room",
+        "children": [
+          {
+            "sections": [
+              {
+                "ref": "Dragon Roost Cavern/Dark Room"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "drc",
+                "x": 496,
+                "y": 345
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Tingle Statue Chest",
+        "children": [
+          {
+            "sections": [
+              {
+                "ref": "Dragon Roost Cavern/Tingle Statue Chest"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "drc",
+                "x": 468,
+                "y": 361
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Pot on Upper Shelf in Pot Room",
+        "children": [
+          {
+            "sections": [
+              {
+                "ref": "Dragon Roost Cavern/Pot on Upper Shelf in Pot Room"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "drc",
+                "x": 169,
+                "y": 440
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Pot Room Chest",
+        "children": [
+          {
+            "sections": [
+              {
+                "ref": "Dragon Roost Cavern/Pot Room Chest"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "drc",
+                "x": 155,
+                "y": 414
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Miniboss",
+        "children": [
+          {
+            "sections": [
+              {
+                "ref": "Dragon Roost Cavern/Miniboss"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "drc",
+                "x": 455,
+                "y": 129
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Under Rope Bridge",
+        "children": [
+          {
+            "sections": [
+              {
+                "ref": "Dragon Roost Cavern/Under Rope Bridge"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "drc",
+                "x": 514,
+                "y": 559
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Tingle Statue in Hub Room",
+        "children": [
+          {
+            "sections": [
+              {
+                "ref": "Dragon Roost Cavern/Tingle Statue in Hub Room"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "drc",
+                "x": 331,
+                "y": 405
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Big Key Chest",
+        "children": [
+          {
+            "sections": [
+              {
+                "ref": "Dragon Roost Cavern/Big Key Chest"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "drc",
+                "x": 543,
+                "y": 493
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Boss Stairs Left Chest",
+        "children": [
+          {
+            "sections": [
+              {
+                "ref": "Dragon Roost Cavern/Boss Stairs Left Chest"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "drc",
+                "x": 103,
+                "y": 390
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Boss Stairs Right Chest",
+        "children": [
+          {
+            "sections": [
+              {
+                "ref": "Dragon Roost Cavern/Boss Stairs Right Chest"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "drc",
+                "x": 123,
+                "y": 403
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Boss Stairs Right Pot",
+        "children": [
+          {
+            "sections": [
+              {
+                "ref": "Dragon Roost Cavern/Boss Stairs Right Pot"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "drc",
+                "x": 139,
+                "y": 384
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gohma Heart Container",
+        "children": [
+          {
+            "sections": [
+              {
+                "ref": "Dragon Roost Cavern/Gohma Heart Container"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "drc",
+                "x": 191,
+                "y": 333
+              }
+            ]
           }
         ]
       }
