@@ -1,9 +1,10 @@
 ﻿{
     "name": "Wind Waker AP Tracker",
     "game_name": "The Legend of Zelda: The Wind Waker",
-    "package_version": "0.7.1",
+    "package_version": "1.0.0a",
     "package_uid": "ap_windwaker",
-    "author": "Ouro",
+    "author": "Mysteryem",
+    "original_author": "Ouro",
     "variants": {
         "standard": {
             "display_name": "Map Tracker",
