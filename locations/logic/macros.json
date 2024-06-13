@@ -43,7 +43,7 @@
         "name": "_can_play_ballad_of_gales_or_sequence_break",
         "access_rules": [
           "@Macros/can_play_ballad_of_gales",
-          "sequence_break_ballad"
+          "sequence_break_ballad, [@Macros/can_play_ballad_of_gales]"
         ]
       },
       {
