@@ -10,7 +10,7 @@
             "flags": ["ap"]
         },
         "variant_entrance_rando": {
-            "display_name": "Map Tracker (Entrance Rando)",
+            "display_name": "Map Tracker (Entrance Rando WIP)",
             "flags": ["ap"]
         }
     }
