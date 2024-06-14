@@ -142,8 +142,8 @@
         "name": "Two-Eye Reef - Sunken Triforce 8",
         "access_rules": [
           "triforce8, bombs",
-          "treasure8, [tww_precise_1]",
-          "treasure8, @Macros/can_use_magic_armor, [tww_obscure_1]"
+          "triforce8, [tww_precise_1]",
+          "triforce8, @Macros/can_use_magic_armor, [tww_obscure_1]"
         ],
         "sections": [
           {
