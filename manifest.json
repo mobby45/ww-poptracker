@@ -14,5 +14,7 @@
             "display_name": "Map Tracker (Entrance Rando WIP)",
             "flags": ["ap"]
         }
-    }
+    },
+    "min_poptracker_version": "0.25.6",
+    "target_poptracker_version": "0.26.1"
 }
