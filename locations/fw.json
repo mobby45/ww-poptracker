@@ -3,9 +3,6 @@
     "name": "Forbidden Woods",
     "chest_unopened_img": "images/items/chest_wood.png",
     "chest_opened_img": "images/items/chest_wood_gray.png",
-    "access_rules": [
-      "@Exit Logic/can_access_forbidden_woods"
-    ],
     "visibility_rules": [
       "dungeons_on"
     ],
