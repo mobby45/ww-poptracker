@@ -326,7 +326,8 @@
           {
             "name": "Lenzo's House - Left Chest",
             "access_rules": [
-              "@Macros/can_play_winds_requiem, picto"
+              "@Macros/can_play_winds_requiem, picto",
+              "@Macros/_swift_sail_sequence_break, [@Macros/can_play_winds_requiem], picto"
             ],
             "visibility_rules": [
               "shortsq_on"
@@ -335,7 +336,8 @@
           {
             "name": "Lenzo's House - Right Chest",
             "access_rules": [
-              "@Macros/can_play_winds_requiem, picto"
+              "@Macros/can_play_winds_requiem, picto",
+              "@Macros/_swift_sail_sequence_break, [@Macros/can_play_winds_requiem], picto"
             ],
             "visibility_rules": [
               "shortsq_on"
