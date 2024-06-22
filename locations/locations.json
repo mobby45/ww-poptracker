@@ -413,7 +413,8 @@
           {
             "name": "Pompie and Vera - Secret Meeting Photo",
             "access_rules": [
-              "@Macros/can_play_winds_requiem, picto"
+              "@Macros/can_play_winds_requiem, picto",
+              "@Macros/_swift_sail_sequence_break, [@Macros/can_play_winds_requiem], picto"
             ],
             "visibility_rules": [
               "shortsq_on"
