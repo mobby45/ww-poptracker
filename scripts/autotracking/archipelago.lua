@@ -72,11 +72,7 @@ function onClear(slot_data)
         end
         local obj = Tracker:FindObjectForCode(v)
         if obj then
-            if v:sub(1, 1) == "@" then
-                obj.AvailableChestCount = obj.ChestCount
-            else
-                obj.Active = false
-            end
+            obj.AvailableChestCount = obj.ChestCount
         elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
             print(string.format("onClear: could not find object for code %s", v))
         end
@@ -166,11 +162,7 @@ function onLocation(location_id, location_name)
     end
     local obj = Tracker:FindObjectForCode(v)
     if obj then
-        if v:sub(1, 1) == "@" then
-            obj.AvailableChestCount = obj.AvailableChestCount - 1
-        else
-            obj.Active = true
-        end
+        obj.AvailableChestCount = obj.AvailableChestCount - 1
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("onLocation: could not find object for code %s", v))
     end
