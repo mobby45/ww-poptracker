@@ -3,8 +3,6 @@ ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
 
 CUR_INDEX = -1
 SLOT_DATA = nil
-LOCAL_ITEMS = {}
-GLOBAL_ITEMS = {}
 
 function onClear(slot_data)
     -- autotracking settings from YAML
@@ -107,12 +105,6 @@ function onClear(slot_data)
             print(string.format("onClear: could not find object for code %s", v))
         end
     end
-    LOCAL_ITEMS = {}
-    GLOBAL_ITEMS = {}
-    -- manually run snes interface functions after onClear in case we are already ingame
-    if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then
-        -- add snes interface functions here
-    end
 end
 
 -- called when an item gets collected
@@ -156,27 +148,6 @@ function onItem(index, item_id, item_name, player_number)
         end
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("onItem: could not find object for code %s", v))
-    end
-    -- track local items via snes interface
-    if is_local then
-        if LOCAL_ITEMS[v[1]] then
-            LOCAL_ITEMS[v[1]] = LOCAL_ITEMS[v[1]] + 1
-        else
-            LOCAL_ITEMS[v[1]] = 1
-        end
-    else
-        if GLOBAL_ITEMS[v[1]] then
-            GLOBAL_ITEMS[v[1]] = GLOBAL_ITEMS[v[1]] + 1
-        else
-            GLOBAL_ITEMS[v[1]] = 1
-        end
-    end
-    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-        print(string.format("local items: %s", dump_table(LOCAL_ITEMS)))
-        print(string.format("global items: %s", dump_table(GLOBAL_ITEMS)))
-    end
-    if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then
-        -- add snes interface functions here for local item tracking
     end
 end
 
