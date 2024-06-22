@@ -67,20 +67,18 @@ function onClear(slot_data)
     CUR_INDEX = -1
     -- reset locations
     for _, v in pairs(LOCATION_MAPPING) do
-        if v[1] then
-            if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-                print(string.format("onClear: clearing location %s", v[1]))
+        if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+            print(string.format("onClear: clearing location %s", v))
+        end
+        local obj = Tracker:FindObjectForCode(v)
+        if obj then
+            if v:sub(1, 1) == "@" then
+                obj.AvailableChestCount = obj.ChestCount
+            else
+                obj.Active = false
             end
-            local obj = Tracker:FindObjectForCode(v[1])
-            if obj then
-                if v[1]:sub(1, 1) == "@" then
-                    obj.AvailableChestCount = obj.ChestCount
-                else
-                    obj.Active = false
-                end
-            elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-                print(string.format("onClear: could not find object for code %s", v[1]))
-            end
+        elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+            print(string.format("onClear: could not find object for code %s", v))
         end
     end
     -- reset items
@@ -160,21 +158,21 @@ function onLocation(location_id, location_name)
         return
     end
     local v = LOCATION_MAPPING[location_id]
-    if not v and AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-        print(string.format("onLocation: could not find location mapping for id %s", location_id))
-    end
-    if not v[1] then
+    if not v then
+        if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+            print(string.format("onLocation: could not find location mapping for id %s", location_id))
+        end
         return
     end
-    local obj = Tracker:FindObjectForCode(v[1])
+    local obj = Tracker:FindObjectForCode(v)
     if obj then
-        if v[1]:sub(1, 1) == "@" then
+        if v:sub(1, 1) == "@" then
             obj.AvailableChestCount = obj.AvailableChestCount - 1
         else
             obj.Active = true
         end
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-        print(string.format("onLocation: could not find object for code %s", v[1]))
+        print(string.format("onLocation: could not find object for code %s", v))
     end
 end
 
