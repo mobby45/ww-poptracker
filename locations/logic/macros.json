@@ -537,7 +537,9 @@
       {
         "name": "can_defeat_kalle_demos",
         "access_rules": [
-          "boomerang"
+          "boomerang",
+          "sequence_break_other, [boomerang], bow, mastersword",// Unsure what the minimum arrows needed are, nor if you can one-cycle with the basic sword like you can with the mastersword
+          "sequence_break_other, [boomerang], bow, quiver, sword"
         ]
       },
       {
