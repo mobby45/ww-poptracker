@@ -456,7 +456,7 @@
               "@Macros/can_obtain_15_blue_chu_jelly"
             ],
             "visibility_rules": [
-              "spoilssq_on"
+              "spoilssq_on, longsq_on"
             ]
           },
           {
@@ -948,8 +948,7 @@
               "@Exit Logic/can_access_fire_mountain_secret_cave, @Macros/can_defeat_magtails"
             ],
             "visibility_rules": [
-              "puzzlecaves_on",
-              "combat_on"
+              "puzzlecaves_on, combat_on"
             ]
           },
           {
@@ -1620,8 +1619,7 @@
               "@Exit Logic/can_access_ice_ring_isle_inner_cave, @Macros/has_fire_arrows"
             ],
             "visibility_rules": [
-              "puzzlecaves_on",
-              "combat_on"
+              "puzzlecaves_on, combat_on"
             ]
           }
         ],
@@ -1922,7 +1920,7 @@
               "@Macros/rescued_aryll, delivery"
             ],
             "visibility_rules": [
-              "longsq_on"
+              "longsq_on, expensive_on"
             ]
           },
           {
@@ -2106,8 +2104,7 @@
               ]
             ],
             "visibility_rules": [
-              "puzzlecaves_on",
-              "combat_on"
+              "puzzlecaves_on, combat_on"
             ]
           }
         ],
@@ -2268,7 +2265,7 @@
               ]
             ],
             "visibility_rules": [
-              "mail_on,dungeons_on"
+              "mail_on, dungeons_on, expensive_on"
             ]
           }
         ],
