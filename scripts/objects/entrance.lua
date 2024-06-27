@@ -1,10 +1,12 @@
 local Entrance = {}
 Entrance.__index = Entrance
 
-function Entrance.new(name, vanilla_exit, parent_exit)
+function Entrance.new(name, vanilla_exit, entrance_type, parent_exit)
     local self = setmetatable({}, Entrance)
     -- The name of this entrance.
     self.name = name
+    -- The vanilla exit, stored here for simpler lookup.
+    self.vanilla_exit = vanilla_exit
     -- The exit that has been assigned to this entrance. Always starts off as vanilla and won't change if Entrance
     -- Randomization is not enabled.
     self.exit = vanilla_exit
@@ -13,6 +15,8 @@ function Entrance.new(name, vanilla_exit, parent_exit)
     self.parent_exit = parent_exit or "The Great Sea"
     -- The location which holds this entrance's logic, or `nil` if the entrance is always accessible.
     self.entrance_logic = "@Entrance Logic/" .. name
+    -- The type of the entrance: "dungeon", "miniboss", "boss", "secret_cave", "inner", "fairy"
+    self.entrance_type = entrance_type
     return self
 end
 

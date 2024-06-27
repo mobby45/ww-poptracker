@@ -46,6 +46,10 @@ EXITS = {
     "Southern Fairy Fountain",
     "Northern Fairy Fountain"
 }
+NAME_TO_EXIT_IDX = {}
+for idx, name in ipairs(EXITS) do
+    NAME_TO_EXIT_IDX[name] = idx
+end
 
 NUM_EXITS = #EXITS
 
@@ -164,6 +168,49 @@ function exit_mapping_update(self, old_exit_idx)
 
     update_exit_mapping_icon(self, entrance_name, exit_name)
     update_entrances()
+end
+
+function exit_mapping_assign(self, new_exit)
+    local entrance = ENTRANCES[self:Get("entrance_idx")]
+    if entrance and entrance.exit then
+        -- Can't change the exit if the entrance already has an exit assigned.
+        return false
+    end
+
+    local new_exit_name
+    local new_exit_idx
+    if type(new_exit) == "number" then
+        new_exit_idx = new_exit
+        new_exit_name = EXITS[new_exit]
+    else
+        new_exit_name = new_exit
+        if new_exit == nil then
+            new_exit_idx = 0
+        else
+            new_exit_idx = NAME_TO_EXIT_IDX[new_exit] or 0
+        end
+        if new_exit_idx == 0 and new_exit_name then
+            print("No exit found with the name '" .. new_exit_name .. "'")
+            new_exit_name = nil
+        end
+    end
+
+    local already_assigned_entrance = exit_to_entrance[new_exit_name]
+    if already_assigned_entrance then
+        -- Can't assign to an exit that has already been assigned.
+        return false
+    end
+
+    local old_idx = self:Get("exit_idx")
+    if new_exit_idx == old_idx then
+        -- No changes needed
+        print(self.Name .. "is already assigned to exit_idx" .. tostring(new_exit_idx))
+        return true
+    end
+    self:Set("exit_idx", new_exit_idx)
+
+    exit_mapping_update(self, old_idx)
+    return true
 end
 
 function create_mapping_lua_item(idx, entrance)

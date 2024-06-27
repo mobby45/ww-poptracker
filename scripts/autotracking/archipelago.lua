@@ -1,8 +1,76 @@
 ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
+ScriptHost:LoadScript("scripts/logic/entrances.lua")
+ScriptHost:LoadScript("scripts/items/exit_mappings.lua")
 
 CUR_INDEX = -1
 SLOT_DATA = nil
+
+function setNonRandomizedEntrancesFromSlotData(slot_data)
+    local vanilla_dungeons = slot_data['randomize_dungeon_entrances'] == 0
+    local vanilla_minibosses = slot_data['randomize_miniboss_entrances'] == 0
+    local vanilla_bosses = slot_data['randomize_boss_entrances'] == 0
+    local vanilla_secret_caves = slot_data['randomize_secret_cave_entrances'] == 0
+    local vanilla_secret_cave_inner_entrances = slot_data['randomize_secret_cave_inner_entrances'] == 0
+    local vanilla_fairy_fountains = slot_data['randomize_fairy_fountain_entrances'] == 0
+
+    local all_vanilla_entrances = {}
+    local add_vanilla_entrances = function(entrance_type)
+        for _, entrance in ipairs(ENTRANCE_TYPE_TO_ENTRANCES[entrance_type]) do
+            table.insert(all_vanilla_entrances, entrance)
+        end
+    end
+
+    if vanilla_dungeons then
+        add_vanilla_entrances("dungeon")
+    end
+    if vanilla_minibosses then
+        add_vanilla_entrances("miniboss")
+    end
+    if vanilla_bosses then
+        add_vanilla_entrances("boss")
+    end
+    if vanilla_secret_caves then
+        add_vanilla_entrances("secret_cave")
+    end
+    if vanilla_secret_cave_inner_entrances then
+        add_vanilla_entrances("inner")
+    end
+    if vanilla_fairy_fountains then
+        add_vanilla_entrances("fairy")
+    end
+
+    PAUSE_ENTRANCE_UPDATES = true
+    -- Disabled for now to prevent modifying already assigned exits in-case the user connects to the wrong slot.
+--     -- For the first pass, set all vanilla entrances to unassigned
+--     for _, entrance in ipairs(all_vanilla_entrances) do
+--         local exit_mapping = Tracker:FindObjectForCode(entrance.name)
+--         exit_mapping_assign(exit_mapping, nil)
+--     end
+--     PAUSE_ENTRANCE_UPDATES = false
+--     -- Update the exit_to_entrance table
+--     update_entrances()
+--     PAUSE_ENTRANCE_UPDATES = true
+
+    -- For the second pass, set all the entrances to their vanilla exit
+    local all_set_correctly = true
+    for _, entrance in ipairs(all_vanilla_entrances) do
+        local exit_mapping = Tracker:FindObjectForCode(entrance.name)
+        local set_correctly = exit_mapping_assign(exit_mapping, entrance.vanilla_exit)
+        if not set_correctly then
+            -- Exit was most likely already assigned to an entrance
+            all_set_correctly = false
+        end
+    end
+    if not all_set_correctly then
+        print("Some exit mappings could not be set to their vanilla entrances." ..
+              " Their vanilla exits are probably already assigned to another entrance.")
+    end
+
+    -- Now update the entrance logic.
+    PAUSE_ENTRANCE_UPDATES = false
+    update_entrances()
+end
 
 function onClear(slot_data)
     -- autotracking settings from YAML
@@ -58,6 +126,10 @@ function onClear(slot_data)
     setFromSlotData('sword_mode', 'tww_sword_mode')
     setFromSlotData('skip_rematch_bosses', 'tww_rematch_bosses_skipped')
     setFromSlotData('swift_sail', 'swift_sail')
+
+    if ENTRANCE_RANDO_ENABLED then
+        setNonRandomizedEntrancesFromSlotData(slot_data)
+    end
 
     -- junk that was in here from the template
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
