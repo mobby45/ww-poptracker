@@ -129,13 +129,20 @@ end
 
 -- Update an exit mapping's name, image and exit name after its "exit_idx" has been changed
 function exit_mapping_update(self, old_exit_idx)
+    local initial_creation = old_exit_idx == nil
     local entrance_idx = self:Get("entrance_idx")
     local entrance = ENTRANCES[entrance_idx]
     local entrance_name = entrance.name
     local exit_idx = self:Get("exit_idx")
     local exit_name = EXITS[exit_idx]
 
-    local entrance_location_section = Tracker:FindObjectForCode(entrance.entrance_logic .. "/Can Enter")
+    -- Items are created before locations, so during creation of the exit mappings, the location sections to clear/reset
+    -- won't exist yet.
+    local entrance_location_section
+    if not initial_creation then
+        entrance_location_section = Tracker:FindObjectForCode(entrance.entrance_logic .. "/Can Enter")
+    end
+
     -- Update the new exit
     if exit_name then
         entrance.exit = exit_name
@@ -147,12 +154,16 @@ function exit_mapping_update(self, old_exit_idx)
             exit_item.IconMods = "@disabled"
         end
         -- Clear the "Can Enter" chest.
-        entrance_location_section.AvailableChestCount = entrance_location_section.AvailableChestCount - 1
+        if entrance_location_section then
+            entrance_location_section.AvailableChestCount = entrance_location_section.AvailableChestCount - 1
+        end
     else
         entrance.exit = nil
         self.Name = "Click to assign " .. entrance_name
         -- Reset the "Can Enter" chest.
-        entrance_location_section.AvailableChestCount = entrance_location_section.ChestCount
+        if entrance_location_section then
+            entrance_location_section.AvailableChestCount = entrance_location_section.ChestCount
+        end
     end
 
     -- Update the old exit, if there was an old exit.
