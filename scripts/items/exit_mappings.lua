@@ -334,10 +334,15 @@ function create_exit_lua_item(idx)
     exit_item:Set("exit_idx", idx)
 end
 
-PAUSE_ENTRANCE_UPDATES = true
-for idx, entrance in ipairs(ENTRANCES) do
-   create_mapping_lua_item(idx, entrance)
-   create_exit_lua_item(idx)
+function createExitMappingLuaItems()
+    PAUSE_ENTRANCE_UPDATES = true
+    for idx, entrance in ipairs(ENTRANCES) do
+       create_mapping_lua_item(idx, entrance)
+       create_exit_lua_item(idx)
+    end
+    PAUSE_ENTRANCE_UPDATES = false
+
+    if ENTRANCE_RANDO_ENABLED then
+        update_entrances()
+    end
 end
-PAUSE_ENTRANCE_UPDATES = false
-update_entrances()
