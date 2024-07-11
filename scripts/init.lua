@@ -10,11 +10,10 @@ Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/settings.json")
 Tracker:AddItems("items/internal.json")
 
-if ENTRANCE_RANDO_ENABLED then
-    -- Variants have separate auto-save state and exported state includes the active variant, so there's no need to
-    -- create these items when entrance rando is not enabled.
-    -- Lua Items
-    ScriptHost:LoadScript("scripts/items/exit_mappings.lua")
+-- Lua Items
+-- The base variant does not have entrance rando, so these items and their global functions are not needed and loading
+-- exit_mappings.lua will return `false`.
+if ScriptHost:LoadScript("scripts/items/exit_mappings.lua") then
     print("Exit mapping lua items loaded")
 end
 

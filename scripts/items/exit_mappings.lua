@@ -1,10 +1,13 @@
 if EXIT_MAPPINGS_LOADED then
-    return
+    return false
 else
     EXIT_MAPPINGS_LOADED = true
 end
 
 require("scripts/logic/entrances")
+if not ENTRANCE_RANDO_ENABLED then
+    return false
+end
 
 EXITS = {
     "Dragon Roost Cavern",
@@ -350,3 +353,5 @@ PAUSE_ENTRANCE_UPDATES = false
 if ENTRANCE_RANDO_ENABLED then
     update_entrances()
 end
+
+return true
