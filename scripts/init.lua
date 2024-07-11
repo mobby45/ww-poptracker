@@ -48,4 +48,4 @@ ScriptHost:LoadScript("scripts/autotracking.lua")
 print("Autotracking script loaded")
 
 -- Briefly pause logic updates so that auto-save state can load without causing updates.
-pauseLogicUpdates(0.01)
+pauseLogicUpdates("tracker post-init", 0.01)

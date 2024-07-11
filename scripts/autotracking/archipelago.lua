@@ -181,7 +181,7 @@ function onClear(slot_data)
 end
 
 function onClearHandler(slot_data)
-    pauseLogicUpdates(0.01, onClear, slot_data)
+    pauseLogicUpdates("AP onClearHandler", 0.01, onClear, slot_data)
 end
 
 -- called when an item gets collected
