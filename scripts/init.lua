@@ -8,11 +8,11 @@ print("Logic scripts loaded")
 -- Items
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/settings.json")
+Tracker:AddItems("items/internal.json")
 
 if ENTRANCE_RANDO_ENABLED then
     -- Variants have separate auto-save state and exported state includes the active variant, so there's no need to
     -- create these items when entrance rando is not enabled.
-    Tracker:AddItems("items/internal.json")
     -- Lua Items
     ScriptHost:LoadScript("scripts/items/exit_mappings.lua")
     print("Exit mapping lua items loaded")
