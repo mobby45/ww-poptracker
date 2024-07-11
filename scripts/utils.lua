@@ -1,22 +1,22 @@
 function has_value(t, val)
-	for i, v in ipairs(t) do
-		if v == val then return 1 end
-	end
-	return 0
+    for i, v in ipairs(t) do
+        if v == val then return 1 end
+    end
+    return 0
 end
 
 function has(item, amount)
-	local count = Tracker:ProviderCountForCode(item)
-	amount = tonumber(amount)
-	if not amount then
-		return count > 0
-	else
-		return count >= amount
-	end
+    local count = Tracker:ProviderCountForCode(item)
+    amount = tonumber(amount)
+    if not amount then
+        return count > 0
+    else
+        return count >= amount
+    end
 end
 
 function progCount(code)
-	return Tracker:FindObjectForCode(code).CurrentStage
+    return Tracker:FindObjectForCode(code).CurrentStage
 end
 
 -- from https://stackoverflow.com/questions/9168058/how-to-dump-a-table-to-console
