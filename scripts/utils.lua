@@ -1,3 +1,9 @@
+if UTILS_LOADED then
+    return
+else
+    UTILS_LOADED = true
+end
+
 function has_value(t, val)
     for i, v in ipairs(t) do
         if v == val then return 1 end
@@ -39,4 +45,36 @@ function dump_table(o, depth)
     else
         return tostring(o)
     end
+end
+
+function forceLogicUpdate()
+    local update = Tracker:FindObjectForCode("update")
+    -- If this function is called too early, the item won't exist yet.
+    if update then
+        --print("Forced update!")
+        update.Active = not update.Active
+    end
+end
+
+local function pauseLogicUpdatesFinished(duration)
+    print("Finished sleeping for " .. duration .. " seconds")
+    Tracker.BulkUpdate = false
+    forceLogicUpdate()
+end
+
+-- Disable tracker logic updates and then wait `seconds` before re-enabling tracker logic updates.
+-- If a function is provided, it is run after disabling tracker logic updates and the wait only starts after the
+-- function has finished executing.
+function pauseLogicUpdates(seconds, func, ...)
+    Tracker.BulkUpdate = true
+    if func then
+        local ok, err = pcall(func, ...)
+
+        if not ok then
+            Tracker.BulkUpdate = false
+            print("Error:\n"..tostring(err))
+            return
+        end
+    end
+    ScriptHost:RunScriptAsync("scripts/sleep.lua", 0.01, pauseLogicUpdatesFinished, nil)
 end

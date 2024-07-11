@@ -8,6 +8,7 @@ ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
 ScriptHost:LoadScript("scripts/logic/entrances.lua")
 ScriptHost:LoadScript("scripts/items/exit_mappings.lua")
+ScriptHost:LoadScript("scripts/utils.lua")
 
 CUR_INDEX = -1
 SLOT_DATA = nil
@@ -179,6 +180,10 @@ function onClear(slot_data)
     end
 end
 
+function onClearHandler(slot_data)
+    pauseLogicUpdates(0.01, onClear, slot_data)
+end
+
 -- called when an item gets collected
 function onItem(index, item_id, item_name, player_number)
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
@@ -265,7 +270,7 @@ end
 
 -- add AP callbacks
 -- un-/comment as needed
-Archipelago:AddClearHandler("clear handler", onClear)
+Archipelago:AddClearHandler("clear handler", onClearHandler)
 if AUTOTRACKER_ENABLE_ITEM_TRACKING then
     Archipelago:AddItemHandler("item handler", onItem)
 end

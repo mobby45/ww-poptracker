@@ -5,6 +5,7 @@ else
 end
 
 local Entrance = require("objects/entrance")
+ScriptHost:LoadScript("scripts/utils.lua")
 ENTRANCE_RANDO_ENABLED = Tracker.ActiveVariantUID == "variant_entrance_rando"
 
 -- Each entrance starts with its vanilla exit.
@@ -110,16 +111,6 @@ local function is_exit_possible(exit_name, checked_set)
 end
 
 PAUSE_ENTRANCE_UPDATES = false
-
-function forceLogicUpdate()
-    local update = Tracker:FindObjectForCode("update")
-    -- If this function is called too early, the item won't exist yet. The item also won'#t exist when entrance
-    -- randomization is not enabled.
-    if update then
-        --print("Forced update!")
-        update.Active = not update.Active
-    end
-end
 
 function update_entrances(initializing)
     if not initializing and (PAUSE_ENTRANCE_UPDATES or not ENTRANCE_RANDO_ENABLED) then
