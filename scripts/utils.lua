@@ -56,53 +56,28 @@ function forceLogicUpdate()
     end
 end
 
-local function pauseLogicUpdatesFinished(duration)
-    print("Finished sleeping for " .. duration .. " seconds")
+local function pauseLogicUpdatesFinished(name)
+    print(name .. ": Re-enabling tracker logic updates")
     Tracker.BulkUpdate = false
     forceLogicUpdate()
 end
 
--- When specified, finishedCallback(duration, ...) is called after the timer is finished. The duration argument is
+-- When specified, finishedCallback(...) is called after the timer is finished. The duration argument is
 -- likely to be greater than the requested timer duration because the timer only updates each frame.
-local function startFrameTimer(name, duration, finishedCallback, ...)
+local function runNextFrame(name, func, ...)
     -- Can't access the varargs from within frameCallback, so pack them into a local table and unpack in frameCallback.
     local arg = {...}
 
-    local clock = os.clock
-    local start_time = clock()
-    local end_time = start_time + duration
-
     local function frameCallback(_seconds_since_last_frame)
-        local current_time = clock()
-        print(current_time)
-        if current_time > end_time then
-            ScriptHost:RemoveOnFrameHandler(name)
-            if finishedCallback then
-                finishedCallback(current_time - start_time, table.unpack(arg))
-            end
-        end
+        ScriptHost:RemoveOnFrameHandler(name)
+        func(name, table.unpack(arg))
     end
 
     ScriptHost:AddOnFrameHandler(name, frameCallback)
 end
 
--- Disable tracker logic updates and then wait `seconds` before re-enabling tracker logic updates.
--- If a function is provided, it is run after disabling tracker logic updates and the wait only starts after the
--- function has finished executing.
--- The timer internally uses a Frame Handler, so will only check the time each frame.
--- Note: The next frame after running init.lua or after connecting to Archipelago can take quite a while.
-function pauseLogicUpdates(name, seconds, func, ...)
+-- Disable tracker logic updates until the next frame and then re-enable tracker logic updates.
+function pauseLogicUntilNextFrame(name)
     Tracker.BulkUpdate = true
-    if func then
-        -- Perform a protected call to ensure that `Tracker.BulkUpdate` gets set back to `false` if something goes
-        -- wrong.
-        local ok, err = pcall(func, ...)
-
-        if not ok then
-            Tracker.BulkUpdate = false
-            print("Error:\n"..tostring(err))
-            return
-        end
-    end
-    startFrameTimer(name, seconds, pauseLogicUpdatesFinished)
+    runNextFrame(name, pauseLogicUpdatesFinished)
 end

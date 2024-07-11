@@ -47,5 +47,5 @@ Tracker:AddLayouts("layouts/settings.json")
 ScriptHost:LoadScript("scripts/autotracking.lua")
 print("Autotracking script loaded")
 
--- Briefly pause logic updates so that auto-save state can load without causing updates.
-pauseLogicUpdates("tracker post-init", 0.01)
+-- Pause logic updates until the next frame, so that auto-save state can load without causing updates.
+pauseLogicUntilNextFrame("tracker post-init")
