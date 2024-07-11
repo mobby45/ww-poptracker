@@ -132,7 +132,7 @@ function update_exit_mapping_icon(self, entrance_name, exit_name)
     end
     -- We use .IconMods to mark impossible to reach exits with @disabled, so pre-add the icon mods in the
     -- ImageReference for .Icon instead.
-    print("updating .Icon to: " .. full_icon_path)
+    --print("updating .Icon to: " .. full_icon_path)
     self.Icon = ImageReference:FromPackRelativePath(full_icon_path)
 end
 
