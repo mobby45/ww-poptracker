@@ -15,7 +15,6 @@ if ENTRANCE_RANDO_ENABLED then
     Tracker:AddItems("items/internal.json")
     -- Lua Items
     ScriptHost:LoadScript("scripts/items/exit_mappings.lua")
-    createExitMappingLuaItems()
     print("Exit mapping lua items loaded")
 end
 

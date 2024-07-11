@@ -1,3 +1,9 @@
+if ARCHIPELAGO_LOADED then
+    return
+else
+    ARCHIPELAGO_LOADED = true
+end
+
 ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
 ScriptHost:LoadScript("scripts/logic/entrances.lua")

@@ -1,3 +1,9 @@
+if ENTRANCES_LOADED then
+    return
+else
+    ENTRANCES_LOADED = true
+end
+
 local Entrance = require("objects/entrance")
 ENTRANCE_RANDO_ENABLED = Tracker.ActiveVariantUID == "variant_entrance_rando"
 

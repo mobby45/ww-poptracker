@@ -1,3 +1,9 @@
+if EXIT_MAPPINGS_LOADED then
+    return
+else
+    EXIT_MAPPINGS_LOADED = true
+end
+
 require("scripts/logic/entrances")
 
 EXITS = {
@@ -334,15 +340,13 @@ function create_exit_lua_item(idx)
     exit_item:Set("exit_idx", idx)
 end
 
-function createExitMappingLuaItems()
-    PAUSE_ENTRANCE_UPDATES = true
-    for idx, entrance in ipairs(ENTRANCES) do
-       create_mapping_lua_item(idx, entrance)
-       create_exit_lua_item(idx)
-    end
-    PAUSE_ENTRANCE_UPDATES = false
+PAUSE_ENTRANCE_UPDATES = true
+for idx, entrance in ipairs(ENTRANCES) do
+   create_mapping_lua_item(idx, entrance)
+   create_exit_lua_item(idx)
+end
+PAUSE_ENTRANCE_UPDATES = false
 
-    if ENTRANCE_RANDO_ENABLED then
-        update_entrances()
-    end
+if ENTRANCE_RANDO_ENABLED then
+    update_entrances()
 end
