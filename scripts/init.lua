@@ -5,17 +5,17 @@ ScriptHost:LoadScript("scripts/utils.lua")
 ScriptHost:LoadScript("scripts/logic/logic.lua")
 print("Logic scripts loaded")
 
--- Items
-Tracker:AddItems("items/items.json")
-Tracker:AddItems("items/settings.json")
-Tracker:AddItems("items/internal.json")
-
 -- Lua Items
 -- The base variant does not have entrance rando, so these items and their global functions are not needed and loading
 -- exit_mappings.lua will return `false`.
 if ScriptHost:LoadScript("scripts/items/exit_mappings.lua") then
     print("Exit mapping lua items loaded")
 end
+
+-- Items
+Tracker:AddItems("items/items.json")
+Tracker:AddItems("items/settings.json")
+Tracker:AddItems("items/internal.json")
 
 -- Maps
 Tracker:AddMaps("maps/maps.json")
