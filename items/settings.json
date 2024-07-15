@@ -309,5 +309,18 @@
 		"type": "toggle",
 		"img": "images/items/item13.png",
 		"codes": "sequence_break_other"
+	},
+	{
+		"name": "Automatic Map Switching",
+		"type": "toggle",
+		"img": "images/items/chart_tingle.png",
+		"codes": "setting_map_tracking",
+		"initial_active_state": true
+	},
+	{
+		"name": "Only Switch To Dungeons",
+		"type": "toggle",
+		"img": "images/items/bigkey2.png",
+		"codes": "setting_map_tracking_dungeons_only"
 	}
 ]

@@ -320,11 +320,20 @@ function onMap(stage_name)
         return
     end
 
-    local tab_name = STAGE_NAME_TO_TAB_NAME[stage_name]
-    if tab_name then
-        if tab_name ~= _last_activated_tab then
-            Tracker:UiHint("ActivateTab", tab_name)
-            _last_activated_tab = tab_name
+    local map_switch_setting = Tracker:FindObjectForCode("setting_map_tracking")
+    if map_switch_setting and map_switch_setting.Active then
+        local tab_name = STAGE_NAME_TO_TAB_NAME[stage_name]
+        if tab_name and tab_name ~= _last_activated_tab then
+            local map_switch_dungeons_only_setting = Tracker:FindObjectForCode("setting_map_tracking_dungeons_only")
+            if map_switch_dungeons_only_setting then
+                if not map_switch_dungeons_only_setting.Active or tab_name ~= "The Great Sea" then
+                    Tracker:UiHint("ActivateTab", tab_name)
+                end
+                -- Always set the last activated tab, so that if the player has the setting on that only switches when
+                -- entering a dungeon, enters a dungeon, leaves, and then re-enters, the map will switch to the dungeon
+                -- again.
+                _last_activated_tab = tab_name
+            end
         end
     end
 

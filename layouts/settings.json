@@ -60,6 +60,15 @@
                   "type": "layout",
                   "key": "sequence_break_settings_grid"
                 }
+              },
+              {
+                "type": "group",
+                "header": "Auto Map Switch",
+                "dock": "left",
+                "content": {
+                  "type": "layout",
+                  "key": "map_tracking_settings_grid"
+                }
               }
             ]
           }
