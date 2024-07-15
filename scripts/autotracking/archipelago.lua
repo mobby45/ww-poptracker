@@ -13,6 +13,117 @@ ScriptHost:LoadScript("scripts/utils.lua")
 CUR_INDEX = -1
 SLOT_DATA = nil
 
+-- Tracker Tab names and the Stages that should swap to those tabs.
+-- Stage names from https://github.com/LagoLunatic/wwrando/blob/master/data/stage_names.txt
+local _STAGE_MAPPING = {
+    {
+        "The Great Sea",
+        {
+            -- Stages which do not form connections with potentially randomized entrances are not included in this list.
+            "sea", -- The Great Sea
+            "Abesso", -- Cabana Interior
+            "Adanmae", -- Dragon Roost Cavern Entrance
+            "A_mori", -- Outset Island Fairy Woods
+            -- Caves 06 and 08 are unused.
+            "Cave01", -- Bomb Island Cave
+            "Cave02", -- Star Island Cave
+            "Cave03", -- Cliff Plateau Isles Cave
+            "Cave04", -- Rock Spire Isle Cave
+            "Cave05", -- Horseshoe Island Cave
+            "Cave07", -- Pawprint Isle Wizzrobe Cave
+            "Cave09", -- Savage Labyrinth
+            "Cave10", -- Savage Labyrinth
+            "Cave11", -- Savage Labyrinth
+            "Edaichi", -- Earth Temple Entrance (the room on Headstone Island before the dungeon)
+            "Ekaze", -- Wind Temple Entrance (the room on Gale Isle before the dungeon)
+            "Fairy01", -- Northern Fairy Island Fairy Fountain
+            "Fairy02", -- Eastern Fairy Island Fairy Fountain
+            "Fairy03", -- Western Fairy Island Fairy Fountain
+            "Fairy04", -- Outset Island Fairy Fountain
+            "Fairy05", -- Thorned Fairy Island Fairy Fountain
+            "Fairy06", -- Southern Fairy Island Fairy Fountain
+            "ITest62", -- Ice Ring Isle Inner Cave
+            "ITest63", -- Shark Island Cave
+            "kenroom", -- Master Sword Chamber
+            "MiniHyo", -- Ice Ring Isle Cave
+            "MiniKaz", -- Fire Mountain Cave
+            "SubD42", -- Needle Rock Isle Cave
+            "SubD43", -- Angular Isles Cave
+            "SubD71", -- Boating Course Cave
+            -- TF 05 and 07 are unused.
+            "TF_01", -- Stone Watcher Island Cave
+            "TF_02", -- Overlook Island Cave
+            "TF_03", -- Bird's Peak Rock Cave
+            "TF_04", -- Cabana Labyrinth
+            "TF_06", -- Dragon Roost Island Secret Cave
+            "TyuTyu", -- Pawprint Isle Chuchu Cave
+            "WarpD", -- Diamond Steppe Island Warp Maze
+        }
+    },
+    {
+        "Dragon Roost Cavern",
+        {
+            "M_Dra09", -- Dragon Roost Cavern Moblin Miniboss Room
+            "M_DragB", -- Dragon Roost Cavern Gohma Boss Room
+            "M_NewD2", -- Dragon Roost Cavern
+        }
+    },
+    {
+        "Forbidden Woods",
+        {
+            "kinBOSS", -- Forbidden Woods Kalle Demos Boss Room
+            "kindan", -- Forbidden Woods
+            "kinMB", -- Forbidden Woods Mothula Miniboss Room
+        }
+    },
+    {
+        "Tower of the Gods",
+        {
+            "Siren", -- Tower of the Gods
+            "SirenB", -- Tower of the Gods Gohdan Boss Room
+            "SirenMB", -- Tower of the Gods Darknut Miniboss Room
+        }
+    },
+    {
+        "Forsaken Fortress",
+        {
+            -- Not sure exactly which stages are used by the randomizer currently, so simply including them all.
+            "M2ganon", -- Forsaken Fortress Ganon's Room (2nd visit)
+            "M2tower", -- Forsaken Fortress Tower (2nd visit)
+            "ma2room", -- Forsaken Fortress Interior (2nd visit)
+            "ma3room", -- Forsaken Fortress Interior (3rd visit)
+            "majroom", -- Forsaken Fortress Interior (1st visit)
+            "MajyuE", -- Forsaken Fortress Exterior (1st visit)
+            "Mjtower", -- Forsaken Fortress Tower (1st visit)
+        }
+    },
+    {
+        "Earth Temple",
+        {
+            "M_Dai", -- Earth Temple
+            "M_DaiB", -- Earth Temple Jalhalla Boss Room
+            "M_DaiMB", -- Earth Temple Stalfos Miniboss Room
+        }
+    },
+    {
+        "Wind Temple",
+        {
+            "kaze", -- Wind Temple
+            "kazeB", -- Wind Temple Molgera Boss Room
+            "kazeMB", -- Wind Temple Wizzrobe Miniboss Room
+        }
+    },
+}
+local STAGE_NAME_TO_TAB_NAME = {}
+for _, pair in ipairs({_STAGE_MAPPING}) do
+    tab_name = pair[0]
+    stage_list = pair[1]
+    for _, stage_name in ipairs(stage_list) do
+        STAGE_NAME_TO_TAB_NAME[stage_name] = tab_name
+    end
+end
+_STAGE_MAPPING = nil
+
 function setNonRandomizedEntrancesFromSlotData(slot_data)
     local vanilla_dungeons = slot_data['randomize_dungeon_entrances'] == 0
     local vanilla_minibosses = slot_data['randomize_miniboss_entrances'] == 0
@@ -185,6 +296,17 @@ function onClearHandler(slot_data)
     onClear(slot_data)
 end
 
+function onMap(stage_name)
+    if not stage_name then
+        return
+    end
+
+    local tab_name = STAGE_NAME_TO_TAB_NAME[stage_name]
+    if tab_name then
+        Tracker:UiHint("ActivateTab", tab_name)
+    end
+end
+
 -- called when an item gets collected
 function onItem(index, item_id, item_name, player_number)
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
@@ -262,16 +384,24 @@ function onScout(location_id, location_name, item_id, item_name, item_player)
 end
 
 -- called when a bounce message is received 
-function onBounce(json)
+function onBounced(value)
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-        print(string.format("called onBounce: %s", dump_table(json)))
+        print(string.format("called onBounce: %s", dump_table(value)))
     end
-    -- your code goes here
+
+    local data = value["data"]
+    if not data then
+        return
+    end
+
+    -- The key is specified in the AP client.
+    onMap(data["tww_stage_name"])
 end
 
 -- add AP callbacks
 -- un-/comment as needed
 Archipelago:AddClearHandler("clear handler", onClearHandler)
+Archipelago:AddBouncedHandler("bounced handler", onBounced)
 if AUTOTRACKER_ENABLE_ITEM_TRACKING then
     Archipelago:AddItemHandler("item handler", onItem)
 end
@@ -279,4 +409,3 @@ if AUTOTRACKER_ENABLE_LOCATION_TRACKING then
     Archipelago:AddLocationHandler("location handler", onLocation)
 end
 -- Archipelago:AddScoutHandler("scout handler", onScout)
--- Archipelago:AddBouncedHandler("bounce handler", onBounce)
