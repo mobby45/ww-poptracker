@@ -12,6 +12,7 @@ ScriptHost:LoadScript("scripts/utils.lua")
 
 CUR_INDEX = -1
 SLOT_DATA = nil
+local SLOT_DATA_EXIT_TO_ENTRANCE = {}
 
 -- Tracker Tab names and the Stages that should swap to those tabs.
 -- Stage names from https://github.com/LagoLunatic/wwrando/blob/master/data/stage_names.txt
@@ -20,106 +21,113 @@ local _STAGE_MAPPING = {
         "The Great Sea",
         {
             -- Stages which do not form connections with potentially randomized entrances are not included in this list.
-            "sea", -- The Great Sea
-            "Abesso", -- Cabana Interior
-            "Adanmae", -- Dragon Roost Cavern Entrance
-            "A_mori", -- Outset Island Fairy Woods
+            {"sea"}, -- The Great Sea
+            {"Abesso"}, -- Cabana Interior
+            {"Adanmae"}, -- Dragon Roost Cavern Entrance
+            {"A_mori"}, -- Outset Island Fairy Woods
             -- Caves 06 and 08 are unused.
-            "Cave01", -- Bomb Island Cave
-            "Cave02", -- Star Island Cave
-            "Cave03", -- Cliff Plateau Isles Cave
-            "Cave04", -- Rock Spire Isle Cave
-            "Cave05", -- Horseshoe Island Cave
-            "Cave07", -- Pawprint Isle Wizzrobe Cave
-            "Cave09", -- Savage Labyrinth
-            "Cave10", -- Savage Labyrinth
-            "Cave11", -- Savage Labyrinth
-            "Edaichi", -- Earth Temple Entrance (the room on Headstone Island before the dungeon)
-            "Ekaze", -- Wind Temple Entrance (the room on Gale Isle before the dungeon)
-            "Fairy01", -- Northern Fairy Island Fairy Fountain
-            "Fairy02", -- Eastern Fairy Island Fairy Fountain
-            "Fairy03", -- Western Fairy Island Fairy Fountain
-            "Fairy04", -- Outset Island Fairy Fountain
-            "Fairy05", -- Thorned Fairy Island Fairy Fountain
-            "Fairy06", -- Southern Fairy Island Fairy Fountain
-            "ITest62", -- Ice Ring Isle Inner Cave
-            "ITest63", -- Shark Island Cave
-            "kenroom", -- Master Sword Chamber
-            "MiniHyo", -- Ice Ring Isle Cave
-            "MiniKaz", -- Fire Mountain Cave
-            "SubD42", -- Needle Rock Isle Cave
-            "SubD43", -- Angular Isles Cave
-            "SubD71", -- Boating Course Cave
+            {"Cave01", "Bomb Island Secret Cave"},
+            {"Cave02", "Star Island Secret Cave"},
+            {"Cave03", "Cliff Plateau Isles Secret Cave"},
+            {"Cave04", "Rock Spire Isle Secret Cave"},
+            {"Cave05", "Horseshoe Island Secret Cave"},
+            {"Cave07", "Pawprint Isle Wizzrobe Cave"},
+            -- Unsure which is the entrance, so specifying all 3 for now.
+            {"Cave09", "Savage Labyrinth"},
+            {"Cave10", "Savage Labyrinth"},
+            {"Cave11", "Savage Labyrinth"},
+            {"Edaichi"}, -- Earth Temple Entrance (the room on Headstone Island before the dungeon)
+            {"Ekaze"}, -- Wind Temple Entrance (the room on Gale Isle before the dungeon)
+            {"Fairy01", "Northern Fairy Fountain"},
+            {"Fairy02", "Eastern Fairy Fountain"},
+            {"Fairy03", "Western Fairy Fountain"},
+            {"Fairy04", "Outset Fairy Fountain"},
+            {"Fairy05", "Thorned Fairy Fountain"},
+            {"Fairy06", "Southern Fairy Fountain"},
+            {"ITest62", "Ice Ring Isle Inner Cave"},
+            {"ITest63", "Shark Island Secret Cave"},
+            {"kenroom", "Master Sword Chamber"},
+            {"MiniHyo", "Ice Ring Isle Secret Cave"},
+            {"MiniKaz", "Fire Mountain Secret Cave"},
+            {"SubD42", "Needle Rock Isle Secret Cave"},
+            {"SubD43", "Angular Isles Secret Cave"},
+            {"SubD71", "Boating Course Secret Cave"},
             -- TF 05 and 07 are unused.
-            "TF_01", -- Stone Watcher Island Cave
-            "TF_02", -- Overlook Island Cave
-            "TF_03", -- Bird's Peak Rock Cave
-            "TF_04", -- Cabana Labyrinth
-            "TF_06", -- Dragon Roost Island Secret Cave
-            "TyuTyu", -- Pawprint Isle Chuchu Cave
-            "WarpD", -- Diamond Steppe Island Warp Maze
+            {"TF_01", "Stone Watcher Island Secret Cave"},
+            {"TF_02", "Overlook Island Secret Cave"},
+            {"TF_03", "Bird's Peak Rock Secret Cave"},
+            {"TF_04", "Cabana Labyrinth"},
+            {"TF_06", "Dragon Roost Island Secret Cave"},
+            {"TyuTyu", "Pawprint Isle Chuchu Cave"},
+            {"WarpD", "Diamond Steppe Island Warp Maze Cave"},
         }
     },
     {
         "Dragon Roost Cavern",
         {
-            "M_Dra09", -- Dragon Roost Cavern Moblin Miniboss Room
-            "M_DragB", -- Dragon Roost Cavern Gohma Boss Room
-            "M_NewD2", -- Dragon Roost Cavern
+            {"M_Dra09"}, -- Dragon Roost Cavern Moblin Miniboss Room
+            {"M_DragB", "Gohma Boss Arena"},
+            {"M_NewD2", "Dragon Roost Cavern"},
         }
     },
     {
         "Forbidden Woods",
         {
-            "kinBOSS", -- Forbidden Woods Kalle Demos Boss Room
-            "kindan", -- Forbidden Woods
-            "kinMB", -- Forbidden Woods Mothula Miniboss Room
+            {"kinBOSS", "Kalle Demos Boss Arena"},
+            {"kindan", "Forbidden Woods"},
+            {"kinMB", "Forbidden Woods Miniboss Arena"},
         }
     },
     {
         "Tower of the Gods",
         {
-            "Siren", -- Tower of the Gods
-            "SirenB", -- Tower of the Gods Gohdan Boss Room
-            "SirenMB", -- Tower of the Gods Darknut Miniboss Room
+            {"Siren", "Tower of the Gods"},
+            {"SirenB", "Gohdan Boss Arena"},
+            {"SirenMB", "Tower of the Gods Miniboss Arena"},
         }
     },
     {
         "Forsaken Fortress",
         {
-            -- Not sure exactly which stages are used by the randomizer currently, so simply including them all.
-            "M2ganon", -- Forsaken Fortress Ganon's Room (2nd visit)
-            "M2tower", -- Forsaken Fortress Tower (2nd visit)
-            "ma2room", -- Forsaken Fortress Interior (2nd visit)
-            "ma3room", -- Forsaken Fortress Interior (3rd visit)
-            "majroom", -- Forsaken Fortress Interior (1st visit)
-            "MajyuE", -- Forsaken Fortress Exterior (1st visit)
-            "Mjtower", -- Forsaken Fortress Tower (1st visit)
+            -- "M2ganon", -- Forsaken Fortress Ganon's Room (2nd visit)
+            {"M2tower", "Helmaroc King Boss Arena"}, -- Forsaken Fortress Tower (2nd visit)
+            {"ma2room"}, -- Forsaken Fortress Interior (2nd visit)
+            -- "ma3room", -- Forsaken Fortress Interior (3rd visit)
+            -- "majroom", -- Forsaken Fortress Interior (1st visit)
+            -- "MajyuE", -- Forsaken Fortress Exterior (1st visit)
+            -- "Mjtower", -- Forsaken Fortress Tower (1st visit)
         }
     },
     {
         "Earth Temple",
         {
-            "M_Dai", -- Earth Temple
-            "M_DaiB", -- Earth Temple Jalhalla Boss Room
-            "M_DaiMB", -- Earth Temple Stalfos Miniboss Room
+            {"M_Dai", "Earth Temple"},
+            {"M_DaiB", "Jalhalla Boss Arena"},
+            {"M_DaiMB", "Earth Temple Miniboss Arena"},
         }
     },
     {
         "Wind Temple",
         {
-            "kaze", -- Wind Temple
-            "kazeB", -- Wind Temple Molgera Boss Room
-            "kazeMB", -- Wind Temple Wizzrobe Miniboss Room
+            {"kaze", "Wind Temple"},
+            {"kazeB", "Molgera Boss Arena"},
+            {"kazeMB", "Wind Temple Miniboss Arena"},
         }
     },
 }
 local STAGE_NAME_TO_TAB_NAME = {}
-for _, pair in ipairs({_STAGE_MAPPING}) do
-    tab_name = pair[0]
-    stage_list = pair[1]
-    for _, stage_name in ipairs(stage_list) do
+local STAGE_NAME_TO_EXIT_NAME = {}
+for _, pair in ipairs(_STAGE_MAPPING) do
+    local tab_name = pair[1]
+    local stage_list = pair[2]
+    for _, stage_data in ipairs(stage_list) do
+        local stage_name = stage_data[1]
         STAGE_NAME_TO_TAB_NAME[stage_name] = tab_name
+
+        local exit_name = stage_data[2]
+        if exit_name then
+            STAGE_NAME_TO_EXIT_NAME[stage_name] = exit_name
+        end
     end
 end
 _STAGE_MAPPING = nil
@@ -245,8 +253,18 @@ function onClear(slot_data)
     setFromSlotData('skip_rematch_bosses', 'tww_rematch_bosses_skipped')
     setFromSlotData('swift_sail', 'swift_sail')
 
+    SLOT_DATA_EXIT_TO_ENTRANCE = {}
     if ENTRANCE_RANDO_ENABLED then
         setNonRandomizedEntrancesFromSlotData(slot_data)
+        local entrances = slot_data["entrances"]
+        if entrances then
+            --print(dump_table(entrances))
+            for entrance, exit in pairs(entrances) do
+                SLOT_DATA_EXIT_TO_ENTRANCE[exit] = entrance
+            end
+        else
+            print("'entrances' was not present in slot_data, automatic entrance assignment will not be available")
+        end
     end
 
     -- junk that was in here from the template
@@ -304,6 +322,28 @@ function onMap(stage_name)
     local tab_name = STAGE_NAME_TO_TAB_NAME[stage_name]
     if tab_name then
         Tracker:UiHint("ActivateTab", tab_name)
+    end
+
+    -- Assign the current stage_name to its entrance as read from slot_data
+    if ENTRANCE_RANDO_ENABLED then
+        local exit_name = STAGE_NAME_TO_EXIT_NAME[stage_name]
+        if exit_name then
+            local entrance_name = SLOT_DATA_EXIT_TO_ENTRANCE[exit_name]
+            if entrance_name then
+                local exit_mapping = Tracker:FindObjectForCode(entrance_name)
+                if exit_mapping then
+                    local set_correctly = exit_mapping_assign(exit_mapping, exit_name)
+                    if not set_correctly then
+                        print("Warning: Failed to assign entrance mapping "..entrance_name.." -> "..exit_name..
+                              ". It could already be assigned to something else")
+                    end
+                end
+            else
+                print("Could not find an entrance_name for "..exit_name)
+            end
+        else
+            print("Could not find an exit_name for "..stage_name)
+        end
     end
 end
 
