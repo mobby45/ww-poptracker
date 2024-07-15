@@ -271,7 +271,8 @@
 		"name": "Skip Rematch Bosses",
 		"type": "toggle",
 		"img": "images/items/settings/skip_rematches.png",
-		"codes": "tww_rematch_bosses_skipped"
+		"codes": "tww_rematch_bosses_skipped",
+		"initial_active_state": true
 	},
 	{
 		"name": "Swift Sail Changes Wind",
