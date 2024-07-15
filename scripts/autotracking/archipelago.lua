@@ -314,6 +314,7 @@ function onClearHandler(slot_data)
     onClear(slot_data)
 end
 
+_last_activated_tab = ""
 function onMap(stage_name)
     if not stage_name then
         return
@@ -321,7 +322,10 @@ function onMap(stage_name)
 
     local tab_name = STAGE_NAME_TO_TAB_NAME[stage_name]
     if tab_name then
-        Tracker:UiHint("ActivateTab", tab_name)
+        if tab_name ~= _last_activated_tab then
+            Tracker:UiHint("ActivateTab", tab_name)
+            _last_activated_tab = tab_name
+        end
     end
 
     -- Assign the current stage_name to its entrance as read from slot_data
