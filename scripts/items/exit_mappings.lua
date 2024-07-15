@@ -191,12 +191,6 @@ function exit_mapping_update(self, old_exit_idx)
 end
 
 function exit_mapping_assign(self, new_exit)
-    local entrance = ENTRANCES[self:Get("entrance_idx")]
-    if entrance and entrance.exit then
-        -- Can't change the exit if the entrance already has an exit assigned.
-        return false
-    end
-
     local new_exit_name
     local new_exit_idx
     if type(new_exit) == "number" then
@@ -212,6 +206,17 @@ function exit_mapping_assign(self, new_exit)
         if new_exit_idx == 0 and new_exit_name then
             print("No exit found with the name '" .. new_exit_name .. "'")
             new_exit_name = nil
+        end
+    end
+
+    local entrance = ENTRANCES[self:Get("entrance_idx")]
+    if entrance and entrance.exit then
+        -- Can't change the exit if the entrance already has an exit assigned.
+        if entrance.exit == new_exit_name then
+            -- Already assigned
+            return true
+        else
+            return false
         end
     end
 
