@@ -199,6 +199,9 @@ function setNonRandomizedEntrancesFromSlotData(slot_data)
 end
 
 function onClear(slot_data)
+    -- Reset the last activated tab from map tracking.
+    _last_activated_tab = ""
+
     -- autotracking settings from YAML
     local function setFromSlotData(slot_data_key, item_code)
         local v = slot_data[slot_data_key]
