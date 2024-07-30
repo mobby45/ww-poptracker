@@ -749,7 +749,7 @@
         "name": "can_defeat_wizzrobes_at_range",
         "access_rules": [
           "bow",
-          "hookshot"
+          "hookshot, [tww_precise_1]"
         ]
       },
       {
