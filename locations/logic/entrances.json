@@ -303,13 +303,15 @@
           [
             "@Macros/can_get_inside_forsaken_fortress",
             "hammer",
-            "@Macros/_can_fly_with_deku_leaf_indoors_or_hookshot"
+            "@Macros/_can_fly_with_deku_leaf_indoors_or_hookshot",
+            "@Macros/_can_access_outdoors_boss_entrance_in_forsaken_fortress"
           ],
           [
             "@Macros/can_get_inside_forsaken_fortress",
             "hammer",
             "[tww_obscure_2]",
-            "[tww_precise_2]"
+            "[tww_precise_2]",
+            "@Macros/_can_access_outdoors_boss_entrance_in_forsaken_fortress"
           ]
         ],
         "sections": [

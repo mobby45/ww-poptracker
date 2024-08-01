@@ -1224,6 +1224,14 @@
         "access_rules": [
           "sequence_break_swift_sail, sail, swift_sail"
         ]
+      },
+      {
+        "name": "_can_access_outdoors_boss_entrance_in_forsaken_fortress",
+        "access_rules": [
+          "@Macros/can_defeat_bokoblins",
+          "@Macros/can_fly_with_deku_leaf_outdoors",// Swift Sail sequence break is allowed because the player must have hammer for the boss entrance, so they can get inside FF without out-of-logic flying to the other FF entrance by setting the wind direction with swift sail
+          "grapple"
+        ]
       }
     ]
   }
