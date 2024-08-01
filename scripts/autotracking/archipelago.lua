@@ -482,11 +482,18 @@ function onRetrieved(key, new_value, old_value)
         -- If the player has not connected the AP client and visited any stages yet, the value in the server's data
         -- storage may not exist.
         if new_value ~= nil then
+            Tracker.BulkUpdate = true
+            PAUSE_ENTRANCE_UPDATES = true
             -- The data is stored as a dictionary used as a set, so the keys are the visited stage names and the values are
             -- all `true`.
             for stage_name, _ in pairs(new_value) do
                 entranceRandoAssignEntranceFromVisitedStage(stage_name)
             end
+            PAUSE_ENTRANCE_UPDATES = false
+            update_entrances()
+
+            Tracker.BulkUpdate = false
+            forceLogicUpdate()
         end
     end
 end
