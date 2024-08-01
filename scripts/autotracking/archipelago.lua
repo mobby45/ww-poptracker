@@ -60,6 +60,8 @@ local _STAGE_MAPPING = {
             {"TF_06", "Dragon Roost Island Secret Cave"},
             {"TyuTyu", "Pawprint Isle Chuchu Cave"},
             {"WarpD", "Diamond Steppe Island Warp Maze Cave"},
+            -- Technically part of the `sea` stage, this is a dummy stage name sent by the AP Client.
+            {"CliPlaH", "Cliff Plateau Isles Inner Cave"}, -- The exit onto the highest isle
         }
     },
     {
