@@ -63,11 +63,11 @@
               },
               {
                 "type": "group",
-                "header": "Auto Map Switch",
+                "header": "Auto Tracking",
                 "dock": "left",
                 "content": {
                   "type": "layout",
-                  "key": "map_tracking_settings_grid"
+                  "key": "auto_tracking_settings_grid"
                 }
               }
             ]

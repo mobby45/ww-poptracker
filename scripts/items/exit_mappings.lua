@@ -238,6 +238,26 @@ function exit_mapping_assign(self, new_exit)
     return true
 end
 
+function exit_mapping_clear(self)
+    local entrance = ENTRANCES[self:Get("entrance_idx")]
+    if entrance and entrance.exit then
+        entrance.exit = nil
+    end
+
+    local old_idx = self:Get("exit_idx")
+    if old_idx ~= 0 then
+        self:Set("exit_idx", 0)
+        exit_mapping_update(self, old_idx)
+    end
+end
+
+function clearExitMappings()
+    for _, entrance in ipairs(ENTRANCES) do
+        local exit_mapping = Tracker:FindObjectForCode(entrance.name)
+        exit_mapping_clear(exit_mapping)
+    end
+end
+
 function create_mapping_lua_item(idx, entrance)
     local mapping_item = ScriptHost:CreateLuaItem()
 

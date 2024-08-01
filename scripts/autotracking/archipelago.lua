@@ -172,18 +172,6 @@ function setNonRandomizedEntrancesFromSlotData(slot_data)
         add_vanilla_entrances("fairy")
     end
 
-    PAUSE_ENTRANCE_UPDATES = true
-    -- Disabled for now to prevent modifying already assigned exits in-case the user connects to the wrong slot.
---     -- For the first pass, set all vanilla entrances to unassigned
---     for _, entrance in ipairs(all_vanilla_entrances) do
---         local exit_mapping = Tracker:FindObjectForCode(entrance.name)
---         exit_mapping_assign(exit_mapping, nil)
---     end
---     PAUSE_ENTRANCE_UPDATES = false
---     -- Update the exit_to_entrance table
---     update_entrances()
---     PAUSE_ENTRANCE_UPDATES = true
-
     -- For the second pass, set all the entrances to their vanilla exit
     local all_set_correctly = true
     for _, entrance in ipairs(all_vanilla_entrances) do
@@ -198,10 +186,6 @@ function setNonRandomizedEntrancesFromSlotData(slot_data)
         print("Some exit mappings could not be set to their vanilla entrances." ..
               " Their vanilla exits are probably already assigned to another entrance.")
     end
-
-    -- Now update the entrance logic.
-    PAUSE_ENTRANCE_UPDATES = false
-    update_entrances()
 end
 
 function onClear(slot_data)
@@ -271,7 +255,10 @@ function onClear(slot_data)
     setFromSlotData('swift_sail', 'swift_sail')
 
     SLOT_DATA_EXIT_TO_ENTRANCE = {}
-    if ENTRANCE_RANDO_ENABLED then
+    local load_assignments_from_ap = Tracker:FindObjectForCode("setting_load_exit_assignments_from_ap")
+    if ENTRANCE_RANDO_ENABLED and load_assignments_from_ap.Active then
+        PAUSE_ENTRANCE_UPDATES = true
+        clearExitMappings()
         setNonRandomizedEntrancesFromSlotData(slot_data)
         local entrances = slot_data["entrances"]
         if entrances then
@@ -282,6 +269,8 @@ function onClear(slot_data)
         else
             print("'entrances' was not present in slot_data, automatic entrance assignment will not be available")
         end
+        PAUSE_ENTRANCE_UPDATES = false
+        update_entrances()
     end
 
     -- junk that was in here from the template
@@ -338,10 +327,11 @@ function entranceRandoAssignEntranceFromVisitedStage(stage_name)
         if entrance_name then
             local exit_mapping = Tracker:FindObjectForCode(entrance_name)
             if exit_mapping then
+                -- Clear the current assignment if it is already assigned.
+                exit_mapping_clear(exit_mapping)
                 local set_correctly = exit_mapping_assign(exit_mapping, exit_name)
                 if not set_correctly then
-                    print("Warning: Failed to assign entrance mapping "..entrance_name.." -> "..exit_name..
-                          ". It could already be assigned to something else")
+                    print("Warning: Failed to assign entrance mapping "..entrance_name.." -> "..exit_name..".")
                 end
             end
         else
@@ -482,18 +472,21 @@ function onRetrieved(key, new_value, old_value)
         -- If the player has not connected the AP client and visited any stages yet, the value in the server's data
         -- storage may not exist.
         if new_value ~= nil then
-            Tracker.BulkUpdate = true
-            PAUSE_ENTRANCE_UPDATES = true
-            -- The data is stored as a dictionary used as a set, so the keys are the visited stage names and the values are
-            -- all `true`.
-            for stage_name, _ in pairs(new_value) do
-                entranceRandoAssignEntranceFromVisitedStage(stage_name)
-            end
-            PAUSE_ENTRANCE_UPDATES = false
-            update_entrances()
+            local load_assignments_from_ap = Tracker:FindObjectForCode("setting_load_exit_assignments_from_ap")
+            if load_assignments_from_ap.Active then
+                Tracker.BulkUpdate = true
+                PAUSE_ENTRANCE_UPDATES = true
+                -- The data is stored as a dictionary used as a set, so the keys are the visited stage names and the
+                -- values are all `true`.
+                for stage_name, _ in pairs(new_value) do
+                    entranceRandoAssignEntranceFromVisitedStage(stage_name)
+                end
+                PAUSE_ENTRANCE_UPDATES = false
+                update_entrances()
 
-            Tracker.BulkUpdate = false
-            forceLogicUpdate()
+                Tracker.BulkUpdate = false
+                forceLogicUpdate()
+            end
         end
     end
 end

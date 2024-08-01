@@ -323,9 +323,16 @@
 		"initial_active_state": true
 	},
 	{
-		"name": "Only Switch To Dungeons",
+		"name": "Only Map Switch To Dungeons",
 		"type": "toggle",
 		"img": "images/items/bigkey2.png",
 		"codes": "setting_map_tracking_dungeons_only"
+	},
+	{
+		"name": "Load Exit Assignments From AP",
+		"type": "toggle",
+		"img": "images/items/item0.png",
+		"codes": "setting_load_exit_assignments_from_ap",
+		"initial_active_state": true
 	}
 ]
