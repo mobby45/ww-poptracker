@@ -260,6 +260,11 @@
 				"img_mods": "@disabled"
 			},
 			{
+				"name": "Sword Mode - Swords Optional",
+				"img": "images/items/item20.png",
+				"img_mods": "overlay|images/items/item21.png|@disabled"
+			},
+			{
 				"name": "Sword Mode - Swordless",
 				"img": "images/items/item20.png",
 				"inherit_codes": false,
