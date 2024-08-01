@@ -12,6 +12,10 @@ ScriptHost:LoadScript("scripts/utils.lua")
 
 CUR_INDEX = -1
 SLOT_DATA = nil
+local VISITED_STAGES_FORMAT = "tww_visited_stages_%i"
+-- Data storage key
+visited_stages_key = nil
+
 local SLOT_DATA_EXIT_TO_ENTRANCE = {}
 
 -- Tracker Tab names and the Stages that should swap to those tabs.
@@ -204,6 +208,14 @@ function onClear(slot_data)
     -- Reset the last activated tab from map tracking.
     _last_activated_tab = ""
 
+    if ENTRANCE_RANDO_ENABLED then
+        visited_stages_key = string.format(VISITED_STAGES_FORMAT, Archipelago.PlayerNumber)
+        -- Only get the value when connecting so that entrances can be automatically assigned for all previously visited
+        -- stages. There is no need to receive updates to its value as it changes because the tracker already receives the
+        -- current stage name for map switching.
+        Archipelago:Get({visited_stages_key})
+    end
+
     -- autotracking settings from YAML
     local function setFromSlotData(slot_data_key, item_code)
         local v = slot_data[slot_data_key]
@@ -319,6 +331,27 @@ function onClearHandler(slot_data)
     onClear(slot_data)
 end
 
+function entranceRandoAssignEntranceFromVisitedStage(stage_name)
+    local exit_name = STAGE_NAME_TO_EXIT_NAME[stage_name]
+    if exit_name then
+        local entrance_name = SLOT_DATA_EXIT_TO_ENTRANCE[exit_name]
+        if entrance_name then
+            local exit_mapping = Tracker:FindObjectForCode(entrance_name)
+            if exit_mapping then
+                local set_correctly = exit_mapping_assign(exit_mapping, exit_name)
+                if not set_correctly then
+                    print("Warning: Failed to assign entrance mapping "..entrance_name.." -> "..exit_name..
+                          ". It could already be assigned to something else")
+                end
+            end
+        else
+            print("Could not find an entrance_name for "..exit_name)
+        end
+    else
+        print("Could not find an exit_name for "..stage_name)
+    end
+end
+
 _last_activated_tab = ""
 function onMap(stage_name)
     if not stage_name then
@@ -344,24 +377,7 @@ function onMap(stage_name)
 
     -- Assign the current stage_name to its entrance as read from slot_data
     if ENTRANCE_RANDO_ENABLED then
-        local exit_name = STAGE_NAME_TO_EXIT_NAME[stage_name]
-        if exit_name then
-            local entrance_name = SLOT_DATA_EXIT_TO_ENTRANCE[exit_name]
-            if entrance_name then
-                local exit_mapping = Tracker:FindObjectForCode(entrance_name)
-                if exit_mapping then
-                    local set_correctly = exit_mapping_assign(exit_mapping, exit_name)
-                    if not set_correctly then
-                        print("Warning: Failed to assign entrance mapping "..entrance_name.." -> "..exit_name..
-                              ". It could already be assigned to something else")
-                    end
-                end
-            else
-                print("Could not find an entrance_name for "..exit_name)
-            end
-        else
-            print("Could not find an exit_name for "..stage_name)
-        end
+        entranceRandoAssignEntranceFromVisitedStage(stage_name)
     end
 end
 
@@ -456,10 +472,30 @@ function onBounced(value)
     onMap(data["tww_stage_name"])
 end
 
+-- called in response to an Archipelago:Get(key_list)
+function onRetrieved(key, new_value, old_value)
+    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+        print(string.format("called onRetrieved: %s", dump_table(value)))
+    end
+
+    if key == visited_stages_key and ENTRANCE_RANDO_ENABLED then
+        -- If the player has not connected the AP client and visited any stages yet, the value in the server's data
+        -- storage may not exist.
+        if new_value ~= nil then
+            -- The data is stored as a dictionary used as a set, so the keys are the visited stage names and the values are
+            -- all `true`.
+            for stage_name, _ in pairs(new_value) do
+                entranceRandoAssignEntranceFromVisitedStage(stage_name)
+            end
+        end
+    end
+end
+
 -- add AP callbacks
 -- un-/comment as needed
 Archipelago:AddClearHandler("clear handler", onClearHandler)
 Archipelago:AddBouncedHandler("bounced handler", onBounced)
+Archipelago:AddRetrievedHandler("retrieved handler", onRetrieved)
 if AUTOTRACKER_ENABLE_ITEM_TRACKING then
     Archipelago:AddItemHandler("item handler", onItem)
 end
