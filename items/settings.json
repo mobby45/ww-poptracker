@@ -329,7 +329,7 @@
 		"codes": "setting_map_tracking_dungeons_only"
 	},
 	{
-		"name": "Load Exit Assignments From AP",
+		"name": "Load Checked Entrances From Archipelago",
 		"type": "toggle",
 		"img": "images/items/item0.png",
 		"codes": "setting_load_exit_assignments_from_ap",
