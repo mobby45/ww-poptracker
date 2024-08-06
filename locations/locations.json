@@ -180,15 +180,7 @@
             "chest_opened_img": "images/items/chest_spiky_gray.png",
             "access_rules": [
               [
-                "@Exit Logic/can_access_overlook_island_secret_cave",
-                "@Macros/can_defeat_stalfos",
-                "@Macros/can_defeat_wizzrobes",
-                "@Macros/can_defeat_red_chuchus",
-                "@Macros/can_defeat_green_chuchus",
-                "@Macros/can_defeat_keese",
-                "@Macros/can_defeat_fire_keese",
-                "@Macros/can_defeat_morths",
-                "@Macros/can_defeat_kargarocs",
+                "@Macros/_can_reach_overlook_island_cave_darknuts",
                 "@Macros/can_defeat_darknuts",
                 "@Macros/can_play_winds_requiem"
               ]
@@ -1276,9 +1268,7 @@
             "chest_opened_img": "images/items/chest_spiky_gray.png",
             "access_rules": [
               [
-                "@Exit Logic/can_access_stone_watcher_island_secret_cave",
-                "@Macros/can_defeat_armos",
-                "@Macros/can_defeat_wizzrobes",
+                "@Macros/_can_reach_stone_watcher_cave_darknuts",
                 "@Macros/can_defeat_darknuts",
                 "@Macros/can_play_winds_requiem"
               ]

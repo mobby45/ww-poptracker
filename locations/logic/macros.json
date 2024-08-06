@@ -788,6 +788,22 @@
         ]
       },
       {
+        "name": "_can_reach_overlook_island_cave_darknuts",
+        "access_rules": [
+          [
+            "@Exit Logic/can_access_overlook_island_secret_cave",
+            "@Macros/can_defeat_stalfos",
+            "@Macros/can_defeat_wizzrobes",
+            "@Macros/can_defeat_red_chuchus",
+            "@Macros/can_defeat_green_chuchus",
+            "@Macros/can_defeat_keese",
+            "@Macros/can_defeat_fire_keese",
+            "@Macros/can_defeat_morths",
+            "@Macros/can_defeat_kargarocs"
+          ]
+        ]
+      },
+      {
         "name": "_can_farm_knights_crests",
         "access_rules": [
           "@The Great Sea/Ice Ring Isle/Inner Cave - Chest",
@@ -798,6 +814,7 @@
           "@The Great Sea/Stone Watcher Island/Cave, @Macros/can_defeat_darknuts_easily",// This includes can_play_winds_requiem logic, but this logic is not actually required,
           "sequence_break_other, @Macros/_can_reach_stone_watcher_cave_darknuts, [@The Great Sea/Stone Watcher Island/Cave], @Macros/can_defeat_darknuts_easily",
           "@The Great Sea/Overlook Island/Cave, @Macros/can_defeat_darknuts_easily",
+          "sequence_break_other, @Macros/_can_reach_overlook_island_cave_darknuts, [@The Great Sea/Overlook Island/Cave], @Macros/can_defeat_darknuts_easily",
           "@Macros/can_access_hyrule"
         ]
       },
