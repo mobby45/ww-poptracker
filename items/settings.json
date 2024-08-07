@@ -262,7 +262,9 @@
 			{
 				"name": "Sword Mode - Swords Optional",
 				"img": "images/items/item20.png",
-				"img_mods": "overlay|images/items/item21.png|@disabled"
+				"img_mods": "overlay|images/items/item21.png|@disabled",
+				"inherit_codes": false,
+				"codes": "tww_in_swordless_mode"
 			},
 			{
 				"name": "Sword Mode - Swordless",
