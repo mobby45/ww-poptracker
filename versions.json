@@ -1,0 +1,12 @@
+{
+  "versions": [
+    {
+      "package_version": "1.0.1",
+      "download_url": "https://github.com/Mysteryem/ww-poptracker/archive/refs/tags/v1.0.1.zip",
+      "sha256": "5facdb44b489c0232d528ea271173ee8d0ed1f878ade0af4f4ef84df2ad6c12a",
+      "changelog": [
+        "Add automatic map switching, and entrance tracking for the entrance rando variant"
+      ]
+    }
+  ]
+}
