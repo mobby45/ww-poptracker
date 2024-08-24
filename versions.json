@@ -1,6 +1,15 @@
 {
   "versions": [
     {
+      "package_version": "1.0.2",
+      "download_url": "https://github.com/Mysteryem/ww-poptracker/archive/refs/tags/v1.0.2.zip",
+      "sha256": "3bbad4f5782867588fe471f03268c2571a414e6b84b18873dbb8d94711777228",
+      "changelog": [
+        "Add automatic updates",
+        "Fix map switching and entrance tracking processing map switches from other Wind Waker slots in the multiworld"
+      ]
+    },
+    {
       "package_version": "1.0.1",
       "download_url": "https://github.com/Mysteryem/ww-poptracker/archive/refs/tags/v1.0.1.zip",
       "sha256": "5facdb44b489c0232d528ea271173ee8d0ed1f878ade0af4f4ef84df2ad6c12a",
