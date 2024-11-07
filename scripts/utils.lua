@@ -1,9 +1,3 @@
-if UTILS_LOADED then
-    return
-else
-    UTILS_LOADED = true
-end
-
 function has_value(t, val)
     for i, v in ipairs(t) do
         if v == val then return 1 end

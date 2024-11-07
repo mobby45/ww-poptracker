@@ -1,11 +1,5 @@
-if ENTRANCES_LOADED then
-    return
-else
-    ENTRANCES_LOADED = true
-end
-
 local Entrance = require("objects/entrance")
-ScriptHost:LoadScript("scripts/utils.lua")
+require("scripts/utils")
 ENTRANCE_RANDO_ENABLED = Tracker.ActiveVariantUID == "variant_entrance_rando"
 
 -- Each entrance starts with its vanilla exit.

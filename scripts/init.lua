@@ -1,14 +1,14 @@
 local ENTRANCE_RANDO_ENABLED = Tracker.ActiveVariantUID == "variant_entrance_rando"
 
 -- Logic
-ScriptHost:LoadScript("scripts/utils.lua")
-ScriptHost:LoadScript("scripts/logic/logic.lua")
+require("scripts/utils")
+require("scripts/logic/logic")
 print("Logic scripts loaded")
 
 -- Lua Items
 -- The base variant does not have entrance rando, so these items and their global functions are not needed and loading
 -- exit_mappings.lua will return `false`.
-if ScriptHost:LoadScript("scripts/items/exit_mappings.lua") then
+if require("scripts/items/exit_mappings") then
     print("Exit mapping lua items loaded")
 end
 
@@ -44,7 +44,7 @@ Tracker:AddLayouts("layouts/broadcast.json")
 Tracker:AddLayouts("layouts/settings.json")
 
 -- AutoTracking for Poptracker
-ScriptHost:LoadScript("scripts/autotracking.lua")
+require("scripts/autotracking")
 print("Autotracking script loaded")
 
 -- Pause logic updates until the next frame, so that auto-save state can load without causing updates.

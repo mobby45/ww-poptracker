@@ -1,9 +1,3 @@
-if EXIT_MAPPINGS_LOADED then
-    return false
-else
-    EXIT_MAPPINGS_LOADED = true
-end
-
 require("scripts/logic/entrances")
 if not ENTRANCE_RANDO_ENABLED then
     return false

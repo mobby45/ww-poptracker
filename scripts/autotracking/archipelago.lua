@@ -1,14 +1,8 @@
-if ARCHIPELAGO_LOADED then
-    return
-else
-    ARCHIPELAGO_LOADED = true
-end
-
-ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
-ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
-ScriptHost:LoadScript("scripts/logic/entrances.lua")
-ScriptHost:LoadScript("scripts/items/exit_mappings.lua")
-ScriptHost:LoadScript("scripts/utils.lua")
+require("scripts/autotracking/item_mapping")
+require("scripts/autotracking/location_mapping")
+require("scripts/logic/entrances")
+require("scripts/items/exit_mappings")
+require("scripts/utils")
 
 CUR_INDEX = -1
 SLOT_DATA = nil
