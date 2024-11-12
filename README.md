@@ -25,7 +25,7 @@ PopTracker pack for The Legend of Zelda: The Wind Waker
 
 ## Credits
 
-@Ouro-dev, the original author of the tracker
+@Ouro-dev, the original author of the tracker, Mysteryem the official maintainer
 
 3D map renders by VGCartography
 	https://www.deviantart.com/vgcartography
