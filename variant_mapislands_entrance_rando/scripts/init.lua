@@ -1,4 +1,4 @@
-local ENTRANCE_RANDO_ENABLED = Tracker.ActiveVariantUID == "variant_entrance_rando"
+local ENTRANCE_RANDO_ENABLED = Tracker.ActiveVariantUID == "variant_mapislands_entrance_rando"
 
 -- Logic
 ScriptHost:LoadScript("scripts/utils.lua")

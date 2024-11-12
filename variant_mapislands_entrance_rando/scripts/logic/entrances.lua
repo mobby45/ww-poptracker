@@ -6,7 +6,7 @@ end
 
 local Entrance = require("objects/entrance")
 ScriptHost:LoadScript("scripts/utils.lua")
-ENTRANCE_RANDO_ENABLED = Tracker.ActiveVariantUID == "variant_entrance_rando"
+ENTRANCE_RANDO_ENABLED = Tracker.ActiveVariantUID == "variant_mapislands_entrance_rando"
 
 -- Each entrance starts with its vanilla exit.
 ENTRANCES = {
