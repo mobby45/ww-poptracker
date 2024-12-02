@@ -126,7 +126,7 @@
           "bombs",
           "@Macros/can_fan_with_deku_leaf, sword",
           "hammer",
-          "grapple, sword, [tww_obscure_1], [tww_precise_2]"
+          "grapple, sword, @General Logic/Normal Logic Obscurity, @General Logic/Hard Logic Precision"
         ]
       },
       {
@@ -134,7 +134,7 @@
         "access_rules": [
           "sword",
           "bow",
-          "hammer, [tww_precise_1]"
+          "hammer, @General Logic/Normal Logic Precision"
         ]
       },
       {
@@ -251,7 +251,7 @@
         "access_rules": [
           "boots, @Macros/can_fan_with_deku_leaf, @Macros/can_fly_with_deku_leaf_indoors, @Macros/can_cut_grass",
           "hookshot, @Macros/can_defeat_blue_bubbles, @Macros/can_fly_with_deku_leaf_indoors",
-          "hookshot, @Macros/can_fly_with_deku_leaf_indoors, [tww_obscure_1], [tww_precise_2]"
+          "hookshot, @Macros/can_fly_with_deku_leaf_indoors, @General Logic/Normal Logic Obscurity, @General Logic/Hard Logic Precision"
         ]
       },
       {
@@ -339,7 +339,7 @@
           ],
           [
             "totg_small:2",
-            "[tww_obscure_1]",
+            "@General Logic/Normal Logic Obscurity",
             "@Macros/can_play_command_melody"
           ]
         ]
@@ -376,8 +376,8 @@
         "name": "can_get_past_forsaken_fortress_gate",
         "access_rules": [
           "bombs",
-          "[tww_obscure_1], [tww_precise_1]",
-          "@Macros/can_open_ganons_tower_dark_portal, [tww_obscure_1]"
+          "@General Logic/Normal Logic Obscurity, @General Logic/Normal Logic Precision",
+          "@Macros/can_open_ganons_tower_dark_portal, @General Logic/Normal Logic Obscurity"
         ]
       },
       {
@@ -444,7 +444,7 @@
         "name": "_can_defeat_or_ignore_red_bubbles",
         "access_rules": [
           "@Macros/can_defeat_red_bubbles",
-          "[tww_precise_2]"
+          "@General Logic/Hard Logic Precision"
         ]
       },
       {
@@ -494,14 +494,14 @@
           "sword",
           "boomerang",
           "hammer",
-          "power, [tww_obscure_3]"
+          "power, @General Logic/Very Hard Logic Obscurity"
         ]
       },
       {
         "name": "can_reach_outset_island_upper_level",
         "access_rules": [
           "@Macros/can_cut_down_outset_trees",
-          "@Macros/can_fly_with_deku_leaf_outdoors, [tww_obscure_1]"
+          "@Macros/can_fly_with_deku_leaf_outdoors, @General Logic/Normal Logic Obscurity"
         ]
       },
       {
@@ -561,7 +561,7 @@
         "name": "can_defeat_gohdan",
         "access_rules": [
           "bow, bombs",
-          "hookshot, [tww_obscure_1], [tww_precise_2], bombs"
+          "hookshot, @General Logic/Normal Logic Obscurity, @General Logic/Hard Logic Precision, bombs"
         ]
       },
       {
@@ -749,7 +749,7 @@
         "name": "can_defeat_wizzrobes_at_range",
         "access_rules": [
           "bow",
-          "hookshot, [tww_precise_1]"
+          "hookshot, @General Logic/Normal Logic Precision"
         ]
       },
       {
@@ -774,7 +774,7 @@
         "name": "can_defeat_mighty_darknuts",
         "access_rules": [
           "@Macros/can_defeat_darknuts_easily",
-          "hammer, [tww_precise_3]"
+          "hammer, @General Logic/Very Hard Logic Precision"
         ]
       },
       {
@@ -891,16 +891,16 @@
           "bombs",
           "bow",
           "hammer",
-          "hookshot, [tww_precise_1]",
-          "grapple, [tww_precise_1]"
+          "hookshot, @General Logic/Normal Logic Precision",
+          "grapple, @General Logic/Normal Logic Precision"
         ]
       },
       {
         "name": "can_reach_dragon_roost_cavern_gaping_maw",
         "access_rules": [
           "@Exit Logic/can_access_dragon_roost_cavern, drc_small:4, @Macros/can_cut_down_hanging_drc_platform",
-          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:1, @Macros/can_fly_with_deku_leaf_indoors, [tww_obscure_2]",
-          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:1, @Macros/has_ice_arrows, [tww_obscure_2], [tww_precise_2]"
+          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:1, @Macros/can_fly_with_deku_leaf_indoors, @General Logic/Hard Logic Obscurity",
+          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:1, @Macros/has_ice_arrows, @General Logic/Hard Logic Obscurity, @General Logic/Hard Logic Precision"
         ]
       },
       {
@@ -1125,7 +1125,7 @@
         "name": "can_defeat_puppet_ganon",
         "access_rules": [
           "@Macros/has_light_arrows, boomerang",
-          "@Macros/has_light_arrows, [tww_precise_2]"
+          "@Macros/has_light_arrows, @General Logic/Hard Logic Precision"
         ]
       },
       {
@@ -1143,7 +1143,7 @@
         "name": "_can_reflect_light_arrows",
         "access_rules": [
           "shield",
-          "hammer, [tww_obscure_2]"
+          "hammer, @General Logic/Hard Logic Obscurity"
         ]
       },
       {
@@ -1197,8 +1197,8 @@
       {
         "name": "_forest_haven_grapple_skip_magic_use",
         "access_rules": [
-          "@Macros/can_cut_grass, [tww_precise_1]",
-          "magic_2, [tww_precise_2]"
+          "@Macros/can_cut_grass, @General Logic/Normal Logic Precision",
+          "magic_2, @General Logic/Hard Logic Precision"
         ]
       },
       {
@@ -1207,7 +1207,7 @@
           [
             "@Macros/can_fly_with_deku_leaf_indoors",
             "@Macros/_can_fly_with_deku_leaf_outdoors_no_swift_sail_sequence_break",// Must be able to fly out and then back, requiring a change in wind direction half way
-            "[tww_obscure_1]",
+            "@General Logic/Normal Logic Obscurity",
             "@Macros/_forest_haven_grapple_skip_magic_use"
           ]
         ]
@@ -1216,9 +1216,9 @@
         "name": "_can_defeat_et_big_key_chest_blue_bubbles",
         "access_rules": [
           "@Macros/can_defeat_blue_bubbles",
-          "bow, [tww_obscure_1]",
-          "sword, [tww_obscure_1], [tww_precise_1]",
-          "hammer, [tww_obscure_1], [tww_precise_1]"
+          "bow, @General Logic/Normal Logic Obscurity",
+          "sword, @General Logic/Normal Logic Obscurity, @General Logic/Normal Logic Precision",
+          "hammer, @General Logic/Normal Logic Obscurity, @General Logic/Normal Logic Precision"
         ]
       },
       {

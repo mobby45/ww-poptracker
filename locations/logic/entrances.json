@@ -35,8 +35,8 @@
           [
             "@Macros/can_access_forest_haven",
             "@Macros/can_fly_with_deku_leaf_indoors",
-            "[tww_obscure_1]",
-            "[tww_precise_1]",
+            "@General Logic/Normal Logic Obscurity",
+            "@General Logic/Normal Logic Precision",
             "@Macros/_can_fly_with_deku_leaf_outdoors_no_swift_sail_sequence_break",// The wind direction to get into Forest Haven without grappling hook is different to the wind direction required to fly to the dungeon entrance
             "@Macros/_can_cut_grass_or_has_magic_meter_upgrade"
           ]
@@ -309,8 +309,8 @@
           [
             "@Macros/can_get_inside_forsaken_fortress",
             "hammer",
-            "[tww_obscure_2]",
-            "[tww_precise_2]",
+            "@General Logic/Hard Logic Obscurity",
+            "@General Logic/Hard Logic Precision",
             "@Macros/_can_access_outdoors_boss_entrance_in_forsaken_fortress"
           ]
         ],

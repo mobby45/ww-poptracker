@@ -1678,7 +1678,7 @@
             "name": "Cave",
             "access_rules": [
               "@Exit Logic/can_access_cliff_plateau_isles_secret_cave, @Macros/can_defeat_boko_babas",
-              "@Exit Logic/can_access_cliff_plateau_isles_secret_cave, grapple, [tww_obscure_1], [tww_precise_1]"
+              "@Exit Logic/can_access_cliff_plateau_isles_secret_cave, grapple, @General Logic/Normal Logic Obscurity, @General Logic/Normal Logic Precision"
             ],
             "visibility_rules": [
               "puzzlecaves_on"
@@ -2090,7 +2090,7 @@
               [
                 "@Exit Logic/can_access_boating_course_secret_cave",
                 "@Macros/can_hit_diamond_switches_at_range",
-                "[tww_precise_2]"
+                "@General Logic/Hard Logic Precision"
               ]
             ],
             "visibility_rules": [

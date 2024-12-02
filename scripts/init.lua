@@ -21,6 +21,7 @@ Tracker:AddItems("items/internal.json")
 Tracker:AddMaps("maps/maps.json")
 
 -- Logic Locations
+Tracker:AddLocations("locations/logic/general_logic.json")
 Tracker:AddLocations("locations/logic/exits.json")
 Tracker:AddLocations("locations/logic/macros.json")
 Tracker:AddLocations("locations/logic/entrances.json")
