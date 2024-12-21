@@ -1,9 +1,3 @@
-if EXIT_MAPPINGS_LOADED then
-    return false
-else
-    EXIT_MAPPINGS_LOADED = true
-end
-
 require("scripts/logic/entrances")
 if not ENTRANCE_RANDO_ENABLED then
     return false
@@ -154,6 +148,7 @@ function exit_mapping_update(self, old_exit_idx)
 
     -- Update the new exit
     if exit_name then
+        --print("Assigning "..exit_name.." to "..entrance_name)
         entrance.exit = exit_name
         self.Name = entrance_name ..  " -> " .. exit_name
         local exit_item = Tracker:FindObjectForCode(exit_name)
@@ -167,6 +162,7 @@ function exit_mapping_update(self, old_exit_idx)
             entrance_location_section.AvailableChestCount = entrance_location_section.AvailableChestCount - 1
         end
     else
+        --print("Unassiging entrance "..entrance_name)
         entrance.exit = nil
         self.Name = "Click to assign " .. entrance_name
         -- Reset the "Can Enter" chest.

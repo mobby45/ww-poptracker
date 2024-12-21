@@ -6,7 +6,7 @@
       "orientation": "horizontal",
       "content": [
         {
-          "type": "tabbed",
+          "type": "tabbed",//TODO: Options tab that shows the options read from AP
           "tabs": [
             {
               "title": "Assignment",

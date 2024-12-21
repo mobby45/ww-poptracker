@@ -336,5 +336,29 @@
 		"img": "images/items/item0.png",
 		"codes": "setting_load_exit_assignments_from_ap",
 		"initial_active_state": true
+	},
+	{
+		"name": "Show Higher Logic Difficulties",// Applies to both Logic Precision and Obscurity
+		"type": "progressive",
+		"allow_disabled": false,
+		"initial_stage_idx": 1,
+		"loop": true,
+		"stages": [
+			{
+				"name": "Show Only Current Logic Difficulties",
+				"img": "images/items/settings/show_out_of_logic_none.png",
+				"codes": "setting_show_higher_logic"
+			},
+			{
+				"name": "Show Next Logic Difficulties",
+				"img": "images/items/settings/show_out_of_logic_plus_one.png",
+				"codes": "setting_show_higher_logic_next_only_enabled"
+			},
+			{
+				"name": "Show All Logic Difficulties",
+				"img": "images/items/settings/show_out_of_logic_all.png",
+				"codes": "setting_show_higher_logic_next_only_disabled"
+			}
+		]
 	}
 ]

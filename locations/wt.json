@@ -100,8 +100,8 @@
             "@Macros/can_reach_wind_temple_kidnapping_room",
             "hookshot",
             "@Macros/can_fly_with_deku_leaf_indoors",
-            "[tww_obscure_1]",
-            "[tww_precise_2]"
+            "@General Logic/Normal Logic Obscurity",
+            "@General Logic/Hard Logic Precision"
           ]
         ]
       },

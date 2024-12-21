@@ -18,4 +18,4 @@ end
 print("---------------------------------------------------------------------")
 print("")
 
-ScriptHost:LoadScript("scripts/autotracking/archipelago.lua")
+require("scripts/autotracking/archipelago")

@@ -126,7 +126,7 @@
             "@Macros/can_defeat_boko_babas",
             "grapple",
             "fw_small:1",
-            "[tww_precise_2]"
+            "@General Logic/Hard Logic Precision"
           ]
         ]
       },
@@ -157,7 +157,7 @@
             "grapple",
             "fw_small:1",
             "@Macros/can_defeat_door_flowers",
-            "[tww_precise_1]"
+            "@General Logic/Normal Logic Precision"
           ]
         ]
       },

@@ -1,14 +1,8 @@
-if ARCHIPELAGO_LOADED then
-    return
-else
-    ARCHIPELAGO_LOADED = true
-end
-
-ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
-ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
-ScriptHost:LoadScript("scripts/logic/entrances.lua")
-ScriptHost:LoadScript("scripts/items/exit_mappings.lua")
-ScriptHost:LoadScript("scripts/utils.lua")
+require("scripts/autotracking/item_mapping")
+require("scripts/autotracking/location_mapping")
+require("scripts/logic/entrances")
+require("scripts/items/exit_mappings")
+require("scripts/utils")
 
 CUR_INDEX = -1
 SLOT_DATA = nil
@@ -192,14 +186,6 @@ function onClear(slot_data)
     -- Reset the last activated tab from map tracking.
     _last_activated_tab = ""
 
-    if ENTRANCE_RANDO_ENABLED then
-        visited_stages_key = string.format(VISITED_STAGES_FORMAT, Archipelago.PlayerNumber)
-        -- Only get the value when connecting so that entrances can be automatically assigned for all previously visited
-        -- stages. There is no need to receive updates to its value as it changes because the tracker already receives the
-        -- current stage name for map switching.
-        Archipelago:Get({visited_stages_key})
-    end
-
     -- autotracking settings from YAML
     local function setFromSlotData(slot_data_key, item_code)
         local v = slot_data[slot_data_key]
@@ -257,6 +243,12 @@ function onClear(slot_data)
     SLOT_DATA_EXIT_TO_ENTRANCE = {}
     local load_assignments_from_ap = Tracker:FindObjectForCode("setting_load_exit_assignments_from_ap")
     if ENTRANCE_RANDO_ENABLED and load_assignments_from_ap.Active then
+        visited_stages_key = string.format(VISITED_STAGES_FORMAT, Archipelago.PlayerNumber)
+        -- Only get the value when connecting so that entrances can be automatically assigned for all previously visited
+        -- stages. There is no need to receive updates to its value as it changes because the tracker already receives the
+        -- current stage name for map switching.
+        Archipelago:Get({visited_stages_key})
+
         PAUSE_ENTRANCE_UPDATES = true
         clearExitMappings()
         setNonRandomizedEntrancesFromSlotData(slot_data)

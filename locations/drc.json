@@ -57,7 +57,7 @@
             "@Exit Logic/can_access_dragon_roost_cavern",
             "drc_small:2",
             "hookshot",
-            "[tww_obscure_1]"
+            "@General Logic/Normal Logic Obscurity"
           ]
         ]
       },

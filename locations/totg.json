@@ -100,8 +100,8 @@
         "name": "Floating Platforms Room",
         "access_rules": [
           "@Macros/can_reach_tower_of_the_gods_second_floor, bow",
-          "@Macros/can_reach_tower_of_the_gods_second_floor, @Macros/can_fly_with_deku_leaf_indoors, [tww_precise_1]",
-          "@Macros/can_reach_tower_of_the_gods_second_floor, hookshot, [tww_obscure_1]"
+          "@Macros/can_reach_tower_of_the_gods_second_floor, @Macros/can_fly_with_deku_leaf_indoors, @General Logic/Normal Logic Precision",
+          "@Macros/can_reach_tower_of_the_gods_second_floor, hookshot, @General Logic/Normal Logic Obscurity"
         ]
       },
       {

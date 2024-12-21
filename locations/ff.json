@@ -47,7 +47,7 @@
           ],
           [
             "@Macros/can_get_inside_forsaken_fortress",
-            "[tww_obscure_1]"
+            "@General Logic/Normal Logic Obscurity"
           ]
         ]
       },
